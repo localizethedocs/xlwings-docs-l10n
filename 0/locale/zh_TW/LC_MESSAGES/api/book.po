@@ -1,0 +1,389 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/book.rst:2
+msgid "Book"
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "A book object is a member of the `books` collection:"
+msgstr ""
+
+#: ../../../api/book.rst:10
+msgid ""
+"The easiest way to connect to a book is offered by `xw.Book`: it looks for "
+"the book in all app instances and returns an error, should the same book be "
+"open in multiple instances. To connect to a book in the active app instance, "
+"use `xw.books` and to refer to a specific app, use:"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "xw.Book"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "xw.books"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "New book"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "`xw.Book()`"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "`xw.books.add()`"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "Unsaved book"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "`xw.Book('Book1')`"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "`xw.books['Book1']`"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "Book by (full)name"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "`xw.Book(r'C:/path/to/file.xlsx')`"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+msgid "`xw.books.open(r'C:/path/to/file.xlsx')`"
+msgstr ""
+
+#: ../../../api/book.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:29
+msgid ""
+"Full path or name (incl. xlsx, xlsm etc.) of existing workbook or name of an "
+"unsaved workbook. Without a full path, it looks for the file in the current "
+"working directory."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:32
+msgid ""
+"If this argument is omitted, the user is prompted to specify how links will "
+"be updated"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:34
+msgid "True to open workbook in read-only mode"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:35
+msgid "If opening a text file, this specifies the delimiter character"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:36
+msgid "Password to open a protected workbook"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:37
+msgid "Password to write to a write-reserved workbook"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:38
+msgid "Set to ``True`` to mute the read-only recommended message"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:39
+msgid ""
+"For text files only. Specifies where it originated. Use Platform constants."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:40
+msgid "If format argument is 6, this specifies the delimiter."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:41
+msgid "This option is only for legacy Microsoft Excel 4.0 addins."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:42
+msgid ""
+"Notify the user when a file becomes available If the file cannot be opened "
+"in read/write mode."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:44
+msgid "The index of the first file converter to try when opening the file."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:45
+msgid "Add this workbook to the list of recently added workbooks."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:46
+msgid ""
+"If ``True``, saves files against the language of Excel, otherwise against "
+"the language of VBA. Not supported on macOS."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:48
+msgid ""
+"Can be one of xlNormalLoad, xlRepairFile or xlExtractData. Not supported on "
+"macOS."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:50
+msgid ""
+"A JSON object as delivered by the MS Office Scripts or Google Apps Script "
+"xlwings module but in a deserialized form, i.e., as dictionary. *New in "
+"version 0.26.0.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:53
+msgid ""
+"Either ``\"i\"`` (interactive (default)) or ``\"r\"`` (read). In interactive "
+"mode, xlwings opens the workbook in Excel, i.e., Excel needs to be "
+"installed. In read mode, xlwings reads from the file directly, without "
+"requiring Excel to be installed. Read mode requires xlwings ``PRO``. *New in "
+"version 0.28.0.*"
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Activates the book."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.activate:6
+msgid ""
+"If True, make frontmost window and hand over focus from Python to Excel."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Returns an app object that represents the creator of the book."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid ""
+"References the calling book when the Python function is called from Excel "
+"via `RunPython`. Pack it into the function being called from Excel, e.g.:"
+msgstr ""
+
+#: ../../../api/book.rst:11
+msgid ""
+"To be able to easily invoke such code from Python for debugging, use `xw."
+"Book.set_mock_caller()`."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Closes the book without saving it."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Flushes all pending actions to Excel and the Output pane."
+msgstr ""
+
+#: ../../../api/book.rst:3
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid ""
+"Returns the name of the object, including its path on disk, as a string. "
+"Read-only String."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Returns the selected cells as Range, fetched live from Excel."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid ""
+"Returns a JSON serializable object as expected by the MS Office Scripts or "
+"Google Apps Script xlwings module. Only available with book objects that "
+"have been instantiated via `xw.Book(json=...)`."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Loads the book's current data from Excel on demand."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Runs a Sub or Function in Excel VBA."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.macro:6
+msgid "``'Module1.MyMacro'`` or ``'MyMacro'``"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.macro:13
+#: xlwings.main.Book.render_template:19 xlwings.main.Book.set_mock_caller:8
+#: xlwings.main.Book.to_pdf:36
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/book.rst:6
+msgid "can be accessed like this:"
+msgstr ""
+
+#: ../../../api/book.rst:16
+msgid "See also: `App.macro`"
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Returns the name of the book as str."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid ""
+"Returns a names collection that represents all the names in the specified "
+"book (including all sheet-specific names)."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "This method requires xlwings `PRO`."
+msgstr ""
+
+#: ../../../api/book.rst:3
+msgid ""
+"Replaces all Jinja variables (e.g `{{ myvar }}`) in the book with the "
+"keyword argument of the same name."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.Book.render_template:12
+msgid "All key/value pairs that are used in the template."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid ""
+"Saves the Workbook. If a path is provided, this works like SaveAs() in "
+"Excel. If no path is specified and if the file hasn't been saved previously, "
+"it's saved in the current working directory with the current filename. "
+"Existing files are overwritten without prompting. To change the file type, "
+"provide the appropriate extension, e.g. to save `myfile.xlsx` in the `xlsb` "
+"format, provide `myfile.xlsb` as path."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.save:11
+msgid "Path where you want to save the Book."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.save:12
+msgid "Protection password with max. 15 characters *New in version 0.25.1.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.save:20
+msgid "Example"
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Returns the selected cells as Range."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid ""
+"Sets the Excel file which is used to mock `xw.Book.caller()` when the code "
+"is called from Python and not from Excel via `RunPython`."
+msgstr ""
+
+#: ../../../api/book.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.Book.sheet_names:6
+msgid "List of sheet names in order of appearance."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid "Returns a sheets collection that represents all the sheets in the book."
+msgstr ""
+
+#: ../../../api/book.rst:2
+msgid "Use `flush` instead."
+msgstr ""
+
+#: ../../../api/book.rst:1
+msgid ""
+"Exports the whole Excel workbook or a subset of the sheets to a PDF file. If "
+"you want to print hidden sheets, you will need to list them explicitely "
+"under `include`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.to_pdf:8
+msgid ""
+"Path to the PDF file, defaults to the same name as the workbook, in the same "
+"directory. For unsaved workbooks, it defaults to the current working "
+"directory instead."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.to_pdf:11
+msgid ""
+"Which sheets to include: provide a selection of sheets in the form of sheet "
+"indices (1-based like in Excel) or sheet names. Can be an int/str for a "
+"single sheet or a list of int/str for multiple sheets."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.to_pdf:14
+msgid ""
+"Which sheets to exclude: provide a selection of sheets in the form of sheet "
+"indices (1-based like in Excel) or sheet names. Can be an int/str for a "
+"single sheet or a list of int/str for multiple sheets."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.to_pdf:17
+msgid ""
+"This argument requires xlwings ``PRO``. Path to a PDF file on which the "
+"report will be printed. This is ideal for headers and footers as well as "
+"borderless printing of graphics/artwork. The PDF file either needs to have "
+"only 1 page (every report page uses the same layout) or otherwise needs the "
+"same amount of pages as the report (each report page is printed on the "
+"respective page in the layout PDF). *New in version 0.24.3.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.to_pdf:24
+msgid ""
+"Sheet names that start with this character/string will not be printed. *New "
+"in version 0.24.4.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.to_pdf:26
+msgid ""
+"Once created, open the PDF file with the default application. *New in "
+"version 0.24.6.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.to_pdf:28
+msgid ""
+"Quality of the PDF file. Can either be ``'standard'`` or ``'minimum'``. *New "
+"in version 0.26.2.*"
+msgstr ""
+
+#: ../../../api/book.rst:7
+msgid "See also `xlwings.Sheet.to_pdf`"
+msgstr ""
