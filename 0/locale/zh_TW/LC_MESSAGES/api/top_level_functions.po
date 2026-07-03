@@ -63,7 +63,7 @@ msgstr "範例"
 
 #: ../../../api/top_level_functions.rst:6
 msgid "See also: `view`"
-msgstr ""
+msgstr "另請參見：`view`"
 
 #: ../../../api/top_level_functions.rst:1
 msgid ""
@@ -97,4 +97,4 @@ msgstr ""
 
 #: ../../../api/top_level_functions.rst:9
 msgid "See also: `load`"
-msgstr ""
+msgstr "另請參見：`load`"

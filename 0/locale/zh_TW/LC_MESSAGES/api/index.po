@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../api/index.rst:9
 msgid "UDF decorators"
-msgstr ""
+msgstr "UDF 裝飾器"
 
 #: ../../../api/index.rst:14
 msgid "xlwings Object Model"
@@ -31,4 +31,4 @@ msgstr ""
 
 #: ../../../api/index.rst:2
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"

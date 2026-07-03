@@ -35,20 +35,24 @@ msgid ""
 "BSD-3-Clause) Python library that makes it easy to call Python from Excel "
 "and vice versa:"
 msgstr ""
+"xlwings（開源版）是一款採用 [BSD 授權](http://opensource.org/licenses/BSD-3-"
+"Clause)的 Python 程式庫，能輕鬆實現 Python 與 Excel 之間的相互呼叫："
 
 #: ../../../index.md:5
 msgid ""
 "**Scripting**: Automate/interact with Excel from Python using a syntax close "
 "to VBA."
 msgstr ""
+"**腳本編寫**：使用與 VBA 語法相近的方式，從 Python 自動化操作或與 Excel 互"
+"動。"
 
 #: ../../../index.md:6
 msgid "**Macros**: Replace VBA macros with clean and powerful Python code."
-msgstr ""
+msgstr "**巨集**：使用簡潔且強大的 Python 程式碼取代 VBA 巨集。"
 
 #: ../../../index.md:7
 msgid "**UDFs**: Write User Defined Functions (UDFs) in Python (Windows only)."
-msgstr ""
+msgstr "**UDF**：使用 Python 編寫使用者定義函數（UDF）（僅限 Windows）。"
 
 #: ../../../index.md:9
 msgid ""

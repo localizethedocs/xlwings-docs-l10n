@@ -210,7 +210,7 @@ msgstr ""
 
 #: ../../../api/app.rst:38
 msgid "See also: `Book.macro`"
-msgstr ""
+msgstr "另請參見：`Book.macro`"
 
 #: ../../../api/app.rst:1
 msgid "Returns the path to where the App is installed."
