@@ -1,0 +1,438 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../opensource_licenses.md:1
+msgid "Open Source Licenses"
+msgstr ""
+
+#: ../../../opensource_licenses.md:3
+msgid ""
+"Depending on the platform and features that you use, xlwings requires "
+"various Open Source dependencies."
+msgstr ""
+
+#: ../../../opensource_licenses.md:5
+msgid ""
+"The licenses of the compiled code are available in a <a "
+"href=\"opensource_licenses2.html\">separate document</a>"
+msgstr ""
+
+#: ../../../opensource_licenses.md:5
+msgid "<a href=\"opensource_licenses2.html\">"
+msgstr ""
+
+#: ../../../opensource_licenses.md:5
+msgid "</a>"
+msgstr ""
+
+#: ../../../opensource_licenses.md:6
+msgid "All other licenses are listed below"
+msgstr ""
+
+#: ../../../opensource_licenses.md:8
+msgid "pywin32 (used for interactive mode on Windows)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:10
+msgid "**com subpackage**"
+msgstr ""
+
+#: ../../../opensource_licenses.md:12
+msgid ""
+"Unless stated in the specific source file, this work is Copyright (c) "
+"1996-2008, Greg Stein and Mark Hammond. All rights reserved."
+msgstr ""
+
+#: ../../../opensource_licenses.md:16 ../../../opensource_licenses.md:49
+#: ../../../opensource_licenses.md:82
+msgid ""
+"Redistribution and use in source and binary forms, with or without  "
+"modification, are permitted provided that the following conditions  are met:"
+msgstr ""
+
+#: ../../../opensource_licenses.md:20 ../../../opensource_licenses.md:53
+#: ../../../opensource_licenses.md:86
+msgid ""
+"Redistributions of source code must retain the above copyright notice,  this "
+"list of conditions and the following disclaimer."
+msgstr ""
+
+#: ../../../opensource_licenses.md:23 ../../../opensource_licenses.md:56
+#: ../../../opensource_licenses.md:89
+msgid ""
+"Redistributions in binary form must reproduce the above copyright  notice, "
+"this list of conditions and the following disclaimer in  the documentation "
+"and/or other materials provided with the distribution."
+msgstr ""
+
+#: ../../../opensource_licenses.md:27
+msgid ""
+"Neither names of Greg Stein, Mark Hammond nor the name of contributors may "
+"be used  to endorse or promote products derived from this software without  "
+"specific prior written permission."
+msgstr ""
+
+#: ../../../opensource_licenses.md:31 ../../../opensource_licenses.md:64
+#: ../../../opensource_licenses.md:97
+msgid ""
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ''AS "
+"IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, "
+"THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
+"PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE "
+"LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF "
+"SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS "
+"INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN "
+"CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) "
+"ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE "
+"POSSIBILITY OF SUCH DAMAGE."
+msgstr ""
+
+#: ../../../opensource_licenses.md:43
+msgid "**win32 subpackage**"
+msgstr ""
+
+#: ../../../opensource_licenses.md:45 ../../../opensource_licenses.md:78
+msgid ""
+"Unless stated in the specfic source file, this work is Copyright (c) "
+"1994-2008, Mark Hammond  All rights reserved."
+msgstr ""
+
+#: ../../../opensource_licenses.md:60 ../../../opensource_licenses.md:93
+msgid ""
+"Neither name of Mark Hammond nor the name of contributors may be used  to "
+"endorse or promote products derived from this software without  specific "
+"prior written permission."
+msgstr ""
+
+#: ../../../opensource_licenses.md:76
+msgid "**Pythonwin subpackage**"
+msgstr ""
+
+#: ../../../opensource_licenses.md:109
+msgid "psutil (used for interactive mode on macOS)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:111 ../../../opensource_licenses.md:197
+msgid "BSD 3-Clause License"
+msgstr ""
+
+#: ../../../opensource_licenses.md:113
+msgid ""
+"Copyright (c) 2009, Jay Loden, Dave Daeschler, Giampaolo Rodola' All rights "
+"reserved."
+msgstr ""
+
+#: ../../../opensource_licenses.md:116 ../../../opensource_licenses.md:203
+msgid ""
+"Redistribution and use in source and binary forms, with or without "
+"modification, are permitted provided that the following conditions are met:"
+msgstr ""
+
+#: ../../../opensource_licenses.md:119 ../../../opensource_licenses.md:205
+msgid ""
+"Redistributions of source code must retain the above copyright notice, this "
+"list of conditions and the following disclaimer."
+msgstr ""
+
+#: ../../../opensource_licenses.md:122 ../../../opensource_licenses.md:207
+msgid ""
+"Redistributions in binary form must reproduce the above copyright notice, "
+"this list of conditions and the following disclaimer in the documentation "
+"and/or other materials provided with the distribution."
+msgstr ""
+
+#: ../../../opensource_licenses.md:126
+msgid ""
+"Neither the name of the psutil authors nor the names of its contributors may "
+"be used to endorse or promote products derived from this software without "
+"specific prior written permission."
+msgstr ""
+
+#: ../../../opensource_licenses.md:130
+msgid ""
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS "
+"IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, "
+"THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
+"PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR "
+"CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, "
+"EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, "
+"PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; "
+"OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, "
+"WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR "
+"OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF "
+"ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+msgstr ""
+
+#: ../../../opensource_licenses.md:141
+msgid "Appscript (used for interactive mode on macOS)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:143
+msgid ""
+"Appscript is released into the public domain, except for the following code:"
+msgstr ""
+
+#: ../../../opensource_licenses.md:145
+msgid ""
+"| portions of ae.c, which are Copyright (C) the original authors: | Original "
+"code taken from _AEmodule.c, _CFmodule.c, _Launchmodule.c | Copyright (C) "
+"2001-2008 Python Software Foundation. | License: https://docs.python.org/3/"
+"license.html."
+msgstr ""
+
+#: ../../../opensource_licenses.md:150
+msgid ""
+"| SendThreadSafe.h/SendThreadSafe.m, which are modified versions of Apple  | "
+"code (https://developer.apple.com/library/archive/samplecode/"
+"AESendThreadSafe): | Written by: DTS   | Copyright:  Copyright (c) 2007 "
+"Apple Inc. All Rights Reserved.   | Disclaimer: IMPORTANT: This Apple "
+"software is supplied to you by Apple Inc."
+msgstr ""
+
+#: ../../../opensource_licenses.md:0
+msgid "<br />\n"
+msgstr ""
+
+#: ../../../opensource_licenses.md:0
+msgid "\\\\\n"
+msgstr ""
+
+#: ../../../opensource_licenses.md:156
+msgid ""
+"(\"Apple\") in consideration of your agreement to the following terms, and "
+"your use, installation, modification or redistribution of this Apple "
+"software constitutes acceptance of these terms.  If you do not agree with "
+"these terms, please do not use, install, modify or redistribute this Apple "
+"software. In consideration of your agreement to abide by the following "
+"terms, and subject to these terms, Apple grants you a personal, non-"
+"exclusive license, under Apple's copyrights in this original Apple software "
+"(the \"Apple Software\"), to use, reproduce, modify and redistribute the "
+"Apple Software, with or without modifications, in source and/or binary "
+"forms; provided that if you redistribute the Apple Software in its entirety "
+"and without modifications, you must retain this notice and the following "
+"text and disclaimers in all such redistributions of the Apple Software. "
+"Neither the name, trademarks, service marks or logos of Apple Inc. may be "
+"used to endorse or promote products derived from the Apple Software without "
+"specific prior written permission from Apple.  Except as expressly stated in "
+"this notice, no other rights or licenses, express or implied, are granted by "
+"Apple herein, including but not limited to any patent rights that may be "
+"infringed by your derivative works or by other works in which the Apple "
+"Software may be incorporated. The Apple Software is provided by Apple on an "
+"\"AS IS\" basis."
+msgstr ""
+
+#: ../../../opensource_licenses.md:180
+msgid ""
+"APPLE MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION "
+"THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR "
+"A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND OPERATION "
+"ALONE OR IN COMBINATION WITH YOUR PRODUCTS. IN NO EVENT SHALL APPLE BE "
+"LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES "
+"(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; "
+"LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) ARISING IN ANY WAY "
+"OUT OF THE USE, REPRODUCTION, MODIFICATION AND/OR DISTRIBUTION OF THE APPLE "
+"SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY OF CONTRACT, TORT "
+"(INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS "
+"BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+msgstr ""
+
+#: ../../../opensource_licenses.md:195
+msgid "Mistune"
+msgstr ""
+
+#: ../../../opensource_licenses.md:199
+msgid "Copyright (c) 2014, Hsiaoming Yang"
+msgstr ""
+
+#: ../../../opensource_licenses.md:201
+msgid "All rights reserved."
+msgstr ""
+
+#: ../../../opensource_licenses.md:209
+msgid ""
+"Neither the name of the creator nor the names of its contributors may be "
+"used to endorse or promote products derived from this software without "
+"specific prior written permission."
+msgstr ""
+
+#: ../../../opensource_licenses.md:211
+msgid ""
+"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS "
+"IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, "
+"THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
+"PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR "
+"CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, "
+"EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, "
+"PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; "
+"OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, "
+"WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR "
+"OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF "
+"ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+msgstr ""
+
+#: ../../../opensource_licenses.md:213
+msgid "VBA-Dictionary (used in VBA add-in & modules)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:215 ../../../opensource_licenses.md:239
+#: ../../../opensource_licenses.md:263 ../../../opensource_licenses.md:287
+#: ../../../opensource_licenses.md:336 ../../../opensource_licenses.md:360
+msgid "The MIT License (MIT)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:217
+msgid "Copyright (c) 2020 Tim Hall"
+msgstr ""
+
+#: ../../../opensource_licenses.md:219 ../../../opensource_licenses.md:243
+#: ../../../opensource_licenses.md:267 ../../../opensource_licenses.md:316
+#: ../../../opensource_licenses.md:340 ../../../opensource_licenses.md:364
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy "
+"of this software and associated documentation files (the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
+msgstr ""
+
+#: ../../../opensource_licenses.md:226 ../../../opensource_licenses.md:250
+#: ../../../opensource_licenses.md:274 ../../../opensource_licenses.md:301
+#: ../../../opensource_licenses.md:323 ../../../opensource_licenses.md:347
+#: ../../../opensource_licenses.md:371 ../../../opensource_licenses.md:394
+msgid ""
+"The above copyright notice and this permission notice shall be included in "
+"all copies or substantial portions of the Software."
+msgstr ""
+
+#: ../../../opensource_licenses.md:229 ../../../opensource_licenses.md:253
+#: ../../../opensource_licenses.md:277 ../../../opensource_licenses.md:326
+#: ../../../opensource_licenses.md:350 ../../../opensource_licenses.md:374
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
+"IN THE SOFTWARE."
+msgstr ""
+
+#: ../../../opensource_licenses.md:237
+msgid "VBA-Web (used in VBA add-in & modules)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:241
+msgid "Copyright (c) 2016-2019 Tim Hall"
+msgstr ""
+
+#: ../../../opensource_licenses.md:261
+msgid "watchgod (used in xlwings.exe)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:265
+msgid "Copyright (c) 2017, 2018, 2019, 2020, 2021, 2022 Samuel Colvin"
+msgstr ""
+
+#: ../../../opensource_licenses.md:285
+msgid "msal (used in xlwings.exe)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:289
+msgid "Copyright (c) Microsoft Corporation. All rights reserved."
+msgstr ""
+
+#: ../../../opensource_licenses.md:292
+msgid "This code is licensed under the MIT License."
+msgstr ""
+
+#: ../../../opensource_licenses.md:294
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy "
+"of this software and associated documentation files(the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and / "
+"or sell copies of the Software, and to permit persons to whom the Software "
+"is furnished to do so, subject to the following conditions :"
+msgstr ""
+
+#: ../../../opensource_licenses.md:304
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
+"IN THE SOFTWARE."
+msgstr ""
+
+#: ../../../opensource_licenses.md:312
+msgid "core-js (used in xlwings.js)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:314
+msgid "Copyright (c) 2014-2023 Denis Pushkarev"
+msgstr ""
+
+#: ../../../opensource_licenses.md:334
+msgid "Bootstrap (used in xlwings-alert.html in connection with xlwings.js)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:338
+msgid "Copyright (c) 2011-2023 The Bootstrap Authors"
+msgstr ""
+
+#: ../../../opensource_licenses.md:358
+msgid ""
+"bootstrap-ie11 (used in xlwings-alert.html in connection with xlwings.js)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:362
+msgid "Copyright (c) 2022 Christian Oliff"
+msgstr ""
+
+#: ../../../opensource_licenses.md:382
+msgid "Webpack (used in xlwings.js)"
+msgstr ""
+
+#: ../../../opensource_licenses.md:384
+msgid "Copyright JS Foundation and other contributors"
+msgstr ""
+
+#: ../../../opensource_licenses.md:386
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy "
+"of this software and associated documentation files (the 'Software'), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
+msgstr ""
+
+#: ../../../opensource_licenses.md:397
+msgid ""
+"THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
+"IN THE SOFTWARE."
+msgstr ""

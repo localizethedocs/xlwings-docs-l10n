@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../troubleshooting.md:1
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../troubleshooting.md:3
+msgid "Issue: dll not found"
+msgstr ""
+
+#: ../../../troubleshooting.md:5 ../../../troubleshooting.md:17
+#: ../../../troubleshooting.md:23
+msgid "Solution:"
+msgstr ""
+
+#: ../../../troubleshooting.md:7
+msgid ""
+"`xlwings32-<version>.dll` and `xlwings64-<version>.dll` are both in the same "
+"directory as your `python.exe`. If not, something went wrong with your "
+"installation. Reinstall it with `pip` or `conda`, see [Installation]"
+"(installation.md#installation)."
+msgstr ""
+
+#: ../../../troubleshooting.md:9
+msgid ""
+"Check your `Interpreter` in the add-in or config sheet. If it is empty, then "
+"you need to be able to open a windows command prompt and type `python` to "
+"start an interactive Python session. If you get the error `'python' is not "
+"recognized as an internal or external command, operable program or batch "
+"file.`, then you have two options: Either add the path of where your `python."
+"exe` lives to your Windows path (see https://www.computerhope.com/issues/"
+"ch000549.htm) or set the full path to your interpreter in the add-in or your "
+"config sheet, e.g. `C:\\Users\\MyUser\\anaconda\\pythonw.exe`"
+msgstr ""
+
+#: ../../../troubleshooting.md:15
+msgid ""
+"Issue: Files that are saved on OneDrive or SharePoint cause an error to pop "
+"up"
+msgstr ""
+
+#: ../../../troubleshooting.md:19
+msgid ""
+"See the dedicated page about how to configure OneDrive and Sharepoint: "
+"[OneDrive and SharePoint](onedrive_sharepoint.md#onedrive-and-sharepoint)."
+msgstr ""
+
+#: ../../../troubleshooting.md:21
+msgid ""
+"Issue: Python was not found; run without arguments to install from the "
+"Microsoft Store, or disable this shortcut from Settings > Manage App "
+"Execution Aliases."
+msgstr ""
+
+#: ../../../troubleshooting.md:25
+msgid ""
+"The Python interpreter is not correctly installed or the configuration does "
+"not point to the Python interpreter. To fix this:"
+msgstr ""
+
+#: ../../../troubleshooting.md:27
+msgid ""
+"Verify that a Python interpreter is installed. Python can be installed in "
+"any way, including via Conda or virtual environment or the xlwings 1-click "
+"installer (part of xlwings PRO)."
+msgstr ""
+
+#: ../../../troubleshooting.md:28
+msgid ""
+"Check the configuration of xlwings according to its [Config Hierarchy](addin."
+"md#config-hierarchy)."
+msgstr ""
