@@ -19,4 +19,4 @@ msgstr ""
 
 #: ../../../getting_started/index.md:1
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"

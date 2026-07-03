@@ -29,11 +29,11 @@ msgstr ""
 
 #: ../../../api/characters.rst:4
 msgid "`mysheet['A1'].characters`"
-msgstr ""
+msgstr "`mysheet['A1'].characters`"
 
 #: ../../../api/characters.rst:5
 msgid "`mysheet.shapes[0].characters`"
-msgstr ""
+msgstr "`mysheet.shapes[0].characters`"
 
 #: ../../../api/characters.rst:8
 msgid ""

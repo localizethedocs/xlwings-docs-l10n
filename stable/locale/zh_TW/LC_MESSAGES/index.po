@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../index.md:76
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: ../../../index.md:1
 msgid "xlwings - Make Excel Fly!"
-msgstr ""
+msgstr "xlwings - 讓 Excel 飛起來！"
 
 #: ../../../index.md:3
 msgid ""

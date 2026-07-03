@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../api/sheets.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Sheets.add:6
 msgid "Name of the new sheet. If None, will default to Excel's default name."

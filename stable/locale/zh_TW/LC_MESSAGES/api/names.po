@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../api/names.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Names.add:6
 msgid ""

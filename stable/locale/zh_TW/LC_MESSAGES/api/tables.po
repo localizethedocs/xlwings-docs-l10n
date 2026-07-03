@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../api/tables.rst:2
 msgid "Tables"
-msgstr ""
+msgstr "表格"
 
 #: ../../../api/tables.rst:1
 msgid "A collection of all `table` objects on the specified sheet:"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../api/tables.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Tables.add:6
 msgid "An xlwings range object, representing the data source."
@@ -76,4 +76,4 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Tables.add:26
 msgid "Examples"
-msgstr ""
+msgstr "範例"

@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../api/shape.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Shape.scale_height:1
 #: xlwings.main.Shape.scale_width:1
