@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../../installation.md:39
 msgid "xlwings Excel Add-in"
-msgstr ""
+msgstr "xlwings Excel 增益集"
 
 #: ../../../installation.md:41
 msgid "To install the add-in, run the following command:"
@@ -149,7 +149,7 @@ msgstr ""
 
 #: ../../../installation.md:70
 msgid "See [xlwings PRO](pro/license_key.md#license-key)."
-msgstr ""
+msgstr "請參見 [xlwings PRO](pro/license_key.md#license-key)。"
 
 #: ../../../installation.md:72
 msgid "Optional Dependencies"

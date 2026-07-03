@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../../customaddin.md:67
 msgid "Renaming your add-in"
-msgstr ""
+msgstr "重新命名您的增益集"
 
 #: ../../../customaddin.md:69
 msgid ""

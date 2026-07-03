@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../vba.md:3
 msgid "xlwings add-in"
-msgstr ""
+msgstr "xlwings 增益集"
 
 #: ../../../vba.md:5
 msgid ""

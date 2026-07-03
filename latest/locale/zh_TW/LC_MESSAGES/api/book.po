@@ -35,11 +35,11 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
 msgid "xw.Book"
-msgstr ""
+msgstr "xw.Book"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
 msgid "xw.books"
-msgstr ""
+msgstr "xw.books"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
 msgid "New book"
@@ -300,7 +300,7 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Book.save:20
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/book.rst:1
 msgid "Returns the selected cells as Range."
@@ -326,7 +326,7 @@ msgstr ""
 
 #: ../../../api/book.rst:2
 msgid "Use `flush` instead."
-msgstr ""
+msgstr "請改用 `flush`。"
 
 #: ../../../api/book.rst:1
 msgid ""
@@ -386,4 +386,4 @@ msgstr ""
 
 #: ../../../api/book.rst:7
 msgid "See also `xlwings.Sheet.to_pdf`"
-msgstr ""
+msgstr "另請參見 `xlwings.Sheet.to_pdf`"

@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../../pro/reports/markdown.md:108
 msgid "See also the API reference:"
-msgstr ""
+msgstr "另請參見 API 參考："
 
 #: ../../../pro/reports/markdown.md:110
 msgid "{meth}`Markdown class <xlwings.pro.Markdown>`"

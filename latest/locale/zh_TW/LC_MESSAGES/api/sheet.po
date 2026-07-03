@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../../api/sheet.rst:1
 msgid "Deletes the Sheet."
-msgstr ""
+msgstr "刪除工作表。"
 
 #: ../../../api/sheet.rst:1
 msgid "Interface to freeze/unfreeze panes."
@@ -237,7 +237,7 @@ msgstr ""
 
 #: ../../../api/sheet.rst:8
 msgid "See also `xlwings.Book.to_pdf`"
-msgstr ""
+msgstr "另請參見 `xlwings.Book.to_pdf`"
 
 #: ../../../api/sheet.rst:1
 msgid "Used Range of Sheet."

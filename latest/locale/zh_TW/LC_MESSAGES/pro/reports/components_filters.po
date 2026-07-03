@@ -70,7 +70,7 @@ msgstr ""
 #: ../../../pro/reports/components_filters.md:492
 #: ../../../pro/reports/components_filters.md:575
 msgid "Example:"
-msgstr ""
+msgstr "範例："
 
 #: ../../../pro/reports/components_filters.md:35
 msgid "header"

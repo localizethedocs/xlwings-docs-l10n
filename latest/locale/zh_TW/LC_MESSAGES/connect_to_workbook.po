@@ -41,11 +41,11 @@ msgstr ""
 
 #: ../../../connect_to_workbook.md:0
 msgid "xw.Book"
-msgstr ""
+msgstr "xw.Book"
 
 #: ../../../connect_to_workbook.md:0
 msgid "xw.books"
-msgstr ""
+msgstr "xw.books"
 
 #: ../../../connect_to_workbook.md:0
 msgid "New book"

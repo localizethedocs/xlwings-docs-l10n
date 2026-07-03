@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../addin.md:1
 msgid "Add-in & Settings"
-msgstr ""
+msgstr "增益集與設定"
 
 #: ../../../addin.md:5
 msgid ""
