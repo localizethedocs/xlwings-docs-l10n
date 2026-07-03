@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../license.md:1
+msgid "License"
+msgstr ""
+
+#: ../../../license.md:3
+msgid "xlwings (Open Source)"
+msgstr ""
+
+#: ../../../license.md:5
+msgid ""
+"xlwings (Open Source) is a distributed under a BSD-3-Clause license. xlwings "
+"(Open Source) includes all files in the xlwings package except the `pro` "
+"folder, i.e., the `xlwings.pro` subpackage."
+msgstr ""
+
+#: ../../../license.md:7
+msgid ""
+"[xlwings (Open Source) License](https://github.com/xlwings/xlwings/blob/main/"
+"LICENSE.txt)"
+msgstr ""
+
+#: ../../../license.md:9
+msgid "xlwings PRO"
+msgstr ""
+
+#: ../../../license.md:11
+msgid ""
+"xlwings PRO is [source available](https://en.wikipedia.org/wiki/Source-"
+"available_software) and dual-licensed under one of the following licenses:"
+msgstr ""
+
+#: ../../../license.md:13
+msgid ""
+"[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/"
+"noncommercial/1.0.0) (noncommercial use is free)"
+msgstr ""
+
+#: ../../../license.md:14
+msgid ""
+"[xlwings PRO License](https://github.com/xlwings/xlwings/blob/main/"
+"LICENSE_PRO.txt) (commercial use requires a [paid plan](https://www.xlwings."
+"org/pricing))"
+msgstr ""
+
+#: ../../../license.md:16
+msgid "Third-party Open Source Licenses"
+msgstr ""
+
+#: ../../../license.md:18
+msgid ""
+"For the licenses of third-party Open Source dependencies, see [Open Source "
+"Licenses](opensource_licenses.md#open-source-licenses)."
+msgstr ""
