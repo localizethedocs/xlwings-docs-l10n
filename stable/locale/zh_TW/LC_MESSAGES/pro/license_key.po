@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../pro/license_key.md:1
 msgid "License Key"
-msgstr ""
+msgstr "授權金鑰"
 
 #: ../../../pro/license_key.md:3
 msgid ""
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../pro/license_key.md:17
 msgid "**License Key for non-commercial Purpose**:"
-msgstr ""
+msgstr "**非商業用途的授權金鑰**："
 
 #: ../../../pro/license_key.md:19
 msgid ""
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../pro/license_key.md:37
 msgid "Generate a deploy key"
-msgstr ""
+msgstr "生成部署金鑰"
 
 #: ../../../pro/license_key.md:39
 msgid "With an activated developer key, you can generate deploy keys like so:"

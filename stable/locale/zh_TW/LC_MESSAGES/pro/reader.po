@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../pro/reader.md:1
 msgid "xlwings Reader"
-msgstr ""
+msgstr "xlwings 讀取器"
 
 #: ../../../pro/reader.md:3
 msgid "This feature requires xlwings PRO and at least v0.28.0."

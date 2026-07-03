@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../api/udf_decorators.md:1
 msgid "UDF decorators"
-msgstr ""
+msgstr "UDF 裝飾器"
 
 #: ../../../api/udf_decorators.md:5
 msgid ""
@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../../../api/udf_decorators.md:58
 msgid "**Examples**"
-msgstr ""
+msgstr "**範例**"
 
 #: ../../../api/udf_decorators.md:60
 msgid "1\\) Suppress the index and header of a returned DataFrame:"

@@ -23,7 +23,7 @@ msgstr "開始使用"
 
 #: ../../../index_latex.md:23
 msgid "Advanced Features"
-msgstr ""
+msgstr "進階功能"
 
 #: ../../../index_latex.md:37
 msgid "xlwings PRO"
@@ -43,4 +43,4 @@ msgstr "關於"
 
 #: ../../../index_latex.md:72
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"
