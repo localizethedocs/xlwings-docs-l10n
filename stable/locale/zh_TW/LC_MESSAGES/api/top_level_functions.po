@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/top_level_functions.rst:2
+msgid "Top-level functions"
+msgstr ""
+
+#: ../../../api/top_level_functions.rst:1
+msgid ""
+"Loads the selected cell(s) of the active workbook into a pandas DataFrame. "
+"If you select a single cell that has adjacent cells, the range is auto-"
+"expanded (via current region) and turned into a pandas DataFrame. If you "
+"don't have pandas installed, it returns the values as nested lists."
+msgstr ""
+
+#: ../../../api/top_level_functions.rst:7
+msgid ""
+"Only use this in an interactive context like e.g. a Jupyter notebook! Don't "
+"use this in a script as it depends on the active book."
+msgstr ""
+
+#: ../../../api/top_level_functions.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/__init__.py:docstring of xlwings.main.load:14
+msgid ""
+"Defines the number of columns on the left that will be turned into the "
+"DataFrame's index"
+msgstr ""
+
+#: ../../../../xlwings/__init__.py:docstring of xlwings.main.load:16
+msgid ""
+"Defines the number of rows at the top that will be turned into the "
+"DataFrame's columns"
+msgstr ""
+
+#: ../../../../xlwings/__init__.py:docstring of xlwings.main.load:18
+#: xlwings.main.view:19
+msgid "Chunks the loading of big arrays."
+msgstr ""
+
+#: ../../../../xlwings/__init__.py:docstring of xlwings.main.load:25
+#: xlwings.main.view:26
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/top_level_functions.rst:6
+msgid "See also: `view`"
+msgstr ""
+
+#: ../../../api/top_level_functions.rst:1
+msgid ""
+"Opens a new workbook and displays an object on its first sheet by default. "
+"If you provide a sheet object, it will clear the sheet before displaying the "
+"object on the existing sheet."
+msgstr ""
+
+#: ../../../api/top_level_functions.rst:6
+msgid ""
+"Only use this in an interactive context like e.g., a Jupyter notebook! Don't "
+"use this in a script as it depends on the active book."
+msgstr ""
+
+#: ../../../../xlwings/__init__.py:docstring of xlwings.main.view:13
+msgid ""
+"the object to display, e.g. numbers, strings, lists, numpy arrays, pandas "
+"DataFrames"
+msgstr ""
+
+#: ../../../../xlwings/__init__.py:docstring of xlwings.main.view:15
+msgid ""
+"Sheet object. If none provided, the first sheet of a new workbook is used."
+msgstr ""
+
+#: ../../../../xlwings/__init__.py:docstring of xlwings.main.view:16
+msgid ""
+"If your object is a pandas DataFrame, by default it is formatted as an Excel "
+"Table"
+msgstr ""
+
+#: ../../../api/top_level_functions.rst:9
+msgid "See also: `load`"
+msgstr ""

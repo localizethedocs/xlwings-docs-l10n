@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/books.rst:2
+msgid "Books"
+msgstr ""
+
+#: ../../../api/books.rst:1
+msgid "A collection of all `book` objects:"
+msgstr ""
+
+#: ../../../api/books.rst:1
+msgid "Returns the active Book."
+msgstr ""
+
+#: ../../../api/books.rst:1
+msgid ""
+"Creates a new Book. The new Book becomes the active Book. Returns a Book "
+"object."
+msgstr ""
+
+#: ../../../api/books.rst:1
+msgid "Returns the active Book without pre-loading values (lazy loading)."
+msgstr ""
+
+#: ../../../api/books.rst:3
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/books.rst:5
+msgid "Use `await myrange.get_value()` to read cell values on demand."
+msgstr ""
+
+#: ../../../api/books.rst:1
+msgid ""
+"Opens a Book if it is not open yet and returns it. If it is already open, it "
+"doesn't raise an exception but simply returns the Book object."
+msgstr ""
+
+#: ../../../api/books.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Books.open:7
+msgid ""
+"filename or fully qualified filename, e.g., ``r'C:\\path\\to\\file.xlsx'`` "
+"or ``'file.xlsm'``. Without a full path, it looks for the file in the "
+"current working directory."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Books.open:11
+msgid "``xlwings.Book()``"
+msgstr ""

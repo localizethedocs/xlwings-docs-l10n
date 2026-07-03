@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../pro/license_key.md:1
+msgid "License Key"
+msgstr ""
+
+#: ../../../pro/license_key.md:3
+msgid ""
+"To use xlwings PRO functionality, you need to use a license key. xlwings PRO "
+"licenses keys are verified offline (i.e., no telemetry/license server "
+"involved). There are two types of license keys:"
+msgstr ""
+
+#: ../../../pro/license_key.md:5
+msgid ""
+"**Developer key**: this is the key that you will be provided with after "
+"purchase. As the name suggests, a developer key should be used by the "
+"developer, i.e., someone who writes xlwings code. Developer keys are valid "
+"for one or more developers (depending on your plan) and expire after 1 year."
+msgstr ""
+
+#: ../../../pro/license_key.md:6
+msgid ""
+"**Deploy key**: to create deploy keys, you'll need an activated developer "
+"key. As the name suggests, a deploy key should be used for the deployment of "
+"workbooks to end-users or with xlwings Server. A deploy key doesn't expire "
+"but is bound to a specific version of xlwings, which means that you need to "
+"generate a new deploy key every time you update xlwings (the `xlwings "
+"release` command handles this automatically as we'll see below). Note that "
+"you can't generate deploy keys with a trial license."
+msgstr ""
+
+#: ../../../pro/license_key.md:8
+msgid "Let's now see how you can get and activate a license key."
+msgstr ""
+
+#: ../../../pro/license_key.md:10
+msgid "How to get a license key"
+msgstr ""
+
+#: ../../../pro/license_key.md:12
+msgid "**License Key for Commercial Purpose**:"
+msgstr ""
+
+#: ../../../pro/license_key.md:14
+msgid ""
+"To try xlwings PRO for free in a commercial context, request a trial license "
+"key: https://www.xlwings.org/trial"
+msgstr ""
+
+#: ../../../pro/license_key.md:15
+msgid ""
+"To use xlwings PRO in a commercial context beyond the trial, you need to "
+"enroll in a paid plan (they include additional services like support and the "
+"ability to create one-click installers): https://www.xlwings.org/pricing"
+msgstr ""
+
+#: ../../../pro/license_key.md:17
+msgid "**License Key for non-commercial Purpose**:"
+msgstr ""
+
+#: ../../../pro/license_key.md:19
+msgid ""
+"To use xlwings PRO for free in a non-commercial context (as defined by the "
+"[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/"
+"noncommercial/1.0.0)) use the following license key: `noncommercial` (Note "
+"that you need at least xlwings 0.26.0)."
+msgstr ""
+
+#: ../../../pro/license_key.md:21
+msgid "Activate a developer key"
+msgstr ""
+
+#: ../../../pro/license_key.md:23
+msgid ""
+"To use xlwings PRO locally in your development environment, it's easiest to "
+"run the following command:"
+msgstr ""
+
+#: ../../../pro/license_key.md:29
+msgid ""
+"Make sure to replace `YOUR_LICENSE_KEY` with your actual key. This will "
+"store the license key in your `xlwings.conf` file (see [User Config: Ribbon/"
+"Config File](../addin.md#user-config-ribbonconfig-file) for where this is on "
+"your system). Alternatively, you could also activate the license key by "
+"setting an environment variable, as we'll see next."
+msgstr ""
+
+#: ../../../pro/license_key.md:31
+msgid "Setting developer keys or deploy keys as environment variable"
+msgstr ""
+
+#: ../../../pro/license_key.md:33
+msgid ""
+"For xlwings Server deployments, it is recommended to set the license key via "
+"the `XLWINGS_LICENSE_KEY` environment variable. How you set an environment "
+"variable depends on the operating system you use. Managed services often "
+"allow you to set environment variables as a secret via their user interface "
+"and many systems and frameworks such as Docker can be configured to read "
+"environment variables from a local `.env` file."
+msgstr ""
+
+#: ../../../pro/license_key.md:35
+msgid ""
+"Setting an environment variable is also a convenient way for your local "
+"development environment. Just make sure to restart your code editor, IDE, or "
+"Terminal/Command Prompt after setting the environment variable."
+msgstr ""
+
+#: ../../../pro/license_key.md:37
+msgid "Generate a deploy key"
+msgstr ""
+
+#: ../../../pro/license_key.md:39
+msgid "With an activated developer key, you can generate deploy keys like so:"
+msgstr ""
+
+#: ../../../pro/license_key.md:45
+msgid ""
+"Make sure that you run this command with the same xlwings version as you'll "
+"be using in your deployment. For convenience, when you run this command, the "
+"xlwings version will be printed as first line, but you can also query the "
+"xlwings version by running the following command in a Terminal/Command "
+"Prompt: `python -c \"import xlwings;print(xlwings.__version__)\"`"
+msgstr ""
+
+#: ../../../pro/license_key.md:47
+msgid ""
+"Note that if you use the `xlwings release` command, your workbook's `xlwings."
+"conf` sheet will be automatically updated with a correct deploy key as we'll "
+"see next."
+msgstr ""
+
+#: ../../../pro/license_key.md:49
+msgid ""
+"Updating the deploy key in a workbook via the \"xlwings release\" command"
+msgstr ""
+
+#: ../../../pro/license_key.md:51
+msgid ""
+"The `xlwings release` command is the recommended way to prepare a workbook "
+"for deployment. It takes care of:"
+msgstr ""
+
+#: ../../../pro/license_key.md:53
+msgid "Setting the deploy key in the `xlwings.conf` sheet"
+msgstr ""
+
+#: ../../../pro/license_key.md:54
+msgid "Embedding the code if desired"
+msgstr ""
+
+#: ../../../pro/license_key.md:55
+msgid ""
+"Updating the xlwings VBA module so there's no need to use the xlwings add-in "
+"on the end-users machine"
+msgstr ""
+
+#: ../../../pro/license_key.md:57
+msgid ""
+"For more details, see Step 2 under [1-click installer](release.md#1-click-"
+"installerembedded-code)."
+msgstr ""
+
+#: ../../../pro/license_key.md:59
+msgid "Updating the deploy key in a workbook manually"
+msgstr ""
+
+#: ../../../pro/license_key.md:61
+msgid "To update a workbook with a deploy key for deployment manually:"
+msgstr ""
+
+#: ../../../pro/license_key.md:63
+msgid "Run `xlwings license deploy`, see above"
+msgstr ""
+
+#: ../../../pro/license_key.md:64
+msgid ""
+"Paste the deploy key in your `xlwings.conf` sheet as value for "
+"`LICENSE_KEY`, see [xlwings.conf Sheet](../addin.md#workbook-config-"
+"xlwingsconf-sheet)"
+msgstr ""
+
+#: ../../../pro/license_key.md:66
+msgid "Setting the license key in code"
+msgstr ""
+
+#: ../../../pro/license_key.md:68
+msgid ""
+"If you run use xlwings PRO by running a Python script directly (e.g., as a "
+"frozen executable), it is easiest if you set the deploy key directly in code:"
+msgstr ""
+
+#: ../../../pro/license_key.md:75
+msgid ""
+"These lines must be run before importing xlwings. It is also best practice "
+"to store the deploy key in an external config file instead of hardcoding it "
+"directly in the code."
+msgstr ""

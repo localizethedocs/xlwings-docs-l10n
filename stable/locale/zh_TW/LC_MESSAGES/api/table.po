@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/table.rst:2
+msgid "Table"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "The table object is a member of the `tables` collection:"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid ""
+"Returns an xlwings range object that represents the range of values, "
+"excluding the header row"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Returns or sets the display name for the specified Table object"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid ""
+"Returns an xlwings range object that represents the range of the header row"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid ""
+"Returns an xlwings range object representing the row where data is going to "
+"be inserted. This is only available for empty tables, otherwise it'll return "
+"`None`"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Returns or sets the name of the Table."
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Returns the parent of the table."
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Returns an xlwings range object of the table."
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Resize a Table by providing an xlwings range object"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid ""
+"Turn the autofilter on or off by setting it to `True` or `False` (read/write "
+"boolean)"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Show or hide the header (read/write)"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid ""
+"Returns or sets if the Column Stripes table style is used for (read/write "
+"boolean)"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Returns or sets if the first column is formatted (read/write boolean)"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Returns or sets if the last column is displayed (read/write boolean)"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid ""
+"Returns or sets if the Row Stripes table style is used (read/write boolean)"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Gets or sets a boolean to show/hide the Total row."
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Gets or sets the table style. See `Tables.add` for possible values."
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid "Returns an xlwings range object representing the Total row"
+msgstr ""
+
+#: ../../../api/table.rst:1
+msgid ""
+"Updates the Excel table with the provided data. Currently restricted to "
+"DataFrames."
+msgstr ""
+
+#: ../../../api/table.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:10
+msgid "Currently restricted to pandas DataFrames."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:11
+msgid ""
+"Whether or not the index of a pandas DataFrame should be written to the "
+"Excel table."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:19
+msgid "Examples"
+msgstr ""
