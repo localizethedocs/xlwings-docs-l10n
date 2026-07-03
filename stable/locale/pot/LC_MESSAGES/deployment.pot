@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../deployment.md:1
+msgid "Deployment"
+msgstr ""
+
+#: ../../../deployment.md:3
+msgid "Zip files"
+msgstr ""
+
+#: ../../../deployment.md:8
+msgid ""
+"To make it easier to distribute, you can zip up your Python code into a zip "
+"file. If you use UDFs, this will disable the automatic code reload, so this "
+"is a feature meant for distribution, not development. In practice, this "
+"means that when your code is inside a zip file, you'll have to click on re-"
+"import to get any changes."
+msgstr ""
+
+#: ../../../deployment.md:12
+msgid ""
+"If you name your zip file like your Excel file (but with `.zip` extension) "
+"and place it in the same folder as your Excel workbook, xlwings will "
+"automatically find it (similar to how it works with a single python file)."
+msgstr ""
+
+#: ../../../deployment.md:15
+msgid ""
+"If you want to use a different directory, make sure to add it to the "
+"`PYTHONPATH` in your config (Ribbon or config file):"
+msgstr ""
+
+#: ../../../deployment.md:21
+msgid "RunFrozenPython"
+msgstr ""
+
+#: ../../../deployment.md:26
+msgid ""
+"You can use a freezer like PyInstaller, cx_Freeze, py2exe etc. to freeze "
+"your Python module into an executable so that the recipient doesn't have to "
+"install a full Python distribution."
+msgstr ""
+
+#: ../../../deployment.md:30
+msgid "This does not work with UDFs."
+msgstr ""
+
+#: ../../../deployment.md:31
+msgid ""
+"Currently only available on Windows, but support for Mac should be easy to "
+"add."
+msgstr ""
+
+#: ../../../deployment.md:32
+msgid ""
+"You need at least 0.15.2 to support arguments whereas the syntax changed in "
+"0.15.6"
+msgstr ""
+
+#: ../../../deployment.md:35
+msgid "Use it as follows:"
+msgstr ""
