@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../extensions.md:1
 msgid "Extensions"
-msgstr ""
+msgstr "擴充功能"
 
 #: ../../../extensions.md:3
 msgid ""

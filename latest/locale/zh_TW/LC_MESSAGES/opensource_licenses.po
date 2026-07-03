@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../opensource_licenses.md:1
 msgid "Open Source Licenses"
-msgstr ""
+msgstr "開源授權條款"
 
 #: ../../../opensource_licenses.md:3
 msgid ""
@@ -35,11 +35,11 @@ msgstr ""
 
 #: ../../../opensource_licenses.md:5
 msgid "<a href=\"opensource_licenses2.html\">"
-msgstr ""
+msgstr "<a href=\"opensource_licenses2.html\">"
 
 #: ../../../opensource_licenses.md:5
 msgid "</a>"
-msgstr ""
+msgstr "</a>"
 
 #: ../../../opensource_licenses.md:6
 msgid "All other licenses are listed below"

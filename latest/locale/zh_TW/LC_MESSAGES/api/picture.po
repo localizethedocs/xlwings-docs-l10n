@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../../api/picture.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Picture.update:7
 msgid "Either a filepath or a Matplotlib figure object."

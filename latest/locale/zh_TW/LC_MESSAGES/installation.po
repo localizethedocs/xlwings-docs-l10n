@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../installation.md:8
 msgid "xlwings requires at least Python 3.9."
-msgstr ""
+msgstr "xlwings 需要最低 Python 3.9。"
 
 #: ../../../installation.md:10
 msgid ""
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../../installation.md:18
 msgid "xlwings Python package"
-msgstr ""
+msgstr "xlwings Python 軟體包"
 
 #: ../../../installation.md:20
 msgid ""
@@ -157,19 +157,19 @@ msgstr ""
 
 #: ../../../installation.md:74
 msgid "NumPy"
-msgstr ""
+msgstr "NumPy"
 
 #: ../../../installation.md:75
 msgid "pandas"
-msgstr ""
+msgstr "pandas"
 
 #: ../../../installation.md:76
 msgid "Matplotlib"
-msgstr ""
+msgstr "Matplotlib"
 
 #: ../../../installation.md:77
 msgid "Pillow"
-msgstr ""
+msgstr "Pillow"
 
 #: ../../../installation.md:78
 msgid "Jinja2 (for xlwings.reports)"
@@ -210,7 +210,7 @@ msgstr ""
 
 #: ../../../installation.md:110
 msgid "Uninstall"
-msgstr ""
+msgstr "解除安裝"
 
 #: ../../../installation.md:112
 msgid ""

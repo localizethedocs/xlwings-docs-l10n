@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../api/top_level_functions.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/__init__.py:docstring of xlwings.main.load:14
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 #: ../../../../xlwings/__init__.py:docstring of xlwings.main.load:25
 #: xlwings.main.view:26
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/top_level_functions.rst:6
 msgid "See also: `view`"

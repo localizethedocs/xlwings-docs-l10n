@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../api/charts.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:6
 msgid "left position in points"
@@ -51,4 +51,4 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:16
 msgid "Examples"
-msgstr ""
+msgstr "範例"

@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../api/range.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Range:6
 msgid ""
@@ -47,7 +47,7 @@ msgstr ""
 #: xlwings.main.Range:17 xlwings.main.Range.end:15 xlwings.main.Range.expand:14
 #: xlwings.main.Range.get_address:21
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/range.rst:1
 msgid "Adds a hyperlink to the specified Range (single Cell)"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../index_latex.md:1
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../index_latex.md:23
 msgid "Advanced Features"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../index_latex.md:62
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: ../../../index_latex.md:72
 msgid "API Reference"
