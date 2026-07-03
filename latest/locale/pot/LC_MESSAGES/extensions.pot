@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../extensions.md:1
+msgid "Extensions"
+msgstr ""
+
+#: ../../../extensions.md:3
+msgid ""
+"It's easy to extend the xlwings add-in with own code like UDFs or RunPython "
+"macros, so that they can be deployed without end users having to import or "
+"write the functions themselves. Just add another VBA module to the xlwings "
+"addin with the respective code."
+msgstr ""
+
+#: ../../../extensions.md:7
+msgid ""
+"UDF extensions can be used from every workbook without having to set a "
+"reference."
+msgstr ""
+
+#: ../../../extensions.md:9
+msgid "In-Excel SQL"
+msgstr ""
+
+#: ../../../extensions.md:11
+msgid ""
+"The xlwings addin comes with a built-in extension that adds in-Excel SQL "
+"syntax (sqlite dialect):"
+msgstr ""
+
+#: ../../../extensions.md:19
+msgid ""
+"If there are no aliases provided, tables are aliased automatically as `a`, "
+"`b`, `c`, etc. as the screenshot shows. Since v0.33.5 you can, however, "
+"provide your own alias/table name like so:"
+msgstr ""
+
+#: ../../../extensions.md:31
+msgid ""
+"This is, you need to provide the table name/alias first before providing the "
+"range reference as the next argument, similar to how the `=LET` formula "
+"works in Excel."
+msgstr ""
+
+#: ../../../extensions.md:33
+msgid ""
+"As this extension uses UDFs, it's only available on Windows right now. This "
+"formula can be used on macOS and Excel on the web though via xlwings Server."
+msgstr ""

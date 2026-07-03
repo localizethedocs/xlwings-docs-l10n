@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../pro/reports/reports.md:1
+msgid "Quickstart"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:3
+msgid "You can work on the `sheet`, `book` or `app` level:"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:5
+msgid ""
+"`mysheet.render_template(**data)`: replaces the placeholders in `mysheet`"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:6
+msgid ""
+"`mybook.render_template(**data)`: replaces the placeholders in all sheets of "
+"`mybook`"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:7
+msgid ""
+"`myapp.render_template(template, output, **data)`: convenience wrapper that "
+"copies a template book before replacing the placeholder with the values. "
+"Since this approach allows you to work with hidden Excel instances, it is "
+"the most commonly used method for production."
+msgstr ""
+
+#: ../../../pro/reports/reports.md:9
+msgid ""
+"Let's go through a typical example: start by creating the following Python "
+"script `report.py`:"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:34
+msgid "Then create the following Excel file called `mytemplate.xlsx`:"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:38
+msgid "Run the Python script (or run the code from a Jupyter notebook):"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:44
+msgid ""
+"This will copy the template and create the following output by replacing the "
+"variables in double curly braces with the value from the Python variable:"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:49
+msgid ""
+"If you like, you could also create a classic xlwings tool to call this "
+"script or you could design a GUI app by using a framework like PySimpleGUI "
+"and turn it into an executable by using a freezer (e.g., PyInstaller). This, "
+"however, is beyond the scope of this tutorial."
+msgstr ""
+
+#: ../../../pro/reports/reports.md:52
+msgid ""
+"By default, xlwings Reports overwrites existing values in templates if there "
+"is not enough free space for your variable. If you want your rows to "
+"dynamically shift according to the height of your array, use [Frames]"
+"(components_filters.md#frames-multi-column-layout)."
+msgstr ""
+
+#: ../../../pro/reports/reports.md:56
+msgid ""
+"Unlike xlwings, xlwings Reports never writes out the index of pandas "
+"DataFrames. If you need the index to appear in Excel, use `df."
+"reset_index()`, see [DataFrames](components_filters.md#dataframes)."
+msgstr ""
+
+#: ../../../pro/reports/reports.md:59
+msgid ""
+"See also {meth}`render_templates (API reference) <xlwings.pro.reports."
+"render_template>`."
+msgstr ""
+
+#: ../../../pro/reports/reports.md:61
+msgid "Render Books and Sheets"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:63
+msgid ""
+"Sometimes, it's useful to render a single book or sheet instead of using the "
+"`myapp.render_template` method. This is a workbook stored as `Book1.xlsx`:"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:68
+msgid "Running the following code:"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:79
+msgid "Copies the template sheet first and then fills it in:"
+msgstr ""
+
+#: ../../../pro/reports/reports.md:84
+msgid ""
+"See also the {meth}`mysheet.render_template (API reference) <xlwings.Sheet."
+"render_template>` and {meth}`mybook.render_template (API reference) <xlwings."
+"Book.render_template>`."
+msgstr ""
