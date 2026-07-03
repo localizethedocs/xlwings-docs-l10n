@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../converters.md:1
 msgid "Converters and Options"
-msgstr ""
+msgstr "轉換器與選項"
 
 #: ../../../converters.md:3
 msgid ""
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../converters.md:18
 msgid "**Syntax:**"
-msgstr ""
+msgstr "**語法：**"
 
 #: ../../../converters.md:0
 msgid "Action"
@@ -66,11 +66,11 @@ msgstr ""
 
 #: ../../../converters.md:0
 msgid "`myrange.options(convert=None, **kwargs).value`"
-msgstr ""
+msgstr "`myrange.options(convert=None, **kwargs).value`"
 
 #: ../../../converters.md:0
 msgid "`@arg('x', convert=None, **kwargs)`"
-msgstr ""
+msgstr "`@arg('x', convert=None, **kwargs)`"
 
 #: ../../../converters.md:0
 msgid "**writing**"
@@ -78,11 +78,11 @@ msgstr ""
 
 #: ../../../converters.md:0
 msgid "`myrange.options(convert=None, **kwargs).value = myvalue`"
-msgstr ""
+msgstr "`myrange.options(convert=None, **kwargs).value = myvalue`"
 
 #: ../../../converters.md:0
 msgid "`@ret(convert=None, **kwargs)`"
-msgstr ""
+msgstr "`@ret(convert=None, **kwargs)`"
 
 #: ../../../converters.md:26
 msgid ""
@@ -319,7 +319,7 @@ msgstr ""
 
 #: ../../../converters.md:274
 msgid "Built-in Converters"
-msgstr ""
+msgstr "內建轉換器"
 
 #: ../../../converters.md:276
 msgid ""
@@ -344,7 +344,7 @@ msgstr ""
 
 #: ../../../converters.md:285
 msgid "Dictionary converter"
-msgstr ""
+msgstr "字典轉換器"
 
 #: ../../../converters.md:287
 msgid ""
@@ -369,7 +369,7 @@ msgstr ""
 
 #: ../../../converters.md:312
 msgid "JSON converter"
-msgstr ""
+msgstr "JSON 轉換器"
 
 #: ../../../converters.md:314
 msgid ""
@@ -431,7 +431,7 @@ msgstr ""
 
 #: ../../../converters.md:358 ../../../converters.md:394
 msgid "**Example:**"
-msgstr ""
+msgstr "**範例：**"
 
 #: ../../../converters.md:377
 msgid "Pandas DataFrame converter"
@@ -475,7 +475,7 @@ msgstr ""
 
 #: ../../../converters.md:432
 msgid "**Examples:**"
-msgstr ""
+msgstr "**範例：**"
 
 #: ../../../converters.md:472
 msgid "xw.Range and 'raw' converters"

@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../../../api/chart.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of
 #: xlwings.main.Chart.set_source_data:6

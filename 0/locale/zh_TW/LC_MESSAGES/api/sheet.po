@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../api/sheet.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Sheet.autofit:6
 msgid ""
@@ -54,7 +54,7 @@ msgstr ""
 #: xlwings.main.Sheet.autofit:15 xlwings.main.Sheet.copy:26
 #: xlwings.main.Sheet.render_template:22 xlwings.main.Sheet.to_pdf:26
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/sheet.rst:1
 msgid "Returns the Book of the specified Sheet. Read-only."

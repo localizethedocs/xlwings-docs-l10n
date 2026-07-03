@@ -39,4 +39,4 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Note.text:8
 msgid "Examples"
-msgstr ""
+msgstr "範例"

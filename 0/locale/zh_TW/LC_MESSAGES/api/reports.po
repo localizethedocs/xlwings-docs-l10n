@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../api/reports.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/pro/reports/image.py:docstring of
 #: xlwings.pro.reports.image.Image:6
@@ -64,7 +64,7 @@ msgstr ""
 #: ../../../../xlwings/reports.py:docstring
 #: xlwings.pro.reports.main.render_template:39
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/reports.rst:1
 msgid ""

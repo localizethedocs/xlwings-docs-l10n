@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../../api/udf_decorators.md:39
 msgid "**Examples:**"
-msgstr ""
+msgstr "**範例：**"
 
 #: ../../../api/udf_decorators.md:41
 msgid "Convert `x` into a 2-dimensional numpy array:"

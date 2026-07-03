@@ -118,7 +118,7 @@ msgstr ""
 
 #: ../../../api/table.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:10
 msgid "Currently restricted to pandas DataFrames."
@@ -132,4 +132,4 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:19
 msgid "Examples"
-msgstr ""
+msgstr "範例"

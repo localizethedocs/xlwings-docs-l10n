@@ -33,4 +33,4 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.PageSetup.print_area:7
 msgid "Examples"
-msgstr ""
+msgstr "範例"
