@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/sheets.rst:2
+msgid "Sheets"
+msgstr ""
+
+#: ../../../api/sheets.rst:1
+msgid "A collection of all `sheet` objects:"
+msgstr ""
+
+#: ../../../api/sheets.rst:1
+msgid "Returns the active Sheet."
+msgstr ""
+
+#: ../../../api/sheets.rst:1
+msgid "Creates a new Sheet and makes it the active sheet."
+msgstr ""
+
+#: ../../../api/sheets.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Sheets.add:6
+msgid "Name of the new sheet. If None, will default to Excel's default name."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Sheets.add:7
+msgid "An object that specifies the sheet before which the new sheet is added."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Sheets.add:9
+msgid "An object that specifies the sheet after which the new sheet is added."
+msgstr ""
+
+#: ../../../api/sheets.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Sheets.add:16
+msgid "Added sheet object"
+msgstr ""
+
+#: ../../../api/sheets.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/sheets.rst:1
+msgid "Returns the active Sheet, fetched live from Excel."
+msgstr ""
+
+#: ../../../api/sheets.rst:3
+msgid "Requires xlwings Lite."
+msgstr ""

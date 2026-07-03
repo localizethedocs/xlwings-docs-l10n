@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/reports.rst:2
+msgid "Reports"
+msgstr ""
+
+#: ../../../api/reports.rst:1
+msgid "Use this class to provide images to either `render_template()`."
+msgstr ""
+
+#: ../../../api/reports.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/pro/reports/image.py:docstring of
+#: xlwings.pro.reports.image.Image:6
+msgid "The file name or path"
+msgstr ""
+
+#: ../../../api/reports.rst:1
+msgid ""
+"Markdown objects can be assigned to a single cell or shape via `myrange."
+"value` or `myshape.text`. They accept a string in Markdown format which will "
+"cause the text in the cell to be formatted accordingly. They can also be "
+"used in `mysheet.render_template()`."
+msgstr ""
+
+#: ../../../../xlwings/pro/reports/markdown.py:docstring of
+#: xlwings.pro.reports.markdown.Markdown:9
+msgid ""
+"On macOS, formatting is currently not supported, but things like bullet "
+"points will still work."
+msgstr ""
+
+#: ../../../../xlwings/pro/reports/markdown.py:docstring of
+#: xlwings.pro.reports.markdown.Markdown:16
+msgid "The text in Markdown syntax"
+msgstr ""
+
+#: ../../../../xlwings/pro/reports/markdown.py:docstring of
+#: xlwings.pro.reports.markdown.Markdown:18
+msgid "The MarkdownStyle object defines how the text will be formatted."
+msgstr ""
+
+#: ../../../../xlwings/pro/reports/markdown.py:docstring of
+#: xlwings.pro.reports.markdown.Markdown:26
+#: ../../../../xlwings/reports.py:docstring
+#: xlwings.pro.reports.main.render_template:39
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/reports.rst:1
+msgid ""
+"`MarkdownStyle` defines how `Markdown` objects are being rendered in Excel "
+"cells or shapes. Start by instantiating a `MarkdownStyle` object. Printing "
+"it will show you the current (default) style:"
+msgstr ""
+
+#: ../../../api/reports.rst:18
+msgid ""
+"You can override the defaults, e.g., to make `**strong**` text red instead "
+"of bold, do this:"
+msgstr ""
+
+#: ../../../api/reports.rst:1
+msgid "Decorator"
+msgstr ""
+
+#: ../../../api/reports.rst:1
+msgid "This function requires xlwings `PRO`."
+msgstr ""
+
+#: ../../../api/reports.rst:3
+msgid ""
+"This is a convenience wrapper around :meth:`mysheet.render_template <xlwings."
+"Sheet.render_template>`"
+msgstr ""
+
+#: ../../../api/reports.rst:6
+msgid ""
+"Writes the values of all key word arguments to the `output` file according "
+"to the `template` and the variables contained in there (Jinja variable "
+"syntax). Following variable types are supported:"
+msgstr ""
+
+#: ../../../api/reports.rst:10
+msgid ""
+"strings, numbers, lists, simple dicts, NumPy arrays, Pandas DataFrames, "
+"pictures and Matplotlib/Plotly figures."
+msgstr ""
+
+#: ../../../../xlwings/reports.py:docstring of
+#: xlwings.pro.reports.main.render_template:16
+msgid "Path to your Excel template, e.g. ``r'C:\\Path\\to\\my_template.xlsx'``"
+msgstr ""
+
+#: ../../../../xlwings/reports.py:docstring of
+#: xlwings.pro.reports.main.render_template:18
+msgid "Path to your Report, e.g. ``r'C:\\Path\\to\\my_report.xlsx'``"
+msgstr ""
+
+#: ../../../../xlwings/reports.py:docstring of
+#: xlwings.pro.reports.main.render_template:19
+msgid ""
+"A dict of ``xlwings.Book`` parameters, for details see: :attr:``xlwings."
+"Book``. For example: ``book_settings={'update_links': False}``."
+msgstr ""
+
+#: ../../../../xlwings/reports.py:docstring of
+#: xlwings.pro.reports.main.render_template:22
+msgid ""
+"By passing in an xlwings App instance, you can control where your report "
+"runs and configure things like ``visible=False``. For details see :attr:"
+"``xlwings.App``. By default, it creates the report in the currently active "
+"instance of Excel."
+msgstr ""
+
+#: ../../../../xlwings/reports.py:docstring of
+#: xlwings.pro.reports.main.render_template:26
+msgid "All key/value pairs that are used in the template."
+msgstr ""
+
+#: ../../../api/reports.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xlwings/reports.py:docstring of
+#: xlwings.pro.reports.main.render_template:32
+msgid "xlwings Book"
+msgstr ""
+
+#: ../../../api/reports.rst:1
+msgid ""
+"In `my_template.xlsx`, put the following Jinja variables in two cells: "
+"`{{ title }}` and `{{ df }}`"
+msgstr ""
+
+#: ../../../api/reports.rst:12
+msgid ""
+"With many template variables it may be useful to collect the data first:"
+msgstr ""
+
+#: ../../../api/reports.rst:19
+msgid "If you need to handle external links or a password, use it like so:"
+msgstr ""
