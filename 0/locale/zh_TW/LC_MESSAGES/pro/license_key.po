@@ -57,13 +57,15 @@ msgstr ""
 
 #: ../../../pro/license_key.md:12
 msgid "**License Key for Commercial Purpose**:"
-msgstr ""
+msgstr "**商業用途的授權金鑰**："
 
 #: ../../../pro/license_key.md:14
 msgid ""
 "To try xlwings PRO for free in a commercial context, request a trial license "
 "key: https://www.xlwings.org/trial"
 msgstr ""
+"若要在商業環境中免費試用 xlwings PRO，請申請試用授權金鑰：\\ https://www."
+"xlwings.org/trial"
 
 #: ../../../pro/license_key.md:15
 msgid ""
@@ -71,6 +73,9 @@ msgid ""
 "enroll in a paid plan (they include additional services like support and the "
 "ability to create one-click installers): https://www.xlwings.org/pricing"
 msgstr ""
+"若要在試用期結束後於商業環境中使用 xlwings PRO，您需要註冊付費方案（這些方案"
+"包含額外服務，例如支援和建立一鍵安裝程式的功能）：\\ https://www.xlwings.org/"
+"pricing"
 
 #: ../../../pro/license_key.md:17
 msgid "**License Key for non-commercial Purpose**:"
