@@ -1,0 +1,812 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../pro/reports/components_filters.md:1
+msgid "Components and Filters"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:3
+msgid "DataFrames"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:5
+msgid ""
+"To write DataFrames in a consistent manner to Excel, xlwings Reports ignores "
+"the DataFrame indices. If you need to pass the index over to Excel, reset "
+"the index before passing in the DataFrame to `render_template`: `df."
+"reset_index()`."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:7
+msgid ""
+"When working with pandas DataFrames, the report designer often needs to "
+"tweak the data. Thanks to filters, they can do the most common operations "
+"directly in the template without the need to write Python code. A filter is "
+"added to the placeholder in Excel by using the pipe character: "
+"`{{ myplaceholder | myfilter }}`. You can combine multiple filters by using "
+"multiple pipe characters: they are applied from left to right, i.e. the "
+"result from the first filter will be the input for the next filter. Let's "
+"start with an example before listing each filter with its details:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:23
+msgid "DataFrames Filters"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:25
+msgid "noheader"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:27
+msgid "Hide the column headers"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:29
+#: ../../../pro/reports/components_filters.md:39
+#: ../../../pro/reports/components_filters.md:166
+#: ../../../pro/reports/components_filters.md:178
+#: ../../../pro/reports/components_filters.md:294
+#: ../../../pro/reports/components_filters.md:448
+#: ../../../pro/reports/components_filters.md:456
+#: ../../../pro/reports/components_filters.md:464
+#: ../../../pro/reports/components_filters.md:472
+#: ../../../pro/reports/components_filters.md:482
+#: ../../../pro/reports/components_filters.md:492
+#: ../../../pro/reports/components_filters.md:575
+msgid "Example:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:35
+msgid "header"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:37
+msgid "Only return the header"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:45
+msgid "sortasc"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:47
+msgid "Sort in ascending order (indices are zero-based)"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:49
+msgid "Example: sort by second, then by first column:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:55
+msgid "sortdesc"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:57
+msgid "Sort in descending order (indices are zero-based)"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:59
+msgid "Example: sort by first, then by second column in descending order:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:65
+msgid "columns"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:67
+msgid ""
+"Select/reorder columns and insert empty columns (indices are zero-based)"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:69
+msgid "See also: `colslice`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:71
+msgid ""
+"Example: introduce an empty column (`None`) as the second column and switch "
+"the order of the second and third column:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:78
+msgid ""
+"Merged cells: you'll also have to introduce empty columns if you are using "
+"merged cells in your Excel template."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:81
+msgid "mul, div, sum, sub"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:83
+msgid ""
+"Apply an arithmetic operation (multiply, divide, sum, subtract) on a column "
+"(indices are zero-based)"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:85
+#: ../../../pro/reports/components_filters.md:119
+#: ../../../pro/reports/components_filters.md:143
+#: ../../../pro/reports/components_filters.md:190
+#: ../../../pro/reports/components_filters.md:216
+msgid "Syntax:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:91
+msgid ""
+"`fill_value` is optional and determines whether empty cells are included in "
+"the operation or not. To include empty values and thus make it behave like "
+"in Excel, set it to `0`."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:93
+msgid "Example: multiply the first column by 100:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:99
+msgid "Example: multiply the first column by 100 and the second column by 2:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:105
+msgid "Example: add 100 to the first column including empty cells:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:111
+msgid "maxrows"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:113
+msgid ""
+"Maximum number of rows (currently, only `sum` is supported as aggregation "
+"function)"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:115
+msgid ""
+"If your DataFrame has 12 rows and you use `maxrows(10, \"Other\")` as "
+"filter, you'll get a table that shows the first 9 rows as-is and sums up the "
+"remaining 3 rows under the label `Other`. If your data is unsorted, make "
+"sure to call `sortasc`/`sortdesc` first to make sure the correct rows are "
+"aggregated."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:117
+msgid "See also: `aggsmall`, `head`, `tail`, `rowslice`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:125
+msgid ""
+"`label_col_ix` is optional: if left away, it will label the first column of "
+"the DataFrame (index is zero-based)"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:127
+#: ../../../pro/reports/components_filters.md:151
+msgid "Examples:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:135
+msgid "aggsmall"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:137
+msgid ""
+"Aggregate rows with values below a certain threshold (currently, only `sum` "
+"is supported as aggregation function)"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:139
+msgid ""
+"If the values in the specified row are below the threshold values, they will "
+"be summed up in a single row."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:141
+msgid "See also: `maxrows`, `head`, `tail`, `rowslice`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:149
+msgid ""
+"`label_col_ix` and `min_rows` are optional: if `label_col_ix` is left away, "
+"it will label the first column of the DataFrame (indices are zero-based). "
+"`min_rows` has the effect that it skips rows from aggregating if it "
+"otherwise the number of rows falls below `min_rows`. This prevents you from "
+"ending up with only one row called \"Other\" if you only have a few rows "
+"that are all below the threshold. NOTE that this parameter only makes sense "
+"if the data is sorted!"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:160
+msgid "head"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:162
+msgid "Only show the top n rows"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:164
+msgid "See also: `maxrows`, `aggsmall`, `tail`, `rowslice`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:172
+msgid "tail"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:174
+msgid "Only show the bottom n rows"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:176
+msgid "See also: `maxrows`, `aggsmall`, `head`, `rowslice`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:184
+msgid "rowslice"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:186
+msgid "Slice the rows"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:188
+msgid "See also: `maxrows`, `aggsmall`, `head`, `tail`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:196
+#: ../../../pro/reports/components_filters.md:222
+msgid ""
+"`stop_index` is optional: if left away, it will stop at the end of the "
+"DataFrame"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:198
+msgid ""
+"Example: Show rows 2 to 4 (indices are zero-based and interval is half-open, "
+"i.e. the start is including and the end is excluding):"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:204
+msgid "Example: Show rows 2 to the end of the DataFrame:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:210
+msgid "colslice"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:212
+msgid "Slice the columns"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:214
+msgid "See also: `columns`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:224
+msgid ""
+"Example: Show columns 2 to 4 (indices are zero-based and interval is half-"
+"open, i.e. the start is including and the end is excluding):"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:230
+msgid "Example: Show columns 2 to the end of the DataFrame:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:236
+msgid "vmerge"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:238
+msgid ""
+"Merge cells vertically for adjacent cells with the same value --- can be "
+"used to represent hierarchies"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:241
+msgid ""
+"The `vmerge` filter does not work in Excel tables, as Excel tables don't "
+"support merged cells!"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:248
+msgid ""
+"Note that the screenshot uses 4 [Frames](components_filters.md#frames-multi-"
+"column-layout) and the text is centered/vertically aligned in the template."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:250
+msgid "Syntax (arguments are optional):"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:256
+msgid ""
+"Example (default): Hierarchical mode across all columns --- this is helpful "
+"if the number of columns is dynamic. In hierarchical mode, cells are merged "
+"vertically in the first column (indices are zero-based) and cells in the "
+"next columns are merged only within the merged cells of the previous column:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:262
+msgid "Example: Hierarchical mode across the specified columns only:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:268
+msgid ""
+"Example: Independent mode: If you want to merge cells within columns "
+"independently of each other, use the filter multiple times. This sample "
+"merge cells vertically in the first two columns (indices are zero-based):"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:274
+msgid "formatter"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:277
+msgid "You can't use formatters with Excel tables."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:280
+msgid ""
+"The `formatter` filter accepts the name of a function. The function will be "
+"called after writing the values to Excel and allows you to easily style the "
+"range in a very flexible way:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:286
+msgid ""
+"The formatter's signature is: `def myformatter(rng, df)` where `rng` "
+"corresponds to the range where the original DataFrame `df` is written to. "
+"Adding type hints (as shown in the example below) will help your editor with "
+"auto-completion."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:289
+msgid ""
+"Within the reports framework, formatters need to be decorated with `xlwings."
+"reports.formatter` (see example below)! This isn't necessary though when you "
+"use them as part of the standard xlwings API."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:292
+msgid "Let's run through the Quickstart example again, amended by a formatter."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:338
+msgid "Excel Tables"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:340
+msgid ""
+"Using Excel tables is the recommended way to format tables as the styling "
+"can be applied dynamically across columns and rows. You can also use themes "
+"and apply alternating colors to rows/columns. Go to `Insert` > `Table` and "
+"make sure that you activate `My table has headers` before clicking on `OK`. "
+"Add the placeholder as usual on the top-left of your Excel table (note that "
+"this example makes use of [Frames](components_filters.md#frames-multi-column-"
+"layout)):"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:346
+msgid "Running the following script:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:359
+msgid "Will produce the following report:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:365
+msgid ""
+"Headers of Excel tables are relatively strict, e.g. you can't have multi-"
+"line headers or merged cells. To get around these limitations, uncheck the "
+"`Header Row` checkbox under `Table Design` and use the `noheader` filter "
+"(see DataFrame filters). This will allow you to design your own headers "
+"outside of the Excel Table."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:368
+msgid "At the moment, you can only assign pandas DataFrames to tables"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:371
+msgid "Excel Charts"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:373
+msgid "To use Excel charts in your reports, follow this process:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:375
+msgid "Add some sample/dummy data to your Excel template:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:381
+msgid ""
+"If your data source is dynamic, turn it into an Excel Table (`Insert` > "
+"`Table`). Make sure you do this _before_ adding the chart in the next step."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:387
+msgid "Add your chart and style it:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:393
+msgid ""
+"Reduce the Excel table to a 2 x 2 range and add the placeholder in the top-"
+"left corner (in our example `{{ chart_data }}`) . You can leave in some "
+"dummy data or clear the values of the Excel table:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:399
+msgid ""
+"Assuming your file is called `mytemplate.xlsx` and your sheet `template` "
+"like on the previous screenshot, you can run the following code:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:415
+msgid ""
+"This will produce the following report, with the chart source correctly "
+"adjusted:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:422
+msgid ""
+"If you don't want the source data on your report, you can place it on a "
+"separate sheet. It's easiest if you add and design the chart on the separate "
+"sheet, before cutting the chart and pasting it on your report template. To "
+"prevent the data sheet from being printed when calling `to_pdf`, you can "
+"give it a name that starts with `#` and it will be ignored. NOTE that if you "
+"start your sheet name with `##`, it won't be printed but also not rendered!"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:425
+msgid "Images"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:427
+msgid ""
+"Images are inserted so that the cell with the placeholder will become the "
+"top-left corner of the image. For example, write the following placeholder "
+"into you desired cell: `{{ logo }}`, then run the following code:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:439
+msgid "`Image` also accepts a `pathlib.Path` object instead of a string."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:442
+msgid ""
+"If you want to use vector-based graphics, you can use `svg` on Windows and "
+"`pdf` on macOS. You can control the appearance of your image by applying "
+"filters on your placeholder."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:444
+msgid "Available filters for Images:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:446
+msgid ""
+"**width**: Set the width in pixels (height will be scaled proportionally)."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:454
+msgid ""
+"**height**: Set the height in pixels (width will be scaled proportionally)."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:462
+msgid ""
+"**width and height**: Setting both width and height will distort the "
+"proportions of the image!"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:470
+msgid ""
+"**scale**: Scale your image using a factor (height and width will be scaled "
+"proportionally)."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:478
+msgid ""
+"**top**: Top margin. Has the effect of moving the image down (positive pixel "
+"number) or up (negative pixel number), relative to the top border of the "
+"cell. This is very handy to fine-tune the position of graphics object."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:480
+msgid "See also: `left`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:488
+msgid ""
+"**left**: Left margin. Has the effect of moving the image right (positive "
+"pixel number) or left (negative pixel number), relative to the left border "
+"of the cell. This is very handy to fine-tune the position of graphics object."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:490
+msgid "See also: `top`"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:498
+msgid "Matplotlib and Plotly Plots"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:500
+msgid ""
+"For a general introduction on how to handle Matplotlib and Plotly, see also: "
+"[Matplotlib & Plotly Charts](../../matplotlib.md#matplotlib--plotly-charts). "
+"There, you'll also find the prerequisites to be able to export Plotly charts "
+"as pictures."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:502
+msgid "Matplotlib"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:504
+msgid ""
+"Write the following placeholder in the cell where you want to paste the "
+"Matplotlib plot: `{{ lineplot }}`. Then run the following code to get your "
+"Matplotlib Figure object:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:518
+msgid "Plotly"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:520
+msgid "Plotly works practically the same:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:532
+msgid ""
+"To change the appearance of the Matplotlib or Plotly plot, you can use the "
+"same filters as with images. Additionally, you can use the following filter:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:534
+msgid ""
+"**format**: allows to change the default image format from `png` to e.g., "
+"`vector`, which will export the plot as vector graphics (`svg` on Windows "
+"and `pdf` on macOS). As an example, to make the chart smaller and use the "
+"vector format, you would write the following placeholder:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:540
+msgid "Text"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:542
+msgid ""
+"You can work with placeholders in text that lives in cells or shapes like "
+"text boxes. If you have more than just a few words, text boxes usually make "
+"more sense as they won't impact the row height no matter how you style them. "
+"Using the same gird formatting across worksheets is key to getting a "
+"consistent multi-page report."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:544
+msgid "Simple Text without Formatting"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:550
+msgid "You can use any shapes like rectangles or circles, not just text boxes:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:557
+msgid "This code turns this template:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:563
+msgid "into this report:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:569
+msgid ""
+"While this works for simple text, you will lose the formatting if you have "
+"any. To prevent that, use a `Markdown` object, as explained in the next "
+"section."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:571
+msgid ""
+"If you will be printing on a [PDF Layout](components_filters.md#pdf-layout) "
+"with a dark background, you may need to change the font color to white. This "
+"has the nasty side effect that you won't see anything on the screen anymore. "
+"To solve that issue, use the `fontcolor` filter:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:573
+msgid ""
+"**fontcolor**: Change the color of the whole (!) cell or shape. The primary "
+"purpose of this filter is to make white fonts visible in Excel. For most "
+"other colors, you can just change the color in Excel itself. Note that this "
+"filter changes the font of the whole cell or shape and only has an effect if "
+"there is just a single placeholder---if you need to manipulate single words, "
+"use Markdown instead, see below. Black and white can be used as word, "
+"otherwise use a hex notation of your desired color."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:582
+msgid "Markdown Formatting"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:588
+msgid ""
+"You can format text in cells or shapes via Markdown syntax. Note that you "
+"can also use placeholders in the Markdown text that will take the values "
+"from the variables you supply via the `render_template` method:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:614
+msgid ""
+"This will render this template with the placeholder in a cell and a shape:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:620
+msgid "Like this (this uses the default formatting):"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:626
+msgid ""
+"For more details about Markdown, especially about how to change the styling, "
+"see [Markdown Formatting](markdown.md#markdown-formatting)."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:628
+msgid "Date and Time"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:630
+msgid ""
+"If a placeholder corresponds to a Python `datetime` object, by default, "
+"Excel will format that cell as a date-formatted cell. This isn't always "
+"desired as the formatting depends on the user's regional settings. To "
+"prevent that, format the cell in the `Text` format or use a TextBox and use "
+"the `datetime` filter to format the date in the desired format. The "
+"`datetime` filter accepts the strftime syntax---for a good reference, see e."
+"g., [strftime.org](https://strftime.org/)."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:632
+msgid ""
+"To control the language of month and weekday names, you'll need to set the "
+"`locale` in your Python code. For example, for German, you would use the "
+"following:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:639
+msgid "Example: The default formatting is `December 1, 2020`:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:645
+msgid ""
+"Example: To apply a specific formatting, provide the desired format as "
+"filter argument. For example, to get it in the `12/31/20` format:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:651
+msgid "Number Format"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:653
+msgid ""
+"The `format` filter allows you to format numbers by using the same mechanism "
+"as offered by Python's f-strings. For example, to format the placeholder "
+"`performance=0.13` as `13.0%`, you would do the following:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:659
+msgid ""
+"This corresponds to the following f-string in Python: "
+"`f\"{performance:0.1%}\"`. To get an introduction to the formatting string "
+"syntax, have a look at the [Python String Format Cookbook](https://mkaz.blog/"
+"code/python-string-format-cookbook/)."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:661
+msgid "Frames: Multi-column Layout"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:663
+msgid ""
+"Frames are vertical containers in which content is being aligned according "
+"to their height. That is, within Frames:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:666
+msgid ""
+"Variables do not overwrite existing cell values as they do without Frames."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:667
+msgid ""
+"Formatting is applied dynamically, depending on the number of rows your "
+"object uses in Excel"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:669
+msgid ""
+"To use Frames, insert a Note with the text `<frame>` into **row 1** of your "
+"Excel template wherever you want a new dynamic column to start. Frames go "
+"from one `<frame>` to the next `<frame>` or the right border of the used "
+"range."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:672
+msgid ""
+"How Frames behave is best demonstrated with an example: The following "
+"screenshot defines two frames. The first one goes from column A to column E "
+"and the second one goes from column F to column I, since this is the last "
+"column that is used."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:680
+msgid "You can define and format DataFrames by formatting"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:682
+msgid "one header and"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:683
+msgid "one data row"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:685
+msgid ""
+"If you use the `noheader` filter for DataFrames, you can leave the header "
+"away and format a single data row. Alternatively, you could also use Excel "
+"Tables, as they can make formatting easier."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:688
+msgid "Running the following code:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:704
+msgid "will generate this report:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:710
+msgid "PDF Layout"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:712
+msgid ""
+"Using the `layout` parameter in the `to_pdf()` command, you can \"print\" "
+"your Excel workbook on professionally designed PDFs for pixel-perfect "
+"reports in your corporate layout including headers, footers, backgrounds and "
+"borderless graphics:"
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:727
+msgid ""
+"Note that the layout PDF either needs to consist of a single page (will be "
+"used for each reporting page) or will need to have the same number of pages "
+"as the report (each report page will be printed on the corresponding layout "
+"page)."
+msgstr ""
+
+#: ../../../pro/reports/components_filters.md:729
+msgid ""
+"To create your layout PDF, you can use any program capable of exporting a "
+"file in PDF format such as PowerPoint or Word, but for the best results "
+"consider using a professional desktop publishing software such as Adobe "
+"InDesign."
+msgstr ""

@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/pictures.rst:2
+msgid "Pictures"
+msgstr ""
+
+#: ../../../api/pictures.rst:1
+msgid "A collection of all `picture` objects on the specified sheet:"
+msgstr ""
+
+#: ../../../api/pictures.rst:1
+msgid "Adds a picture to the specified sheet."
+msgstr ""
+
+#: ../../../api/pictures.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:6
+msgid "Either a filepath or a Matplotlib figure object."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:7
+msgid ""
+"Left position in points, defaults to 0. If you use ``top``/``left``, you "
+"must not provide a value for ``anchor``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:9
+msgid ""
+"Top position in points, defaults to 0. If you use ``top``/``left``, you must "
+"not provide a value for ``anchor``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:11
+msgid "Width in points. Defaults to original width."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:12
+msgid "Height in points. Defaults to original height."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:13
+msgid ""
+"Excel picture name. Defaults to Excel standard name if not provided, e.g., "
+"'Picture 1'."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:15
+msgid ""
+"Replace an existing picture with the same name. Requires ``name`` to be set."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:17
+msgid "Scales your picture by the provided factor."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:18
+msgid ""
+"Only used if image is a Matplotlib or Plotly plot. By default, the plot is "
+"inserted in the \"png\" format, but you may want to change this to a vector-"
+"based format like \"svg\" on Windows (may require Microsoft 365) or \"eps\" "
+"on macOS for better print quality. If you use ``'vector'``, it will be using "
+"``'svg'`` on Windows and ``'eps'`` on macOS. To find out which formats your "
+"version of Excel supports, see: https://support.microsoft.com/en-us/topic/"
+"support-for-eps-images-has-been-turned-off-in-office-a069d664-4bcf-415e-a1b5-"
+"cbb0c334a840"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:25
+msgid ""
+"The xlwings Range object of where you want to insert the picture. If you use "
+"``anchor``, you must not provide values for ``top``/``left``. *New in "
+"version 0.24.3.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:28
+msgid ""
+"For Matplotlib plots, this dictionary is passed on to ``image.savefig()`` "
+"with the following defaults: ``{\"bbox_inches\": \"tight\", \"dpi\": 200}``, "
+"so if you want to leave the picture uncropped and increase dpi to 300, use: "
+"``export_options={\"dpi\": 300}``. For Plotly, the options are passed to "
+"``write_image()``. *New in version 0.27.7.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:40
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/pictures.rst:1
+msgid "Picture"
+msgstr ""
+
+#: ../../../api/pictures.rst:10
+msgid "Matplotlib"
+msgstr ""
