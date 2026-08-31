@@ -8,19 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../index.md:65
+#: ../../../index.md:66
 msgid "xlwings PRO"
 msgstr ""
 
-#: ../../../index.md:76
+#: ../../../index.md:77
 msgid "About"
 msgstr ""
 
@@ -56,7 +57,7 @@ msgid ""
 "**Mac**."
 msgstr ""
 
-#: ../../../index.md:15
+#: ../../../index.md:16
 msgid ""
 "<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
 "octicon-rocket sd-text-success\" viewBox=\"0 0 24 24\" aria-"
@@ -79,7 +80,7 @@ msgid ""
 "1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z\"></path></svg> Getting Started"
 msgstr ""
 
-#: ../../../index.md:16
+#: ../../../index.md:17
 msgid ""
 "<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
 "octicon-rocket sd-text-success\" viewBox=\"0 0 24 24\" aria-"
@@ -102,28 +103,10 @@ msgid ""
 "1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z\"></path></svg>"
 msgstr ""
 
-#: ../../../index.md:19
+#: ../../../index.md:20
 msgid ""
 "Start here if you are new to xlwings. Learn about the syntax, the "
 "`RunPython` call, the add-in and UDFs."
-msgstr ""
-
-#: ../../../index.md:22
-msgid ""
-"<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
-"octicon-light-bulb sd-text-success\" viewBox=\"0 0 24 24\" aria-"
-"hidden=\"true\"><path d=\"M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 "
-"2.572 1.425 "
-"3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 "
-"1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.111 "
-"18.111 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 "
-"10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 "
-"4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 "
-"1.357a.751.751 0 0 "
-"1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 "
-"1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 "
-"1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 "
-"0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z\"></path></svg> Advanced Features"
 msgstr ""
 
 #: ../../../index.md:23
@@ -141,28 +124,31 @@ msgid ""
 "1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 "
 "1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 "
 "1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 "
+"0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z\"></path></svg> Advanced Features"
+msgstr ""
+
+#: ../../../index.md:24
+msgid ""
+"<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
+"octicon-light-bulb sd-text-success\" viewBox=\"0 0 24 24\" aria-"
+"hidden=\"true\"><path d=\"M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 "
+"2.572 1.425 "
+"3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 "
+"1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.111 "
+"18.111 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 "
+"10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 "
+"4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 "
+"1.357a.751.751 0 0 "
+"1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 "
+"1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 "
+"1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 "
 "0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z\"></path></svg>"
 msgstr ""
 
-#: ../../../index.md:26
+#: ../../../index.md:27
 msgid ""
 "More in-depths explanations about converters, debugging or how to write your "
 "own add-in."
-msgstr ""
-
-#: ../../../index.md:29
-msgid ""
-"<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
-"octicon-star sd-text-success\" viewBox=\"0 0 24 24\" aria-"
-"hidden=\"true\"><path d=\"M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 "
-"6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 "
-"1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 "
-"1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 "
-"1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 "
-"7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 "
-"1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 "
-"2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 "
-"1-.565-.41L12 2.694Z\"></path></svg> xlwings PRO"
 msgstr ""
 
 #: ../../../index.md:30
@@ -177,45 +163,46 @@ msgid ""
 "7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 "
 "1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 "
 "2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 "
+"1-.565-.41L12 2.694Z\"></path></svg> xlwings PRO"
+msgstr ""
+
+#: ../../../index.md:31
+msgid ""
+"<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
+"octicon-star sd-text-success\" viewBox=\"0 0 24 24\" aria-"
+"hidden=\"true\"><path d=\"M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 "
+"6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 "
+"1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 "
+"1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 "
+"1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 "
+"7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 "
+"1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 "
+"2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 "
 "1-.565-.41L12 2.694Z\"></path></svg>"
 msgstr ""
 
-#: ../../../index.md:33
+#: ../../../index.md:34
 msgid "Use advanced features such as:"
 msgstr ""
 
-#: ../../../index.md:35
+#: ../../../index.md:36
 msgid "xlwings Reports: work with templates"
 msgstr ""
 
-#: ../../../index.md:36
+#: ../../../index.md:37
 msgid "1-click installer: bundle Python and all your packages"
 msgstr ""
 
-#: ../../../index.md:37
+#: ../../../index.md:38
 msgid "Embedded code: easy deployment"
 msgstr ""
 
-#: ../../../index.md:38
+#: ../../../index.md:39
 msgid "Ultra fast file reader: no Excel required"
 msgstr ""
 
-#: ../../../index.md:40
+#: ../../../index.md:41
 msgid "Free for non-commercial use only."
-msgstr ""
-
-#: ../../../index.md:43
-msgid ""
-"<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
-"octicon-code-square sd-text-success\" viewBox=\"0 0 24 24\" aria-"
-"hidden=\"true\"><path d=\"M10.3 8.24a.75.75 0 0 1-.04 1.06L7.352 12l2.908 "
-"2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 "
-"1.06.04Zm3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 "
-"3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7-2.908-2.7Z\"></path><path d=\"M2 3.75C2 "
-"2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 "
-"20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 "
-"0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 "
-"0-.25-.25Z\"></path></svg> API Reference"
 msgstr ""
 
 #: ../../../index.md:44
@@ -229,10 +216,24 @@ msgid ""
 "2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 "
 "20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 "
 "0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 "
+"0-.25-.25Z\"></path></svg> API Reference"
+msgstr ""
+
+#: ../../../index.md:45
+msgid ""
+"<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
+"octicon-code-square sd-text-success\" viewBox=\"0 0 24 24\" aria-"
+"hidden=\"true\"><path d=\"M10.3 8.24a.75.75 0 0 1-.04 1.06L7.352 12l2.908 "
+"2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 "
+"1.06.04Zm3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 "
+"3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7-2.908-2.7Z\"></path><path d=\"M2 3.75C2 "
+"2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 "
+"20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 "
+"0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 "
 "0-.25-.25Z\"></path></svg>"
 msgstr ""
 
-#: ../../../index.md:47
+#: ../../../index.md:48
 msgid ""
 "This is a description of all the classes, methods, properties and functions "
 "that xlwings offers to work with the Excel object model."
