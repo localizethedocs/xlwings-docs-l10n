@@ -8,44 +8,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../api/characters.rst:2
+#: ../../../api/characters.md:1
 msgid "Characters"
 msgstr ""
 
-#: ../../../api/characters.rst:1
+#: ../../../api/characters.md:1
 msgid ""
 "The characters object can be accessed as an attribute of the range or shape "
 "object."
 msgstr ""
 
-#: ../../../api/characters.rst:4
+#: ../../../api/characters.md:4
 msgid "`mysheet['A1'].characters`"
 msgstr ""
 
-#: ../../../api/characters.rst:5
+#: ../../../api/characters.md:5
 msgid "`mysheet.shapes[0].characters`"
 msgstr ""
 
-#: ../../../api/characters.rst:8
+#: ../../../api/characters.md:8
 msgid ""
 "On macOS, `characters` are currently not supported due to bugs/lack of "
 "support in AppleScript."
 msgstr ""
 
-#: ../../../api/characters.rst:1
+#: ../../../api/characters.md:1
 msgid ""
 "Returns the native object (`pywin32` or `appscript` obj) of the engine being "
 "used."
 msgstr ""
 
-#: ../../../api/characters.rst:1
+#: ../../../api/characters.md:1
 msgid "Returns or sets the text property of a `characters` object."
 msgstr ""

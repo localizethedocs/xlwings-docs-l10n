@@ -8,23 +8,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../api/reports.rst:2
+#: ../../../api/reports.md:1
 msgid "Reports"
 msgstr ""
 
-#: ../../../api/reports.rst:1
+#: ../../../api/reports.md:1
 msgid "Use this class to provide images to either `render_template()`."
 msgstr ""
 
-#: ../../../api/reports.rst:0
+#: ../../../api/reports.md:0
 msgid "Parameters"
 msgstr ""
 
@@ -33,7 +34,7 @@ msgstr ""
 msgid "The file name or path"
 msgstr ""
 
-#: ../../../api/reports.rst:1
+#: ../../../api/reports.md:1
 msgid ""
 "Markdown objects can be assigned to a single cell or shape via `myrange."
 "value` or `myshape.text`. They accept a string in Markdown format which will "
@@ -65,41 +66,41 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../../api/reports.rst:1
+#: ../../../api/reports.md:1
 msgid ""
 "`MarkdownStyle` defines how `Markdown` objects are being rendered in Excel "
 "cells or shapes. Start by instantiating a `MarkdownStyle` object. Printing "
 "it will show you the current (default) style:"
 msgstr ""
 
-#: ../../../api/reports.rst:18
+#: ../../../api/reports.md:18
 msgid ""
 "You can override the defaults, e.g., to make `**strong**` text red instead "
 "of bold, do this:"
 msgstr ""
 
-#: ../../../api/reports.rst:1
+#: ../../../api/reports.md:1
 msgid "Decorator"
 msgstr ""
 
-#: ../../../api/reports.rst:1
+#: ../../../api/reports.md:1
 msgid "This function requires xlwings `PRO`."
 msgstr ""
 
-#: ../../../api/reports.rst:3
+#: ../../../api/reports.md:3
 msgid ""
 "This is a convenience wrapper around :meth:`mysheet.render_template <xlwings."
 "Sheet.render_template>`"
 msgstr ""
 
-#: ../../../api/reports.rst:6
+#: ../../../api/reports.md:6
 msgid ""
 "Writes the values of all key word arguments to the `output` file according "
 "to the `template` and the variables contained in there (Jinja variable "
 "syntax). Following variable types are supported:"
 msgstr ""
 
-#: ../../../api/reports.rst:10
+#: ../../../api/reports.md:10
 msgid ""
 "strings, numbers, lists, simple dicts, NumPy arrays, Pandas DataFrames, "
 "pictures and Matplotlib/Plotly figures."
@@ -136,7 +137,7 @@ msgstr ""
 msgid "All key/value pairs that are used in the template."
 msgstr ""
 
-#: ../../../api/reports.rst:0
+#: ../../../api/reports.md:0
 msgid "Returns"
 msgstr ""
 
@@ -145,17 +146,17 @@ msgstr ""
 msgid "xlwings Book"
 msgstr ""
 
-#: ../../../api/reports.rst:1
+#: ../../../api/reports.md:1
 msgid ""
 "In `my_template.xlsx`, put the following Jinja variables in two cells: "
 "`{{ title }}` and `{{ df }}`"
 msgstr ""
 
-#: ../../../api/reports.rst:12
+#: ../../../api/reports.md:12
 msgid ""
 "With many template variables it may be useful to collect the data first:"
 msgstr ""
 
-#: ../../../api/reports.rst:19
+#: ../../../api/reports.md:19
 msgid "If you need to handle external links or a password, use it like so:"
 msgstr ""

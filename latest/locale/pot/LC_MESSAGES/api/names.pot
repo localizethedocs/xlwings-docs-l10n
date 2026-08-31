@@ -8,27 +8,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../api/names.rst:2
+#: ../../../api/names.md:1
 msgid "Names"
 msgstr ""
 
-#: ../../../api/names.rst:1
+#: ../../../api/names.md:1
 msgid "A collection of all `name` objects in the workbook:"
 msgstr ""
 
-#: ../../../api/names.rst:1
+#: ../../../api/names.md:1
 msgid "Defines a new name for a range of cells."
 msgstr ""
 
-#: ../../../api/names.rst:0
+#: ../../../api/names.md:0
 msgid "Parameters"
 msgstr ""
 
@@ -42,12 +43,12 @@ msgstr ""
 msgid "Describes what the name refers to, in English, using A1-style notation."
 msgstr ""
 
-#: ../../../api/names.rst:1
+#: ../../../api/names.md:1
 msgid ""
 "Returns the native object (`pywin32` or `appscript` obj) of the engine "
 "beingused."
 msgstr ""
 
-#: ../../../api/names.rst:1
+#: ../../../api/names.md:1
 msgid "Returns the number of objects in the collection."
 msgstr ""
