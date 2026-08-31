@@ -8,25 +8,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../api/page_setup.rst:2
+#: ../../../api/page_setup.md:1
 msgid "PageSetup"
 msgstr ""
 
-#: ../../../api/page_setup.rst:1
+#: ../../../api/page_setup.md:1
 msgid ""
 "Returns the native object (`pywin32` or `appscript` obj) of the engine being "
 "used."
 msgstr ""
 
-#: ../../../api/page_setup.rst:1
+#: ../../../api/page_setup.md:1
 msgid "Gets or sets the range address that defines the print area."
 msgstr ""
 

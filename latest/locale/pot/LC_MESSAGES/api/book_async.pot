@@ -12,35 +12,27 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../index_latex.md:1
-msgid "Getting Started"
+#: ../../../api/book_async.md:1
+msgid "BookAsync"
 msgstr ""
 
-#: ../../../index_latex.md:23
-msgid "Advanced Features"
+#: ../../../api/book_async.md:1
+msgid "Type hint for the async API in xlwings Lite scripts."
 msgstr ""
 
-#: ../../../index_latex.md:37
-msgid "xlwings PRO"
+#: ../../../api/book_async.md:3
+msgid ""
+"Annotate a script's `book` parameter with `xw.BookAsync` to opt into the "
+"async, on-demand API --- no cell values are pre-loaded, and you read them "
+"via `await myrange.get_value()`:"
 msgstr ""
 
-#: ../../../index_latex.md:46
-msgid "File Reader"
-msgstr ""
-
-#: ../../../index_latex.md:54
-msgid "xlwings Reports"
-msgstr ""
-
-#: ../../../index_latex.md:62
-msgid "About"
-msgstr ""
-
-#: ../../../index_latex.md:72
-msgid "API Reference"
+#: ../../../api/book_async.md:16
+msgid ""
+"At runtime it's a plain `Book`; the annotation only signals xlwings Lite to "
+"skip loading the values of the entire book up front."
 msgstr ""

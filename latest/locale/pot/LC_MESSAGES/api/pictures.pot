@@ -8,27 +8,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../api/pictures.rst:2
+#: ../../../api/pictures.md:1
 msgid "Pictures"
 msgstr ""
 
-#: ../../../api/pictures.rst:1
+#: ../../../api/pictures.md:1
 msgid "A collection of all `picture` objects on the specified sheet:"
 msgstr ""
 
-#: ../../../api/pictures.rst:1
+#: ../../../api/pictures.md:1
 msgid "Adds a picture to the specified sheet."
 msgstr ""
 
-#: ../../../api/pictures.rst:0
+#: ../../../api/pictures.md:0
 msgid "Parameters"
 msgstr ""
 
@@ -103,10 +104,10 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../../api/pictures.rst:1
+#: ../../../api/pictures.md:1
 msgid "Picture"
 msgstr ""
 
-#: ../../../api/pictures.rst:10
+#: ../../../api/pictures.md:10
 msgid "Matplotlib"
 msgstr ""

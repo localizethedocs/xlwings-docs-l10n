@@ -8,37 +8,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../api/sheet.rst:2
+#: ../../../api/sheet.md:1
 msgid "Sheet"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "A sheet object is a member of the `sheets` collection:"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Activates the Sheet and returns it."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid ""
 "Returns the native object (`pywin32` or `appscript` obj) of the engine being "
 "used."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Autofits the width of either columns, rows or both on a whole Sheet."
 msgstr ""
 
-#: ../../../api/sheet.rst:0
+#: ../../../api/sheet.md:0
 msgid "Parameters"
 msgstr ""
 
@@ -55,33 +56,33 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Returns the Book of the specified Sheet. Read-only."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid ""
 "Returns a Range object that represents all the cells on the Sheet (not just "
 "the cells that are currently in use)."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "See `Charts`"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Clears the content and formatting of the whole sheet."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Clears the content of the whole sheet but leaves the formatting."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Clears the format of the whole sheet but leaves the content."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid ""
 "Copy a sheet to the current or a new Book. By default, it places the copied "
 "sheet after all existing sheets in the current Book. Returns the copied "
@@ -102,7 +103,7 @@ msgstr ""
 msgid "The sheet name of the copy"
 msgstr ""
 
-#: ../../../api/sheet.rst:0
+#: ../../../api/sheet.md:0
 msgid "Returns"
 msgstr ""
 
@@ -110,65 +111,72 @@ msgstr ""
 msgid "The copied sheet"
 msgstr ""
 
-#: ../../../api/sheet.rst:0
+#: ../../../api/sheet.md:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Deletes the Sheet."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Interface to freeze/unfreeze panes."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Returns the index of the Sheet (1-based as in Excel)."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
-msgid "Loads the sheet's current data from Excel on demand."
+#: ../../../api/sheet.md:1
+msgid "(Re)loads the sheet's data from Excel on demand."
 msgstr ""
 
-#: ../../../api/sheet.rst:3
+#: ../../../api/sheet.md:3
+msgid ""
+"Like `Book.load`, this loads only *metadata* by default on an async book and "
+"everything (including values) on a regular book. Pass `values=True` to also "
+"load this sheet's cell values."
+msgstr ""
+
+#: ../../../api/sheet.md:7
 msgid "Requires xlwings Lite."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Gets or sets the name of the Sheet."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid ""
 "Returns a names collection that represents all the sheet-specific names "
 "(names defined with the \"SheetName!\" prefix)."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Returns a PageSetup object."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "See `Pictures`"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid ""
 "Returns a Range object from the active sheet of the active book, see `Range`."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "This method requires xlwings `PRO`."
 msgstr ""
 
-#: ../../../api/sheet.rst:3
+#: ../../../api/sheet.md:3
 msgid ""
 "Replaces all Jinja variables (e.g `{{ myvar }}`) in the sheet with the "
 "keyword argument that has the same name. Following variable types are "
 "supported:"
 msgstr ""
 
-#: ../../../api/sheet.rst:6
+#: ../../../api/sheet.md:6
 msgid ""
 "strings, numbers, lists, simple dicts, NumPy arrays, Pandas DataFrames, PIL "
 "Image objects that have a filename and Matplotlib figures."
@@ -179,19 +187,19 @@ msgstr ""
 msgid "All key/value pairs that are used in the template."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Selects the Sheet. Activates the book if it isn't the active one."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "See `Shapes`"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "See `Tables`"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Export a Sheet as HTML page."
 msgstr ""
 
@@ -201,7 +209,7 @@ msgid ""
 "current working directory."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Exports the sheet to a PDF file."
 msgstr ""
 
@@ -234,14 +242,14 @@ msgid ""
 "in version 0.26.2.*"
 msgstr ""
 
-#: ../../../api/sheet.rst:8
+#: ../../../api/sheet.md:8
 msgid "See also `xlwings.Book.to_pdf`"
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Used Range of Sheet."
 msgstr ""
 
-#: ../../../api/sheet.rst:1
+#: ../../../api/sheet.md:1
 msgid "Gets or sets the visibility of the Sheet (bool)."
 msgstr ""

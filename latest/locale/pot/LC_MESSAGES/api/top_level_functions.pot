@@ -8,19 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../api/top_level_functions.rst:2
+#: ../../../api/top_level_functions.md:1
 msgid "Top-level functions"
 msgstr ""
 
-#: ../../../api/top_level_functions.rst:1
+#: ../../../api/top_level_functions.md:1
 msgid ""
 "Loads the selected cell(s) of the active workbook into a pandas DataFrame. "
 "If you select a single cell that has adjacent cells, the range is auto-"
@@ -28,13 +29,13 @@ msgid ""
 "don't have pandas installed, it returns the values as nested lists."
 msgstr ""
 
-#: ../../../api/top_level_functions.rst:7
+#: ../../../api/top_level_functions.md:7
 msgid ""
 "Only use this in an interactive context like e.g. a Jupyter notebook! Don't "
 "use this in a script as it depends on the active book."
 msgstr ""
 
-#: ../../../api/top_level_functions.rst:0
+#: ../../../api/top_level_functions.md:0
 msgid "Parameters"
 msgstr ""
 
@@ -60,18 +61,18 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../../api/top_level_functions.rst:6
+#: ../../../api/top_level_functions.md:6
 msgid "See also: `view`"
 msgstr ""
 
-#: ../../../api/top_level_functions.rst:1
+#: ../../../api/top_level_functions.md:1
 msgid ""
 "Opens a new workbook and displays an object on its first sheet by default. "
 "If you provide a sheet object, it will clear the sheet before displaying the "
 "object on the existing sheet."
 msgstr ""
 
-#: ../../../api/top_level_functions.rst:6
+#: ../../../api/top_level_functions.md:6
 msgid ""
 "Only use this in an interactive context like e.g., a Jupyter notebook! Don't "
 "use this in a script as it depends on the active book."
@@ -94,6 +95,6 @@ msgid ""
 "Table"
 msgstr ""
 
-#: ../../../api/top_level_functions.rst:9
+#: ../../../api/top_level_functions.md:9
 msgid "See also: `load`"
 msgstr ""

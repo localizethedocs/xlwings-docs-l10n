@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-06-28 10:03:35 +0200",
-      "hash" : "7adba2ee18cc09fabfaf38da7421910c08cd6c02",
-      "title" : "changelog"
+      "date" : "2026-08-24 21:24:04 +0200",
+      "hash" : "dd76c99b67a242e2da2f30f1cc45a6098ad906fc",
+      "title" : "Merge pull request #2739 from lucasP243/add-range-getitem-overloads"
     }
   },
   "type" : "branch",
