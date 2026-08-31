@@ -1,0 +1,527 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../udfs.md:1
+msgid "User Defined Functions (UDFs)"
+msgstr ""
+
+#: ../../../udfs.md:3
+msgid ""
+"This tutorial gets you quickly started on how to write User Defined "
+"Functions."
+msgstr ""
+
+#: ../../../udfs.md:6
+msgid "UDFs are currently only available on Windows."
+msgstr ""
+
+#: ../../../udfs.md:7
+msgid ""
+"For details of how to control the behaviour of the arguments and return "
+"values, have a look at [Converters and Options](converters.md#converters-and-"
+"options)."
+msgstr ""
+
+#: ../../../udfs.md:8
+msgid ""
+"For a comprehensive overview of the available decorators and their options, "
+"check out the corresponding API docs: [UDF decorators](api/udf_decorators."
+"md)."
+msgstr ""
+
+#: ../../../udfs.md:11
+msgid "One-time Excel preparations"
+msgstr ""
+
+#: ../../../udfs.md:13
+msgid ""
+"Enable `Trust access to the VBA project object model` under `File > Options "
+"> Trust Center > Trust Center Settings > Macro Settings`. You only need to "
+"do this once. Also, this is only required for importing the functions, i.e. "
+"end users won't need to bother about this."
+msgstr ""
+
+#: ../../../udfs.md:15
+msgid ""
+"Install the add-in via command prompt: `xlwings addin install` (see [Add-in "
+"& Settings](addin.md#add-in--settings))."
+msgstr ""
+
+#: ../../../udfs.md:17
+msgid "Workbook preparation"
+msgstr ""
+
+#: ../../../udfs.md:19
+msgid ""
+"The easiest way to start a new project is to run `xlwings quickstart "
+"myproject` on a command prompt (see [Command Line Client (CLI)](command_line."
+"md#command-line-client-cli)). This automatically adds the xlwings reference "
+"to the generated workbook."
+msgstr ""
+
+#: ../../../udfs.md:22
+msgid "A simple UDF"
+msgstr ""
+
+#: ../../../udfs.md:24
+msgid ""
+"The default add-in settings expect a Python source file in the way it is "
+"created by `quickstart`:"
+msgstr ""
+
+#: ../../../udfs.md:26
+msgid "in the same directory as the Excel file"
+msgstr ""
+
+#: ../../../udfs.md:27
+msgid ""
+"with the same name as the Excel file, but with a `.py` ending instead of `."
+"xlsm`."
+msgstr ""
+
+#: ../../../udfs.md:29
+msgid ""
+"Alternatively, you can point to a specific module via `UDF Modules` in the "
+"xlwings ribbon."
+msgstr ""
+
+#: ../../../udfs.md:31
+msgid ""
+"The Image below shows the correct input for the \"UDF Modules\" field in the "
+"xlwings ribbon with a module called \"my_udf.py\":"
+msgstr ""
+
+#: ../../../udfs.md:37
+msgid ""
+"If the module is not within the same directory as the Excel file, you point "
+"to it via the \"PYTHONPATH\" field. The image below shows the configuration "
+"if the module was in the folder \"C:\\\\py_folder\" (just an example so it "
+"fits in the field window):"
+msgstr ""
+
+#: ../../../udfs.md:43
+msgid ""
+"For reference, this is how your xlwings.conf file would look like with these "
+"settings:"
+msgstr ""
+
+#: ../../../udfs.md:49
+msgid ""
+"Let's assume you have a Workbook `myproject.xlsm`, then you would write the "
+"following code in `myproject.py`:"
+msgstr ""
+
+#: ../../../udfs.md:60
+msgid ""
+"Now click on `Import Python UDFs` in the xlwings tab to pick up the changes "
+"made to `myproject.py`."
+msgstr ""
+
+#: ../../../udfs.md:61
+msgid ""
+"Enter the formula `=double_sum(1, 2)` into a cell and you will see the "
+"correct result:"
+msgstr ""
+
+#: ../../../udfs.md:67
+msgid ""
+"The docstring (in triple-quotes) will be shown as function description in "
+"Excel."
+msgstr ""
+
+#: ../../../udfs.md:70
+msgid ""
+"You only need to re-import your functions if you change the function "
+"arguments or the function name."
+msgstr ""
+
+#: ../../../udfs.md:71
+msgid ""
+"Code changes in the actual functions are picked up automatically (i.e. at "
+"the next calculation of the formula, e.g. triggered by `Ctrl-Alt-F9`), but "
+"changes in imported modules are not. This is the very behaviour of how "
+"Python imports work. If you want to make sure everything is in a fresh "
+"state, click `Restart UDF Server`."
+msgstr ""
+
+#: ../../../udfs.md:74
+msgid ""
+"The `@xw.func` decorator is only used by xlwings when the function is being "
+"imported into Excel. It tells xlwings for which functions it should create a "
+"VBA wrapper function, otherwise it has no effect on how the functions behave "
+"in Python."
+msgstr ""
+
+#: ../../../udfs.md:79
+msgid "Array formulas: Get efficient"
+msgstr ""
+
+#: ../../../udfs.md:81
+msgid ""
+"Calling one big array formula in Excel is much more efficient than calling "
+"many single-cell formulas, so it's generally a good idea to use them, "
+"especially if you hit performance problems."
+msgstr ""
+
+#: ../../../udfs.md:84
+msgid ""
+"You can pass an Excel Range as a function argument, as opposed to a single "
+"cell and it will show up in Python as list of lists."
+msgstr ""
+
+#: ../../../udfs.md:87
+msgid ""
+"For example, you can write the following function to add 1 to every cell in "
+"a Range:"
+msgstr ""
+
+#: ../../../udfs.md:95
+msgid "To use this formula in Excel,"
+msgstr ""
+
+#: ../../../udfs.md:97
+msgid "Click on `Import Python UDFs` again"
+msgstr ""
+
+#: ../../../udfs.md:98
+msgid "Fill in the values in the range `A1:B2`"
+msgstr ""
+
+#: ../../../udfs.md:99
+msgid "Select the range `D1:E2`"
+msgstr ""
+
+#: ../../../udfs.md:100
+msgid "Type in the formula `=add_one(A1:B2)`"
+msgstr ""
+
+#: ../../../udfs.md:101
+msgid ""
+"Press `Ctrl+Shift+Enter` to create an array formula. If you did everything "
+"correctly, you'll see the formula surrounded by curly braces as in this "
+"screenshot:"
+msgstr ""
+
+#: ../../../udfs.md:108
+msgid "Number of array dimensions: ndim"
+msgstr ""
+
+#: ../../../udfs.md:110
+msgid ""
+"The above formula has the issue that it expects a \"two dimensional\" input, "
+"e.g. a nested list of the form `[[1, 2], [3, 4]]`. Therefore, if you would "
+"apply the formula to a single cell, you would get the following error: "
+"`TypeError: 'float' object is not iterable`."
+msgstr ""
+
+#: ../../../udfs.md:115
+msgid ""
+"To force Excel to always give you a two-dimensional array, no matter whether "
+"the argument is a single cell, a column/row or a two-dimensional Range, you "
+"can extend the above formula like this:"
+msgstr ""
+
+#: ../../../udfs.md:125
+msgid "Using type hints, the same can be written like this:"
+msgstr ""
+
+#: ../../../udfs.md:135
+msgid ""
+"If you want to reuse that type hint for other functions, you can simplify "
+"things like this:"
+msgstr ""
+
+#: ../../../udfs.md:147
+msgid "Array formulas with NumPy and Pandas"
+msgstr ""
+
+#: ../../../udfs.md:149
+msgid ""
+"Often, you'll want to use NumPy arrays or Pandas DataFrames in your UDF, as "
+"this unlocks the full power of Python's ecosystem for scientific computing."
+msgstr ""
+
+#: ../../../udfs.md:152
+msgid ""
+"To define a formula for matrix multiplication using numpy arrays, you would "
+"define the following function:"
+msgstr ""
+
+#: ../../../udfs.md:165
+msgid "and again the same with type hints:"
+msgstr ""
+
+#: ../../../udfs.md:180
+msgid ""
+"If you are not on Python >= 3.5 with NumPy >= 1.10, use `x.dot(y)` instead "
+"of `x @ y`."
+msgstr ""
+
+#: ../../../udfs.md:183
+msgid ""
+"A great example of how you can put Pandas at work is the creation of an "
+"array-based `CORREL` formula. Excel's version of `CORREL` only works on 2 "
+"datasets and is cumbersome to use if you want to quickly get the correlation "
+"matrix of a few time-series, for example. Pandas makes the creation of an "
+"array-based `CORREL2` formula basically a one-liner:"
+msgstr ""
+
+#: ../../../udfs.md:200
+msgid "and the same again with type hints:"
+msgstr ""
+
+#: ../../../udfs.md:213
+msgid "@xw.arg and @xw.ret decorators"
+msgstr ""
+
+#: ../../../udfs.md:215
+msgid ""
+"These decorators are to UDFs what the `options` method is to `Range` "
+"objects: they allow you to apply converters and their options to function "
+"arguments (`@xw.arg`) and to the return value (`@xw.ret`). For example, to "
+"convert the argument `x` into a pandas DataFrame and suppress the index when "
+"returning it, you would do the following:"
+msgstr ""
+
+#: ../../../udfs.md:228
+msgid ""
+"For further details see the [Converters and Options](converters."
+"md#converters-and-options) documentation."
+msgstr ""
+
+#: ../../../udfs.md:230
+msgid "Using type hints instead of decorators"
+msgstr ""
+
+#: ../../../udfs.md:236
+msgid ""
+"Since v0.32.0, xlwings has supported type hints that you can use instead of "
+"or in combination with decorators:"
+msgstr ""
+
+#: ../../../udfs.md:248
+msgid ""
+"In this example, the return type (`-> pd.DataFrame`) is optional, as xlwings "
+"automatically checks the type of the returned object."
+msgstr ""
+
+#: ../../../udfs.md:250
+msgid ""
+"If you need to provide additional conversion arguments, you can either "
+"provide them via an annotated type hint or via a decorator. Note that when "
+"you use type hints and decorators together, decorators override type hints "
+"for conversion."
+msgstr ""
+
+#: ../../../udfs.md:252
+msgid ""
+"To set `index=False` for both the argument and the return value, you can "
+"annotate the type hint like this:"
+msgstr ""
+
+#: ../../../udfs.md:267
+msgid ""
+"As this might be a little harder to read, you can extract the type "
+"definition, which also allows you to reuse it like so:"
+msgstr ""
+
+#: ../../../udfs.md:282
+msgid "Alternatively, you could also combine type hints with decorators:"
+msgstr ""
+
+#: ../../../udfs.md:297
+msgid "Legacy Dynamic Arrays"
+msgstr ""
+
+#: ../../../udfs.md:300
+msgid ""
+"If your version of Excel supports the new native dynamic arrays, then you "
+"don't have to do anything special, and you shouldn't use the `expand` "
+"decorator! To check if your version of Excel supports it, see if you have "
+"the `=UNIQUE()` formula available. Native dynamic arrays were first "
+"introduced at the end of 2018."
+msgstr ""
+
+#: ../../../udfs.md:305
+msgid ""
+"As seen above, to use Excel's array formulas, you need to specify their "
+"dimensions up front by selecting the result array first, then entering the "
+"formula and finally hitting `Ctrl-Shift-Enter`. In practice, it often turns "
+"out to be a cumbersome process, especially when working with dynamic arrays "
+"such as time series data. Since v0.10, xlwings offers dynamic UDF expansion:"
+msgstr ""
+
+#: ../../../udfs.md:310
+msgid ""
+"This is a simple example that demonstrates the syntax and effect of UDF "
+"expansion:"
+msgstr ""
+
+#: ../../../udfs.md:321
+msgid "and the same with type hints:"
+msgstr ""
+
+#: ../../../udfs.md:341
+msgid "Expanding array formulas will overwrite cells without prompting"
+msgstr ""
+
+#: ../../../udfs.md:342
+msgid ""
+"Pre v0.15.0 doesn't allow to have volatile functions as arguments, e.g. you "
+"cannot use functions like `=TODAY()` as arguments. Starting with v0.15.0, "
+"you can use volatile functions as input, but the UDF will be called more "
+"than 1x."
+msgstr ""
+
+#: ../../../udfs.md:344
+msgid ""
+"Dynamic Arrays have been refactored with v0.15.0 to be proper legacy arrays: "
+"To edit a dynamic array with xlwings >= v0.15.0, you need to hit `Ctrl-Shift-"
+"Enter` while in the top left cell. Note that you don't have to do that when "
+"you enter the formula for the first time."
+msgstr ""
+
+#: ../../../udfs.md:349
+msgid "Docstrings"
+msgstr ""
+
+#: ../../../udfs.md:351
+msgid ""
+"The following sample shows how to include docstrings both for the function "
+"and for the arguments x and y that then show up in the function wizard in "
+"Excel:"
+msgstr ""
+
+#: ../../../udfs.md:365
+msgid "And the same with type hints:"
+msgstr ""
+
+#: ../../../udfs.md:380
+msgid "The \"caller\" argument"
+msgstr ""
+
+#: ../../../udfs.md:382
+msgid ""
+"You often need to know which cell called the UDF. For this, xlwings offers "
+"the reserved argument `caller` which returns the calling cell as xlwings "
+"range object:"
+msgstr ""
+
+#: ../../../udfs.md:392
+msgid ""
+"Note that `caller` will not be exposed in Excel but will be provided by "
+"xlwings behind the scenes."
+msgstr ""
+
+#: ../../../udfs.md:394
+msgid "The \"vba\" keyword"
+msgstr ""
+
+#: ../../../udfs.md:396
+msgid ""
+"By using the `vba` keyword, you can get access to any Excel VBA object in "
+"the form of a pywin32 object. For example, if you wanted to pass the sheet "
+"object in the form of its `CodeName`, you can do it as follows:"
+msgstr ""
+
+#: ../../../udfs.md:407
+msgid ""
+"Note that `vba` arguments are not exposed in the UDF but automatically "
+"provided by xlwings."
+msgstr ""
+
+#: ../../../udfs.md:409
+msgid "Macros"
+msgstr ""
+
+#: ../../../udfs.md:411
+msgid ""
+"On Windows, as an alternative to calling macros via [RunPython](vba.md#call-"
+"python-with-runpython), you can also use the `@xw.script` decorator:"
+msgstr ""
+
+#: ../../../udfs.md:424
+msgid ""
+"After clicking on `Import Python UDFs`, you can then use this macro by "
+"executing it via `Alt + F8` or by binding it e.g. to a button. To do the "
+"latter, make sure you have the `Developer` tab selected under `File > "
+"Options > Customize Ribbon`. Then, under the `Developer` tab, you can insert "
+"a button via `Insert > Form Controls`. After drawing the button, you will be "
+"prompted to assign a macro to it and you can select `my_macro`."
+msgstr ""
+
+#: ../../../udfs.md:429
+msgid ""
+"Note: previously, `xw.script` was called `xw.sub`, which is now deprecated."
+msgstr ""
+
+#: ../../../udfs.md:431
+msgid "Call UDFs from VBA"
+msgstr ""
+
+#: ../../../udfs.md:433
+msgid ""
+"Imported functions can also be used from VBA. For example, for a function "
+"returning a 2d array:"
+msgstr ""
+
+#: ../../../udfs.md:452
+msgid "Asynchronous UDFs"
+msgstr ""
+
+#: ../../../udfs.md:455
+msgid "This is an experimental feature"
+msgstr ""
+
+#: ../../../udfs.md:462
+msgid ""
+"xlwings offers an easy way to write asynchronous functions in Excel. "
+"Asynchronous functions return immediately with `#N/A waiting...`. While the "
+"function is waiting for its return value, you can use Excel to do other "
+"stuff and whenever the return value is available, the cell value will be "
+"updated."
+msgstr ""
+
+#: ../../../udfs.md:466
+msgid ""
+"The only available mode is currently `async_mode='threading'`, meaning that "
+"it's useful for I/O-bound tasks, for example when you fetch data from an API "
+"over the web."
+msgstr ""
+
+#: ../../../udfs.md:469
+msgid ""
+"You make a function asynchronous simply by giving it the respective argument "
+"in the function decorator. In this example, the time consuming I/O-bound "
+"task is simulated by using `time.sleep`:"
+msgstr ""
+
+#: ../../../udfs.md:482
+msgid ""
+"You can use this function like any other xlwings function, simply by putting "
+"`=myfunction(\"abcd\")` into a cell (after you have imported the function, "
+"of course)."
+msgstr ""
+
+#: ../../../udfs.md:485
+msgid ""
+"Note that xlwings doesn't use the native asynchronous functions that were "
+"introduced with Excel 2010, so xlwings asynchronous functions are supported "
+"with any version of Excel."
+msgstr ""

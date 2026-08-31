@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../missing_features.md:1
+msgid "Missing Features"
+msgstr ""
+
+#: ../../../missing_features.md:3
+msgid "If you're missing a feature in xlwings, do the following:"
+msgstr ""
+
+#: ../../../missing_features.md:5
+msgid ""
+"Most importantly, open an issue on [GitHub](https://github.com/xlwings/"
+"xlwings/issues). Adding functionality should be user driven, so only if you "
+"tell us about what you're missing, it's eventually going to find its way "
+"into the library. By the way, we also appreciate pull requests!"
+msgstr ""
+
+#: ../../../missing_features.md:9
+msgid ""
+"Workaround: in essence, xlwings is just a smart wrapper around [pywin32]"
+"(https://github.com/mhammond/pywin32/) on Windows and [appscript](https://"
+"github.com/hhas/appscript) on Mac. You can access the underlying objects by "
+"calling the `api` property:"
+msgstr ""
+
+#: ../../../missing_features.md:22
+msgid ""
+"This works accordingly for the other objects like `sheet.range('A1').api` "
+"etc."
+msgstr ""
+
+#: ../../../missing_features.md:24
+msgid ""
+"The underlying objects will offer you pretty much everything you can do with "
+"VBA, using the syntax of pywin32 (which pretty much feels like VBA) and "
+"appscript (which doesn't feel like VBA). But apart from looking ugly, keep "
+"in mind that **it makes your code platform specific (!)**, i.e. even if you "
+"go for option 2), you should still follow option 1) and open an issue so the "
+"feature finds it's way into the library (cross-platform and with a Pythonic "
+"syntax)."
+msgstr ""
+
+#: ../../../missing_features.md:30
+msgid "Example: Workaround to use VBA's `Range.WrapText`"
+msgstr ""
