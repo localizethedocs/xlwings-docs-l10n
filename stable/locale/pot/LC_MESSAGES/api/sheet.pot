@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -127,10 +128,17 @@ msgid "Returns the index of the Sheet (1-based as in Excel)."
 msgstr ""
 
 #: ../../../api/sheet.rst:1
-msgid "Loads the sheet's current data from Excel on demand."
+msgid "(Re)loads the sheet's data from Excel on demand."
 msgstr ""
 
 #: ../../../api/sheet.rst:3
+msgid ""
+"Like `Book.load`, this loads only *metadata* by default on an async book and "
+"everything (including values) on a regular book. Pass `values=True` to also "
+"load this sheet's cell values."
+msgstr ""
+
+#: ../../../api/sheet.rst:7
 msgid "Requires xlwings Lite."
 msgstr ""
 

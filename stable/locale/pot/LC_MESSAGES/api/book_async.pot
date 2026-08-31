@@ -12,20 +12,27 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../course.md:1
-msgid "Video course"
+#: ../../../api/book_async.rst:2
+msgid "BookAsync"
 msgstr ""
 
-#: ../../../course.md:3
-msgid "There is a free but partially outdated course available on YouTube:"
+#: ../../../api/book_async.rst:1
+msgid "Type hint for the async API in xlwings Lite scripts."
 msgstr ""
 
-#: ../../../course.md:5
+#: ../../../api/book_async.rst:3
 msgid ""
-"https://www.youtube.com/playlist?list=PL8T301Ai03xFcE5AFTnfSqnemXAh8cmMR"
+"Annotate a script's `book` parameter with `xw.BookAsync` to opt into the "
+"async, on-demand API --- no cell values are pre-loaded, and you read them "
+"via `await myrange.get_value()`:"
+msgstr ""
+
+#: ../../../api/book_async.rst:16
+msgid ""
+"At runtime it's a plain `Book`; the annotation only signals xlwings Lite to "
+"skip loading the values of the entire book up front."
 msgstr ""

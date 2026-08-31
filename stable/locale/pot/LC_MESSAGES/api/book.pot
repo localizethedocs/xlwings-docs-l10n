@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-08-31 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -207,7 +208,7 @@ msgstr ""
 msgid "Flushes all pending actions to Excel and the Output pane."
 msgstr ""
 
-#: ../../../api/book.rst:3
+#: ../../../api/book.rst:3 ../../../api/book.rst:10
 msgid "Requires xlwings Lite."
 msgstr ""
 
@@ -229,7 +230,16 @@ msgid ""
 msgstr ""
 
 #: ../../../api/book.rst:1
-msgid "Loads the book's current data from Excel on demand."
+msgid "(Re)loads the book's data from Excel on demand."
+msgstr ""
+
+#: ../../../api/book.rst:3
+msgid ""
+"On an async book (see `xw.BookAsync`), this loads only *metadata* (tables, "
+"pictures, names) by default — not cell values — since bulk-loading values "
+"would defeat the point of the async API. Pass `values=True` to also snapshot "
+"all cell values, after which sync `.value` reads work again. On a regular "
+"book, everything including values is loaded regardless."
 msgstr ""
 
 #: ../../../api/book.rst:1
