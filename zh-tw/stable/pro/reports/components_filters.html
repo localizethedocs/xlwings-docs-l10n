@@ -1,0 +1,1014 @@
+
+
+<!doctype html>
+<html class="no-js" lang="zh-TW" data-content_root="../../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="../../genindex.html"><link rel="search" title="搜尋" href="../../search.html"><link rel="next" title="Markdown Formatting" href="markdown.html"><link rel="prev" title="Quickstart" href="reports.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/xlwings-docs-l10n/pro/reports/components_filters.html">
+        <link rel="prefetch" href="../../_static/logo-light.svg" as="image">
+        <link rel="prefetch" href="../../_static/logo-dark.svg" as="image">
+
+    <link rel="shortcut icon" href="../../_static/favicon.png"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Components and Filters - xlwings Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ce868e14" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: black;
+  --color-brand-content: #28a745;
+  --color-sidebar-caption-text: #28a745;
+  --sidebar-caption-font-size: 1em;
+  --color-announcement-background: #28a745;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../../ltd-provenance.js"></script>
+<script type="text/javascript" src="../../ltd-current.js"></script>
+<script type="text/javascript" src="../../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+  
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+<div class="announcement">
+  <aside class="announcement-content">
+     <a href="https://lite.xlwings.org/" target="_blank"> xlwings Lite</a> is now available in the add-in store for free!</a> 
+  </aside>
+</div>
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">xlwings Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/logo-light.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/logo-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜尋" name="q" aria-label="搜尋">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../getting_started/index.html">開始使用</a><input aria-label="Toggle navigation of 開始使用" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course.html">Video course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../connect_to_workbook.html">Connect to a Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../syntax_overview.html">Syntax Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../datastructures.html">Data Structures Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../addin.html">增益集與設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vba.html">RunPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../udfs.html">User Defined Functions (UDFs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../matplotlib.html">Matplotlib &amp; Plotly Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jupyternotebooks.html">Jupyter Notebooks: Interact with Excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../command_line.html">Command Line Client (CLI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../deployment.html">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../onedrive_sharepoint.html">OneDrive and SharePoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../advanced_features/index.html">進階功能</a><input aria-label="Toggle navigation of 進階功能" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../converters.html">轉換器與選項</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../debugging.html">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../extensions.html">擴充功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../customaddin.html">Custom Add-ins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../threading_and_multiprocessing.html">Threading and Multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../missing_features.html">Missing Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../other_office_apps.html">xlwings with other Office Apps</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xlwings PRO</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../license_key.html">授權金鑰</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">xlwings Reports</a><input aria-label="Toggle navigation of xlwings Reports" checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reports.html">Quickstart</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Components and Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html">Markdown Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reader.html">xlwings 讀取器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release.html">1-click Installer/Embedded Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">關於</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../whatsnew.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../api/index.html">API 參考</a><input aria-label="Toggle navigation of API 參考" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../api/top_level_functions.html">Top-level functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/udf_decorators.html">UDF 裝飾器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/app.html">App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/apps.html">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/book.html">Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/books.html">Books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/chart.html">Chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/charts.html">Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/font.html">Font</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/name.html">Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/names.html">Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/note.html">Note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/page_setup.html">PageSetup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/picture.html">Picture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/pictures.html">Pictures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/range.html">Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/range_columns.html">RangeColumns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/range_rows.html">RangeRows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/reports.html">Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/shape.html">Shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/shapes.html">Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/sheet.html">Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/sheets.html">Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/table.html">Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/tables.html">表格</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="components-and-filters">
+<h1>Components and Filters<a class="headerlink" href="#components-and-filters" title="連結到這個標頭">¶</a></h1>
+<section id="dataframes">
+<h2>DataFrames<a class="headerlink" href="#dataframes" title="連結到這個標頭">¶</a></h2>
+<p>To write DataFrames in a consistent manner to Excel, xlwings Reports ignores the DataFrame indices. If you need to pass the index over to Excel, reset the index before passing in the DataFrame to <code class="docutils literal notranslate"><span class="pre">render_template</span></code>: <code class="docutils literal notranslate"><span class="pre">df.reset_index()</span></code>.</p>
+<p>When working with pandas DataFrames, the report designer often needs to tweak the data. Thanks to filters, they can do the most common operations directly in the template without the need to write Python code. A filter is added to the placeholder in Excel by using the pipe character: <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">myplaceholder</span> <span class="pre">|</span> <span class="pre">myfilter</span> <span class="pre">}}</span></code>. You can combine multiple filters by using multiple pipe characters: they are applied from left to right, i.e. the result from the first filter will be the input for the next filter. Let's start with an example before listing each filter with its details:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">book</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">(</span><span class="s1">'Book1.xlsx'</span><span class="p">)</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="s1">'template'</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'report'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'one'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s1">'two'</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="s1">'three'</span><span class="p">:</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]})</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/reports_df_filters.png" src="../../_images/reports_df_filters.png" />
+<section id="dataframes-filters">
+<h3>DataFrames Filters<a class="headerlink" href="#dataframes-filters" title="連結到這個標頭">¶</a></h3>
+</section>
+<section id="noheader">
+<h3>noheader<a class="headerlink" href="#noheader" title="連結到這個標頭">¶</a></h3>
+<p>Hide the column headers</p>
+<p>範例：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">noheader</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="header">
+<h3>header<a class="headerlink" href="#header" title="連結到這個標頭">¶</a></h3>
+<p>Only return the header</p>
+<p>範例：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">header</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="sortasc">
+<h3>sortasc<a class="headerlink" href="#sortasc" title="連結到這個標頭">¶</a></h3>
+<p>Sort in ascending order (indices are zero-based)</p>
+<p>Example: sort by second, then by first column:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">sortasc</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="sortdesc">
+<h3>sortdesc<a class="headerlink" href="#sortdesc" title="連結到這個標頭">¶</a></h3>
+<p>Sort in descending order (indices are zero-based)</p>
+<p>Example: sort by first, then by second column in descending order:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">sortdesc</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="columns">
+<h3>columns<a class="headerlink" href="#columns" title="連結到這個標頭">¶</a></h3>
+<p>Select/reorder columns and insert empty columns (indices are zero-based)</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">colslice</span></code></p>
+<p>Example: introduce an empty column (<code class="docutils literal notranslate"><span class="pre">None</span></code>) as the second column and switch the order of the second and third column:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">columns</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>Merged cells: you'll also have to introduce empty columns if you are using merged cells in your Excel template.</p>
+</div>
+</section>
+<section id="mul-div-sum-sub">
+<h3>mul, div, sum, sub<a class="headerlink" href="#mul-div-sum-sub" title="連結到這個標頭">¶</a></h3>
+<p>Apply an arithmetic operation (multiply, divide, sum, subtract) on a column (indices are zero-based)</p>
+<p>Syntax:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">operation</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">col_ix</span><span class="p">[,</span> <span class="n">fill_value</span><span class="p">])</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">fill_value</span></code> is optional and determines whether empty cells are included in the operation or not. To include empty values and thus make it behave like in Excel, set it to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<p>Example: multiply the first column by 100:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">mul</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>Example: multiply the first column by 100 and the second column by 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">mul</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">mul</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>Example: add 100 to the first column including empty cells:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">add</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="maxrows">
+<h3>maxrows<a class="headerlink" href="#maxrows" title="連結到這個標頭">¶</a></h3>
+<p>Maximum number of rows (currently, only <code class="docutils literal notranslate"><span class="pre">sum</span></code> is supported as aggregation function)</p>
+<p>If your DataFrame has 12 rows and you use <code class="docutils literal notranslate"><span class="pre">maxrows(10,</span> <span class="pre">&quot;Other&quot;)</span></code> as filter, you'll get a table that shows the first 9 rows as-is and sums up the remaining 3 rows under the label <code class="docutils literal notranslate"><span class="pre">Other</span></code>. If your data is unsorted, make sure to call <code class="docutils literal notranslate"><span class="pre">sortasc</span></code>/<code class="docutils literal notranslate"><span class="pre">sortdesc</span></code> first to make sure the correct rows are aggregated.</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">aggsmall</span></code>, <code class="docutils literal notranslate"><span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">tail</span></code>, <code class="docutils literal notranslate"><span class="pre">rowslice</span></code></p>
+<p>Syntax:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">maxrows</span><span class="p">(</span><span class="n">number_rows</span><span class="p">,</span> <span class="n">label</span><span class="p">[,</span> <span class="n">label_col_ix</span><span class="p">])</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">label_col_ix</span></code> is optional: if left away, it will label the first column of the DataFrame (index is zero-based)</p>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">maxrows</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s2">"Other"</span><span class="p">)</span> <span class="p">}}</span>
+<span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">sortasc</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">|</span> <span class="n">maxrows</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"Other"</span><span class="p">)</span> <span class="p">}}</span>
+<span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">maxrows</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s2">"Other"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="aggsmall">
+<h3>aggsmall<a class="headerlink" href="#aggsmall" title="連結到這個標頭">¶</a></h3>
+<p>Aggregate rows with values below a certain threshold (currently, only <code class="docutils literal notranslate"><span class="pre">sum</span></code> is supported as aggregation function)</p>
+<p>If the values in the specified row are below the threshold values, they will be summed up in a single row.</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">maxrows</span></code>, <code class="docutils literal notranslate"><span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">tail</span></code>, <code class="docutils literal notranslate"><span class="pre">rowslice</span></code></p>
+<p>Syntax:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">aggsmall</span><span class="p">(</span><span class="n">threshold</span><span class="p">,</span> <span class="n">threshold_col_ix</span><span class="p">,</span> <span class="n">label</span><span class="p">[,</span> <span class="n">label_col_ix</span><span class="p">][,</span> <span class="n">min_rows</span><span class="p">])</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">label_col_ix</span></code> and <code class="docutils literal notranslate"><span class="pre">min_rows</span></code> are optional: if <code class="docutils literal notranslate"><span class="pre">label_col_ix</span></code> is left away, it will label the first column of the DataFrame (indices are zero-based). <code class="docutils literal notranslate"><span class="pre">min_rows</span></code> has the effect that it skips rows from aggregating if it otherwise the number of rows falls below <code class="docutils literal notranslate"><span class="pre">min_rows</span></code>. This prevents you from ending up with only one row called &quot;Other&quot; if you only have a few rows that are all below the threshold. NOTE that this parameter only makes sense if the data is sorted!</p>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">aggsmall</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"Other"</span><span class="p">)</span> <span class="p">}}</span>
+<span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">sortasc</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="n">aggsmall</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"Other"</span><span class="p">)</span> <span class="p">}}</span>
+<span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">aggsmall</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"Other"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">}}</span>
+<span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">aggsmall</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"Other"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="head">
+<h3>head<a class="headerlink" href="#head" title="連結到這個標頭">¶</a></h3>
+<p>Only show the top n rows</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">maxrows</span></code>, <code class="docutils literal notranslate"><span class="pre">aggsmall</span></code>, <code class="docutils literal notranslate"><span class="pre">tail</span></code>, <code class="docutils literal notranslate"><span class="pre">rowslice</span></code></p>
+<p>範例：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="tail">
+<h3>tail<a class="headerlink" href="#tail" title="連結到這個標頭">¶</a></h3>
+<p>Only show the bottom n rows</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">maxrows</span></code>, <code class="docutils literal notranslate"><span class="pre">aggsmall</span></code>, <code class="docutils literal notranslate"><span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">rowslice</span></code></p>
+<p>範例：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="rowslice">
+<h3>rowslice<a class="headerlink" href="#rowslice" title="連結到這個標頭">¶</a></h3>
+<p>Slice the rows</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">maxrows</span></code>, <code class="docutils literal notranslate"><span class="pre">aggsmall</span></code>, <code class="docutils literal notranslate"><span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">tail</span></code></p>
+<p>Syntax:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">rowslice</span><span class="p">(</span><span class="n">start_index</span><span class="p">[,</span> <span class="n">stop_index</span><span class="p">])</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">stop_index</span></code> is optional: if left away, it will stop at the end of the DataFrame</p>
+<p>Example: Show rows 2 to 4 (indices are zero-based and interval is half-open, i.e. the start is including and the end is excluding):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">rowslice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>Example: Show rows 2 to the end of the DataFrame:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">rowslice</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="colslice">
+<h3>colslice<a class="headerlink" href="#colslice" title="連結到這個標頭">¶</a></h3>
+<p>Slice the columns</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">columns</span></code></p>
+<p>Syntax:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">colslice</span><span class="p">(</span><span class="n">start_index</span><span class="p">[,</span> <span class="n">stop_index</span><span class="p">])</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">stop_index</span></code> is optional: if left away, it will stop at the end of the DataFrame</p>
+<p>Example: Show columns 2 to 4 (indices are zero-based and interval is half-open, i.e. the start is including and the end is excluding):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">colslice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>Example: Show columns 2 to the end of the DataFrame:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">colslice</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="vmerge">
+<h3>vmerge<a class="headerlink" href="#vmerge" title="連結到這個標頭">¶</a></h3>
+<p>Merge cells vertically for adjacent cells with the same value --- can be used to represent hierarchies</p>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">vmerge</span></code> filter does not work in Excel tables, as Excel tables don't support merged cells!</p>
+</div>
+<img alt="../../_images/vmerge.png" src="../../_images/vmerge.png" />
+<p>Note that the screenshot uses 4 <a class="reference internal" href="#frames-multi-column-layout"><span class="std std-ref">Frames</span></a> and the text is centered/vertically aligned in the template.</p>
+<p>Syntax (arguments are optional):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">vmerge</span><span class="p">(</span><span class="n">col_index1</span><span class="p">,</span> <span class="n">col_index2</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>Example (default): Hierarchical mode across all columns --- this is helpful if the number of columns is dynamic. In hierarchical mode, cells are merged vertically in the first column (indices are zero-based) and cells in the next columns are merged only within the merged cells of the previous column:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">vmerge</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>Example: Hierarchical mode across the specified columns only:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">vmerge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>Example: Independent mode: If you want to merge cells within columns independently of each other, use the filter multiple times. This sample merge cells vertically in the first two columns (indices are zero-based):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">vmerge</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">vmerge</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="formatter">
+<h3>formatter<a class="headerlink" href="#formatter" title="連結到這個標頭">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>You can't use formatters with Excel tables.</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">formatter</span></code> filter accepts the name of a function. The function will be called after writing the values to Excel and allows you to easily style the range in a very flexible way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">df</span> <span class="o">|</span> <span class="n">formatter</span><span class="p">(</span><span class="s2">"myformatter"</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>The formatter's signature is: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">myformatter(rng,</span> <span class="pre">df)</span></code> where <code class="docutils literal notranslate"><span class="pre">rng</span></code> corresponds to the range where the original DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> is written to. Adding type hints (as shown in the example below) will help your editor with auto-completion.</p>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>Within the reports framework, formatters need to be decorated with <code class="docutils literal notranslate"><span class="pre">xlwings.reports.formatter</span></code> (see example below)! This isn't necessary though when you use them as part of the standard xlwings API.</p>
+</div>
+<p>Let's run through the Quickstart example again, amended by a formatter.</p>
+<p>範例：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">xlwings.reports</span><span class="w"> </span><span class="kn">import</span> <span class="n">formatter</span>
+
+<span class="c1"># We'll place this file in the same directory as the Excel template</span>
+<span class="n">this_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span>
+
+<span class="nd">@formatter</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">rng</span><span class="p">:</span> <span class="n">xw</span><span class="o">.</span><span class="n">Range</span><span class="p">,</span> <span class="n">df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""This is the formatter function"""</span>
+    <span class="c1"># Header</span>
+    <span class="n">rng</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s2">"#A9D08E"</span>
+
+    <span class="c1"># Rows</span>
+    <span class="k">for</span> <span class="n">ix</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">rng</span><span class="o">.</span><span class="n">rows</span><span class="p">[</span><span class="mi">1</span><span class="p">:]):</span>
+        <span class="k">if</span> <span class="n">ix</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">row</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s2">"#D0CECE"</span>  <span class="c1"># Even rows</span>
+
+    <span class="c1"># Columns</span>
+    <span class="k">for</span> <span class="n">ix</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">):</span>
+        <span class="k">if</span> <span class="s1">'two'</span> <span class="ow">in</span> <span class="n">col</span><span class="p">:</span>
+            <span class="n">rng</span><span class="p">[</span><span class="mi">1</span><span class="p">:,</span> <span class="n">ix</span><span class="p">]</span><span class="o">.</span><span class="n">number_format</span> <span class="o">=</span> <span class="s1">'0.0%'</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">'MyTitle'</span><span class="p">,</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">'one'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="s1">'two'</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]})</span>
+<span class="p">)</span>
+
+<span class="c1"># Change visible=False to run this in a hidden Excel instance</span>
+<span class="k">with</span> <span class="n">xw</span><span class="o">.</span><span class="n">App</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
+    <span class="n">book</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="n">this_dir</span> <span class="o">/</span> <span class="s1">'mytemplate.xlsx'</span><span class="p">,</span>
+                               <span class="n">this_dir</span> <span class="o">/</span> <span class="s1">'myreport.xlsx'</span><span class="p">,</span>
+                               <span class="o">**</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/formatter_reports.png" src="../../_images/formatter_reports.png" />
+</section>
+</section>
+<section id="excel-tables">
+<h2>Excel Tables<a class="headerlink" href="#excel-tables" title="連結到這個標頭">¶</a></h2>
+<p>Using Excel tables is the recommended way to format tables as the styling can be applied dynamically across columns and rows. You can also use themes and apply alternating colors to rows/columns. Go to <code class="docutils literal notranslate"><span class="pre">Insert</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Table</span></code> and make sure that you activate <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">table</span> <span class="pre">has</span> <span class="pre">headers</span></code> before clicking on <code class="docutils literal notranslate"><span class="pre">OK</span></code>. Add the placeholder as usual on the top-left of your Excel table (note that this example makes use of <a class="reference internal" href="#frames-multi-column-layout"><span class="std std-ref">Frames</span></a>):</p>
+<img alt="../../_images/excel_table_template.png" src="../../_images/excel_table_template.png" />
+<p>Running the following script:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">nrows</span> <span class="o">*</span> <span class="p">[</span><span class="n">ncols</span> <span class="o">*</span> <span class="p">[</span><span class="s1">'test'</span><span class="p">]],</span>
+                  <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="sa">f</span><span class="s1">'col </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">'</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncols</span><span class="p">)])</span>
+
+<span class="k">with</span> <span class="n">xw</span><span class="o">.</span><span class="n">App</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
+    <span class="n">book</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="s1">'template.xlsx'</span><span class="p">,</span> <span class="s1">'output.xlsx'</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Will produce the following report:</p>
+<img alt="../../_images/excel_table_report.png" src="../../_images/excel_table_report.png" />
+<p>Headers of Excel tables are relatively strict, e.g. you can't have multi-line headers or merged cells. To get around these limitations, uncheck the <code class="docutils literal notranslate"><span class="pre">Header</span> <span class="pre">Row</span></code> checkbox under <code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">Design</span></code> and use the <code class="docutils literal notranslate"><span class="pre">noheader</span></code> filter (see DataFrame filters). This will allow you to design your own headers outside of the Excel Table.</p>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>At the moment, you can only assign pandas DataFrames to tables</p>
+</div>
+</section>
+<section id="excel-charts">
+<h2>Excel Charts<a class="headerlink" href="#excel-charts" title="連結到這個標頭">¶</a></h2>
+<p>To use Excel charts in your reports, follow this process:</p>
+<ol class="arabic">
+<li><p>Add some sample/dummy data to your Excel template:</p>
+<img alt="../../_images/reports_chart1.png" src="../../_images/reports_chart1.png" />
+</li>
+<li><p>If your data source is dynamic, turn it into an Excel Table (<code class="docutils literal notranslate"><span class="pre">Insert</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Table</span></code>). Make sure you do this <em>before</em> adding the chart in the next step.</p>
+<img alt="../../_images/reports_chart2.png" src="../../_images/reports_chart2.png" />
+</li>
+<li><p>Add your chart and style it:</p>
+<img alt="../../_images/reports_chart3.png" src="../../_images/reports_chart3.png" />
+</li>
+<li><p>Reduce the Excel table to a 2 x 2 range and add the placeholder in the top-left corner (in our example <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">chart_data</span> <span class="pre">}}</span></code>) . You can leave in some dummy data or clear the values of the Excel table:</p>
+<img alt="../../_images/reports_chart4.png" src="../../_images/reports_chart4.png" />
+</li>
+<li><p>Assuming your file is called <code class="docutils literal notranslate"><span class="pre">mytemplate.xlsx</span></code> and your sheet <code class="docutils literal notranslate"><span class="pre">template</span></code> like on the previous screenshot, you can run the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">'Q1'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">3000</span><span class="p">],</span>
+                        <span class="s1">'Q2'</span><span class="p">:</span> <span class="p">[</span><span class="mi">4000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="mi">6000</span><span class="p">],</span>
+                        <span class="s1">'Q3'</span><span class="p">:</span> <span class="p">[</span><span class="mi">7000</span><span class="p">,</span> <span class="mi">8000</span><span class="p">,</span> <span class="mi">9000</span><span class="p">]},</span>
+                <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">'North'</span><span class="p">,</span> <span class="s1">'South'</span><span class="p">,</span> <span class="s1">'West'</span><span class="p">])</span>
+
+<span class="n">book</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">(</span><span class="s2">"mytemplate.xlsx"</span><span class="p">)</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="s1">'template'</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'report'</span><span class="p">)</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="n">chart_data</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>This will produce the following report, with the chart source correctly adjusted:</p>
+<img alt="../../_images/reports_chart5.png" src="../../_images/reports_chart5.png" />
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>If you don't want the source data on your report, you can place it on a separate sheet. It's easiest if you add and design the chart on the separate sheet, before cutting the chart and pasting it on your report template. To prevent the data sheet from being printed when calling <code class="docutils literal notranslate"><span class="pre">to_pdf</span></code>, you can give it a name that starts with <code class="docutils literal notranslate"><span class="pre">#</span></code> and it will be ignored. NOTE that if you start your sheet name with <code class="docutils literal notranslate"><span class="pre">##</span></code>, it won't be printed but also not rendered!</p>
+</div>
+</section>
+<section id="images">
+<h2>Images<a class="headerlink" href="#images" title="連結到這個標頭">¶</a></h2>
+<p>Images are inserted so that the cell with the placeholder will become the top-left corner of the image. For example, write the following placeholder into you desired cell: <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">logo</span> <span class="pre">}}</span></code>, then run the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">xlwings.reports</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">book</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">(</span><span class="s1">'Book1.xlsx'</span><span class="p">)</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="s1">'template'</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'report'</span><span class="p">)</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="n">logo</span><span class="o">=</span><span class="n">Image</span><span class="p">(</span><span class="sa">r</span><span class="s1">'C:\path\to\logo.png'</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p><code class="docutils literal notranslate"><span class="pre">Image</span></code> also accepts a <code class="docutils literal notranslate"><span class="pre">pathlib.Path</span></code> object instead of a string.</p>
+</div>
+<p>If you want to use vector-based graphics, you can use <code class="docutils literal notranslate"><span class="pre">svg</span></code> on Windows and <code class="docutils literal notranslate"><span class="pre">pdf</span></code> on macOS. You can control the appearance of your image by applying filters on your placeholder.</p>
+<p>Available filters for Images:</p>
+<ul>
+<li><p><strong>width</strong>: Set the width in pixels (height will be scaled proportionally).</p>
+<p>範例：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">logo</span> <span class="o">|</span> <span class="n">width</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>height</strong>: Set the height in pixels (width will be scaled proportionally).</p>
+<p>範例：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">logo</span> <span class="o">|</span> <span class="n">height</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>width and height</strong>: Setting both width and height will distort the proportions of the image!</p>
+<p>範例：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">logo</span> <span class="o">|</span> <span class="n">height</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="o">|</span> <span class="n">width</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>scale</strong>: Scale your image using a factor (height and width will be scaled proportionally).</p>
+<p>範例：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">logo</span> <span class="o">|</span> <span class="n">scale</span><span class="p">(</span><span class="mf">1.2</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>top</strong>: Top margin. Has the effect of moving the image down (positive pixel number) or up (negative pixel number), relative to the top border of the cell. This is very handy to fine-tune the position of graphics object.</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">left</span></code></p>
+<p>範例：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">logo</span> <span class="o">|</span> <span class="n">top</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>left</strong>: Left margin. Has the effect of moving the image right (positive pixel number) or left (negative pixel number), relative to the left border of the cell. This is very handy to fine-tune the position of graphics object.</p>
+<p>See also: <code class="docutils literal notranslate"><span class="pre">top</span></code></p>
+<p>範例：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">logo</span> <span class="o">|</span> <span class="n">left</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="matplotlib-and-plotly-plots">
+<h2>Matplotlib and Plotly Plots<a class="headerlink" href="#matplotlib-and-plotly-plots" title="連結到這個標頭">¶</a></h2>
+<p>For a general introduction on how to handle Matplotlib and Plotly, see also: <a class="reference internal" href="../../matplotlib.html#matplotlib-plotly-charts"><span class="std std-ref">Matplotlib &amp; Plotly Charts</span></a>. There, you'll also find the prerequisites to be able to export Plotly charts as pictures.</p>
+<section id="matplotlib">
+<h3>Matplotlib<a class="headerlink" href="#matplotlib" title="連結到這個標頭">¶</a></h3>
+<p>Write the following placeholder in the cell where you want to paste the Matplotlib plot: <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">lineplot</span> <span class="pre">}}</span></code>. Then run the following code to get your Matplotlib Figure object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+<span class="n">book</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">(</span><span class="s1">'Book1.xlsx'</span><span class="p">)</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="s1">'template'</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'report'</span><span class="p">)</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="n">lineplot</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="plotly">
+<h3>Plotly<a class="headerlink" href="#plotly" title="連結到這個標頭">¶</a></h3>
+<p>Plotly works practically the same:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="s2">"a"</span><span class="p">,</span><span class="s2">"b"</span><span class="p">,</span><span class="s2">"c"</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">"A line plot"</span><span class="p">)</span>
+<span class="n">book</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">(</span><span class="s1">'Book1.xlsx'</span><span class="p">)</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="s1">'template'</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'report'</span><span class="p">)</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="n">lineplot</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To change the appearance of the Matplotlib or Plotly plot, you can use the same filters as with images. Additionally, you can use the following filter:</p>
+<ul>
+<li><p><strong>format</strong>: allows to change the default image format from <code class="docutils literal notranslate"><span class="pre">png</span></code> to e.g., <code class="docutils literal notranslate"><span class="pre">vector</span></code>, which will export the plot as vector graphics (<code class="docutils literal notranslate"><span class="pre">svg</span></code> on Windows and <code class="docutils literal notranslate"><span class="pre">pdf</span></code> on macOS). As an example, to make the chart smaller and use the vector format, you would write the following placeholder:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">lineplot</span> <span class="o">|</span> <span class="n">scale</span><span class="p">(</span><span class="mf">0.8</span><span class="p">)</span> <span class="o">|</span> <span class="nb">format</span><span class="p">(</span><span class="s2">"vector"</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<section id="text">
+<h2>Text<a class="headerlink" href="#text" title="連結到這個標頭">¶</a></h2>
+<p>You can work with placeholders in text that lives in cells or shapes like text boxes. If you have more than just a few words, text boxes usually make more sense as they won't impact the row height no matter how you style them. Using the same gird formatting across worksheets is key to getting a consistent multi-page report.</p>
+<section id="simple-text-without-formatting">
+<h3>Simple Text without Formatting<a class="headerlink" href="#simple-text-without-formatting" title="連結到這個標頭">¶</a></h3>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.21.4 版被加入.</span></p>
+</div>
+<p>You can use any shapes like rectangles or circles, not just text boxes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">xw</span><span class="o">.</span><span class="n">App</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="s1">'template.xlsx'</span><span class="p">,</span> <span class="s1">'output.xlsx'</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">12.3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This code turns this template:</p>
+<img alt="../../_images/shape_text_template.png" src="../../_images/shape_text_template.png" />
+<p>into this report:</p>
+<img alt="../../_images/shape_text_report.png" src="../../_images/shape_text_report.png" />
+<p>While this works for simple text, you will lose the formatting if you have any. To prevent that, use a <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> object, as explained in the next section.</p>
+<p>If you will be printing on a <a class="reference internal" href="#pdf-layout"><span class="std std-ref">PDF Layout</span></a> with a dark background, you may need to change the font color to white. This has the nasty side effect that you won't see anything on the screen anymore. To solve that issue, use the <code class="docutils literal notranslate"><span class="pre">fontcolor</span></code> filter:</p>
+<ul>
+<li><p><strong>fontcolor</strong>: Change the color of the whole (!) cell or shape. The primary purpose of this filter is to make white fonts visible in Excel. For most other colors, you can just change the color in Excel itself. Note that this filter changes the font of the whole cell or shape and only has an effect if there is just a single placeholder---if you need to manipulate single words, use Markdown instead, see below. Black and white can be used as word, otherwise use a hex notation of your desired color.</p>
+<p>範例：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">mytitle</span> <span class="o">|</span> <span class="n">fontcolor</span><span class="p">(</span><span class="s2">"white"</span><span class="p">)</span> <span class="p">}}</span>
+<span class="p">{{</span> <span class="n">mytitle</span> <span class="o">|</span> <span class="n">fontcolor</span><span class="p">(</span><span class="s2">"#efefef"</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="markdown-formatting">
+<h3>Markdown Formatting<a class="headerlink" href="#markdown-formatting" title="連結到這個標頭">¶</a></h3>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.23.0 版被加入.</span></p>
+</div>
+<p>You can format text in cells or shapes via Markdown syntax. Note that you can also use placeholders in the Markdown text that will take the values from the variables you supply via the <code class="docutils literal notranslate"><span class="pre">render_template</span></code> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">xlwings.reports</span><span class="w"> </span><span class="kn">import</span> <span class="n">Markdown</span>
+
+<span class="n">mytext</span> <span class="o">=</span> <span class="s2">"""</span><span class="se">\</span>
+<span class="s2"># Title</span>
+
+<span class="s2">Text **bold** and *italic*</span>
+
+<span class="s2">* A first bullet</span>
+<span class="s2">* A second bullet</span>
+
+<span class="s2"># {{ second_title }}</span>
+
+<span class="s2">This paragraph has a line break.</span>
+<span class="s2">Another line.</span>
+<span class="s2">"""</span>
+
+<span class="c1"># The first sheet requires a shape as shown on the screenshot</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">sheets</span><span class="o">.</span><span class="n">active</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="n">myplaceholder</span><span class="o">=</span><span class="n">Markdown</span><span class="p">(</span><span class="n">mytext</span><span class="p">),</span>
+                      <span class="n">second_title</span><span class="o">=</span><span class="s1">'Another Title'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will render this template with the placeholder in a cell and a shape:</p>
+<img alt="../../_images/markdown_template.png" src="../../_images/markdown_template.png" />
+<p>Like this (this uses the default formatting):</p>
+<img alt="../../_images/markdown1.png" src="../../_images/markdown1.png" />
+<p>For more details about Markdown, especially about how to change the styling, see <a class="reference internal" href="markdown.html#markdown-formatting"><span class="std std-ref">Markdown Formatting</span></a>.</p>
+</section>
+</section>
+<section id="date-and-time">
+<h2>Date and Time<a class="headerlink" href="#date-and-time" title="連結到這個標頭">¶</a></h2>
+<p>If a placeholder corresponds to a Python <code class="docutils literal notranslate"><span class="pre">datetime</span></code> object, by default, Excel will format that cell as a date-formatted cell. This isn't always desired as the formatting depends on the user's regional settings. To prevent that, format the cell in the <code class="docutils literal notranslate"><span class="pre">Text</span></code> format or use a TextBox and use the <code class="docutils literal notranslate"><span class="pre">datetime</span></code> filter to format the date in the desired format. The <code class="docutils literal notranslate"><span class="pre">datetime</span></code> filter accepts the strftime syntax---for a good reference, see e.g., <a class="reference external" href="https://strftime.org/" rel="noreferer noopener" target="_blank">strftime.org</a>.</p>
+<p>To control the language of month and weekday names, you'll need to set the <code class="docutils literal notranslate"><span class="pre">locale</span></code> in your Python code. For example, for German, you would use the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">locale</span>
+<span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s1">'de_DE'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example: The default formatting is <code class="docutils literal notranslate"><span class="pre">December</span> <span class="pre">1,</span> <span class="pre">2020</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">mydate</span> <span class="o">|</span> <span class="n">datetime</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>Example: To apply a specific formatting, provide the desired format as filter argument. For example, to get it in the <code class="docutils literal notranslate"><span class="pre">12/31/20</span></code> format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">mydate</span> <span class="o">|</span> <span class="n">datetime</span><span class="p">(</span><span class="s2">"%m/</span><span class="si">%d</span><span class="s2">/%y"</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+</section>
+<section id="number-format">
+<h2>Number Format<a class="headerlink" href="#number-format" title="連結到這個標頭">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">format</span></code> filter allows you to format numbers by using the same mechanism as offered by Python's f-strings. For example, to format the placeholder <code class="docutils literal notranslate"><span class="pre">performance=0.13</span></code> as <code class="docutils literal notranslate"><span class="pre">13.0%</span></code>, you would do the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span> <span class="n">performance</span> <span class="o">|</span> <span class="nb">format</span><span class="p">(</span><span class="s2">".1%"</span><span class="p">)</span> <span class="p">}}</span>
+</pre></div>
+</div>
+<p>This corresponds to the following f-string in Python: <code class="docutils literal notranslate"><span class="pre">f&quot;{performance:0.1%}&quot;</span></code>. To get an introduction to the formatting string syntax, have a look at the <a class="reference external" href="https://mkaz.blog/code/python-string-format-cookbook/" rel="noreferer noopener" target="_blank">Python String Format Cookbook</a>.</p>
+</section>
+<section id="frames-multi-column-layout">
+<h2>Frames: Multi-column Layout<a class="headerlink" href="#frames-multi-column-layout" title="連結到這個標頭">¶</a></h2>
+<p>Frames are vertical containers in which content is being aligned according to their height. That is,
+within Frames:</p>
+<ul class="simple">
+<li><p>Variables do not overwrite existing cell values as they do without Frames.</p></li>
+<li><p>Formatting is applied dynamically, depending on the number of rows your object uses in Excel</p></li>
+</ul>
+<p>To use Frames, insert a Note with the text <code class="docutils literal notranslate"><span class="pre">&lt;frame&gt;</span></code> into <strong>row 1</strong> of your Excel template wherever you want a new dynamic column
+to start. Frames go from one <code class="docutils literal notranslate"><span class="pre">&lt;frame&gt;</span></code> to the next <code class="docutils literal notranslate"><span class="pre">&lt;frame&gt;</span></code> or the right border of the used range.</p>
+<p>How Frames behave is best demonstrated with an example:
+The following screenshot defines two frames. The first one goes from column A to column E and the second one
+goes from column F to column I, since this is the last column that is used.</p>
+<img alt="../../_images/frame_template.png" src="../../_images/frame_template.png" />
+<p>You can define and format DataFrames by formatting</p>
+<ul class="simple">
+<li><p>one header and</p></li>
+<li><p>one data row</p></li>
+</ul>
+<p>If you use the <code class="docutils literal notranslate"><span class="pre">noheader</span></code> filter for DataFrames, you can leave the header away and format a single data row.
+Alternatively, you could also use Excel Tables, as they can make formatting easier.</p>
+<p>Running the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]])</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">]])</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">df1</span><span class="o">=</span><span class="n">df1</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(),</span> <span class="n">df2</span><span class="o">=</span><span class="n">df2</span><span class="o">.</span><span class="n">reset_index</span><span class="p">())</span>
+
+<span class="k">with</span> <span class="n">xw</span><span class="o">.</span><span class="n">App</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
+    <span class="n">book</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="s1">'my_template.xlsx'</span><span class="p">,</span>
+                               <span class="s1">'my_report.xlsx'</span><span class="p">,</span>
+                               <span class="o">**</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will generate this report:</p>
+<img alt="../../_images/frame_report.png" src="../../_images/frame_report.png" />
+</section>
+<section id="pdf-layout">
+<h2>PDF Layout<a class="headerlink" href="#pdf-layout" title="連結到這個標頭">¶</a></h2>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">layout</span></code> parameter in the <code class="docutils literal notranslate"><span class="pre">to_pdf()</span></code> command, you can &quot;print&quot; your Excel workbook on professionally designed PDFs for pixel-perfect reports in your corporate layout including headers, footers, backgrounds and borderless graphics:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]])</span>
+
+<span class="k">with</span> <span class="n">xw</span><span class="o">.</span><span class="n">App</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
+    <span class="n">book</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">render_template</span><span class="p">(</span><span class="s1">'template.xlsx'</span><span class="p">,</span>
+                               <span class="s1">'report.xlsx'</span><span class="p">,</span>
+                               <span class="n">month_year</span> <span class="o">=</span> <span class="s1">'May 21'</span><span class="p">,</span>
+                               <span class="n">summary_text</span> <span class="o">=</span> <span class="s1">'...'</span><span class="p">)</span>
+    <span class="n">book</span><span class="o">.</span><span class="n">to_pdf</span><span class="p">(</span><span class="s1">'report.pdf'</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="s1">'monthly_layout.pdf'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Note that the layout PDF either needs to consist of a single page (will be used for each reporting page) or will need to have the same number of pages as the report (each report page will be printed on the corresponding layout page).</p>
+<p>To create your layout PDF, you can use any program capable of exporting a file in PDF format such as PowerPoint or Word, but for the best results consider using a professional desktop publishing software such as Adobe InDesign.</p>
+<img alt="../../_images/reports_pdf_layout.png" src="../../_images/reports_pdf_layout.png" />
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="markdown.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Markdown Formatting</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="reports.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Quickstart</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; Zoomer Analytics LLC
+            </div>
+            Made with 
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Components and Filters</a><ul>
+<li><a class="reference internal" href="#dataframes">DataFrames</a><ul>
+<li><a class="reference internal" href="#dataframes-filters">DataFrames Filters</a></li>
+<li><a class="reference internal" href="#noheader">noheader</a></li>
+<li><a class="reference internal" href="#header">header</a></li>
+<li><a class="reference internal" href="#sortasc">sortasc</a></li>
+<li><a class="reference internal" href="#sortdesc">sortdesc</a></li>
+<li><a class="reference internal" href="#columns">columns</a></li>
+<li><a class="reference internal" href="#mul-div-sum-sub">mul, div, sum, sub</a></li>
+<li><a class="reference internal" href="#maxrows">maxrows</a></li>
+<li><a class="reference internal" href="#aggsmall">aggsmall</a></li>
+<li><a class="reference internal" href="#head">head</a></li>
+<li><a class="reference internal" href="#tail">tail</a></li>
+<li><a class="reference internal" href="#rowslice">rowslice</a></li>
+<li><a class="reference internal" href="#colslice">colslice</a></li>
+<li><a class="reference internal" href="#vmerge">vmerge</a></li>
+<li><a class="reference internal" href="#formatter">formatter</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#excel-tables">Excel Tables</a></li>
+<li><a class="reference internal" href="#excel-charts">Excel Charts</a></li>
+<li><a class="reference internal" href="#images">Images</a></li>
+<li><a class="reference internal" href="#matplotlib-and-plotly-plots">Matplotlib and Plotly Plots</a><ul>
+<li><a class="reference internal" href="#matplotlib">Matplotlib</a></li>
+<li><a class="reference internal" href="#plotly">Plotly</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#text">Text</a><ul>
+<li><a class="reference internal" href="#simple-text-without-formatting">Simple Text without Formatting</a></li>
+<li><a class="reference internal" href="#markdown-formatting">Markdown Formatting</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#date-and-time">Date and Time</a></li>
+<li><a class="reference internal" href="#number-format">Number Format</a></li>
+<li><a class="reference internal" href="#frames-multi-column-layout">Frames: Multi-column Layout</a></li>
+<li><a class="reference internal" href="#pdf-layout">PDF Layout</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div>
+  
+  <script src="../../_static/sidebar-scroll.js"></script>
+<script src="../../_static/documentation_options.js?v=d84700ab"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=30646c52"></script>
+    <script src="../../_static/translations.js?v=cbf116e0"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

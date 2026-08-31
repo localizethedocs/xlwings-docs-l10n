@@ -1,0 +1,613 @@
+
+
+<!doctype html>
+<html class="no-js" lang="zh-CN" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="genindex.html"><link rel="search" title="搜索" href="search.html"><link rel="next" title="Add-in &amp; Settings" href="addin.html"><link rel="prev" title="Syntax Overview" href="syntax_overview.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/xlwings-docs-l10n/datastructures.html">
+        <link rel="prefetch" href="_static/logo-light.svg" as="image">
+        <link rel="prefetch" href="_static/logo-dark.svg" as="image">
+
+    <link rel="shortcut icon" href="_static/favicon.png"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Data Structures Tutorial - xlwings Documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ce868e14" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: black;
+  --color-brand-content: #28a745;
+  --color-sidebar-caption-text: #28a745;
+  --sidebar-caption-font-size: 1em;
+  --color-announcement-background: #28a745;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+  
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+<div class="announcement">
+  <aside class="announcement-content">
+     <a href="https://lite.xlwings.org/" target="_blank"> xlwings Lite</a> is now available in the add-in store for free!</a> 
+  </aside>
+</div>
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">xlwings Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="_static/logo-light.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="_static/logo-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="搜索" name="q" aria-label="搜索">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="getting_started/index.html">Getting Started</a><input aria-label="Toggle navigation of Getting Started" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="course.html">Video course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_to_workbook.html">Connect to a Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syntax_overview.html">Syntax Overview</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Data Structures Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addin.html">Add-in &amp; Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vba.html">RunPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="udfs.html">User Defined Functions (UDFs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matplotlib.html">Matplotlib &amp; Plotly Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyternotebooks.html">Jupyter Notebooks: Interact with Excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="command_line.html">Command Line Client (CLI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment.html">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onedrive_sharepoint.html">OneDrive and SharePoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="advanced_features/index.html">Advanced Features</a><input aria-label="Toggle navigation of Advanced Features" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="converters.html">Converters and Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html">Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="customaddin.html">Custom Add-ins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threading_and_multiprocessing.html">Threading and Multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="missing_features.html">Missing Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="other_office_apps.html">xlwings with other Office Apps</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xlwings PRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pro/license_key.html">License Key</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="pro/reports/index.html">xlwings Reports</a><input aria-label="Toggle navigation of xlwings Reports" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="pro/reports/reports.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pro/reports/components_filters.html">Components and Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pro/reports/markdown.html">Markdown Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pro/reader.html">xlwings Reader</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pro/release.html">1-click Installer/Embedded Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api/index.html">API Reference</a><input aria-label="Toggle navigation of API Reference" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/top_level_functions.html">Top-level functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/udf_decorators.html">UDF decorators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/app.html">App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/apps.html">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/book.html">Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/books.html">Books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chart.html">Chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/charts.html">Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/font.html">Font</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/name.html">Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/names.html">Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/note.html">Note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/page_setup.html">PageSetup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/picture.html">Picture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/pictures.html">Pictures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/range.html">Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/range_columns.html">RangeColumns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/range_rows.html">RangeRows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/reports.html">Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/shape.html">Shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/shapes.html">Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/sheet.html">Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/sheets.html">Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/table.html">Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/tables.html">Tables</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="data-structures-tutorial">
+<h1>Data Structures Tutorial<a class="headerlink" href="#data-structures-tutorial" title="链接到此标题。">¶</a></h1>
+<p>This tutorial gives you a quick introduction to the most common use cases and default behaviour of xlwings when reading
+and writing values. For an in-depth documentation of how to control the behavior using the <code class="docutils literal notranslate"><span class="pre">options</span></code> method, have a
+look at <a class="reference internal" href="converters.html#converters-and-options"><span class="std std-ref">Converters and Options</span></a>.</p>
+<p>All code samples below depend on the following import:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+</pre></div>
+</div>
+<section id="single-cells">
+<h2>Single Cells<a class="headerlink" href="#single-cells" title="链接到此标题。">¶</a></h2>
+<p>Single cells are by default returned either as <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">unicode</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code> or <code class="docutils literal notranslate"><span class="pre">datetime</span></code> objects, depending on
+whether the cell contains a number, a string, is empty or represents a date:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A2'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s1">'Hello'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A2'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">'Hello'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A3'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A4'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A4'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">datetime.datetime(2000, 1, 1, 0, 0)</span>
+</pre></div>
+</div>
+</section>
+<section id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="链接到此标题。">¶</a></h2>
+<ul>
+<li><p>1d lists: Ranges that represent rows or columns in Excel are returned as simple lists, which means that once
+they are in Python, you've lost the information about the orientation. If that is an issue, the next point shows
+you how to preserve this info:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">]]</span>  <span class="c1"># Column orientation (nested list)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:A5'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[1.0, 2.0, 3.0, 4.0, 5.0]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:E1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[1.0, 2.0, 3.0, 4.0, 5.0]</span>
+</pre></div>
+</div>
+<p>To force a single cell to arrive as list, use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[1.0]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>To write a list in column orientation to Excel, use <code class="docutils literal notranslate"><span class="pre">transpose</span></code>: <code class="docutils literal notranslate"><span class="pre">sheet.range('A1').options(transpose=True).value</span> <span class="pre">=</span> <span class="pre">[1,2,3,4]</span></code></p>
+</div>
+</li>
+<li><p>2d lists: If the row or column orientation has to be preserved, set <code class="docutils literal notranslate"><span class="pre">ndim</span></code> in the Range options. This will return the
+Ranges as nested lists (&quot;2d lists&quot;):</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:A5'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0], [2.0], [3.0], [4.0], [5.0]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:E1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0, 3.0, 4.0, 5.0]]</span>
+</pre></div>
+</div>
+</li>
+<li><p>2 dimensional Ranges are automatically returned as nested lists. When assigning (nested) lists to a Range in Excel,
+it's enough to just specify the top left cell as target address. This sample also makes use of index notation to read the
+values back into Python:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A10'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">'Foo 1'</span><span class="p">,</span> <span class="s1">'Foo 2'</span><span class="p">,</span> <span class="s1">'Foo 3'</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="o">.</span><span class="n">range</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[['Foo 1', 'Foo 2', 'Foo 3'], [10.0, 20.0, 30.0]]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Try to minimize the number of interactions with Excel. It is always more efficient to do
+<code class="docutils literal notranslate"><span class="pre">sheet.range('A1').value</span> <span class="pre">=</span> <span class="pre">[[1,2],[3,4]]</span></code> than <code class="docutils literal notranslate"><span class="pre">sheet.range('A1').value</span> <span class="pre">=</span> <span class="pre">[1,</span> <span class="pre">2]</span></code> and <code class="docutils literal notranslate"><span class="pre">sheet.range('A2').value</span> <span class="pre">=</span> <span class="pre">[3,</span> <span class="pre">4]</span></code>.</p>
+</div>
+</section>
+<section id="range-expanding">
+<h2>Range expanding<a class="headerlink" href="#range-expanding" title="链接到此标题。">¶</a></h2>
+<p>You can get the dimensions of Excel Ranges dynamically through either the method <code class="docutils literal notranslate"><span class="pre">expand</span></code> or through the <code class="docutils literal notranslate"><span class="pre">expand</span></code>
+keyword in the <code class="docutils literal notranslate"><span class="pre">options</span></code> method. While <code class="docutils literal notranslate"><span class="pre">expand</span></code> gives back an expanded Range object, options are only evaluated when
+accessing the values of a Range. The difference is best explained with an example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range1</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s1">'table'</span><span class="p">)</span>  <span class="c1"># or just .expand()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range2</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">expand</span><span class="o">=</span><span class="s1">'table'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range1</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0], [3.0, 4.0]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range2</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0], [3.0, 4.0]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A3'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range1</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0], [3.0, 4.0]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range2</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">'table'</span></code> expands to <code class="docutils literal notranslate"><span class="pre">'down'</span></code> and <code class="docutils literal notranslate"><span class="pre">'right'</span></code>, the other available options which can be used for column or row only
+expansion, respectively.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Using <code class="docutils literal notranslate"><span class="pre">expand()</span></code> together with a named Range as top left cell gives you a flexible setup in
+Excel: You can move around the table and change its size without having to adjust your code, e.g. by using
+something like <code class="docutils literal notranslate"><span class="pre">sheet.range('NamedRange').expand().value</span></code>.</p>
+</div>
+</section>
+<section id="numpy-arrays">
+<h2>NumPy arrays<a class="headerlink" href="#numpy-arrays" title="链接到此标题。">¶</a></h2>
+<p>NumPy arrays work similar to nested lists. However, empty cells are represented by <code class="docutils literal notranslate"><span class="pre">nan</span></code> instead of
+<code class="docutils literal notranslate"><span class="pre">None</span></code>. If you want to read in a Range as array, set <code class="docutils literal notranslate"><span class="pre">convert=np.array</span></code> in the <code class="docutils literal notranslate"><span class="pre">options</span></code> method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="s1">'table'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">array([[ 1.,  0.,  0.],</span>
+<span class="go">       [ 0.,  1.,  0.],</span>
+<span class="go">       [ 0.,  0.,  1.]])</span>
+</pre></div>
+</div>
+</section>
+<section id="pandas-dataframes">
+<h2>Pandas DataFrames<a class="headerlink" href="#pandas-dataframes" title="链接到此标题。">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.3</span><span class="p">,</span> <span class="kc">None</span><span class="p">]],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
+<span class="go">   one  two</span>
+<span class="go">0  1.1  2.2</span>
+<span class="go">1  3.3  NaN</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:C3'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">   one  two</span>
+<span class="go">0  1.1  2.2</span>
+<span class="go">1  3.3  NaN</span>
+<span class="go"># options: work for reading and writing</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A5'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A9'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+</pre></div>
+</div>
+</section>
+<section id="pandas-series">
+<h2>Pandas Series<a class="headerlink" href="#pandas-series" title="链接到此标题。">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">,</span> <span class="mf">5.</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mf">6.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">'myseries'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">0    1.1</span>
+<span class="go">1    3.3</span>
+<span class="go">2    5.0</span>
+<span class="go">3    NaN</span>
+<span class="go">4    6.0</span>
+<span class="go">5    8.0</span>
+<span class="go">Name: myseries, dtype: float64</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">s</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:B7'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">0    1.1</span>
+<span class="go">1    3.3</span>
+<span class="go">2    5.0</span>
+<span class="go">3    NaN</span>
+<span class="go">4    6.0</span>
+<span class="go">5    8.0</span>
+<span class="go">Name: myseries, dtype: float64</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>You only need to specify the top left cell when writing a list, a NumPy array or a Pandas
+DataFrame to Excel, e.g.: <code class="docutils literal notranslate"><span class="pre">sheet['A1'].value</span> <span class="pre">=</span> <span class="pre">np.eye(10)</span></code></p>
+</div>
+</section>
+<section id="chunking-read-write-big-dataframes-etc">
+<h2>Chunking: Read/Write big DataFrames etc.<a class="headerlink" href="#chunking-read-write-big-dataframes-etc" title="链接到此标题。">¶</a></h2>
+<p>When you read and write from or to big ranges, you may have to chunk them or you will hit a timeout or a memory error. The ideal <code class="docutils literal notranslate"><span class="pre">chunksize</span></code> will depend on your system and size of the array, so you will have to try out a few different chunksizes to find one that works well:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">75_000</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">75_000</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">chunksize</span><span class="o">=</span><span class="mi">10_000</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+</pre></div>
+</div>
+<p>And the same for reading:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># As DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="mi">10_000</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="c1"># As list of list</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">chunksize</span><span class="o">=</span><span class="mi">10_000</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="addin.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Add-in &amp; Settings</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="syntax_overview.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Syntax Overview</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; Zoomer Analytics LLC
+            </div>
+            Made with 
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Data Structures Tutorial</a><ul>
+<li><a class="reference internal" href="#single-cells">Single Cells</a></li>
+<li><a class="reference internal" href="#lists">Lists</a></li>
+<li><a class="reference internal" href="#range-expanding">Range expanding</a></li>
+<li><a class="reference internal" href="#numpy-arrays">NumPy arrays</a></li>
+<li><a class="reference internal" href="#pandas-dataframes">Pandas DataFrames</a></li>
+<li><a class="reference internal" href="#pandas-series">Pandas Series</a></li>
+<li><a class="reference internal" href="#chunking-read-write-big-dataframes-etc">Chunking: Read/Write big DataFrames etc.</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div>
+  
+  <script src="_static/sidebar-scroll.js"></script>
+<script src="_static/documentation_options.js?v=fbee7834"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=30646c52"></script>
+    <script src="_static/translations.js?v=540d3cec"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

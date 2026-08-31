@@ -1,0 +1,799 @@
+
+
+<!doctype html>
+<html class="no-js" lang="zh-TW" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="../genindex.html"><link rel="search" title="搜尋" href="../search.html"><link rel="next" title="Top-level functions" href="top_level_functions.html"><link rel="prev" title="License" href="../license.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/xlwings-docs-l10n/api/index.html">
+        <link rel="prefetch" href="../_static/logo-light.svg" as="image">
+        <link rel="prefetch" href="../_static/logo-dark.svg" as="image">
+
+    <link rel="shortcut icon" href="../_static/favicon.png"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>API 參考 - xlwings Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ce868e14" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: black;
+  --color-brand-content: #28a745;
+  --color-sidebar-caption-text: #28a745;
+  --sidebar-caption-font-size: 1em;
+  --color-announcement-background: #28a745;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+  
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+<div class="announcement">
+  <aside class="announcement-content">
+     <a href="https://lite.xlwings.org/" target="_blank"> xlwings Lite</a> is now available in the add-in store for free!</a> 
+  </aside>
+</div>
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">xlwings Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo-light.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜尋" name="q" aria-label="搜尋">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../getting_started/index.html">開始使用</a><input aria-label="Toggle navigation of 開始使用" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../course.html">Video course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connect_to_workbook.html">Connect to a Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../syntax_overview.html">Syntax Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../datastructures.html">Data Structures Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../addin.html">增益集與設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vba.html">RunPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../udfs.html">User Defined Functions (UDFs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../matplotlib.html">Matplotlib &amp; Plotly Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyternotebooks.html">Jupyter Notebooks: Interact with Excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../command_line.html">Command Line Client (CLI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deployment.html">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onedrive_sharepoint.html">OneDrive and SharePoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../advanced_features/index.html">進階功能</a><input aria-label="Toggle navigation of 進階功能" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../converters.html">轉換器與選項</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../extensions.html">擴充功能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../customaddin.html">Custom Add-ins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../threading_and_multiprocessing.html">Threading and Multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../missing_features.html">Missing Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other_office_apps.html">xlwings with other Office Apps</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xlwings PRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pro/license_key.html">授權金鑰</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../pro/reports/index.html">xlwings Reports</a><input aria-label="Toggle navigation of xlwings Reports" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pro/reports/reports.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pro/reports/components_filters.html">Components and Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pro/reports/markdown.html">Markdown Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pro/reader.html">xlwings 讀取器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pro/release.html">1-click Installer/Embedded Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">關於</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../whatsnew.html">變更日誌</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">API 參考</a><input aria-label="Toggle navigation of API 參考" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="top_level_functions.html">Top-level functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="udf_decorators.html">UDF 裝飾器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="app.html">App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="book.html">Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="books.html">Books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chart.html">Chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="charts.html">Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="font.html">Font</a></li>
+<li class="toctree-l2"><a class="reference internal" href="name.html">Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="names.html">Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="note.html">Note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_setup.html">PageSetup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="picture.html">Picture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pictures.html">Pictures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="range.html">Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="range_columns.html">RangeColumns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="range_rows.html">RangeRows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reports.html">Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shape.html">Shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shapes.html">Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sheet.html">Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sheets.html">Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="table.html">Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables.html">表格</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="api-reference">
+<h1>API 參考<a class="headerlink" href="#api-reference" title="連結到這個標頭">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Top-level functions</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="top_level_functions.html">Top-level functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="top_level_functions.html#xlwings.load"><code class="docutils literal notranslate"><span class="pre">load()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="top_level_functions.html#xlwings.view"><code class="docutils literal notranslate"><span class="pre">view()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">UDF 裝飾器</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="udf_decorators.html">UDF 裝飾器</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="udf_decorators.html#xlwings.func"><code class="docutils literal notranslate"><span class="pre">xlwings.func()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="udf_decorators.html#xlwings.script"><code class="docutils literal notranslate"><span class="pre">xlwings.script()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="udf_decorators.html#xlwings.arg"><code class="docutils literal notranslate"><span class="pre">xlwings.arg()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="udf_decorators.html#xlwings.ret"><code class="docutils literal notranslate"><span class="pre">xlwings.ret()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">xlwings Object Model</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="app.html">App</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="app.html#xlwings.App"><code class="docutils literal notranslate"><span class="pre">App</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.activate"><code class="docutils literal notranslate"><span class="pre">App.activate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.alert"><code class="docutils literal notranslate"><span class="pre">App.alert()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.api"><code class="docutils literal notranslate"><span class="pre">App.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.books"><code class="docutils literal notranslate"><span class="pre">App.books</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.calculate"><code class="docutils literal notranslate"><span class="pre">App.calculate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.calculation"><code class="docutils literal notranslate"><span class="pre">App.calculation</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.cut_copy_mode"><code class="docutils literal notranslate"><span class="pre">App.cut_copy_mode</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.display_alerts"><code class="docutils literal notranslate"><span class="pre">App.display_alerts</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.enable_events"><code class="docutils literal notranslate"><span class="pre">App.enable_events</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.get_selection"><code class="docutils literal notranslate"><span class="pre">App.get_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.hwnd"><code class="docutils literal notranslate"><span class="pre">App.hwnd</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.interactive"><code class="docutils literal notranslate"><span class="pre">App.interactive</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.kill"><code class="docutils literal notranslate"><span class="pre">App.kill()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.macro"><code class="docutils literal notranslate"><span class="pre">App.macro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.path"><code class="docutils literal notranslate"><span class="pre">App.path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.pid"><code class="docutils literal notranslate"><span class="pre">App.pid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.properties"><code class="docutils literal notranslate"><span class="pre">App.properties()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.quit"><code class="docutils literal notranslate"><span class="pre">App.quit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.range"><code class="docutils literal notranslate"><span class="pre">App.range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.render_template"><code class="docutils literal notranslate"><span class="pre">App.render_template()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.screen_updating"><code class="docutils literal notranslate"><span class="pre">App.screen_updating</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.selection"><code class="docutils literal notranslate"><span class="pre">App.selection</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.startup_path"><code class="docutils literal notranslate"><span class="pre">App.startup_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.status_bar"><code class="docutils literal notranslate"><span class="pre">App.status_bar</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.version"><code class="docutils literal notranslate"><span class="pre">App.version</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="app.html#xlwings.App.visible"><code class="docutils literal notranslate"><span class="pre">App.visible</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apps.html">Apps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apps.html#xlwings.main.Apps"><code class="docutils literal notranslate"><span class="pre">Apps</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apps.html#xlwings.main.Apps.active"><code class="docutils literal notranslate"><span class="pre">Apps.active</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apps.html#xlwings.main.Apps.add"><code class="docutils literal notranslate"><span class="pre">Apps.add()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apps.html#xlwings.main.Apps.cleanup"><code class="docutils literal notranslate"><span class="pre">Apps.cleanup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apps.html#xlwings.main.Apps.count"><code class="docutils literal notranslate"><span class="pre">Apps.count</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apps.html#xlwings.main.Apps.keys"><code class="docutils literal notranslate"><span class="pre">Apps.keys()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="book.html">Book</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="book.html#xlwings.Book"><code class="docutils literal notranslate"><span class="pre">Book</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.activate"><code class="docutils literal notranslate"><span class="pre">Book.activate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.api"><code class="docutils literal notranslate"><span class="pre">Book.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.app"><code class="docutils literal notranslate"><span class="pre">Book.app</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.caller"><code class="docutils literal notranslate"><span class="pre">Book.caller()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.close"><code class="docutils literal notranslate"><span class="pre">Book.close()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.flush"><code class="docutils literal notranslate"><span class="pre">Book.flush()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.fullname"><code class="docutils literal notranslate"><span class="pre">Book.fullname</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.get_selection"><code class="docutils literal notranslate"><span class="pre">Book.get_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.json"><code class="docutils literal notranslate"><span class="pre">Book.json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.load"><code class="docutils literal notranslate"><span class="pre">Book.load()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.macro"><code class="docutils literal notranslate"><span class="pre">Book.macro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.name"><code class="docutils literal notranslate"><span class="pre">Book.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.names"><code class="docutils literal notranslate"><span class="pre">Book.names</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.render_template"><code class="docutils literal notranslate"><span class="pre">Book.render_template()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.save"><code class="docutils literal notranslate"><span class="pre">Book.save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.selection"><code class="docutils literal notranslate"><span class="pre">Book.selection</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.set_mock_caller"><code class="docutils literal notranslate"><span class="pre">Book.set_mock_caller()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.sheet_names"><code class="docutils literal notranslate"><span class="pre">Book.sheet_names</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.sheets"><code class="docutils literal notranslate"><span class="pre">Book.sheets</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.sync"><code class="docutils literal notranslate"><span class="pre">Book.sync()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="book.html#xlwings.Book.to_pdf"><code class="docutils literal notranslate"><span class="pre">Book.to_pdf()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="books.html">Books</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="books.html#xlwings.main.Books"><code class="docutils literal notranslate"><span class="pre">Books</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="books.html#xlwings.main.Books.active"><code class="docutils literal notranslate"><span class="pre">Books.active</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="books.html#xlwings.main.Books.add"><code class="docutils literal notranslate"><span class="pre">Books.add()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="books.html#xlwings.main.Books.get_active"><code class="docutils literal notranslate"><span class="pre">Books.get_active()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="books.html#xlwings.main.Books.open"><code class="docutils literal notranslate"><span class="pre">Books.open()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="characters.html">Characters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="characters.html#xlwings.main.Characters"><code class="docutils literal notranslate"><span class="pre">Characters</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="characters.html#xlwings.main.Characters.api"><code class="docutils literal notranslate"><span class="pre">Characters.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="characters.html#xlwings.main.Characters.font"><code class="docutils literal notranslate"><span class="pre">Characters.font</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="characters.html#xlwings.main.Characters.text"><code class="docutils literal notranslate"><span class="pre">Characters.text</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chart.html">Chart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chart.html#xlwings.Chart"><code class="docutils literal notranslate"><span class="pre">Chart</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.api"><code class="docutils literal notranslate"><span class="pre">Chart.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.chart_type"><code class="docutils literal notranslate"><span class="pre">Chart.chart_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.delete"><code class="docutils literal notranslate"><span class="pre">Chart.delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.height"><code class="docutils literal notranslate"><span class="pre">Chart.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.left"><code class="docutils literal notranslate"><span class="pre">Chart.left</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.name"><code class="docutils literal notranslate"><span class="pre">Chart.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.parent"><code class="docutils literal notranslate"><span class="pre">Chart.parent</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.set_source_data"><code class="docutils literal notranslate"><span class="pre">Chart.set_source_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.to_pdf"><code class="docutils literal notranslate"><span class="pre">Chart.to_pdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.to_png"><code class="docutils literal notranslate"><span class="pre">Chart.to_png()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.top"><code class="docutils literal notranslate"><span class="pre">Chart.top</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html#xlwings.Chart.width"><code class="docutils literal notranslate"><span class="pre">Chart.width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="charts.html">Charts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="charts.html#xlwings.main.Charts"><code class="docutils literal notranslate"><span class="pre">Charts</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="charts.html#xlwings.main.Charts.add"><code class="docutils literal notranslate"><span class="pre">Charts.add()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="font.html">Font</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="font.html#xlwings.main.Font"><code class="docutils literal notranslate"><span class="pre">Font</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="font.html#xlwings.main.Font.api"><code class="docutils literal notranslate"><span class="pre">Font.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="font.html#xlwings.main.Font.bold"><code class="docutils literal notranslate"><span class="pre">Font.bold</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="font.html#xlwings.main.Font.color"><code class="docutils literal notranslate"><span class="pre">Font.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="font.html#xlwings.main.Font.italic"><code class="docutils literal notranslate"><span class="pre">Font.italic</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="font.html#xlwings.main.Font.name"><code class="docutils literal notranslate"><span class="pre">Font.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="font.html#xlwings.main.Font.size"><code class="docutils literal notranslate"><span class="pre">Font.size</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="name.html">Name</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="name.html#xlwings.Name"><code class="docutils literal notranslate"><span class="pre">Name</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="name.html#xlwings.Name.api"><code class="docutils literal notranslate"><span class="pre">Name.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="name.html#xlwings.Name.delete"><code class="docutils literal notranslate"><span class="pre">Name.delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="name.html#xlwings.Name.name"><code class="docutils literal notranslate"><span class="pre">Name.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="name.html#xlwings.Name.refers_to"><code class="docutils literal notranslate"><span class="pre">Name.refers_to</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="name.html#xlwings.Name.refers_to_range"><code class="docutils literal notranslate"><span class="pre">Name.refers_to_range</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="names.html">Names</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="names.html#xlwings.main.Names"><code class="docutils literal notranslate"><span class="pre">Names</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="names.html#xlwings.main.Names.add"><code class="docutils literal notranslate"><span class="pre">Names.add()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="names.html#xlwings.main.Names.api"><code class="docutils literal notranslate"><span class="pre">Names.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="names.html#xlwings.main.Names.count"><code class="docutils literal notranslate"><span class="pre">Names.count</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="note.html">Note</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="note.html#xlwings.main.Note"><code class="docutils literal notranslate"><span class="pre">Note</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="note.html#xlwings.main.Note.api"><code class="docutils literal notranslate"><span class="pre">Note.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="note.html#xlwings.main.Note.delete"><code class="docutils literal notranslate"><span class="pre">Note.delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="note.html#xlwings.main.Note.text"><code class="docutils literal notranslate"><span class="pre">Note.text</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="page_setup.html">PageSetup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="page_setup.html#xlwings.main.PageSetup"><code class="docutils literal notranslate"><span class="pre">PageSetup</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="page_setup.html#xlwings.main.PageSetup.api"><code class="docutils literal notranslate"><span class="pre">PageSetup.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="page_setup.html#xlwings.main.PageSetup.print_area"><code class="docutils literal notranslate"><span class="pre">PageSetup.print_area</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="picture.html">Picture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="picture.html#xlwings.Picture"><code class="docutils literal notranslate"><span class="pre">Picture</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.api"><code class="docutils literal notranslate"><span class="pre">Picture.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.delete"><code class="docutils literal notranslate"><span class="pre">Picture.delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.height"><code class="docutils literal notranslate"><span class="pre">Picture.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.left"><code class="docutils literal notranslate"><span class="pre">Picture.left</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.lock_aspect_ratio"><code class="docutils literal notranslate"><span class="pre">Picture.lock_aspect_ratio</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.name"><code class="docutils literal notranslate"><span class="pre">Picture.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.parent"><code class="docutils literal notranslate"><span class="pre">Picture.parent</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.top"><code class="docutils literal notranslate"><span class="pre">Picture.top</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.update"><code class="docutils literal notranslate"><span class="pre">Picture.update()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="picture.html#xlwings.Picture.width"><code class="docutils literal notranslate"><span class="pre">Picture.width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pictures.html">Pictures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pictures.html#xlwings.main.Pictures"><code class="docutils literal notranslate"><span class="pre">Pictures</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pictures.html#xlwings.main.Pictures.add"><code class="docutils literal notranslate"><span class="pre">Pictures.add()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="range.html">Range</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="range.html#xlwings.Range"><code class="docutils literal notranslate"><span class="pre">Range</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.add_hyperlink"><code class="docutils literal notranslate"><span class="pre">Range.add_hyperlink()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.address"><code class="docutils literal notranslate"><span class="pre">Range.address</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.adjust_indent"><code class="docutils literal notranslate"><span class="pre">Range.adjust_indent()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.api"><code class="docutils literal notranslate"><span class="pre">Range.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.autofill"><code class="docutils literal notranslate"><span class="pre">Range.autofill()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.autofit"><code class="docutils literal notranslate"><span class="pre">Range.autofit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.clear"><code class="docutils literal notranslate"><span class="pre">Range.clear()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.clear_contents"><code class="docutils literal notranslate"><span class="pre">Range.clear_contents()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.clear_formats"><code class="docutils literal notranslate"><span class="pre">Range.clear_formats()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.color"><code class="docutils literal notranslate"><span class="pre">Range.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.column"><code class="docutils literal notranslate"><span class="pre">Range.column</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.column_width"><code class="docutils literal notranslate"><span class="pre">Range.column_width</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.columns"><code class="docutils literal notranslate"><span class="pre">Range.columns</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.copy"><code class="docutils literal notranslate"><span class="pre">Range.copy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.copy_from"><code class="docutils literal notranslate"><span class="pre">Range.copy_from()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.copy_picture"><code class="docutils literal notranslate"><span class="pre">Range.copy_picture()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.count"><code class="docutils literal notranslate"><span class="pre">Range.count</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.current_region"><code class="docutils literal notranslate"><span class="pre">Range.current_region</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.delete"><code class="docutils literal notranslate"><span class="pre">Range.delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.end"><code class="docutils literal notranslate"><span class="pre">Range.end()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.expand"><code class="docutils literal notranslate"><span class="pre">Range.expand()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.formula"><code class="docutils literal notranslate"><span class="pre">Range.formula</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.formula2"><code class="docutils literal notranslate"><span class="pre">Range.formula2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.formula_array"><code class="docutils literal notranslate"><span class="pre">Range.formula_array</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.get_address"><code class="docutils literal notranslate"><span class="pre">Range.get_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.get_value"><code class="docutils literal notranslate"><span class="pre">Range.get_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.group"><code class="docutils literal notranslate"><span class="pre">Range.group()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.has_array"><code class="docutils literal notranslate"><span class="pre">Range.has_array</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.height"><code class="docutils literal notranslate"><span class="pre">Range.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.hyperlink"><code class="docutils literal notranslate"><span class="pre">Range.hyperlink</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.insert"><code class="docutils literal notranslate"><span class="pre">Range.insert()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.last_cell"><code class="docutils literal notranslate"><span class="pre">Range.last_cell</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.left"><code class="docutils literal notranslate"><span class="pre">Range.left</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.merge"><code class="docutils literal notranslate"><span class="pre">Range.merge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.merge_area"><code class="docutils literal notranslate"><span class="pre">Range.merge_area</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.merge_cells"><code class="docutils literal notranslate"><span class="pre">Range.merge_cells</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.name"><code class="docutils literal notranslate"><span class="pre">Range.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.note"><code class="docutils literal notranslate"><span class="pre">Range.note</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.number_format"><code class="docutils literal notranslate"><span class="pre">Range.number_format</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.offset"><code class="docutils literal notranslate"><span class="pre">Range.offset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.options"><code class="docutils literal notranslate"><span class="pre">Range.options()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.paste"><code class="docutils literal notranslate"><span class="pre">Range.paste()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.raw_value"><code class="docutils literal notranslate"><span class="pre">Range.raw_value</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.resize"><code class="docutils literal notranslate"><span class="pre">Range.resize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.row"><code class="docutils literal notranslate"><span class="pre">Range.row</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.row_height"><code class="docutils literal notranslate"><span class="pre">Range.row_height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.rows"><code class="docutils literal notranslate"><span class="pre">Range.rows</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.select"><code class="docutils literal notranslate"><span class="pre">Range.select()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.shape"><code class="docutils literal notranslate"><span class="pre">Range.shape</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.sheet"><code class="docutils literal notranslate"><span class="pre">Range.sheet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.size"><code class="docutils literal notranslate"><span class="pre">Range.size</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.table"><code class="docutils literal notranslate"><span class="pre">Range.table</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.to_pdf"><code class="docutils literal notranslate"><span class="pre">Range.to_pdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.to_png"><code class="docutils literal notranslate"><span class="pre">Range.to_png()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.top"><code class="docutils literal notranslate"><span class="pre">Range.top</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.ungroup"><code class="docutils literal notranslate"><span class="pre">Range.ungroup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.unmerge"><code class="docutils literal notranslate"><span class="pre">Range.unmerge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.value"><code class="docutils literal notranslate"><span class="pre">Range.value</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.width"><code class="docutils literal notranslate"><span class="pre">Range.width</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range.html#xlwings.Range.wrap_text"><code class="docutils literal notranslate"><span class="pre">Range.wrap_text</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="range_columns.html">RangeColumns</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="range_columns.html#xlwings.RangeColumns"><code class="docutils literal notranslate"><span class="pre">RangeColumns</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="range_columns.html#xlwings.RangeColumns.autofit"><code class="docutils literal notranslate"><span class="pre">RangeColumns.autofit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range_columns.html#xlwings.RangeColumns.count"><code class="docutils literal notranslate"><span class="pre">RangeColumns.count</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="range_rows.html">RangeRows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="range_rows.html#xlwings.RangeRows"><code class="docutils literal notranslate"><span class="pre">RangeRows</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="range_rows.html#xlwings.RangeRows.autofit"><code class="docutils literal notranslate"><span class="pre">RangeRows.autofit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="range_rows.html#xlwings.RangeRows.count"><code class="docutils literal notranslate"><span class="pre">RangeRows.count</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reports.html">Reports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reports.html#xlwings.reports.Image"><code class="docutils literal notranslate"><span class="pre">Image</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="reports.html#xlwings.reports.Markdown"><code class="docutils literal notranslate"><span class="pre">Markdown</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="reports.html#xlwings.reports.MarkdownStyle"><code class="docutils literal notranslate"><span class="pre">MarkdownStyle</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="reports.html#xlwings.reports.formatter"><code class="docutils literal notranslate"><span class="pre">formatter()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="reports.html#xlwings.reports.render_template"><code class="docutils literal notranslate"><span class="pre">render_template()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="shape.html">Shape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="shape.html#xlwings.Shape"><code class="docutils literal notranslate"><span class="pre">Shape</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.activate"><code class="docutils literal notranslate"><span class="pre">Shape.activate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.api"><code class="docutils literal notranslate"><span class="pre">Shape.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.delete"><code class="docutils literal notranslate"><span class="pre">Shape.delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.height"><code class="docutils literal notranslate"><span class="pre">Shape.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.left"><code class="docutils literal notranslate"><span class="pre">Shape.left</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.name"><code class="docutils literal notranslate"><span class="pre">Shape.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.parent"><code class="docutils literal notranslate"><span class="pre">Shape.parent</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.scale_height"><code class="docutils literal notranslate"><span class="pre">Shape.scale_height()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.scale_width"><code class="docutils literal notranslate"><span class="pre">Shape.scale_width()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.text"><code class="docutils literal notranslate"><span class="pre">Shape.text</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.top"><code class="docutils literal notranslate"><span class="pre">Shape.top</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.type"><code class="docutils literal notranslate"><span class="pre">Shape.type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html#xlwings.Shape.width"><code class="docutils literal notranslate"><span class="pre">Shape.width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="shapes.html">Shapes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="shapes.html#xlwings.main.Shapes"><code class="docutils literal notranslate"><span class="pre">Shapes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sheet.html">Sheet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sheet.html#xlwings.Sheet"><code class="docutils literal notranslate"><span class="pre">Sheet</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.activate"><code class="docutils literal notranslate"><span class="pre">Sheet.activate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.api"><code class="docutils literal notranslate"><span class="pre">Sheet.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.autofit"><code class="docutils literal notranslate"><span class="pre">Sheet.autofit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.book"><code class="docutils literal notranslate"><span class="pre">Sheet.book</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.cells"><code class="docutils literal notranslate"><span class="pre">Sheet.cells</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.charts"><code class="docutils literal notranslate"><span class="pre">Sheet.charts</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.clear"><code class="docutils literal notranslate"><span class="pre">Sheet.clear()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.clear_contents"><code class="docutils literal notranslate"><span class="pre">Sheet.clear_contents()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.clear_formats"><code class="docutils literal notranslate"><span class="pre">Sheet.clear_formats()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.copy"><code class="docutils literal notranslate"><span class="pre">Sheet.copy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.delete"><code class="docutils literal notranslate"><span class="pre">Sheet.delete()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.freeze_panes"><code class="docutils literal notranslate"><span class="pre">Sheet.freeze_panes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.index"><code class="docutils literal notranslate"><span class="pre">Sheet.index</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.load"><code class="docutils literal notranslate"><span class="pre">Sheet.load()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.name"><code class="docutils literal notranslate"><span class="pre">Sheet.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.names"><code class="docutils literal notranslate"><span class="pre">Sheet.names</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.page_setup"><code class="docutils literal notranslate"><span class="pre">Sheet.page_setup</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.pictures"><code class="docutils literal notranslate"><span class="pre">Sheet.pictures</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.range"><code class="docutils literal notranslate"><span class="pre">Sheet.range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.render_template"><code class="docutils literal notranslate"><span class="pre">Sheet.render_template()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.select"><code class="docutils literal notranslate"><span class="pre">Sheet.select()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.shapes"><code class="docutils literal notranslate"><span class="pre">Sheet.shapes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.tables"><code class="docutils literal notranslate"><span class="pre">Sheet.tables</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.to_html"><code class="docutils literal notranslate"><span class="pre">Sheet.to_html()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.to_pdf"><code class="docutils literal notranslate"><span class="pre">Sheet.to_pdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.used_range"><code class="docutils literal notranslate"><span class="pre">Sheet.used_range</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheet.html#xlwings.Sheet.visible"><code class="docutils literal notranslate"><span class="pre">Sheet.visible</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sheets.html">Sheets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sheets.html#xlwings.main.Sheets"><code class="docutils literal notranslate"><span class="pre">Sheets</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sheets.html#xlwings.main.Sheets.active"><code class="docutils literal notranslate"><span class="pre">Sheets.active</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheets.html#xlwings.main.Sheets.add"><code class="docutils literal notranslate"><span class="pre">Sheets.add()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="sheets.html#xlwings.main.Sheets.get_active"><code class="docutils literal notranslate"><span class="pre">Sheets.get_active()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="table.html">Table</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="table.html#xlwings.main.Table"><code class="docutils literal notranslate"><span class="pre">Table</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.api"><code class="docutils literal notranslate"><span class="pre">Table.api</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.data_body_range"><code class="docutils literal notranslate"><span class="pre">Table.data_body_range</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.display_name"><code class="docutils literal notranslate"><span class="pre">Table.display_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.header_row_range"><code class="docutils literal notranslate"><span class="pre">Table.header_row_range</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.insert_row_range"><code class="docutils literal notranslate"><span class="pre">Table.insert_row_range</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.name"><code class="docutils literal notranslate"><span class="pre">Table.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.parent"><code class="docutils literal notranslate"><span class="pre">Table.parent</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.range"><code class="docutils literal notranslate"><span class="pre">Table.range</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.resize"><code class="docutils literal notranslate"><span class="pre">Table.resize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.show_autofilter"><code class="docutils literal notranslate"><span class="pre">Table.show_autofilter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.show_headers"><code class="docutils literal notranslate"><span class="pre">Table.show_headers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.show_table_style_column_stripes"><code class="docutils literal notranslate"><span class="pre">Table.show_table_style_column_stripes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.show_table_style_first_column"><code class="docutils literal notranslate"><span class="pre">Table.show_table_style_first_column</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.show_table_style_last_column"><code class="docutils literal notranslate"><span class="pre">Table.show_table_style_last_column</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.show_table_style_row_stripes"><code class="docutils literal notranslate"><span class="pre">Table.show_table_style_row_stripes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.show_totals"><code class="docutils literal notranslate"><span class="pre">Table.show_totals</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.table_style"><code class="docutils literal notranslate"><span class="pre">Table.table_style</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.totals_row_range"><code class="docutils literal notranslate"><span class="pre">Table.totals_row_range</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html#xlwings.main.Table.update"><code class="docutils literal notranslate"><span class="pre">Table.update()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tables.html">表格</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tables.html#xlwings.main.Tables"><code class="docutils literal notranslate"><span class="pre">Tables</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tables.html#xlwings.main.Tables.add"><code class="docutils literal notranslate"><span class="pre">Tables.add()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="top_level_functions.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Top-level functions</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../license.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">License</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; Zoomer Analytics LLC
+            </div>
+            Made with 
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div>
+  
+  <script src="../_static/sidebar-scroll.js"></script>
+<script src="../_static/documentation_options.js?v=d84700ab"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=30646c52"></script>
+    <script src="../_static/translations.js?v=cbf116e0"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

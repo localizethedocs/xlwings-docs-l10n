@@ -1,0 +1,1037 @@
+
+
+<!doctype html>
+<html class="no-js" lang="zh-CN" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="genindex.html"><link rel="search" title="搜索" href="search.html"><link rel="next" title="Debugging" href="debugging.html"><link rel="prev" title="Advanced Features" href="advanced_features/index.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/xlwings-docs-l10n/converters.html">
+        <link rel="prefetch" href="_static/logo-light.svg" as="image">
+        <link rel="prefetch" href="_static/logo-dark.svg" as="image">
+
+    <link rel="shortcut icon" href="_static/favicon.png"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Converters and Options - xlwings Documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ce868e14" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: black;
+  --color-brand-content: #28a745;
+  --color-sidebar-caption-text: #28a745;
+  --sidebar-caption-font-size: 1em;
+  --color-announcement-background: #28a745;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+  
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+<div class="announcement">
+  <aside class="announcement-content">
+     <a href="https://lite.xlwings.org/" target="_blank"> xlwings Lite</a> is now available in the add-in store for free!</a> 
+  </aside>
+</div>
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">xlwings Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="_static/logo-light.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="_static/logo-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="搜索" name="q" aria-label="搜索">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="getting_started/index.html">Getting Started</a><input aria-label="Toggle navigation of Getting Started" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="course.html">Video course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_to_workbook.html">Connect to a Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syntax_overview.html">Syntax Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datastructures.html">Data Structures Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="addin.html">Add-in &amp; Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vba.html">RunPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="udfs.html">User Defined Functions (UDFs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matplotlib.html">Matplotlib &amp; Plotly Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyternotebooks.html">Jupyter Notebooks: Interact with Excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="command_line.html">Command Line Client (CLI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment.html">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onedrive_sharepoint.html">OneDrive and SharePoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="advanced_features/index.html">Advanced Features</a><input aria-label="Toggle navigation of Advanced Features" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Converters and Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extensions.html">Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="customaddin.html">Custom Add-ins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threading_and_multiprocessing.html">Threading and Multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="missing_features.html">Missing Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="other_office_apps.html">xlwings with other Office Apps</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xlwings PRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pro/license_key.html">License Key</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="pro/reports/index.html">xlwings Reports</a><input aria-label="Toggle navigation of xlwings Reports" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="pro/reports/reports.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pro/reports/components_filters.html">Components and Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pro/reports/markdown.html">Markdown Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pro/reader.html">xlwings Reader</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pro/release.html">1-click Installer/Embedded Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api/index.html">API Reference</a><input aria-label="Toggle navigation of API Reference" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/top_level_functions.html">Top-level functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/udf_decorators.html">UDF decorators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/app.html">App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/apps.html">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/book.html">Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/books.html">Books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/chart.html">Chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/charts.html">Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/font.html">Font</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/name.html">Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/names.html">Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/note.html">Note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/page_setup.html">PageSetup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/picture.html">Picture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/pictures.html">Pictures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/range.html">Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/range_columns.html">RangeColumns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/range_rows.html">RangeRows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/reports.html">Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/shape.html">Shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/shapes.html">Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/sheet.html">Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/sheets.html">Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/table.html">Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/tables.html">Tables</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="converters-and-options">
+<h1>Converters and Options<a class="headerlink" href="#converters-and-options" title="链接到此标题。">¶</a></h1>
+<p>Introduced with v0.7.0, converters define how Excel ranges and their values are converted both during
+<strong>reading</strong> and <strong>writing</strong> operations. They also provide a consistent experience across <strong>xlwings.Range</strong> objects and
+<strong>User Defined Functions</strong> (UDFs).</p>
+<p>Converters are explicitly set in the <code class="docutils literal notranslate"><span class="pre">options</span></code> method when manipulating <code class="docutils literal notranslate"><span class="pre">Range</span></code> objects
+or in the <code class="docutils literal notranslate"><span class="pre">&#64;xw.arg</span></code> and <code class="docutils literal notranslate"><span class="pre">&#64;xw.ret</span></code> decorators when using UDFs. If no converter is specified, the default converter
+is applied when reading. When writing, xlwings will automatically apply the correct converter (if available) according to the
+object's type that is being written to Excel. If no converter is found for that type, it falls back to the default converter.</p>
+<p>All code samples below depend on the following import:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+</pre></div>
+</div>
+<p><strong>Syntax:</strong></p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p><strong>Range objects</strong></p></th>
+<th class="head"><p><strong>UDFs</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>reading</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">myrange.options(convert=None,</span> <span class="pre">**kwargs).value</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&#64;arg('x',</span> <span class="pre">convert=None,</span> <span class="pre">**kwargs)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>writing</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">myrange.options(convert=None,</span> <span class="pre">**kwargs).value</span> <span class="pre">=</span> <span class="pre">myvalue</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&#64;ret(convert=None,</span> <span class="pre">**kwargs)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Keyword arguments (<code class="docutils literal notranslate"><span class="pre">kwargs</span></code>) may refer to the specific converter or the default converter.
+For example, to set the <code class="docutils literal notranslate"><span class="pre">numbers</span></code> option in the default converter and the <code class="docutils literal notranslate"><span class="pre">index</span></code> option in the DataFrame converter,
+you would write::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>myrange.options(pd.DataFrame, index=False, numbers=int).value
+</pre></div>
+</div>
+</div>
+<section id="default-converter">
+<h2>Default Converter<a class="headerlink" href="#default-converter" title="链接到此标题。">¶</a></h2>
+<p>If no options are set, the following default conversions are applied when accessing <code class="docutils literal notranslate"><span class="pre">Range.value</span></code>:</p>
+<ul class="simple">
+<li><p>Numbers -&gt; <code class="docutils literal notranslate"><span class="pre">floats</span></code></p></li>
+<li><p>Text -&gt; <code class="docutils literal notranslate"><span class="pre">str</span></code></p></li>
+<li><p>Date and/or time -&gt; <code class="docutils literal notranslate"><span class="pre">datetime</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TRUE</span></code> or <code class="docutils literal notranslate"><span class="pre">FALSE</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">bool</span></code></p></li>
+<li><p>Empty cell -&gt; <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p>Windows only: Currency -&gt; <code class="docutils literal notranslate"><span class="pre">Decimal</span></code>, truncated to 4 decimals</p></li>
+</ul>
+<p>Columns/rows are read in as lists, e.g. <code class="docutils literal notranslate"><span class="pre">[None,</span> <span class="pre">1.0,</span> <span class="pre">'a</span> <span class="pre">string']</span></code> and 2d cell ranges are read in as list of lists, e.g. <code class="docutils literal notranslate"><span class="pre">[[None,</span> <span class="pre">1.0,</span> <span class="pre">'a</span> <span class="pre">string'],</span> <span class="pre">[None,</span> <span class="pre">2.0,</span> <span class="pre">'another</span> <span class="pre">string']]</span></code>.</p>
+<p>The following options can be set:</p>
+<section id="ndim">
+<h3>ndim<a class="headerlink" href="#ndim" title="链接到此标题。">¶</a></h3>
+<p>Force the value to have either 1 or 2 dimensions regardless of the shape of the range:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[1.0]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:A2'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[1.0 3.0]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:A2'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0], [3.0]]</span>
+</pre></div>
+</div>
+<p>To preserve the vertical orientation of columns, use <code class="docutils literal notranslate"><span class="pre">ndim=&quot;natural&quot;</span></code>. This returns scalars for
+single cells, 1D lists for horizontal ranges, and 2D lists for vertical or multi-row ranges:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="s2">"natural"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Industry"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">,</span> <span class="s2">"Employees"</span><span class="p">,</span> <span class="s2">"Revenue"</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:D1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="s2">"natural"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">['Industry', 'Country', 'Employees', 'Revenue']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"3M"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"AbbVie"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"Apple"</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:A3'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="s2">"natural"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>  <span class="c1"># Key difference to default</span>
+<span class="go">[['3M'], ['AbbVie'], ['Apple']]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:C2'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">ndim</span><span class="o">=</span><span class="s2">"natural"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1, 2, 3], [4, 5, 6]]</span>
+</pre></div>
+</div>
+</section>
+<section id="numbers">
+<h3>numbers<a class="headerlink" href="#numbers" title="链接到此标题。">¶</a></h3>
+<p>By default cells with numbers are read as <code class="docutils literal notranslate"><span class="pre">float</span></code>, but you can change it to <code class="docutils literal notranslate"><span class="pre">int</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">numbers</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+<p>Alternatively, you can specify any other function or type which takes a single float argument.</p>
+<p>Using this on UDFs looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@xw</span><span class="o">.</span><span class="n">func</span>
+<span class="nd">@xw</span><span class="o">.</span><span class="n">arg</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">numbers</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myfunction</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="c1"># all numbers in x arrive as int</span>
+    <span class="k">return</span> <span class="n">x</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Excel delivers all numbers as floats in the interactive mode, which is the reason why the <code class="docutils literal notranslate"><span class="pre">int</span></code> converter rounds numbers first before turning them into integers. Otherwise it could happen that e.g., 5 might be returned as 4 in case it is represented as a floating point number that is slightly smaller than 5. Should you require Python's original <code class="docutils literal notranslate"><span class="pre">int</span></code> in your converter, use raw int` instead.</p>
+</div>
+</section>
+<section id="dates">
+<h3>dates<a class="headerlink" href="#dates" title="链接到此标题。">¶</a></h3>
+<p>By default cells with dates are read as <code class="docutils literal notranslate"><span class="pre">datetime.datetime</span></code>, but you can change it to <code class="docutils literal notranslate"><span class="pre">datetime.date</span></code>:</p>
+<ul class="simple">
+<li><p>Range:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">dates</span><span class="o">=</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>UDFs (decorator):</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@xw</span><span class="o">.</span><span class="n">arg</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">dates</span><span class="o">=</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Alternatively, you can specify any other function or type which takes the same keyword arguments
+as <code class="docutils literal notranslate"><span class="pre">datetime.datetime</span></code>, for example:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">my_date_handler</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="s2">"</span><span class="si">%04i</span><span class="s2">-</span><span class="si">%02i</span><span class="s2">-</span><span class="si">%02i</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">dates</span><span class="o">=</span><span class="n">my_date_handler</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">'2017-02-20'</span>
+</pre></div>
+</div>
+</section>
+<section id="empty">
+<h3>empty<a class="headerlink" href="#empty" title="链接到此标题。">¶</a></h3>
+<p>Empty cells are converted per default into <code class="docutils literal notranslate"><span class="pre">None</span></code>, you can change this as follows:</p>
+<ul class="simple">
+<li><p>Range:</p></li>
+</ul>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">empty</span><span class="o">=</span><span class="s1">'NA'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>UDFs (decorator):</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@xw</span><span class="o">.</span><span class="n">arg</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">empty</span><span class="o">=</span><span class="s1">'NA'</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="transpose">
+<h3>transpose<a class="headerlink" href="#transpose" title="链接到此标题。">¶</a></h3>
+<p>This works for reading and writing and allows us to e.g. write a list in column orientation to Excel:</p>
+<ul>
+<li><p>Range: <code class="docutils literal notranslate"><span class="pre">sheet['A1'].options(transpose=True).value</span> <span class="pre">=</span> <span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code></p></li>
+<li><p>UDFs:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@xw</span><span class="o">.</span><span class="n">arg</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">transpose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@xw</span><span class="o">.</span><span class="n">ret</span><span class="p">(</span><span class="n">transpose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myfunction</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="c1"># x will be returned unchanged as transposed both when reading and writing</span>
+    <span class="k">return</span> <span class="n">x</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="expand">
+<h3>expand<a class="headerlink" href="#expand" title="链接到此标题。">¶</a></h3>
+<p>This works the same as the Range properties <code class="docutils literal notranslate"><span class="pre">table</span></code>, <code class="docutils literal notranslate"><span class="pre">vertical</span></code> and <code class="docutils literal notranslate"><span class="pre">horizontal</span></code> but is
+only evaluated when getting the values of a Range:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range1</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range2</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">expand</span><span class="o">=</span><span class="s1">'table'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range1</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0], [3.0, 4.0]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range2</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0], [3.0, 4.0]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A3'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range1</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0], [3.0, 4.0]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">range2</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">expand</span></code> method is only available on <code class="docutils literal notranslate"><span class="pre">Range</span></code> objects as UDFs only allow to manipulate the calling cells.</p>
+</div>
+</section>
+<section id="chunksize">
+<h3>chunksize<a class="headerlink" href="#chunksize" title="链接到此标题。">¶</a></h3>
+<p>When you read and write from or to big ranges, you may have to chunk them or you will hit a timeout or a memory error. The ideal <code class="docutils literal notranslate"><span class="pre">chunksize</span></code> will depend on your system and size of the array, so you will have to try out a few different chunksizes to find one that works well:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">75_000</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">75_000</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">chunksize</span><span class="o">=</span><span class="mi">10_000</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+</pre></div>
+</div>
+<p>And the same for reading:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># As DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="mi">10_000</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="c1"># As list of list</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">chunksize</span><span class="o">=</span><span class="mi">10_000</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+</section>
+<section id="err-to-str">
+<h3>err_to_str<a class="headerlink" href="#err-to-str" title="链接到此标题。">¶</a></h3>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.28.0 版本加入.</span></p>
+</div>
+<p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, will include cell errors such as <code class="docutils literal notranslate"><span class="pre">#N/A</span></code> as strings. By default, they
+will be converted to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</section>
+<section id="formatter">
+<h3>formatter<a class="headerlink" href="#formatter" title="链接到此标题。">¶</a></h3>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.28.1 版本加入.</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>You can't use formatters with Excel tables.</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">formatter</span></code> option accepts the name of a function. The function will be called after writing the values to Excel and allows you to easily style the range in a very flexible way. How it works is best shown with a little example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">rng</span><span class="p">:</span> <span class="n">xw</span><span class="o">.</span><span class="n">Range</span><span class="p">,</span> <span class="n">df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""This is the formatter function"""</span>
+    <span class="c1"># Header</span>
+    <span class="n">rng</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s2">"#A9D08E"</span>
+
+    <span class="c1"># Rows</span>
+    <span class="k">for</span> <span class="n">ix</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">rng</span><span class="o">.</span><span class="n">rows</span><span class="p">[</span><span class="mi">1</span><span class="p">:]):</span>
+        <span class="k">if</span> <span class="n">ix</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">row</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s2">"#D0CECE"</span>  <span class="c1"># Even rows</span>
+
+    <span class="c1"># Columns</span>
+    <span class="k">for</span> <span class="n">ix</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">):</span>
+        <span class="k">if</span> <span class="s2">"two"</span> <span class="ow">in</span> <span class="n">col</span><span class="p">:</span>
+            <span class="n">rng</span><span class="p">[</span><span class="mi">1</span><span class="p">:,</span> <span class="n">ix</span><span class="p">]</span><span class="o">.</span><span class="n">number_format</span> <span class="o">=</span> <span class="s2">"0.0%"</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">"one"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="s2">"two"</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]})</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s2">"A1"</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">formatter</span><span class="o">=</span><span class="n">table</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+</pre></div>
+</div>
+<p>Running this code will format the DataFrame like this:</p>
+<p><img alt="./images/formatter.png" src="_images/formatter.png" /></p>
+<p>The formatter's signature is: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">myformatter(myrange,</span> <span class="pre">myvalues)</span></code> where <code class="docutils literal notranslate"><span class="pre">myrange</span></code> corresponds to the range where <code class="docutils literal notranslate"><span class="pre">myvalues</span></code> are written to. <code class="docutils literal notranslate"><span class="pre">myvalues</span></code> is simply what you assign to the <code class="docutils literal notranslate"><span class="pre">value</span></code> property in the last line of the example. Since we're using this with a DataFrame, it makes sense to name the argument accordingly and using type hints will help your editor with auto-completion. If you would use a nested list instead of a DataFrame, you would write something like this instead:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">rng</span><span class="p">:</span> <span class="n">xw</span><span class="o">.</span><span class="n">Range</span><span class="p">,</span> <span class="n">values</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]):</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="built-in-converters">
+<h2>Built-in Converters<a class="headerlink" href="#built-in-converters" title="链接到此标题。">¶</a></h2>
+<p>xlwings offers several built-in converters that perform type conversion to <strong>dictionaries</strong>, <strong>NumPy arrays</strong>,
+<strong>Pandas Series</strong> and <strong>DataFrames</strong>. These build on top of the default converter, so in most cases the options
+described above can be used in this context, too (unless they are meaningless, for example the <code class="docutils literal notranslate"><span class="pre">ndim</span></code> in the case
+of a dictionary).</p>
+<p>It is also possible to write and register a custom converter for additional types, see below.</p>
+<p>The samples below can be used with both <code class="docutils literal notranslate"><span class="pre">xlwings.Range</span></code> objects and UDFs even though only one version may be shown.</p>
+<section id="dictionary-converter">
+<h3>Dictionary converter<a class="headerlink" href="#dictionary-converter" title="链接到此标题。">¶</a></h3>
+<p>The dictionary converter turns two Excel columns into a dictionary. If the data is in row orientation, use <code class="docutils literal notranslate"><span class="pre">transpose</span></code>:</p>
+<img alt="_images/dict_converter.png" src="_images/dict_converter.png" />
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">sheets</span><span class="o">.</span><span class="n">active</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:B2'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">{'a': 1.0, 'b': 2.0}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A4:B5'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">transpose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">{'a': 1.0, 'b': 2.0}</span>
+</pre></div>
+</div>
+<p>Note: instead of <code class="docutils literal notranslate"><span class="pre">dict</span></code>, you can also use <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code> from <code class="docutils literal notranslate"><span class="pre">collections</span></code>.</p>
+</section>
+<section id="tuple-converter">
+<h3>Tuple converter<a class="headerlink" href="#tuple-converter" title="链接到此标题。">¶</a></h3>
+<p>Get the values as (nested) tuples instead of (nested) lists. This can be helpful in connection with caching, as tuples are immutable and hashable.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">sheets</span><span class="o">.</span><span class="n">active</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:B2'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="nb">tuple</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">(('a', 1.0), ('b', 2.0))</span>
+</pre></div>
+</div>
+</section>
+<section id="json-converter">
+<h3>JSON converter<a class="headerlink" href="#json-converter" title="链接到此标题。">¶</a></h3>
+<p>Read and write values as JSON-formatted strings. This is especially useful to interact with LLMs.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">sheets</span><span class="o">.</span><span class="n">active</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:C2'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="s2">"json"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">'[["2024-01-01T00:00:00", "text", true], [null, 42.0, false]]'</span>
+</pre></div>
+</div>
+</section>
+<section id="numpy-array-converter">
+<h3>Numpy array converter<a class="headerlink" href="#numpy-array-converter" title="链接到此标题。">¶</a></h3>
+<p><strong>options:</strong> <code class="docutils literal notranslate"><span class="pre">dtype=None,</span> <span class="pre">copy=True,</span> <span class="pre">order=None,</span> <span class="pre">ndim=None</span></code></p>
+<p>The first 3 options behave the same as when using <code class="docutils literal notranslate"><span class="pre">np.array()</span></code> directly. Also, <code class="docutils literal notranslate"><span class="pre">ndim</span></code> works the same as shown above
+for lists (under default converter) and hence returns either numpy scalars, 1d arrays or 2d arrays.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">transpose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:A3'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">ndim</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">array([[ 1.],</span>
+<span class="go">       [ 2.],</span>
+<span class="go">       [ 3.]])</span>
+</pre></div>
+</div>
+</section>
+<section id="pandas-series-converter">
+<h3>Pandas Series converter<a class="headerlink" href="#pandas-series-converter" title="链接到此标题。">¶</a></h3>
+<p><strong>options:</strong> <code class="docutils literal notranslate"><span class="pre">dtype=None,</span> <span class="pre">copy=False,</span> <span class="pre">index=1,</span> <span class="pre">header=True</span></code></p>
+<p>The first 2 options behave the same as when using <code class="docutils literal notranslate"><span class="pre">pd.Series()</span></code> directly. <code class="docutils literal notranslate"><span class="pre">ndim</span></code> doesn't have an effect on
+Pandas series as they are always expected and returned in column orientation.</p>
+<p><code class="docutils literal notranslate"><span class="pre">index</span></code>: int or Boolean
+: When reading, it expects the number of index columns shown in Excel.
+When writing, include or exclude the index by setting it to <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">header</span></code>: Boolean
+: When reading, set it to <code class="docutils literal notranslate"><span class="pre">False</span></code> if Excel doesn't show either index or series names.
+When writing, include or exclude the index and series names by setting it to <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>For <code class="docutils literal notranslate"><span class="pre">index</span></code> and <code class="docutils literal notranslate"><span class="pre">header</span></code>, <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">True</span></code> may be used interchangeably.</p>
+<p><strong>Example:</strong></p>
+<img alt="_images/series_conv.png" src="_images/series_conv.png" />
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="s1">'table'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">date</span>
+<span class="go">2001-01-01    1</span>
+<span class="go">2001-01-02    2</span>
+<span class="go">2001-01-03    3</span>
+<span class="go">2001-01-04    4</span>
+<span class="go">2001-01-05    5</span>
+<span class="go">2001-01-06    6</span>
+<span class="go">Name: series name, dtype: float64</span>
+</pre></div>
+</div>
+</section>
+<section id="pandas-dataframe-converter">
+<h3>Pandas DataFrame converter<a class="headerlink" href="#pandas-dataframe-converter" title="链接到此标题。">¶</a></h3>
+<p><strong>options:</strong> <code class="docutils literal notranslate"><span class="pre">dtype=None,</span> <span class="pre">copy=False,</span> <span class="pre">index=1,</span> <span class="pre">header=1</span></code></p>
+<p>The first 2 options behave the same as when using <code class="docutils literal notranslate"><span class="pre">pd.DataFrame()</span></code> directly. <code class="docutils literal notranslate"><span class="pre">ndim</span></code> doesn't have an effect on
+Pandas DataFrames as they are automatically read in with <code class="docutils literal notranslate"><span class="pre">ndim=2</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">index</span></code>: int or Boolean
+: When reading, it expects the number of index columns shown in Excel.
+When writing, include or exclude the index by setting it to <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">header</span></code>: int or Boolean
+: When reading, it expects the number of column headers shown in Excel.
+When writing, include or exclude the index and series names by setting it to <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>For <code class="docutils literal notranslate"><span class="pre">index</span></code> and <code class="docutils literal notranslate"><span class="pre">header</span></code>, <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">True</span></code> may be used interchangeably.</p>
+<p><strong>Example:</strong></p>
+<img alt="_images/df_converter.png" src="_images/df_converter.png" />
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:D5'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
+<span class="go">    a     b</span>
+<span class="go">    c  d  e</span>
+<span class="go">ix</span>
+<span class="go">10  1  2  3</span>
+<span class="go">20  4  5  6</span>
+<span class="go">30  7  8  9</span>
+
+<span class="go"># Writing back using the defaults:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+
+<span class="go"># Writing back and changing some of the options, e.g. getting rid of the index:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'B7'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+</pre></div>
+</div>
+<p>The same sample for <strong>UDF</strong> (starting in cell <code class="docutils literal notranslate"><span class="pre">A13</span></code> on screenshot) looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@xw</span><span class="o">.</span><span class="n">func</span>
+<span class="nd">@xw</span><span class="o">.</span><span class="n">arg</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="nd">@xw</span><span class="o">.</span><span class="n">ret</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myfunction</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="c1"># x is a DataFrame, do something with it</span>
+   <span class="k">return</span> <span class="n">x</span>
+</pre></div>
+</div>
+</section>
+<section id="polars-dataframe-and-series-converters">
+<h3>Polars DataFrame and Series converters<a class="headerlink" href="#polars-dataframe-and-series-converters" title="链接到此标题。">¶</a></h3>
+<p>Polars DataFrames work almost the same as pandas DataFrames. But since polars DataFrames don't have an index and don't support MultiIndex headers, the <code class="docutils literal notranslate"><span class="pre">index</span></code> option isn't available and the <code class="docutils literal notranslate"><span class="pre">header</span></code> option only accepts <code class="docutils literal notranslate"><span class="pre">True</span></code> (default) or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p><strong>Examples:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a script example</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">polars</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Alice Archer"</span><span class="p">,</span> <span class="s2">"Ben Brown"</span><span class="p">,</span> <span class="s2">"Chloe Cooper"</span><span class="p">,</span> <span class="s2">"Daniel Donovan"</span><span class="p">],</span>
+        <span class="s2">"birthdate"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">1997</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+            <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">1985</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
+            <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">1983</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">22</span><span class="p">),</span>
+            <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">1981</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span>
+        <span class="p">],</span>
+        <span class="s2">"weight"</span><span class="p">:</span> <span class="p">[</span><span class="mf">57.9</span><span class="p">,</span> <span class="mf">72.5</span><span class="p">,</span> <span class="mf">53.6</span><span class="p">,</span> <span class="mf">83.1</span><span class="p">],</span>
+        <span class="s2">"height"</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.56</span><span class="p">,</span> <span class="mf">1.77</span><span class="p">,</span> <span class="mf">1.65</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">],</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">book</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s2">"A1"</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>  <span class="c1"># writing</span>
+<span class="n">df_read</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s2">"A1"</span><span class="p">]</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>  <span class="c1"># reading</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a UDF example</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">polars</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>
+
+<span class="nd">@xw</span><span class="o">.</span><span class="n">func</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myfunction</span><span class="p">(</span><span class="n">df</span><span class="p">:</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">):</span>
+   <span class="c1"># df is a polars DataFrame, do something with it</span>
+   <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</section>
+<section id="xw-range-and-raw-converters">
+<h3>xw.Range and 'raw' converters<a class="headerlink" href="#xw-range-and-raw-converters" title="链接到此标题。">¶</a></h3>
+<p>Technically speaking, these are &quot;no-converters&quot;.</p>
+<ul>
+<li><p>If you need access to the <code class="docutils literal notranslate"><span class="pre">xlwings.Range</span></code> object directly, you can do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@xw</span><span class="o">.</span><span class="n">func</span>
+<span class="nd">@xw</span><span class="o">.</span><span class="n">arg</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="s1">'range'</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myfunction</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">formula</span>
+</pre></div>
+</div>
+<p>This returns x as <code class="docutils literal notranslate"><span class="pre">xlwings.Range</span></code> object, i.e. without applying any converters or options.</p>
+</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">raw</span></code> converter delivers the values unchanged from the underlying libraries (<code class="docutils literal notranslate"><span class="pre">pywin32</span></code> on Windows and
+<code class="docutils literal notranslate"><span class="pre">appscript</span></code> on Mac), i.e. no sanitizing/cross-platform harmonizing of values are being made. This might be useful
+in a few cases for efficiency reasons. E.g:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:B2'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">[[1.0, 'text'], [datetime.datetime(2016, 2, 1, 0, 0), None]]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:B2'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="s1">'raw'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>  <span class="c1"># or sheet['A1:B2'].raw_value</span>
+<span class="go">((1.0, 'text'), (pywintypes.datetime(2016, 2, 1, 0, 0, tzinfo=TimeZoneInfo('GMT Standard Time', True)), None))</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<section id="custom-converter">
+<h2>Custom Converter<a class="headerlink" href="#custom-converter" title="链接到此标题。">¶</a></h2>
+<p>Here are the steps to implement your own converter:</p>
+<ul>
+<li><p>Inherit from <code class="docutils literal notranslate"><span class="pre">xlwings.conversion.Converter</span></code></p></li>
+<li><p>Implement both a <code class="docutils literal notranslate"><span class="pre">read_value</span></code> and <code class="docutils literal notranslate"><span class="pre">write_value</span></code> method as static- or classmethod:</p>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">read_value</span></code>, <code class="docutils literal notranslate"><span class="pre">value</span></code> is what the base converter returns: hence, if no
+<code class="docutils literal notranslate"><span class="pre">base</span></code> has been specified it arrives in the format of the default converter.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">write_value</span></code>, <code class="docutils literal notranslate"><span class="pre">value</span></code> is the original object being written to Excel. It must be returned
+in the format that the base converter expects. Again, if no <code class="docutils literal notranslate"><span class="pre">base</span></code> has been specified, this is the default
+converter.</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">options</span></code> dictionary will contain all keyword arguments specified in
+the <code class="docutils literal notranslate"><span class="pre">options</span></code> method, e.g. when calling <code class="docutils literal notranslate"><span class="pre">myrange.options(myoption='some</span> <span class="pre">value')</span></code> or as specified in
+the <code class="docutils literal notranslate"><span class="pre">&#64;arg</span></code> and <code class="docutils literal notranslate"><span class="pre">&#64;ret</span></code> decorator when using UDFs. Here is the basic structure:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">xlwings.conversion</span><span class="w"> </span><span class="kn">import</span> <span class="n">Converter</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyConverter</span><span class="p">(</span><span class="n">Converter</span><span class="p">):</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_value</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="n">myoption</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'myoption'</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+        <span class="n">return_value</span> <span class="o">=</span> <span class="n">value</span>  <span class="c1"># Implement your conversion here</span>
+        <span class="k">return</span> <span class="n">return_value</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write_value</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="n">myoption</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'myoption'</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+        <span class="n">return_value</span> <span class="o">=</span> <span class="n">value</span>  <span class="c1"># Implement your conversion here</span>
+        <span class="k">return</span> <span class="n">return_value</span>
+</pre></div>
+</div>
+</li>
+<li><p>Optional: set a <code class="docutils literal notranslate"><span class="pre">base</span></code> converter (<code class="docutils literal notranslate"><span class="pre">base</span></code> expects a class name) to build on top of an existing converter, e.g.
+for the built-in ones: <code class="docutils literal notranslate"><span class="pre">DictConverter</span></code>, <code class="docutils literal notranslate"><span class="pre">NumpyArrayConverter</span></code>, <code class="docutils literal notranslate"><span class="pre">PandasDataFrameConverter</span></code>, <code class="docutils literal notranslate"><span class="pre">PandasSeriesConverter</span></code></p></li>
+<li><p>Optional: register the converter: you can <strong>(a)</strong> register a type so that your converter becomes the default for
+this type during write operations and/or <strong>(b)</strong> you can register an alias that will allow you to explicitly call
+your converter by name instead of just by class name</p></li>
+</ul>
+<p>The following examples should make it much easier to follow - it defines a DataFrame converter that extends the
+built-in DataFrame converter to add support for dropping nan's:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">xlwings.conversion</span><span class="w"> </span><span class="kn">import</span> <span class="n">Converter</span><span class="p">,</span> <span class="n">PandasDataFrameConverter</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">DataFrameDropna</span><span class="p">(</span><span class="n">Converter</span><span class="p">):</span>
+
+    <span class="n">base</span> <span class="o">=</span> <span class="n">PandasDataFrameConverter</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_value</span><span class="p">(</span><span class="n">builtin_df</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="n">dropna</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'dropna'</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>  <span class="c1"># set default to False</span>
+        <span class="k">if</span> <span class="n">dropna</span><span class="p">:</span>
+            <span class="n">converted_df</span> <span class="o">=</span> <span class="n">builtin_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">converted_df</span> <span class="o">=</span> <span class="n">builtin_df</span>
+        <span class="c1"># This will arrive in Python when using the DataFrameDropna converter for reading</span>
+        <span class="k">return</span> <span class="n">converted_df</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write_value</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="n">dropna</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'dropna'</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">dropna</span><span class="p">:</span>
+            <span class="n">converted_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">converted_df</span> <span class="o">=</span> <span class="n">df</span>
+        <span class="c1"># This will be passed to the built-in PandasDataFrameConverter when writing</span>
+        <span class="k">return</span> <span class="n">converted_df</span>
+</pre></div>
+</div>
+<p>Now let's see how the different converters can be applied:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fire up a Workbook and create a sample DataFrame</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span><span class="mf">10.</span><span class="p">],[</span><span class="mf">2.</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">30.</span><span class="p">]])</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Default converter for DataFrames:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+
+<span class="c1"># Read</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:C4'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>DataFrameDropna converter:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A7'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">DataFrameDropna</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+
+<span class="c1"># Read</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:C4'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">DataFrameDropna</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Register an alias (optional):</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DataFrameDropna</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="s1">'df_dropna'</span><span class="p">)</span>
+
+<span class="c1"># Write</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A12'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="s1">'df_dropna'</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+
+<span class="c1"># Read</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:C4'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="s1">'df_dropna'</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Register DataFrameDropna as default converter for DataFrames (optional):</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DataFrameDropna</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span>
+
+<span class="c1"># Write</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A13'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">df</span>
+
+<span class="c1"># Read</span>
+<span class="n">sheet</span><span class="p">[</span><span class="s1">'A1:C4'</span><span class="p">]</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+<p>These samples all work the same with UDFs, e.g.:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@xw</span><span class="o">.</span><span class="n">func</span>
+<span class="nd">@arg</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">DataFrameDropna</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@ret</span><span class="p">(</span><span class="n">DataFrameDropna</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myfunction</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="c1"># ...</span>
+    <span class="k">return</span> <span class="n">x</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Python objects run through multiple stages of a transformation pipeline when they are being written to Excel. The
+same holds true in the other direction, when Excel/COM objects are being read into Python.</p>
+<p>Pipelines are internally defined by <code class="docutils literal notranslate"><span class="pre">Accessor</span></code> classes. A Converter is just a special Accessor which
+converts to/from a particular type by adding an extra stage to the pipeline of the default Accessor. For example, the
+<code class="docutils literal notranslate"><span class="pre">PandasDataFrameConverter</span></code> defines how a list of lists (as delivered by the default Accessor) should be turned
+into a Pandas DataFrame.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Converter</span></code> class provides basic scaffolding to make the task of writing a new Converter easier. If
+you need more control you can subclass <code class="docutils literal notranslate"><span class="pre">Accessor</span></code> directly, but this part requires more work and is currently
+undocumented.</p>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="debugging.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Debugging</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="advanced_features/index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Advanced Features</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; Zoomer Analytics LLC
+            </div>
+            Made with 
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Converters and Options</a><ul>
+<li><a class="reference internal" href="#default-converter">Default Converter</a><ul>
+<li><a class="reference internal" href="#ndim">ndim</a></li>
+<li><a class="reference internal" href="#numbers">numbers</a></li>
+<li><a class="reference internal" href="#dates">dates</a></li>
+<li><a class="reference internal" href="#empty">empty</a></li>
+<li><a class="reference internal" href="#transpose">transpose</a></li>
+<li><a class="reference internal" href="#expand">expand</a></li>
+<li><a class="reference internal" href="#chunksize">chunksize</a></li>
+<li><a class="reference internal" href="#err-to-str">err_to_str</a></li>
+<li><a class="reference internal" href="#formatter">formatter</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#built-in-converters">Built-in Converters</a><ul>
+<li><a class="reference internal" href="#dictionary-converter">Dictionary converter</a></li>
+<li><a class="reference internal" href="#tuple-converter">Tuple converter</a></li>
+<li><a class="reference internal" href="#json-converter">JSON converter</a></li>
+<li><a class="reference internal" href="#numpy-array-converter">Numpy array converter</a></li>
+<li><a class="reference internal" href="#pandas-series-converter">Pandas Series converter</a></li>
+<li><a class="reference internal" href="#pandas-dataframe-converter">Pandas DataFrame converter</a></li>
+<li><a class="reference internal" href="#polars-dataframe-and-series-converters">Polars DataFrame and Series converters</a></li>
+<li><a class="reference internal" href="#xw-range-and-raw-converters">xw.Range and 'raw' converters</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#custom-converter">Custom Converter</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div>
+  
+  <script src="_static/sidebar-scroll.js"></script>
+<script src="_static/documentation_options.js?v=fbee7834"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=30646c52"></script>
+    <script src="_static/translations.js?v=540d3cec"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

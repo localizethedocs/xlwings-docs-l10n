@@ -1,0 +1,1314 @@
+
+
+<!doctype html>
+<html class="no-js" lang="zh-CN" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="../genindex.html"><link rel="search" title="搜索" href="../search.html"><link rel="next" title="RangeColumns" href="range_columns.html"><link rel="prev" title="Pictures" href="pictures.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/xlwings-docs-l10n/api/range.html">
+        <link rel="prefetch" href="../_static/logo-light.svg" as="image">
+        <link rel="prefetch" href="../_static/logo-dark.svg" as="image">
+
+    <link rel="shortcut icon" href="../_static/favicon.png"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Range - xlwings Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ce868e14" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  --color-brand-primary: black;
+  --color-brand-content: #28a745;
+  --color-sidebar-caption-text: #28a745;
+  --sidebar-caption-font-size: 1em;
+  --color-announcement-background: #28a745;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: white;
+  --color-brand-content: #3fbf5f;
+  --color-announcement-background: #28a745;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+  
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+<div class="announcement">
+  <aside class="announcement-content">
+     <a href="https://lite.xlwings.org/" target="_blank"> xlwings Lite</a> is now available in the add-in store for free!</a> 
+  </aside>
+</div>
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">xlwings Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo-light.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜索" name="q" aria-label="搜索">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../getting_started/index.html">Getting Started</a><input aria-label="Toggle navigation of Getting Started" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../course.html">Video course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../connect_to_workbook.html">Connect to a Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../syntax_overview.html">Syntax Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../datastructures.html">Data Structures Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../addin.html">Add-in &amp; Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vba.html">RunPython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../udfs.html">User Defined Functions (UDFs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../matplotlib.html">Matplotlib &amp; Plotly Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyternotebooks.html">Jupyter Notebooks: Interact with Excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../command_line.html">Command Line Client (CLI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../deployment.html">Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onedrive_sharepoint.html">OneDrive and SharePoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../advanced_features/index.html">Advanced Features</a><input aria-label="Toggle navigation of Advanced Features" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../converters.html">Converters and Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debugging.html">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../extensions.html">Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../customaddin.html">Custom Add-ins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../threading_and_multiprocessing.html">Threading and Multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../missing_features.html">Missing Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other_office_apps.html">xlwings with other Office Apps</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">xlwings PRO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pro/license_key.html">License Key</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../pro/reports/index.html">xlwings Reports</a><input aria-label="Toggle navigation of xlwings Reports" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pro/reports/reports.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pro/reports/components_filters.html">Components and Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pro/reports/markdown.html">Markdown Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pro/reader.html">xlwings Reader</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pro/release.html">1-click Installer/Embedded Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../whatsnew.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">API Reference</a><input aria-label="Toggle navigation of API Reference" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="top_level_functions.html">Top-level functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="udf_decorators.html">UDF decorators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="app.html">App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="book.html">Book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="books.html">Books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chart.html">Chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="charts.html">Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="font.html">Font</a></li>
+<li class="toctree-l2"><a class="reference internal" href="name.html">Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="names.html">Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="note.html">Note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="page_setup.html">PageSetup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="picture.html">Picture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pictures.html">Pictures</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="range_columns.html">RangeColumns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="range_rows.html">RangeRows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reports.html">Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shape.html">Shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shapes.html">Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sheet.html">Sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sheets.html">Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="table.html">Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables.html">Tables</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="range">
+<h1>Range<a class="headerlink" href="#range" title="链接到此标题。">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="xlwings.Range">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cell1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a Range object that represents a cell or a range of cells.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cell1</strong> (<em>str</em><em> | </em><em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>] </em><em>| </em><a class="reference internal" href="#xlwings.Range" title="xlwings.Range"><em>Range</em></a><em> | </em><em>None</em>) -- Name of the range in the upper-left corner in A1 notation or as index-tuple or
+as name or as xw.Range object. It can also specify a range using the range
+operator (a colon), .e.g. 'A1:B2'</p></li>
+<li><p><strong>cell2</strong> (<em>str</em><em> | </em><em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>] </em><em>| </em><a class="reference internal" href="#xlwings.Range" title="xlwings.Range"><em>Range</em></a><em> | </em><em>None</em>) -- Name of the range in the lower-right corner in A1 notation or as index-tuple or
+as name or as xw.Range object.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">示例</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="n">sheet1</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">(</span><span class="s2">"MyBook.xlsx"</span><span class="p">)</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s2">"A1"</span><span class="p">)</span>
+<span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s2">"A1:C3"</span><span class="p">)</span>
+<span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s2">"NamedRange"</span><span class="p">)</span>
+
+<span class="c1"># Or using index/slice notation</span>
+<span class="n">sheet1</span><span class="p">[</span><span class="s2">"A1"</span><span class="p">]</span>
+<span class="n">sheet1</span><span class="p">[</span><span class="s2">"A1:C3"</span><span class="p">]</span>
+<span class="n">sheet1</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">sheet1</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">sheet1</span><span class="p">[</span><span class="s2">"NamedRange"</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.add_hyperlink">
+<span class="sig-name descname"><span class="pre">add_hyperlink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_to_display</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screen_tip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.add_hyperlink" title="链接到此定义。">¶</a></dt>
+<dd><p>Adds a hyperlink to the specified Range (single Cell)</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> (<em>str</em>) -- The address of the hyperlink.</p></li>
+<li><p><strong>text_to_display</strong> (<em>str</em><em> | </em><em>None</em>) -- The text to be displayed for the hyperlink. Defaults to the hyperlink
+address.</p></li>
+<li><p><strong>screen_tip</strong> (<em>str</em><em> | </em><em>None</em>) -- The screen tip to be displayed when the mouse pointer is paused over the
+hyperlink. Default is set to '&lt;address&gt; - Click once to follow. Click and
+hold to select this cell.'</p></li>
+</ul>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.address">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">address</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#xlwings.Range.address" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a string value that represents the range reference.
+Use <code class="docutils literal notranslate"><span class="pre">get_address()</span></code> to be able to provide parameters.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.9.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.adjust_indent">
+<span class="sig-name descname"><span class="pre">adjust_indent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amount</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.adjust_indent" title="链接到此定义。">¶</a></dt>
+<dd><p>Adjusts the indentation in a Range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>amount</strong> (<em>int</em>) -- Number of spaces by which the indent is adjusted.
+Can be positive or negative.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.api">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">api</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></span><a class="headerlink" href="#xlwings.Range.api" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the native object (<code class="docutils literal notranslate"><span class="pre">pywin32</span></code> or <code class="docutils literal notranslate"><span class="pre">appscript</span></code> obj)
+of the engine being used.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.9.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.autofill">
+<span class="sig-name descname"><span class="pre">autofill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">destination</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fill_default'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.autofill" title="链接到此定义。">¶</a></dt>
+<dd><p>Autofills the destination Range. Note that the destination Range must include
+the origin Range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>destination</strong> (<a class="reference internal" href="#xlwings.Range" title="xlwings.main.Range"><em>Range</em></a>) -- The origin.</p></li>
+<li><p><strong>type</strong> -- One of the following strings: <code class="docutils literal notranslate"><span class="pre">&quot;fill_copy&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fill_days&quot;</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&quot;fill_default&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fill_formats&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fill_months&quot;</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&quot;fill_series&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fill_values&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fill_weekdays&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fill_years&quot;</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&quot;growth_trend&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;linear_trend&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;flash_fill</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.30.1 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.autofit">
+<span class="sig-name descname"><span class="pre">autofit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.autofit" title="链接到此定义。">¶</a></dt>
+<dd><p>Autofits the width and height of all cells in the range.</p>
+<ul class="simple">
+<li><p>To autofit only the width of the columns use
+<code class="docutils literal notranslate"><span class="pre">myrange.columns.autofit()</span></code></p></li>
+<li><p>To autofit only the height of the rows use
+<code class="docutils literal notranslate"><span class="pre">myrange.rows.autofit()</span></code></p></li>
+</ul>
+<div class="versionchanged">
+<p><span class="versionmodified changed">在 0.9.0 版本发生变更.</span></p>
+</div>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.clear" title="链接到此定义。">¶</a></dt>
+<dd><p>Clears the content and the formatting of a Range.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.clear_contents">
+<span class="sig-name descname"><span class="pre">clear_contents</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.clear_contents" title="链接到此定义。">¶</a></dt>
+<dd><p>Clears the content of a Range but leaves the formatting.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.clear_formats">
+<span class="sig-name descname"><span class="pre">clear_formats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.clear_formats" title="链接到此定义。">¶</a></dt>
+<dd><p>Clears the format of a Range but leaves the content.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.26.2 版本加入.</span></p>
+</div>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.color">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">color</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#xlwings.Range.color" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets and sets the background color of the specified Range.</p>
+<p>To set the color, either use an RGB tuple <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0)</span></code> or a hex string
+like <code class="docutils literal notranslate"><span class="pre">#efefef</span></code> or an Excel color constant.
+To remove the background, set the color to <code class="docutils literal notranslate"><span class="pre">None</span></code>, see Examples.</p>
+<p class="rubric">示例</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1'</span><span class="p">)</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>  <span class="c1"># or '#ffffff'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A2'</span><span class="p">)</span><span class="o">.</span><span class="n">color</span>
+<span class="go">(255, 255, 255)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A2'</span><span class="p">)</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A2'</span><span class="p">)</span><span class="o">.</span><span class="n">color</span> <span class="ow">is</span> <span class="kc">None</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.column">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#xlwings.Range.column" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the number of the first column in the in the specified range. Read-only.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.5 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.column_width">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">column_width</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#xlwings.Range.column_width" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets or sets the width, in characters, of a Range.
+One unit of column width is equal to the width of one character in the Normal
+style. For proportional fonts, the width of the character 0 (zero) is used.</p>
+<p>If all columns in the Range have the same width, returns the width.
+If columns in the Range have different widths, returns None.</p>
+<p>column_width must be in the range:
+0 &lt;= column_width &lt;= 255</p>
+<p>Note: If the Range is outside the used range of the Worksheet, and columns in
+the Range have different widths, returns the width of the first column.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.4.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.columns">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">columns</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="range_columns.html#xlwings.RangeColumns" title="xlwings.main.RangeColumns"><span class="pre">RangeColumns</span></a></span><a class="headerlink" href="#xlwings.Range.columns" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a <code class="docutils literal notranslate"><span class="pre">RangeColumns</span></code> object that represents the columns in the
+specified range.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.9.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">destination</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.copy" title="链接到此定义。">¶</a></dt>
+<dd><p>Copy a range to a destination range or clipboard.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>destination</strong> (<a class="reference internal" href="#xlwings.Range" title="xlwings.main.Range"><em>Range</em></a><em> | </em><em>None</em>) -- xlwings Range to which the specified range will be copied.
+If omitted, the range is copied to the clipboard.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.copy_from">
+<span class="sig-name descname"><span class="pre">copy_from</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_range</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_blanks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transpose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.copy_from" title="链接到此定义。">¶</a></dt>
+<dd><p>A newer variant of copy that replaces copy/paste.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source_range</strong> (<a class="reference internal" href="#xlwings.Range" title="xlwings.main.Range"><em>Range</em></a>)</p></li>
+<li><p><strong>copy_type</strong> (<em>str</em>) -- One of &quot;all&quot;, &quot;formats&quot;, &quot;formulas&quot;, &quot;link&quot;, &quot;values&quot;</p></li>
+<li><p><strong>skip_blanks</strong> (<em>bool</em>)</p></li>
+<li><p><strong>transpose</strong> (<em>bool</em>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.copy_picture">
+<span class="sig-name descname"><span class="pre">copy_picture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">appearance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'screen'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'picture'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.copy_picture" title="链接到此定义。">¶</a></dt>
+<dd><p>Copies the range to the clipboard as picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>appearance</strong> (<em>str</em>) -- Either 'screen' or 'printer'.</p></li>
+<li><p><strong>format</strong> (<em>str</em>) -- Either 'picture' or 'bitmap'.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.24.8 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.count">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">count</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#xlwings.Range.count" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the number of cells.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.current_region">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">current_region</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#xlwings.Range" title="xlwings.main.Range"><span class="pre">Range</span></a></span><a class="headerlink" href="#xlwings.Range.current_region" title="链接到此定义。">¶</a></dt>
+<dd><p>This property returns a Range object representing a range bounded by (but not
+including) any combination of blank rows and blank columns or the edges of the
+worksheet. It corresponds to <code class="docutils literal notranslate"><span class="pre">Ctrl-*</span></code> on Windows and <code class="docutils literal notranslate"><span class="pre">Shift-Ctrl-Space</span></code> on
+Mac.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.delete" title="链接到此定义。">¶</a></dt>
+<dd><p>Deletes a cell or range of cells.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>shift</strong> (<em>str</em><em> | </em><em>None</em>) -- Use <code class="docutils literal notranslate"><span class="pre">left</span></code> or <code class="docutils literal notranslate"><span class="pre">up</span></code>. If omitted, Excel decides based on the shape of
+the range.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.end">
+<span class="sig-name descname"><span class="pre">end</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">direction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.end" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a Range object that represents the cell at the end of the region that
+contains the source range. Equivalent to pressing Ctrl+Up, Ctrl+down,
+Ctrl+left, or Ctrl+right.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>direction</strong> (<em>str</em>)</p>
+</dd>
+</dl>
+<p class="rubric">示例</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1:B2'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1'</span><span class="p">)</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="s1">'down'</span><span class="p">)</span>
+<span class="go">&lt;Range [Book1]Sheet1!$A$2&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'B2'</span><span class="p">)</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="s1">'right'</span><span class="p">)</span>
+<span class="go">&lt;Range [Book1]Sheet1!$B$2&gt;</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.9.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.expand">
+<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'table'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.expand" title="链接到此定义。">¶</a></dt>
+<dd><p>Expands the range according to the mode provided. Ignores empty top-left cells
+(unlike <code class="docutils literal notranslate"><span class="pre">Range.end()</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mode</strong> (<em>str</em>) -- One of <code class="docutils literal notranslate"><span class="pre">'table'</span></code> (=down and right), <code class="docutils literal notranslate"><span class="pre">'down'</span></code>, <code class="docutils literal notranslate"><span class="pre">'right'</span></code>.</p>
+</dd>
+</dl>
+<p class="rubric">示例</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1'</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span><span class="o">.</span><span class="n">address</span>
+<span class="go">$A$1:$B$2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1'</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="s1">'right'</span><span class="p">)</span><span class="o">.</span><span class="n">address</span>
+<span class="go">$A$1:$B$1</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.9.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.formula">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">formula</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#xlwings.Range.formula" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets or sets the formula for the given Range.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.formula2">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">formula2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#xlwings.Range.formula2" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets or sets the formula2 for the given Range.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.formula_array">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">formula_array</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#xlwings.Range.formula_array" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets or sets an  array formula for the given Range.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.7.1 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.get_address">
+<span class="sig-name descname"><span class="pre">get_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row_absolute</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_absolute</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_sheetname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">external</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.get_address" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the address of the range in the specified format. <code class="docutils literal notranslate"><span class="pre">address</span></code> can be
+used instead if none of the defaults need to be changed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row_absolute</strong> (<em>bool</em>) -- Set to True to return the row part of the reference as an absolute
+reference.</p></li>
+<li><p><strong>column_absolute</strong> (<em>bool</em>) -- Set to True to return the column part of the reference as an absolute
+reference.</p></li>
+<li><p><strong>include_sheetname</strong> (<em>bool</em>) -- Set to True to include the Sheet name in the address. Ignored if
+external=True.</p></li>
+<li><p><strong>external</strong> (<em>bool</em>) -- Set to True to return an external reference with workbook and worksheet
+name.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">示例</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">get_address</span><span class="p">()</span>
+<span class="go">'$A$1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">get_address</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="go">'A1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">get_address</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="go">'Sheet1!A$1:C$3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">get_address</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">external</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">'[Book1]Sheet1!A$1:C$3'</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.2.3 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.get_value">
+<span class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.get_value" title="链接到此定义。">¶</a></dt>
+<dd><p>Fetch values from Excel on demand.</p>
+<p>Requires xlwings Lite.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.group">
+<span class="sig-name descname"><span class="pre">group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.group" title="链接到此定义。">¶</a></dt>
+<dd><p>Group rows or columns.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>by</strong> (<em>str</em><em> | </em><em>None</em>) -- &quot;columns&quot; or &quot;rows&quot;. Figured out automatically if the range is defined as
+'1:3' or 'A:C', respectively.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.has_array">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">has_array</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#xlwings.Range.has_array" title="链接到此定义。">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if the range is part of a legacy CSE Array formula
+and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.height">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">height</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#xlwings.Range.height" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the height, in points, of a Range. Read-only.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.4.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.hyperlink">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">hyperlink</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#xlwings.Range.hyperlink" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the hyperlink address of the specified Range (single Cell only)</p>
+<p class="rubric">示例</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+<span class="go">'www.xlwings.org'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1'</span><span class="p">)</span><span class="o">.</span><span class="n">hyperlink</span>
+<span class="go">'http://www.xlwings.org'</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.insert">
+<span class="sig-name descname"><span class="pre">insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shift</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copy_origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'format_from_left_or_above'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.insert" title="链接到此定义。">¶</a></dt>
+<dd><p>Insert a cell or range of cells into the sheet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shift</strong> (<em>str</em>) -- Use <code class="docutils literal notranslate"><span class="pre">right</span></code> or <code class="docutils literal notranslate"><span class="pre">down</span></code>.</p></li>
+<li><p><strong>copy_origin</strong> (<em>str</em>) -- Use <code class="docutils literal notranslate"><span class="pre">format_from_left_or_above</span></code> or <code class="docutils literal notranslate"><span class="pre">format_from_right_or_below</span></code>.
+Note that copy_origin is only supported on Windows.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="versionchanged">
+<p><span class="versionmodified changed">在 0.30.3 版本发生变更: </span><code class="docutils literal notranslate"><span class="pre">shift</span></code> is now a required argument.</p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.last_cell">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">last_cell</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#xlwings.Range" title="xlwings.main.Range"><span class="pre">Range</span></a></span><a class="headerlink" href="#xlwings.Range.last_cell" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the bottom right cell of the specified range. Read-only.</p>
+<p class="rubric">示例</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myrange</span> <span class="o">=</span> <span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1:E4'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myrange</span><span class="o">.</span><span class="n">last_cell</span><span class="o">.</span><span class="n">row</span><span class="p">,</span> <span class="n">myrange</span><span class="o">.</span><span class="n">last_cell</span><span class="o">.</span><span class="n">column</span>
+<span class="go">(4, 5)</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.5 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.left">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">left</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#xlwings.Range.left" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the distance, in points, from the left edge of column A to the left
+edge of the range. Read-only.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.6.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.merge">
+<span class="sig-name descname"><span class="pre">merge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">across</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.merge" title="链接到此定义。">¶</a></dt>
+<dd><p>Creates a merged cell from the specified Range object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>across</strong> (<em>bool</em>) -- True to merge cells in each row of the specified Range as separate
+merged cells.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.merge_area">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">merge_area</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#xlwings.Range" title="xlwings.main.Range"><span class="pre">Range</span></a></span><a class="headerlink" href="#xlwings.Range.merge_area" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a Range object that represents the merged Range containing the
+specified cell. If the specified cell isn't in a merged range, this property
+returns the specified cell.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.merge_cells">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">merge_cells</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#xlwings.Range.merge_cells" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the Range contains merged cells, otherwise <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.name">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="name.html#xlwings.Name" title="xlwings.main.Name"><span class="pre">Name</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#xlwings.Range.name" title="链接到此定义。">¶</a></dt>
+<dd><p>Sets or gets the name of a Range.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.4.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.note">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">note</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="note.html#xlwings.main.Note" title="xlwings.main.Note"><span class="pre">Note</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#xlwings.Range.note" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a Note object.
+Before the introduction of threaded comments, a Note was called a Comment.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.24.2 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.number_format">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">number_format</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#xlwings.Range.number_format" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets and sets the number_format of a Range.</p>
+<p class="rubric">示例</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">xlwings</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="o">.</span><span class="n">Book</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1'</span><span class="p">)</span><span class="o">.</span><span class="n">number_format</span>
+<span class="go">'General'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1:C3'</span><span class="p">)</span><span class="o">.</span><span class="n">number_format</span> <span class="o">=</span> <span class="s1">'0.00%'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sheet1</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="s1">'A1:C3'</span><span class="p">)</span><span class="o">.</span><span class="n">number_format</span>
+<span class="go">'0.00%'</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.2.3 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.offset">
+<span class="sig-name descname"><span class="pre">offset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.offset" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a Range object that represents a Range that's offset from the
+specified range.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.0 版本加入.</span></p>
+</div>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.options">
+<span class="sig-name descname"><span class="pre">options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">convert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.options" title="链接到此定义。">¶</a></dt>
+<dd><p>Allows you to set a converter and their options. Converters define how Excel
+Ranges and their values are being converted both during reading and writing
+operations. If no explicit converter is specified, the base converter is being
+applied, see <code class="docutils literal notranslate"><span class="pre">converters</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>convert</strong> (<em>Any</em>) -- A converter, e.g. <code class="docutils literal notranslate"><span class="pre">dict</span></code>, <code class="docutils literal notranslate"><span class="pre">np.array</span></code>, <code class="docutils literal notranslate"><span class="pre">pd.DataFrame</span></code>,
+<code class="docutils literal notranslate"><span class="pre">pd.Series</span></code>, defaults to default converter.</p>
+</dd>
+</dl>
+<p>:keyword ndim: Number of dimensions.
+:keyword numbers: Type of numbers, e.g. <code class="docutils literal notranslate"><span class="pre">int</span></code>.
+:keyword dates: E.g. <code class="docutils literal notranslate"><span class="pre">datetime.date</span></code>, defaults to <code class="docutils literal notranslate"><span class="pre">datetime.datetime</span></code>.
+:keyword empty: Transformation of empty cells.
+:keyword transpose: Transpose values.
+:keyword expand: One of <code class="docutils literal notranslate"><span class="pre">'table'</span></code>, <code class="docutils literal notranslate"><span class="pre">'down'</span></code>, <code class="docutils literal notranslate"><span class="pre">'right'</span></code>.
+:keyword chunksize: Use a chunksize, e.g. <code class="docutils literal notranslate"><span class="pre">10000</span></code> to prevent timeout or
+memory issues when reading or writing large amounts of data.
+Works with all formats, including DataFrames, NumPy arrays,
+and list of lists.
+:keyword err_to_str: If <code class="docutils literal notranslate"><span class="pre">True</span></code>, will include cell errors such as <code class="docutils literal notranslate"><span class="pre">#N/A</span></code> as
+strings. By default, they will be converted to <code class="docutils literal notranslate"><span class="pre">None</span></code>.
+<em>New in version 0.28.0.</em></p>
+<p>For converter-specific options, see <code class="docutils literal notranslate"><span class="pre">converters</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.paste">
+<span class="sig-name descname"><span class="pre">paste</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paste</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_blanks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transpose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.paste" title="链接到此定义。">¶</a></dt>
+<dd><p>Pastes a range from the clipboard into the specified range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paste</strong> (<em>str</em><em> | </em><em>None</em>) -- One of <code class="docutils literal notranslate"><span class="pre">all_merging_conditional_formats</span></code>, <code class="docutils literal notranslate"><span class="pre">all</span></code>, <code class="docutils literal notranslate"><span class="pre">all_except_borders</span></code>,
+<code class="docutils literal notranslate"><span class="pre">all_using_source_theme</span></code>, <code class="docutils literal notranslate"><span class="pre">column_widths</span></code>, <code class="docutils literal notranslate"><span class="pre">comments</span></code>, <code class="docutils literal notranslate"><span class="pre">formats</span></code>,
+<code class="docutils literal notranslate"><span class="pre">formulas</span></code>, <code class="docutils literal notranslate"><span class="pre">formulas_and_number_formats</span></code>, <code class="docutils literal notranslate"><span class="pre">validation</span></code>, <code class="docutils literal notranslate"><span class="pre">values</span></code>,
+<code class="docutils literal notranslate"><span class="pre">values_and_number_formats</span></code>.</p></li>
+<li><p><strong>operation</strong> (<em>str</em><em> | </em><em>None</em>) -- One of &quot;add&quot;, &quot;divide&quot;, &quot;multiply&quot;, &quot;subtract&quot;.</p></li>
+<li><p><strong>skip_blanks</strong> (<em>bool</em>) -- Set to <code class="docutils literal notranslate"><span class="pre">True</span></code> to skip over blank cells</p></li>
+<li><p><strong>transpose</strong> (<em>bool</em>) -- Set to <code class="docutils literal notranslate"><span class="pre">True</span></code> to transpose rows and columns.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.raw_value">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">raw_value</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></span><a class="headerlink" href="#xlwings.Range.raw_value" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets and sets the values directly as delivered from/accepted by the engine that
+s being used (<code class="docutils literal notranslate"><span class="pre">pywin32</span></code> or <code class="docutils literal notranslate"><span class="pre">appscript</span></code>) without going through any of
+xlwings' data cleaning/converting. This can be helpful if speed is an issue but
+naturally will be engine specific, i.e. might remove the cross-platform
+compatibility.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.resize">
+<span class="sig-name descname"><span class="pre">resize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.resize" title="链接到此定义。">¶</a></dt>
+<dd><p>Resizes the specified Range</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row_size</strong> (<em>int</em><em> | </em><em>None</em>) -- The number of rows in the new range (if None, the number of rows
+in the range is unchanged).</p></li>
+<li><p><strong>column_size</strong> (<em>int</em><em> | </em><em>None</em>) -- The number of columns in the new range (if None, the number of
+columns in the range is unchanged).</p></li>
+</ul>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.row">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">row</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#xlwings.Range.row" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the number of the first row in the specified range. Read-only.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.5 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.row_height">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">row_height</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#xlwings.Range.row_height" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets or sets the height, in points, of a Range.
+If all rows in the Range have the same height, returns the height.
+If rows in the Range have different heights, returns None.</p>
+<p>row_height must be in the range:
+0 &lt;= row_height &lt;= 409.5</p>
+<p>Note: If the Range is outside the used range of the Worksheet, and rows in the
+Range have different heights, returns the height of the first row.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.4.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.rows">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">rows</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="range_rows.html#xlwings.RangeRows" title="xlwings.main.RangeRows"><span class="pre">RangeRows</span></a></span><a class="headerlink" href="#xlwings.Range.rows" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a <code class="docutils literal notranslate"><span class="pre">RangeRows</span></code> object that represents the rows in the specified
+range.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.9.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.select">
+<span class="sig-name descname"><span class="pre">select</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.select" title="链接到此定义。">¶</a></dt>
+<dd><p>Selects the range. Select only works on the active book.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.9.0 版本加入.</span></p>
+</div>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.shape">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">shape</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#xlwings.Range.shape" title="链接到此定义。">¶</a></dt>
+<dd><p>Tuple of Range dimensions.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.sheet">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sheet</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="sheet.html#xlwings.Sheet" title="xlwings.main.Sheet"><span class="pre">Sheet</span></a></span><a class="headerlink" href="#xlwings.Range.sheet" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the Sheet object to which the Range belongs.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.9.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.size">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">size</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#xlwings.Range.size" title="链接到此定义。">¶</a></dt>
+<dd><p>Number of elements in the Range.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.3.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.table">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">table</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="table.html#xlwings.main.Table" title="xlwings.main.Table"><span class="pre">Table</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#xlwings.Range.table" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns a Table object if the range is part of one, otherwise <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.21.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.to_pdf">
+<span class="sig-name descname"><span class="pre">to_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'standard'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.to_pdf" title="链接到此定义。">¶</a></dt>
+<dd><p>Exports the range as PDF.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em><em> | </em><em>PathLike</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) -- Path where you want to store the pdf. Defaults to the address of the range
+in the same directory as the Excel file if the Excel file is stored and to
+the current working directory otherwise.</p></li>
+<li><p><strong>layout</strong> (<em>str</em><em> | </em><em>PathLike</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) -- This argument requires xlwings <code class="docutils literal notranslate"><span class="pre">PRO</span></code>.
+Path to a PDF file on which the report will be printed. This is ideal for
+headers and footers as well as borderless printing of graphics/artwork. The
+PDF file either needs to have only 1 page (every report page uses the same
+layout) or otherwise needs the same amount of pages as the report (each
+report page is printed on the respective page in the layout PDF).</p></li>
+<li><p><strong>show</strong> (<em>bool</em><em> | </em><em>None</em>) -- Once created, open the PDF file with the default application.</p></li>
+<li><p><strong>quality</strong> (<em>str</em>) -- Quality of the PDF file. Can either be <code class="docutils literal notranslate"><span class="pre">'standard'</span></code> or <code class="docutils literal notranslate"><span class="pre">'minimum'</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.26.2 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.to_png">
+<span class="sig-name descname"><span class="pre">to_png</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.to_png" title="链接到此定义。">¶</a></dt>
+<dd><p>Exports the range as PNG picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em><em> | </em><em>PathLike</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) -- Path where you want to store the picture. Defaults to the name of the range
+in the same directory as the Excel file if the Excel file is stored and to
+the current working directory otherwise.</p>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.24.8 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.top">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">top</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#xlwings.Range.top" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the distance, in points, from the top edge of row 1 to the top edge of
+the range. Read-only.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.6.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.ungroup">
+<span class="sig-name descname"><span class="pre">ungroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.ungroup" title="链接到此定义。">¶</a></dt>
+<dd><p>Ungroup rows or columns</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>by</strong> (<em>str</em><em> | </em><em>None</em>) -- &quot;columns&quot; or &quot;rows&quot;. Figured out automatically if the range is defined as
+'1:3' or 'A:C', respectively.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xlwings.Range.unmerge">
+<span class="sig-name descname"><span class="pre">unmerge</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xlwings.Range.unmerge" title="链接到此定义。">¶</a></dt>
+<dd><p>Separates a merged area into individual cells.</p>
+<dl class="field-list simple">
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.value">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">value</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></span><a class="headerlink" href="#xlwings.Range.value" title="链接到此定义。">¶</a></dt>
+<dd><p>Gets and sets the values for the given Range. See <code class="docutils literal notranslate"><span class="pre">xlwings.Range.options</span></code>
+about how to set options, e.g., to transform it into a DataFrame or how to set
+a chunksize.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.width">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">width</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#xlwings.Range.width" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns the width, in points, of a Range. Read-only.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.4.0 版本加入.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="xlwings.Range.wrap_text">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">wrap_text</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#xlwings.Range.wrap_text" title="链接到此定义。">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the wrap_text property is enabled and <code class="docutils literal notranslate"><span class="pre">False</span></code> if it's
+disabled. If not all cells have the same value in a range, on Windows it returns
+<code class="docutils literal notranslate"><span class="pre">None</span></code> and on macOS <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.23.2 版本加入.</span></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="range_columns.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">RangeColumns</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="pictures.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Pictures</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; Zoomer Analytics LLC
+            </div>
+            Made with 
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Range</a><ul>
+<li><a class="reference internal" href="#xlwings.Range"><code class="docutils literal notranslate"><span class="pre">Range</span></code></a><ul>
+<li><a class="reference internal" href="#xlwings.Range.add_hyperlink"><code class="docutils literal notranslate"><span class="pre">Range.add_hyperlink()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.address"><code class="docutils literal notranslate"><span class="pre">Range.address</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.adjust_indent"><code class="docutils literal notranslate"><span class="pre">Range.adjust_indent()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.api"><code class="docutils literal notranslate"><span class="pre">Range.api</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.autofill"><code class="docutils literal notranslate"><span class="pre">Range.autofill()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.autofit"><code class="docutils literal notranslate"><span class="pre">Range.autofit()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.clear"><code class="docutils literal notranslate"><span class="pre">Range.clear()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.clear_contents"><code class="docutils literal notranslate"><span class="pre">Range.clear_contents()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.clear_formats"><code class="docutils literal notranslate"><span class="pre">Range.clear_formats()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.color"><code class="docutils literal notranslate"><span class="pre">Range.color</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.column"><code class="docutils literal notranslate"><span class="pre">Range.column</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.column_width"><code class="docutils literal notranslate"><span class="pre">Range.column_width</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.columns"><code class="docutils literal notranslate"><span class="pre">Range.columns</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.copy"><code class="docutils literal notranslate"><span class="pre">Range.copy()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.copy_from"><code class="docutils literal notranslate"><span class="pre">Range.copy_from()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.copy_picture"><code class="docutils literal notranslate"><span class="pre">Range.copy_picture()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.count"><code class="docutils literal notranslate"><span class="pre">Range.count</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.current_region"><code class="docutils literal notranslate"><span class="pre">Range.current_region</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.delete"><code class="docutils literal notranslate"><span class="pre">Range.delete()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.end"><code class="docutils literal notranslate"><span class="pre">Range.end()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.expand"><code class="docutils literal notranslate"><span class="pre">Range.expand()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.formula"><code class="docutils literal notranslate"><span class="pre">Range.formula</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.formula2"><code class="docutils literal notranslate"><span class="pre">Range.formula2</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.formula_array"><code class="docutils literal notranslate"><span class="pre">Range.formula_array</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.get_address"><code class="docutils literal notranslate"><span class="pre">Range.get_address()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.get_value"><code class="docutils literal notranslate"><span class="pre">Range.get_value()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.group"><code class="docutils literal notranslate"><span class="pre">Range.group()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.has_array"><code class="docutils literal notranslate"><span class="pre">Range.has_array</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.height"><code class="docutils literal notranslate"><span class="pre">Range.height</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.hyperlink"><code class="docutils literal notranslate"><span class="pre">Range.hyperlink</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.insert"><code class="docutils literal notranslate"><span class="pre">Range.insert()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.last_cell"><code class="docutils literal notranslate"><span class="pre">Range.last_cell</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.left"><code class="docutils literal notranslate"><span class="pre">Range.left</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.merge"><code class="docutils literal notranslate"><span class="pre">Range.merge()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.merge_area"><code class="docutils literal notranslate"><span class="pre">Range.merge_area</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.merge_cells"><code class="docutils literal notranslate"><span class="pre">Range.merge_cells</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.name"><code class="docutils literal notranslate"><span class="pre">Range.name</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.note"><code class="docutils literal notranslate"><span class="pre">Range.note</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.number_format"><code class="docutils literal notranslate"><span class="pre">Range.number_format</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.offset"><code class="docutils literal notranslate"><span class="pre">Range.offset()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.options"><code class="docutils literal notranslate"><span class="pre">Range.options()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.paste"><code class="docutils literal notranslate"><span class="pre">Range.paste()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.raw_value"><code class="docutils literal notranslate"><span class="pre">Range.raw_value</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.resize"><code class="docutils literal notranslate"><span class="pre">Range.resize()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.row"><code class="docutils literal notranslate"><span class="pre">Range.row</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.row_height"><code class="docutils literal notranslate"><span class="pre">Range.row_height</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.rows"><code class="docutils literal notranslate"><span class="pre">Range.rows</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.select"><code class="docutils literal notranslate"><span class="pre">Range.select()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.shape"><code class="docutils literal notranslate"><span class="pre">Range.shape</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.sheet"><code class="docutils literal notranslate"><span class="pre">Range.sheet</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.size"><code class="docutils literal notranslate"><span class="pre">Range.size</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.table"><code class="docutils literal notranslate"><span class="pre">Range.table</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.to_pdf"><code class="docutils literal notranslate"><span class="pre">Range.to_pdf()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.to_png"><code class="docutils literal notranslate"><span class="pre">Range.to_png()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.top"><code class="docutils literal notranslate"><span class="pre">Range.top</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.ungroup"><code class="docutils literal notranslate"><span class="pre">Range.ungroup()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.unmerge"><code class="docutils literal notranslate"><span class="pre">Range.unmerge()</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.value"><code class="docutils literal notranslate"><span class="pre">Range.value</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.width"><code class="docutils literal notranslate"><span class="pre">Range.width</span></code></a></li>
+<li><a class="reference internal" href="#xlwings.Range.wrap_text"><code class="docutils literal notranslate"><span class="pre">Range.wrap_text</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div>
+  
+  <script src="../_static/sidebar-scroll.js"></script>
+<script src="../_static/documentation_options.js?v=fbee7834"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=30646c52"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>
