@@ -1,0 +1,613 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../converters.md:1
+msgid "Converters and Options"
+msgstr ""
+
+#: ../../../converters.md:3
+msgid ""
+"Introduced with v0.7.0, converters define how Excel ranges and their values "
+"are converted both during **reading** and **writing** operations. They also "
+"provide a consistent experience across **xlwings.Range** objects and **User "
+"Defined Functions** (UDFs)."
+msgstr ""
+
+#: ../../../converters.md:7
+msgid ""
+"Converters are explicitly set in the `options` method when manipulating "
+"`Range` objects or in the `@xw.arg` and `@xw.ret` decorators when using "
+"UDFs. If no converter is specified, the default converter is applied when "
+"reading. When writing, xlwings will automatically apply the correct "
+"converter (if available) according to the object's type that is being "
+"written to Excel. If no converter is found for that type, it falls back to "
+"the default converter."
+msgstr ""
+
+#: ../../../converters.md:12
+msgid "All code samples below depend on the following import:"
+msgstr ""
+
+#: ../../../converters.md:18
+msgid "**Syntax:**"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "Action"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "**Range objects**"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "**UDFs**"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "**reading**"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "`myrange.options(convert=None, **kwargs).value`"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "`@arg('x', convert=None, **kwargs)`"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "**writing**"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "`myrange.options(convert=None, **kwargs).value = myvalue`"
+msgstr ""
+
+#: ../../../converters.md:0
+msgid "`@ret(convert=None, **kwargs)`"
+msgstr ""
+
+#: ../../../converters.md:26
+msgid ""
+"Keyword arguments (`kwargs`) may refer to the specific converter or the "
+"default converter. For example, to set the `numbers` option in the default "
+"converter and the `index` option in the DataFrame converter, you would "
+"write::"
+msgstr ""
+
+#: ../../../converters.md:33
+msgid "Default Converter"
+msgstr ""
+
+#: ../../../converters.md:35
+msgid ""
+"If no options are set, the following default conversions are applied when "
+"accessing `Range.value`:"
+msgstr ""
+
+#: ../../../converters.md:37
+msgid "Numbers -> `floats`"
+msgstr ""
+
+#: ../../../converters.md:38
+msgid "Text -> `str`"
+msgstr ""
+
+#: ../../../converters.md:39
+msgid "Date and/or time -> `datetime`"
+msgstr ""
+
+#: ../../../converters.md:40
+msgid "`TRUE` or `FALSE` -> `bool`"
+msgstr ""
+
+#: ../../../converters.md:41
+msgid "Empty cell -> `None`"
+msgstr ""
+
+#: ../../../converters.md:42
+msgid "Windows only: Currency -> `Decimal`, truncated to 4 decimals"
+msgstr ""
+
+#: ../../../converters.md:44
+msgid ""
+"Columns/rows are read in as lists, e.g. `[None, 1.0, 'a string']` and 2d "
+"cell ranges are read in as list of lists, e.g. `[[None, 1.0, 'a string'], "
+"[None, 2.0, 'another string']]`."
+msgstr ""
+
+#: ../../../converters.md:46
+msgid "The following options can be set:"
+msgstr ""
+
+#: ../../../converters.md:48
+msgid "ndim"
+msgstr ""
+
+#: ../../../converters.md:50
+msgid ""
+"Force the value to have either 1 or 2 dimensions regardless of the shape of "
+"the range:"
+msgstr ""
+
+#: ../../../converters.md:68
+msgid ""
+"To preserve the vertical orientation of columns, use `ndim=\"natural\"`. "
+"This returns scalars for single cells, 1D lists for horizontal ranges, and "
+"2D lists for vertical or multi-row ranges:"
+msgstr ""
+
+#: ../../../converters.md:86
+msgid "numbers"
+msgstr ""
+
+#: ../../../converters.md:88
+msgid ""
+"By default cells with numbers are read as `float`, but you can change it to "
+"`int`:"
+msgstr ""
+
+#: ../../../converters.md:98
+msgid ""
+"Alternatively, you can specify any other function or type which takes a "
+"single float argument."
+msgstr ""
+
+#: ../../../converters.md:100
+msgid "Using this on UDFs looks like this:"
+msgstr ""
+
+#: ../../../converters.md:111
+msgid ""
+"Excel delivers all numbers as floats in the interactive mode, which is the "
+"reason why the `int` converter rounds numbers first before turning them into "
+"integers. Otherwise it could happen that e.g., 5 might be returned as 4 in "
+"case it is represented as a floating point number that is slightly smaller "
+"than 5. Should you require Python's original `int` in your converter, use "
+"raw int` instead."
+msgstr ""
+
+#: ../../../converters.md:114
+msgid "dates"
+msgstr ""
+
+#: ../../../converters.md:116
+msgid ""
+"By default cells with dates are read as `datetime.datetime`, but you can "
+"change it to `datetime.date`:"
+msgstr ""
+
+#: ../../../converters.md:118 ../../../converters.md:144
+msgid "Range:"
+msgstr ""
+
+#: ../../../converters.md:125 ../../../converters.md:150
+msgid "UDFs (decorator):"
+msgstr ""
+
+#: ../../../converters.md:131
+msgid ""
+"Alternatively, you can specify any other function or type which takes the "
+"same keyword arguments as `datetime.datetime`, for example:"
+msgstr ""
+
+#: ../../../converters.md:140
+msgid "empty"
+msgstr ""
+
+#: ../../../converters.md:142
+msgid ""
+"Empty cells are converted per default into `None`, you can change this as "
+"follows:"
+msgstr ""
+
+#: ../../../converters.md:156
+msgid "transpose"
+msgstr ""
+
+#: ../../../converters.md:158
+msgid ""
+"This works for reading and writing and allows us to e.g. write a list in "
+"column orientation to Excel:"
+msgstr ""
+
+#: ../../../converters.md:160
+msgid "Range: `sheet['A1'].options(transpose=True).value = [1, 2, 3]`"
+msgstr ""
+
+#: ../../../converters.md:162
+msgid "UDFs:"
+msgstr ""
+
+#: ../../../converters.md:172
+msgid "expand"
+msgstr ""
+
+#: ../../../converters.md:174
+msgid ""
+"This works the same as the Range properties `table`, `vertical` and "
+"`horizontal` but is only evaluated when getting the values of a Range:"
+msgstr ""
+
+#: ../../../converters.md:195
+msgid ""
+"The `expand` method is only available on `Range` objects as UDFs only allow "
+"to manipulate the calling cells."
+msgstr ""
+
+#: ../../../converters.md:198
+msgid "chunksize"
+msgstr ""
+
+#: ../../../converters.md:200
+msgid ""
+"When you read and write from or to big ranges, you may have to chunk them or "
+"you will hit a timeout or a memory error. The ideal `chunksize` will depend "
+"on your system and size of the array, so you will have to try out a few "
+"different chunksizes to find one that works well:"
+msgstr ""
+
+#: ../../../converters.md:211
+msgid "And the same for reading:"
+msgstr ""
+
+#: ../../../converters.md:220
+msgid "err_to_str"
+msgstr ""
+
+#: ../../../converters.md:225
+msgid ""
+"If `True`, will include cell errors such as `#N/A` as strings. By default, "
+"they will be converted to `None`."
+msgstr ""
+
+#: ../../../converters.md:228
+msgid "formatter"
+msgstr ""
+
+#: ../../../converters.md:234
+msgid "You can't use formatters with Excel tables."
+msgstr ""
+
+#: ../../../converters.md:237
+msgid ""
+"The `formatter` option accepts the name of a function. The function will be "
+"called after writing the values to Excel and allows you to easily style the "
+"range in a very flexible way. How it works is best shown with a little "
+"example:"
+msgstr ""
+
+#: ../../../converters.md:264
+msgid "Running this code will format the DataFrame like this:"
+msgstr ""
+
+#: ../../../converters.md:266
+msgid "![./images/formatter.png](./images/formatter.png)"
+msgstr ""
+
+#: ../../../converters.md:266
+msgid "./images/formatter.png"
+msgstr ""
+
+#: ../../../converters.md:268
+msgid ""
+"The formatter's signature is: `def myformatter(myrange, myvalues)` where "
+"`myrange` corresponds to the range where `myvalues` are written to. "
+"`myvalues` is simply what you assign to the `value` property in the last "
+"line of the example. Since we're using this with a DataFrame, it makes sense "
+"to name the argument accordingly and using type hints will help your editor "
+"with auto-completion. If you would use a nested list instead of a DataFrame, "
+"you would write something like this instead:"
+msgstr ""
+
+#: ../../../converters.md:274
+msgid "Built-in Converters"
+msgstr ""
+
+#: ../../../converters.md:276
+msgid ""
+"xlwings offers several built-in converters that perform type conversion to "
+"**dictionaries**, **NumPy arrays**, **Pandas Series** and **DataFrames**. "
+"These build on top of the default converter, so in most cases the options "
+"described above can be used in this context, too (unless they are "
+"meaningless, for example the `ndim` in the case of a dictionary)."
+msgstr ""
+
+#: ../../../converters.md:281
+msgid ""
+"It is also possible to write and register a custom converter for additional "
+"types, see below."
+msgstr ""
+
+#: ../../../converters.md:283
+msgid ""
+"The samples below can be used with both `xlwings.Range` objects and UDFs "
+"even though only one version may be shown."
+msgstr ""
+
+#: ../../../converters.md:285
+msgid "Dictionary converter"
+msgstr ""
+
+#: ../../../converters.md:287
+msgid ""
+"The dictionary converter turns two Excel columns into a dictionary. If the "
+"data is in row orientation, use `transpose`:"
+msgstr ""
+
+#: ../../../converters.md:300
+msgid ""
+"Note: instead of `dict`, you can also use `OrderedDict` from `collections`."
+msgstr ""
+
+#: ../../../converters.md:302
+msgid "Tuple converter"
+msgstr ""
+
+#: ../../../converters.md:304
+msgid ""
+"Get the values as (nested) tuples instead of (nested) lists. This can be "
+"helpful in connection with caching, as tuples are immutable and hashable."
+msgstr ""
+
+#: ../../../converters.md:312
+msgid "JSON converter"
+msgstr ""
+
+#: ../../../converters.md:314
+msgid ""
+"Read and write values as JSON-formatted strings. This is especially useful "
+"to interact with LLMs."
+msgstr ""
+
+#: ../../../converters.md:322
+msgid "Numpy array converter"
+msgstr ""
+
+#: ../../../converters.md:324
+msgid "**options:** `dtype=None, copy=True, order=None, ndim=None`"
+msgstr ""
+
+#: ../../../converters.md:326
+msgid ""
+"The first 3 options behave the same as when using `np.array()` directly. "
+"Also, `ndim` works the same as shown above for lists (under default "
+"converter) and hence returns either numpy scalars, 1d arrays or 2d arrays."
+msgstr ""
+
+#: ../../../converters.md:329
+msgid "**Example**"
+msgstr ""
+
+#: ../../../converters.md:341
+msgid "Pandas Series converter"
+msgstr ""
+
+#: ../../../converters.md:343
+msgid "**options:** `dtype=None, copy=False, index=1, header=True`"
+msgstr ""
+
+#: ../../../converters.md:345
+msgid ""
+"The first 2 options behave the same as when using `pd.Series()` directly. "
+"`ndim` doesn't have an effect on Pandas series as they are always expected "
+"and returned in column orientation."
+msgstr ""
+
+#: ../../../converters.md:348 ../../../converters.md:384
+msgid ""
+"`index`: int or Boolean : When reading, it expects the number of index "
+"columns shown in Excel.   When writing, include or exclude the index by "
+"setting it to `True` or `False`."
+msgstr ""
+
+#: ../../../converters.md:352
+msgid ""
+"`header`: Boolean : When reading, set it to `False` if Excel doesn't show "
+"either index or series names.   When writing, include or exclude the index "
+"and series names by setting it to `True` or `False`."
+msgstr ""
+
+#: ../../../converters.md:356 ../../../converters.md:392
+msgid "For `index` and `header`, `1` and `True` may be used interchangeably."
+msgstr ""
+
+#: ../../../converters.md:358 ../../../converters.md:394
+msgid "**Example:**"
+msgstr ""
+
+#: ../../../converters.md:377
+msgid "Pandas DataFrame converter"
+msgstr ""
+
+#: ../../../converters.md:379
+msgid "**options:** `dtype=None, copy=False, index=1, header=1`"
+msgstr ""
+
+#: ../../../converters.md:381
+msgid ""
+"The first 2 options behave the same as when using `pd.DataFrame()` directly. "
+"`ndim` doesn't have an effect on Pandas DataFrames as they are automatically "
+"read in with `ndim=2`."
+msgstr ""
+
+#: ../../../converters.md:388
+msgid ""
+"`header`: int or Boolean : When reading, it expects the number of column "
+"headers shown in Excel.   When writing, include or exclude the index and "
+"series names by setting it to `True` or `False`."
+msgstr ""
+
+#: ../../../converters.md:417
+msgid ""
+"The same sample for **UDF** (starting in cell `A13` on screenshot) looks "
+"like this:"
+msgstr ""
+
+#: ../../../converters.md:428
+msgid "Polars DataFrame and Series converters"
+msgstr ""
+
+#: ../../../converters.md:430
+msgid ""
+"Polars DataFrames work almost the same as pandas DataFrames. But since "
+"polars DataFrames don't have an index and don't support MultiIndex headers, "
+"the `index` option isn't available and the `header` option only accepts "
+"`True` (default) or `False`."
+msgstr ""
+
+#: ../../../converters.md:432
+msgid "**Examples:**"
+msgstr ""
+
+#: ../../../converters.md:472
+msgid "xw.Range and 'raw' converters"
+msgstr ""
+
+#: ../../../converters.md:474
+msgid "Technically speaking, these are \"no-converters\"."
+msgstr ""
+
+#: ../../../converters.md:476
+msgid "If you need access to the `xlwings.Range` object directly, you can do:"
+msgstr ""
+
+#: ../../../converters.md:485
+msgid ""
+"This returns x as `xlwings.Range` object, i.e. without applying any "
+"converters or options."
+msgstr ""
+
+#: ../../../converters.md:487
+msgid ""
+"The `raw` converter delivers the values unchanged from the underlying "
+"libraries (`pywin32` on Windows and `appscript` on Mac), i.e. no sanitizing/"
+"cross-platform harmonizing of values are being made. This might be useful in "
+"a few cases for efficiency reasons. E.g:"
+msgstr ""
+
+#: ../../../converters.md:499
+msgid "Custom Converter"
+msgstr ""
+
+#: ../../../converters.md:501
+msgid "Here are the steps to implement your own converter:"
+msgstr ""
+
+#: ../../../converters.md:503
+msgid "Inherit from `xlwings.conversion.Converter`"
+msgstr ""
+
+#: ../../../converters.md:504
+msgid ""
+"Implement both a `read_value` and `write_value` method as static- or "
+"classmethod:"
+msgstr ""
+
+#: ../../../converters.md:506
+msgid ""
+"In `read_value`, `value` is what the base converter returns: hence, if no "
+"`base` has been specified it arrives in the format of the default converter."
+msgstr ""
+
+#: ../../../converters.md:508
+msgid ""
+"In `write_value`, `value` is the original object being written to Excel. It "
+"must be returned in the format that the base converter expects. Again, if no "
+"`base` has been specified, this is the default converter."
+msgstr ""
+
+#: ../../../converters.md:512
+msgid ""
+"The `options` dictionary will contain all keyword arguments specified in the "
+"`options` method, e.g. when calling `myrange.options(myoption='some value')` "
+"or as specified in the `@arg` and `@ret` decorator when using UDFs. Here is "
+"the basic structure:"
+msgstr ""
+
+#: ../../../converters.md:534
+msgid ""
+"Optional: set a `base` converter (`base` expects a class name) to build on "
+"top of an existing converter, e.g. for the built-in ones: `DictConverter`, "
+"`NumpyArrayConverter`, `PandasDataFrameConverter`, `PandasSeriesConverter`"
+msgstr ""
+
+#: ../../../converters.md:536
+msgid ""
+"Optional: register the converter: you can **(a)** register a type so that "
+"your converter becomes the default for this type during write operations and/"
+"or **(b)** you can register an alias that will allow you to explicitly call "
+"your converter by name instead of just by class name"
+msgstr ""
+
+#: ../../../converters.md:540
+msgid ""
+"The following examples should make it much easier to follow - it defines a "
+"DataFrame converter that extends the built-in DataFrame converter to add "
+"support for dropping nan's:"
+msgstr ""
+
+#: ../../../converters.md:571
+msgid "Now let's see how the different converters can be applied:"
+msgstr ""
+
+#: ../../../converters.md:579
+msgid "Default converter for DataFrames:"
+msgstr ""
+
+#: ../../../converters.md:589
+msgid "DataFrameDropna converter:"
+msgstr ""
+
+#: ../../../converters.md:599
+msgid "Register an alias (optional):"
+msgstr ""
+
+#: ../../../converters.md:611
+msgid ""
+"Register DataFrameDropna as default converter for DataFrames (optional):"
+msgstr ""
+
+#: ../../../converters.md:623
+msgid "These samples all work the same with UDFs, e.g.:"
+msgstr ""
+
+#: ../../../converters.md:635
+msgid ""
+"Python objects run through multiple stages of a transformation pipeline when "
+"they are being written to Excel. The same holds true in the other direction, "
+"when Excel/COM objects are being read into Python."
+msgstr ""
+
+#: ../../../converters.md:638
+msgid ""
+"Pipelines are internally defined by `Accessor` classes. A Converter is just "
+"a special Accessor which converts to/from a particular type by adding an "
+"extra stage to the pipeline of the default Accessor. For example, the "
+"`PandasDataFrameConverter` defines how a list of lists (as delivered by the "
+"default Accessor) should be turned into a Pandas DataFrame."
+msgstr ""
+
+#: ../../../converters.md:643
+msgid ""
+"The `Converter` class provides basic scaffolding to make the task of writing "
+"a new Converter easier. If you need more control you can subclass `Accessor` "
+"directly, but this part requires more work and is currently undocumented."
+msgstr ""

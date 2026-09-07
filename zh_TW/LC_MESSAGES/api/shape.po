@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/shape.rst:2
+msgid "Shape"
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid "The shape object is a member of the `shapes` collection:"
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid "Activates the shape."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid "Deletes the shape."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid ""
+"Returns or sets the number of points that represent the height of the shape."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid ""
+"Returns or sets the number of points that represent the horizontal position "
+"of the shape."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid "Returns or sets the name of the shape."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid "Returns the parent of the shape."
+msgstr ""
+
+#: ../../../api/shape.rst:0
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Shape.scale_height:1
+#: xlwings.main.Shape.scale_width:1
+msgid "For example 1.5 to scale it up to 150%"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Shape.scale_height:2
+msgid ""
+"If ``False``, it scales relative to current height (default). For ``True`` "
+"must be a picture or OLE object."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Shape.scale_height:4
+#: xlwings.main.Shape.scale_width:4
+msgid ""
+"One of ``scale_from_top_left`` (default), ``scale_from_bottom_right``, "
+"``scale_from_middle``"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Shape.scale_width:2
+msgid ""
+"If ``False``, it scales relative to current width (default). For ``True`` "
+"must be a picture or OLE object."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid "Returns or sets the text of a shape."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid ""
+"Returns or sets the number of points that represent the vertical position of "
+"the shape."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid "Returns the type of the shape."
+msgstr ""
+
+#: ../../../api/shape.rst:1
+msgid ""
+"Returns or sets the number of points that represent the width of the shape."
+msgstr ""
