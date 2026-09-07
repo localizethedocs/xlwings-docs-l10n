@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../pro/reports/markdown.md:1
+msgid "Markdown Formatting"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:3
+msgid "This feature requires xlwings PRO and at least v0.23.0."
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:5
+msgid ""
+"Markdown offers an easy and intuitive way of styling text components in your "
+"cells and shapes. For an introduction to Markdown, see e.g., [Mastering "
+"Markdown](https://guides.github.com/features/mastering-markdown/)."
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:7
+msgid "Markdown support is in an early stage and currently only supports:"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:9
+msgid "First-level headings"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:10
+msgid "Bold (i.e., strong)"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:11
+msgid "Italic (i.e., emphasis)"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:12
+msgid "Unordered lists"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:14
+msgid ""
+"It doesn't support nested objects yet such as 2nd-level headings, bold/"
+"italic within bullet points or nested bullet points."
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:16
+msgid "Let's go through an example to see how everything works!"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:46
+msgid "Running this code will give you this nicely formatted text:"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:50
+msgid ""
+"But why not make things a tad more stylish? By providing a `MarkdownStyle` "
+"object, you can define your style. Let's change the previous example like "
+"this:"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:89
+msgid "Here is the output of this:"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:93
+msgid ""
+"You can override all properties, i.e., you can change the emphasis from "
+"italic to a red font or anything else you want:"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:102
+msgid ""
+"Markdown objects can also be used with template-based reporting, see "
+"[Quickstart](reports.md#quickstart)."
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:105
+msgid ""
+"macOS currently doesn't support the formatting (bold, italic, color etc.) of "
+"Markdown text due to a bug with AppleScript/Excel. The text will be rendered "
+"correctly though, including bullet points."
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:108
+msgid "See also the API reference:"
+msgstr "另請參見 API 參考："
+
+#: ../../../pro/reports/markdown.md:110
+msgid "{meth}`Markdown class <xlwings.pro.Markdown>`"
+msgstr ""
+
+#: ../../../pro/reports/markdown.md:111
+msgid "{meth}`MarkdownStyle class <xlwings.pro.MarkdownStyle>`"
+msgstr ""

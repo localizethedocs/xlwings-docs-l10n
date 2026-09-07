@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/app.rst:2
+msgid "App"
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"An app corresponds to an Excel instance and should normally be used as "
+"context manager to make sure that everything is properly cleaned up again "
+"and to prevent zombie processes. New Excel instances can be fired up like so:"
+msgstr ""
+
+#: ../../../api/app.rst:11
+msgid "An app object is a member of the `apps` collection:"
+msgstr ""
+
+#: ../../../api/app.rst:0
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App:25
+msgid ""
+"Returns or sets a boolean value that determines whether the app is visible. "
+"The default leaves the state unchanged or sets visible=True if the object "
+"doesn't exist yet."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App:28
+msgid ""
+"Mac-only, use the full path to the Excel application, e.g., ``/Applications/"
+"Microsoft Office 2011/Microsoft Excel`` or ``/Applications/Microsoft "
+"Excel``. On Windows, if you want to change the version of Excel that xlwings "
+"talks to, go to ``Control Panel > Programs and Features`` and ``Repair`` the "
+"Office version that you want as default."
+msgstr ""
+
+#: ../../../api/app.rst:2
+msgid ""
+"On Mac, while xlwings allows you to run multiple instances of Excel, it's a "
+"feature that is not officially supported by Excel for Mac: Unlike on "
+"Windows, Excel will not ask you to open a read-only version of a file if it "
+"is already open in another instance. This means that you need to watch out "
+"yourself so that the same file is not being overwritten from different "
+"instances."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Activates the Excel app."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.activate:6
+msgid ""
+"If True, make frontmost application and hand over focus from Python to Excel."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"This corresponds to `MsgBox` in VBA, shows an alert/message box and returns "
+"the value of the pressed button. For xlwings Server, instead of returning a "
+"value, the function accepts the name of a callback to which it will supply "
+"the value of the pressed button."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.alert:9
+msgid "The message to be displayed."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.alert:10
+msgid "The title of the alert."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.alert:11
+msgid ""
+"Can be either ``\"ok\"``, ``\"ok_cancel\"``, ``\"yes_no\"``, or "
+"``\"yes_no_cancel\"``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.alert:13
+msgid ""
+"Can be ``\"info\"`` or ``\"critical\"``. Not supported by Google Sheets."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.alert:15
+msgid ""
+"Only used by xlwings Server: you can provide the name of a function that "
+"will be called with the value of the pressed button as argument. The "
+"function has to exist on the client side, i.e., in VBA or JavaScript."
+msgstr ""
+
+#: ../../../api/app.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.alert:24
+msgid ""
+"``None`` when used with xlwings Server, otherwise the value of the pressed "
+"button in lowercase: ``\"ok\"``, ``\"cancel\"``, ``\"yes\"``, ``\"no\"``."
+msgstr ""
+
+#: ../../../api/app.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "A collection of all Book objects that are currently open."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Calculates all open books."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"Returns or sets a calculation value that represents the calculation mode. "
+"Modes: `'manual'`, `'automatic'`, `'semiautomatic'`"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.App.calculation:8
+#: xlwings.App.version:7 xlwings.main.App.macro:14
+#: xlwings.main.App.properties:11
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../api/app.rst:1
+msgid ""
+"Gets or sets the status of the cut or copy mode. Accepts `False` for setting "
+"and returns `None`, `copy` or `cut` when getting the status."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"The default value is True. Set this property to False to suppress prompts "
+"and alert messages while code is running; when a message requires a "
+"response, Excel chooses the default response."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "`True` if events are enabled. Read/write boolean."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Returns the selected cells as Range, fetched live from Excel."
+msgstr ""
+
+#: ../../../api/app.rst:3
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Returns the Window handle (Windows-only)."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"`True` if Excel is in interactive mode. If you set this property to `False`, "
+"Excel blocks all input from the keyboard and mouse (except input to dialog "
+"boxes that are displayed by your code). Read/write Boolean. NOTE: Not "
+"supported on macOS."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Forces the Excel app to quit by killing its process."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"Runs a Sub or Function in Excel VBA that are not part of a specific workbook "
+"but e.g. are part of an add-in."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.macro:7
+msgid "e.g., ``'Module1.MyMacro'`` or ``'MyMacro'``"
+msgstr ""
+
+#: ../../../api/app.rst:6
+msgid "can be accessed like this:"
+msgstr ""
+
+#: ../../../api/app.rst:16
+msgid "Types are supported too:"
+msgstr ""
+
+#: ../../../api/app.rst:31
+msgid "However typed arrays are not supported. So the following won't work"
+msgstr ""
+
+#: ../../../api/app.rst:38
+msgid "See also: `Book.macro`"
+msgstr "另請參見：`Book.macro`"
+
+#: ../../../api/app.rst:1
+msgid "Returns the path to where the App is installed."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Returns the PID of the app."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"Context manager that allows you to easily change the app's properties "
+"temporarily. Once the code leaves the with block, the properties are changed "
+"back to their previous state. Note: Must be used as context manager or else "
+"will have no effect. Also, you can only use app properties that you can both "
+"read and write."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Quits the application without saving any workbooks."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Range object from the active sheet of the active book, see `Range`."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "This function requires xlwings `PRO`."
+msgstr ""
+
+#: ../../../api/app.rst:3
+msgid "This is a convenience wrapper around `mysheet.render_template`"
+msgstr ""
+
+#: ../../../api/app.rst:5
+msgid ""
+"Writes the values of all key word arguments to the `output` file according "
+"to the `template` and the variables contained in there (Jinja variable "
+"syntax). Following variable types are supported:"
+msgstr ""
+
+#: ../../../api/app.rst:9
+msgid ""
+"strings, numbers, lists, simple dicts, NumPy arrays, Pandas DataFrames, "
+"pictures and Matplotlib/Plotly figures."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.render_template:15
+msgid "Path to your Excel template, e.g. ``r'C:\\Path\\to\\my_template.xlsx'``"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.render_template:16
+msgid "Path to your Report, e.g. ``r'C:\\Path\\to\\my_report.xlsx'``"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.render_template:17
+msgid ""
+"A dictionary of ``xlwings.Book`` parameters, for details see: ``xlwings."
+"Book``. For example: ``book_settings={'update_links': False}``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.App.render_template:20
+msgid "All key/value pairs that are used in the template."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"Turn screen updating off to speed up your script. You won't be able to see "
+"what the script is doing, but it will run faster. Remember to set the "
+"screen_updating property back to True when your script ends."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Returns the selected cells as Range."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"Returns the path to `XLSTART` which is where the xlwings add-in gets copied "
+"to by doing `xlwings addin install`."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid ""
+"Gets or sets the value of the status bar. Returns `False` if Excel has "
+"control of it."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Returns the Excel version number object."
+msgstr ""
+
+#: ../../../api/app.rst:1
+msgid "Gets or sets the visibility of Excel to `True` or  `False`."
+msgstr ""

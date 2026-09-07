@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../matplotlib.md:1
+msgid "Matplotlib & Plotly Charts"
+msgstr ""
+
+#: ../../../matplotlib.md:3
+msgid "Matplotlib"
+msgstr ""
+
+#: ../../../matplotlib.md:5
+msgid ""
+"Using {meth}`pictures.add() <xlwings.main.Pictures.add>`, it is easy to "
+"paste a Matplotlib plot as picture in Excel."
+msgstr ""
+
+#: ../../../matplotlib.md:7
+msgid "Getting started"
+msgstr ""
+
+#: ../../../matplotlib.md:9
+msgid "The easiest sample boils down to:"
+msgstr ""
+
+#: ../../../matplotlib.md:25
+msgid ""
+"If you set `update=True`, you can resize and position the plot on Excel: "
+"subsequent calls to `pictures.add()` with the same name (`'MyPlot'`) will "
+"update the picture without changing its position or size."
+msgstr ""
+
+#: ../../../matplotlib.md:30
+msgid ""
+"If you get the following warning `UserWarning: Starting a Matplotlib GUI "
+"outside of the main thread will likely fail.`, make sure to set the "
+"Matplotlib backend before using any Matplotlib/Pyplot code: `import "
+"matplotlib as mpl` and `mpl.use(\"agg\")`."
+msgstr ""
+
+#: ../../../matplotlib.md:33
+msgid "Full integration with Excel"
+msgstr ""
+
+#: ../../../matplotlib.md:35
+msgid ""
+"Calling the above code with [RunPython](vba.md#call-python-with-runpython) "
+"and binding it e.g. to a button is straightforward and works cross-platform."
+msgstr ""
+
+#: ../../../matplotlib.md:38
+msgid ""
+"However, on Windows you can make things feel even more integrated by setting "
+"up a [UDF](udfs.md#user-defined-functions-udfs) along the following lines:"
+msgstr ""
+
+#: ../../../matplotlib.md:50
+msgid ""
+"If you import this function and call it from cell B2, then the plot gets "
+"automatically updated when cell B1 changes:"
+msgstr ""
+
+#: ../../../matplotlib.md:55
+msgid "Properties"
+msgstr ""
+
+#: ../../../matplotlib.md:57
+msgid ""
+"Size, position and other properties can either be set as arguments within "
+"{meth}`pictures.add() <xlwings.main.Pictures.add>`, or by manipulating the "
+"picture object that is returned, see {meth}`xlwings.Picture`."
+msgstr ""
+
+#: ../../../matplotlib.md:60
+msgid "For example:"
+msgstr ""
+
+#: ../../../matplotlib.md:68 ../../../matplotlib.md:88
+msgid "or:"
+msgstr ""
+
+#: ../../../matplotlib.md:76
+msgid "Getting a Matplotlib figure"
+msgstr ""
+
+#: ../../../matplotlib.md:78
+msgid "Here are a few examples of how you get a matplotlib `figure` object:"
+msgstr ""
+
+#: ../../../matplotlib.md:80
+msgid "via PyPlot interface:"
+msgstr ""
+
+#: ../../../matplotlib.md:96
+msgid "via object oriented interface:"
+msgstr ""
+
+#: ../../../matplotlib.md:105
+msgid "via Pandas:"
+msgstr ""
+
+#: ../../../matplotlib.md:117
+msgid ""
+"When working with Google Sheets, you can use a maximum of 1 million pixels "
+"per picture. Total pixels is a function of figure size and dpi: (width in "
+"inches * dpi) * (height in inches * dpi). For example, `fig = plt."
+"figure(figsize=(6, 4))` with 200 dpi (default dpi when using `pictures."
+"add()`) will result in (6 * 200) * (4 * 200) = 960,000 px. To change the "
+"dpi, provide `export_options`: `pictures.add(fig, "
+"export_options={\"bbox_inches\": \"tight\", \"dpi\": 300})`. Existing figure "
+"size can be checked via `fig.get_size_inches()`. pandas also accepts "
+"`figsize` like so:  `ax = df.plot(figsize=(3, 3))`. Note that "
+"`\"bbox_inches\": \"tight\"` crops the image and therefore will reduce the "
+"number of pixels in a non-deterministic way. `export_options` will be passed "
+"to `figure.figsave()` when using Matplotlib and to `figure.write_image()` "
+"when using Plotly."
+msgstr ""
+
+#: ../../../matplotlib.md:120
+msgid "Plotly static charts"
+msgstr ""
+
+#: ../../../matplotlib.md:122
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../../matplotlib.md:124
+msgid ""
+"In addition to `plotly`, you will need `kaleido`, `psutil`, and `requests`. "
+"The easiest way to get it is via pip:"
+msgstr ""
+
+#: ../../../matplotlib.md:130
+msgid "or conda:"
+msgstr ""
+
+#: ../../../matplotlib.md:136
+msgid "See also: https://plotly.com/python/static-image-export/"
+msgstr ""
+
+#: ../../../matplotlib.md:138
+msgid "How to use"
+msgstr ""
+
+#: ../../../matplotlib.md:140
+msgid ""
+"It works the same as with Matplotlib, however, rendering a Plotly chart "
+"takes slightly longer. Here is a sample:"
+msgstr ""

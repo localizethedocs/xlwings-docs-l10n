@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/font.rst:2
+msgid "Font"
+msgstr ""
+
+#: ../../../api/font.rst:1
+msgid ""
+"The font object can be accessed as an attribute of the range or shape object."
+msgstr ""
+
+#: ../../../api/font.rst:3
+msgid "`mysheet['A1'].font`"
+msgstr ""
+
+#: ../../../api/font.rst:4
+msgid "`mysheet.shapes[0].font`"
+msgstr ""
+
+#: ../../../api/font.rst:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/font.rst:1
+msgid "Returns or sets the bold property (boolean)."
+msgstr ""
+
+#: ../../../api/font.rst:1
+msgid "Returns or sets the color property (tuple)."
+msgstr ""
+
+#: ../../../api/font.rst:1
+msgid "Returns or sets the italic property (boolean)."
+msgstr ""
+
+#: ../../../api/font.rst:1
+msgid "Returns or sets the name of the font (str)."
+msgstr ""
+
+#: ../../../api/font.rst:1
+msgid "Returns or sets the size (float)."
+msgstr ""

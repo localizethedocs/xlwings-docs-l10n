@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../datastructures.md:1
+msgid "Data Structures Tutorial"
+msgstr ""
+
+#: ../../../datastructures.md:3
+msgid ""
+"This tutorial gives you a quick introduction to the most common use cases "
+"and default behaviour of xlwings when reading and writing values. For an in-"
+"depth documentation of how to control the behavior using the `options` "
+"method, have a look at [Converters and Options](converters.md#converters-and-"
+"options)."
+msgstr ""
+
+#: ../../../datastructures.md:7
+msgid "All code samples below depend on the following import:"
+msgstr ""
+
+#: ../../../datastructures.md:13
+msgid "Single Cells"
+msgstr ""
+
+#: ../../../datastructures.md:14
+msgid ""
+"Single cells are by default returned either as `float`, `unicode`, `None` or "
+"`datetime` objects, depending on whether the cell contains a number, a "
+"string, is empty or represents a date:"
+msgstr ""
+
+#: ../../../datastructures.md:33
+msgid "Lists"
+msgstr ""
+
+#: ../../../datastructures.md:34
+msgid ""
+"1d lists: Ranges that represent rows or columns in Excel are returned as "
+"simple lists, which means that once they are in Python, you've lost the "
+"information about the orientation. If that is an issue, the next point shows "
+"you how to preserve this info:"
+msgstr ""
+
+#: ../../../datastructures.md:48
+msgid "To force a single cell to arrive as list, use:"
+msgstr ""
+
+#: ../../../datastructures.md:56
+msgid ""
+"To write a list in column orientation to Excel, use `transpose`: `sheet."
+"range('A1').options(transpose=True).value = [1,2,3,4]`"
+msgstr ""
+
+#: ../../../datastructures.md:59
+msgid ""
+"2d lists: If the row or column orientation has to be preserved, set `ndim` "
+"in the Range options. This will return the Ranges as nested lists (\"2d "
+"lists\"):"
+msgstr ""
+
+#: ../../../datastructures.md:69
+msgid ""
+"2 dimensional Ranges are automatically returned as nested lists. When "
+"assigning (nested) lists to a Range in Excel, it's enough to just specify "
+"the top left cell as target address. This sample also makes use of index "
+"notation to read the values back into Python:"
+msgstr ""
+
+#: ../../../datastructures.md:80
+msgid ""
+"Try to minimize the number of interactions with Excel. It is always more "
+"efficient to do `sheet.range('A1').value = [[1,2],[3,4]]` than `sheet."
+"range('A1').value = [1, 2]` and `sheet.range('A2').value = [3, 4]`."
+msgstr ""
+
+#: ../../../datastructures.md:84
+msgid "Range expanding"
+msgstr ""
+
+#: ../../../datastructures.md:86
+msgid ""
+"You can get the dimensions of Excel Ranges dynamically through either the "
+"method `expand` or through the `expand` keyword in the `options` method. "
+"While `expand` gives back an expanded Range object, options are only "
+"evaluated when accessing the values of a Range. The difference is best "
+"explained with an example:"
+msgstr ""
+
+#: ../../../datastructures.md:106
+msgid ""
+"`'table'` expands to `'down'` and `'right'`, the other available options "
+"which can be used for column or row only expansion, respectively."
+msgstr ""
+
+#: ../../../datastructures.md:110
+msgid ""
+"Using `expand()` together with a named Range as top left cell gives you a "
+"flexible setup in Excel: You can move around the table and change its size "
+"without having to adjust your code, e.g. by using something like `sheet."
+"range('NamedRange').expand().value`."
+msgstr ""
+
+#: ../../../datastructures.md:115
+msgid "NumPy arrays"
+msgstr ""
+
+#: ../../../datastructures.md:117
+msgid ""
+"NumPy arrays work similar to nested lists. However, empty cells are "
+"represented by `nan` instead of `None`. If you want to read in a Range as "
+"array, set `convert=np.array` in the `options` method:"
+msgstr ""
+
+#: ../../../datastructures.md:130
+msgid "Pandas DataFrames"
+msgstr ""
+
+#: ../../../datastructures.md:149
+msgid "Pandas Series"
+msgstr ""
+
+#: ../../../datastructures.md:176
+msgid ""
+"You only need to specify the top left cell when writing a list, a NumPy "
+"array or a Pandas DataFrame to Excel, e.g.: `sheet['A1'].value = np.eye(10)`"
+msgstr ""
+
+#: ../../../datastructures.md:180
+msgid "Chunking: Read/Write big DataFrames etc."
+msgstr ""
+
+#: ../../../datastructures.md:182
+msgid ""
+"When you read and write from or to big ranges, you may have to chunk them or "
+"you will hit a timeout or a memory error. The ideal `chunksize` will depend "
+"on your system and size of the array, so you will have to try out a few "
+"different chunksizes to find one that works well:"
+msgstr ""
+
+#: ../../../datastructures.md:193
+msgid "And the same for reading:"
+msgstr ""

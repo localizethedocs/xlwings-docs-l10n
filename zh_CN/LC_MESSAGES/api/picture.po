@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/picture.rst:2
+msgid "Picture"
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid "The picture object is a member of the `pictures` collection:"
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid "Deletes the picture."
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid ""
+"Returns or sets the number of points that represent the height of the "
+"picture."
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid ""
+"Returns or sets the number of points that represent the horizontal position "
+"of the picture."
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid ""
+"`True` will keep the original proportion, `False` will allow you to change "
+"height and width independently of each other (read/write)."
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid "Returns or sets the name of the picture."
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid "Returns the parent of the picture."
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid ""
+"Returns or sets the number of points that represent the vertical position of "
+"the picture."
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid ""
+"Replaces an existing picture with a new one, taking over the attributes of "
+"the existing picture."
+msgstr ""
+
+#: ../../../api/picture.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Picture.update:7
+msgid "Either a filepath or a Matplotlib figure object."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Picture.update:8
+#: xlwings.main.Picture.update:9
+msgid "See under ``Pictures.add()``"
+msgstr ""
+
+#: ../../../api/picture.rst:1
+msgid ""
+"Returns or sets the number of points that represent the width of the picture."
+msgstr ""
