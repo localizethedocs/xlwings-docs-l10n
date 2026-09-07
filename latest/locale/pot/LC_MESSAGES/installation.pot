@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-09-07 13:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,7 +43,7 @@ msgid ""
 msgstr ""
 
 #: ../../../installation.md:8
-msgid "xlwings requires at least Python 3.9."
+msgid "xlwings requires at least Python 3.11."
 msgstr ""
 
 #: ../../../installation.md:10
@@ -51,178 +52,182 @@ msgid ""
 msgstr ""
 
 #: ../../../installation.md:12
-msgid "Python 3.8: 0.31.10"
+msgid "Python 3.9 and 3.10: 0.37.0"
 msgstr ""
 
 #: ../../../installation.md:13
-msgid "Python 3.7: 0.30.9"
+msgid "Python 3.8: 0.31.10"
 msgstr ""
 
 #: ../../../installation.md:14
-msgid "Python 3.6: 0.25.3"
+msgid "Python 3.7: 0.30.9"
 msgstr ""
 
 #: ../../../installation.md:15
-msgid "Python 3.5: 0.19.5"
+msgid "Python 3.6: 0.25.3"
 msgstr ""
 
 #: ../../../installation.md:16
+msgid "Python 3.5: 0.19.5"
+msgstr ""
+
+#: ../../../installation.md:17
 msgid "Python 2.7: 0.16.6"
 msgstr ""
 
-#: ../../../installation.md:18
+#: ../../../installation.md:19
 msgid "xlwings Python package"
 msgstr ""
 
-#: ../../../installation.md:20
+#: ../../../installation.md:21
 msgid ""
 "xlwings comes pre-installed with [Anaconda](https://www.anaconda.com/"
 "products/individual) (Windows and macOS). Otherwise, you can also install it "
 "with pip:"
 msgstr ""
 
-#: ../../../installation.md:26
+#: ../../../installation.md:27
 msgid "or conda:"
 msgstr ""
 
-#: ../../../installation.md:32
+#: ../../../installation.md:33
 msgid ""
 "Note that the official conda package might be a few releases behind. You "
 "can, however, use the `conda-forge` channel (replace `install` with "
 "`upgrade` if xlwings is already installed):"
 msgstr ""
 
-#: ../../../installation.md:39
+#: ../../../installation.md:40
 msgid "xlwings Excel Add-in"
 msgstr ""
 
-#: ../../../installation.md:41
+#: ../../../installation.md:42
 msgid "To install the add-in, run the following command:"
 msgstr ""
 
-#: ../../../installation.md:47
+#: ../../../installation.md:48
 msgid ""
 "To automate Excel from Python, you don't need an add-in. Also, you can use a "
 "single file VBA module (*standalone workbook*) instead of the add-in. For "
 "more details, see [Add-in & Settings](addin.md#add-in--settings)."
 msgstr ""
 
-#: ../../../installation.md:50
+#: ../../../installation.md:51
 msgid ""
 "The add-in needs to be the same version as the Python package. Make sure to "
 "run `xlwings add install` again after upgrading the xlwings package."
 msgstr ""
 
-#: ../../../installation.md:54
+#: ../../../installation.md:55
 msgid ""
 "When you are on macOS and are using the VBA standalone module instead of the "
 "add-in, you need to run `$ xlwings runpython install` once."
 msgstr ""
 
-#: ../../../installation.md:57
+#: ../../../installation.md:58
 msgid "Dependencies"
 msgstr ""
 
-#: ../../../installation.md:59
+#: ../../../installation.md:60
 msgid "For automating Excel, you'll need the following dependencies:"
 msgstr ""
 
-#: ../../../installation.md:61
+#: ../../../installation.md:62
 msgid "**Windows**: `pywin32`"
 msgstr ""
 
-#: ../../../installation.md:63
+#: ../../../installation.md:64
 msgid "**Mac**: `psutil`, `appscript`"
 msgstr ""
 
-#: ../../../installation.md:65
+#: ../../../installation.md:66
 msgid ""
 "The dependencies are automatically installed via `conda` or `pip`. If you "
 "would like to install xlwings without dependencies, you can run `pip install "
 "xlwings --no-deps`."
 msgstr ""
 
-#: ../../../installation.md:68
+#: ../../../installation.md:69
 msgid "How to activate xlwings PRO"
 msgstr ""
 
-#: ../../../installation.md:70
+#: ../../../installation.md:71
 msgid "See [xlwings PRO](pro/license_key.md#license-key)."
 msgstr ""
 
-#: ../../../installation.md:72
+#: ../../../installation.md:73
 msgid "Optional Dependencies"
 msgstr ""
 
-#: ../../../installation.md:74
+#: ../../../installation.md:75
 msgid "NumPy"
 msgstr ""
 
-#: ../../../installation.md:75
+#: ../../../installation.md:76
 msgid "pandas"
 msgstr ""
 
-#: ../../../installation.md:76
+#: ../../../installation.md:77
 msgid "Matplotlib"
 msgstr ""
 
-#: ../../../installation.md:77
+#: ../../../installation.md:78
 msgid "Pillow"
 msgstr ""
 
-#: ../../../installation.md:78
+#: ../../../installation.md:79
 msgid "Jinja2 (for xlwings.reports)"
 msgstr ""
 
-#: ../../../installation.md:80
+#: ../../../installation.md:81
 msgid ""
 "These packages are not required but highly recommended as they play very "
 "nicely with xlwings. They are all pre-installed with Anaconda. With pip, you "
 "can install xlwings with all optional dependencies as follows:"
 msgstr ""
 
-#: ../../../installation.md:86
+#: ../../../installation.md:87
 msgid "Update"
 msgstr ""
 
-#: ../../../installation.md:88
+#: ../../../installation.md:89
 msgid ""
 "To update to the latest xlwings version, run the following in a command "
 "prompt:"
 msgstr ""
 
-#: ../../../installation.md:94 ../../../installation.md:124
+#: ../../../installation.md:95 ../../../installation.md:125
 msgid "or:"
 msgstr ""
 
-#: ../../../installation.md:100
+#: ../../../installation.md:101
 msgid ""
 "Make sure to keep your version of the Excel add-in in sync with your Python "
 "package by running the following (make sure to close Excel first):"
 msgstr ""
 
-#: ../../../installation.md:107
+#: ../../../installation.md:108
 msgid ""
 "If you get an `Object required` error with UDFs after an update, re-import "
 "the functions and recalculate the workbook via `Ctrl+Alt+F9`."
 msgstr ""
 
-#: ../../../installation.md:110
+#: ../../../installation.md:111
 msgid "Uninstall"
 msgstr ""
 
-#: ../../../installation.md:112
+#: ../../../installation.md:113
 msgid ""
 "To uninstall xlwings completely, first uninstall the add-in, then uninstall "
 "the xlwings package using the same method (pip or conda) that you used for "
 "installing it:"
 msgstr ""
 
-#: ../../../installation.md:118
+#: ../../../installation.md:119
 msgid "Then:"
 msgstr ""
 
-#: ../../../installation.md:130
+#: ../../../installation.md:131
 msgid ""
 "Finally, manually remove the `.xlwings` directory in your home folder if it "
 "exists."
