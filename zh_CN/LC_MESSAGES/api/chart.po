@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/chart.rst:2
+msgid "Chart"
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid "The chart object is a member of the `charts` collection:"
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid ""
+"Returns and sets the chart type of the chart. The following chart types are "
+"available:"
+msgstr ""
+
+#: ../../../api/chart.rst:4
+msgid ""
+"`3d_area`, `3d_area_stacked`, `3d_area_stacked_100`, `3d_bar_clustered`, "
+"`3d_bar_stacked`, `3d_bar_stacked_100`, `3d_column`, `3d_column_clustered`, "
+"`3d_column_stacked`, `3d_column_stacked_100`, `3d_line`, `3d_pie`, "
+"`3d_pie_exploded`, `area`, `area_stacked`, `area_stacked_100`, "
+"`bar_clustered`, `bar_of_pie`, `bar_stacked`, `bar_stacked_100`, `bubble`, "
+"`bubble_3d_effect`, `column_clustered`, `column_stacked`, "
+"`column_stacked_100`, `combination`, `cone_bar_clustered`, "
+"`cone_bar_stacked`, `cone_bar_stacked_100`, `cone_col`, "
+"`cone_col_clustered`, `cone_col_stacked`, `cone_col_stacked_100`, "
+"`cylinder_bar_clustered`, `cylinder_bar_stacked`, "
+"`cylinder_bar_stacked_100`, `cylinder_col`, `cylinder_col_clustered`, "
+"`cylinder_col_stacked`, `cylinder_col_stacked_100`, `doughnut`, "
+"`doughnut_exploded`, `line`, `line_markers`, `line_markers_stacked`, "
+"`line_markers_stacked_100`, `line_stacked`, `line_stacked_100`, `pie`, "
+"`pie_exploded`, `pie_of_pie`, `pyramid_bar_clustered`, "
+"`pyramid_bar_stacked`, `pyramid_bar_stacked_100`, `pyramid_col`, "
+"`pyramid_col_clustered`, `pyramid_col_stacked`, `pyramid_col_stacked_100`, "
+"`radar`, `radar_filled`, `radar_markers`, `stock_hlc`, `stock_ohlc`, "
+"`stock_vhlc`, `stock_vohlc`, `surface`, `surface_top_view`, "
+"`surface_top_view_wireframe`, `surface_wireframe`, `xy_scatter`, "
+"`xy_scatter_lines`, `xy_scatter_lines_no_markers`, `xy_scatter_smooth`, "
+"`xy_scatter_smooth_no_markers`"
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid "Deletes the chart."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid ""
+"Returns or sets the number of points that represent the height of the chart."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid ""
+"Returns or sets the number of points that represent the horizontal position "
+"of the chart."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid "Returns or sets the name of the chart."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid "Returns the parent of the chart."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid "Sets the source data range for the chart."
+msgstr ""
+
+#: ../../../api/chart.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.Chart.set_source_data:6
+msgid "Range object, e.g. ``xw.books['Book1'].sheets[0].range('A1')``"
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid "Exports the chart as PDF."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Chart.to_pdf:6
+msgid ""
+"Path where you want to store the pdf. Defaults to the name of the chart in "
+"the same directory as the Excel file if the Excel file is stored and to the "
+"current working directory otherwise."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Chart.to_pdf:9
+msgid "Once created, open the PDF file with the default application."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Chart.to_pdf:10
+msgid "Quality of the PDF file. Can either be ``'standard'`` or ``'minimum'``."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid "Exports the chart as PNG picture."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Chart.to_png:6
+msgid ""
+"Path where you want to store the picture. Defaults to the name of the chart "
+"in the same directory as the Excel file if the Excel file is stored and to "
+"the current working directory otherwise."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid ""
+"Returns or sets the number of points that represent the vertical position of "
+"the chart."
+msgstr ""
+
+#: ../../../api/chart.rst:1
+msgid ""
+"Returns or sets the number of points that represent the width of the chart."
+msgstr ""

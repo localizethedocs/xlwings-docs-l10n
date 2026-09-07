@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../quickstart.md:1
+msgid "Quickstart"
+msgstr ""
+
+#: ../../../quickstart.md:3
+msgid ""
+"This guide assumes you have xlwings already installed. If that's not the "
+"case, head over to [Installation](installation.md#installation)."
+msgstr ""
+
+#: ../../../quickstart.md:5
+msgid "1. Interacting with Excel from a Jupyter notebook"
+msgstr ""
+
+#: ../../../quickstart.md:7
+msgid ""
+"If you're just interested in getting a pandas DataFrame in and out of your "
+"Jupyter notebook, you can use the `view` and `load` functions, see  [Jupyter "
+"Notebooks: Interact with Excel](jupyternotebooks.md#jupyter-notebooks-"
+"interact-with-excel)."
+msgstr ""
+
+#: ../../../quickstart.md:9
+msgid "2. Scripting: Automate/interact with Excel from Python"
+msgstr ""
+
+#: ../../../quickstart.md:11
+msgid "Establish a connection with a workbook:"
+msgstr ""
+
+#: ../../../quickstart.md:20
+msgid ""
+"If you have the same file open in two instances of Excel, you need to fully "
+"qualify it and include the app instance. You will find your app instance key "
+"(the PID) via `xw.apps.keys()`:"
+msgstr ""
+
+#: ../../../quickstart.md:27
+msgid "Instantiate a sheet object:"
+msgstr ""
+
+#: ../../../quickstart.md:33
+msgid "Reading/writing values to/from ranges is as easy as:"
+msgstr ""
+
+#: ../../../quickstart.md:41
+msgid ""
+"There are many **convenience features** available, e.g. Range expanding:"
+msgstr ""
+
+#: ../../../quickstart.md:49
+msgid ""
+"**Powerful converters** handle most data types of interest, including Numpy "
+"arrays and Pandas DataFrames in both directions:"
+msgstr ""
+
+#: ../../../quickstart.md:61
+msgid "**Matplotlib** figures can be shown as pictures in Excel:"
+msgstr ""
+
+#: ../../../quickstart.md:72
+msgid "3. Macros: Call Python from Excel"
+msgstr ""
+
+#: ../../../quickstart.md:74
+msgid ""
+"You can call Python functions either by clicking the `Run` button (new in "
+"v0.16) in  the add-in or from VBA using the `RunPython` function:"
+msgstr ""
+
+#: ../../../quickstart.md:76
+msgid ""
+"The `Run` button expects a function called `main` in a Python module with "
+"the same name as your workbook. The  great thing about that approach is that "
+"you don't need your workbooks to be macro-enabled, you can save it as `xlsx`."
+msgstr ""
+
+#: ../../../quickstart.md:79
+msgid ""
+"If you want to call any Python function no matter in what module it lives or "
+"what name it has, use `RunPython`:"
+msgstr ""
+
+#: ../../../quickstart.md:88
+msgid ""
+"Per default, `RunPython` expects `hello.py` in the same directory as the "
+"Excel file with the same name, **but you can change both of these things**: "
+"if your Python file is an a different folder, add that folder to the "
+"`PYTHONPATH` in the config. If the file has a different name, change the "
+"`RunPython` command accordingly."
+msgstr ""
+
+#: ../../../quickstart.md:91
+msgid "Refer to the calling Excel book by using `xw.Book.caller()`:"
+msgstr ""
+
+#: ../../../quickstart.md:103
+msgid ""
+"To make this run, you'll need to have the xlwings add-in installed or have "
+"the workbooks setup in the standalone mode. The easiest way to get "
+"everything set up is to use the xlwings command line client from either a "
+"command prompt on Windows or a terminal on Mac: `xlwings quickstart "
+"myproject`."
+msgstr ""
+
+#: ../../../quickstart.md:105
+msgid ""
+"For details about the addin, see [Add-in & Settings](addin.md#add-in--"
+"settings)."
+msgstr ""
+
+#: ../../../quickstart.md:107
+msgid "4. UDFs: User Defined Functions (Windows only)"
+msgstr ""
+
+#: ../../../quickstart.md:109
+msgid "Writing a UDF in Python is as easy as:"
+msgstr ""
+
+#: ../../../quickstart.md:119
+msgid ""
+"Converters can be used with UDFs by using type hints. Again a Pandas "
+"DataFrame example:"
+msgstr ""
+
+#: ../../../quickstart.md:131
+msgid ""
+"Type hints have been supported since v0.32.0. Previously, you would need to "
+"use a decorator (which continues to work):"
+msgstr ""
+
+#: ../../../quickstart.md:144
+msgid ""
+"Import this function into Excel by clicking the import button of the xlwings "
+"add-in: for a step-by-step tutorial, see [User Defined Functions (UDFs)]"
+"(udfs.md#user-defined-functions-udfs)."
+msgstr ""

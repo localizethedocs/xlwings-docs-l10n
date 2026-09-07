@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../vba.md:1
+msgid "RunPython"
+msgstr ""
+
+#: ../../../vba.md:3
+msgid "xlwings add-in"
+msgstr "xlwings 增益集"
+
+#: ../../../vba.md:5
+msgid ""
+"To get access to `Run main` (new in v0.16) button or the `RunPython` VBA "
+"function, you'll need the xlwings addin (or VBA module), see [Add-in & "
+"Settings](addin.md#add-in--settings)."
+msgstr ""
+
+#: ../../../vba.md:7
+msgid ""
+"For new projects, the easiest way to get started is by using the command "
+"line client with the quickstart command, see [Command Line Client (CLI)]"
+"(command_line.md#command-line-client-cli) for details:"
+msgstr ""
+
+#: ../../../vba.md:14
+msgid "Call Python with \"RunPython\""
+msgstr ""
+
+#: ../../../vba.md:16
+msgid ""
+"In the VBA Editor (`Alt-F11`), write the code below into a VBA module. "
+"`xlwings quickstart` automatically adds a new module with a sample call. If "
+"you rather want to start from scratch, you can add a new module via `Insert "
+"> Module`."
+msgstr ""
+
+#: ../../../vba.md:25
+msgid "This calls the following code in `hello.py`:"
+msgstr ""
+
+#: ../../../vba.md:37
+msgid ""
+"You can then attach `HelloWorld` to a button or run it directly in the VBA "
+"Editor by hitting `F5`."
+msgstr ""
+
+#: ../../../vba.md:40
+msgid ""
+"Place `xw.Book.caller()` within the function that is being called from Excel "
+"and not outside as global variable. Otherwise it prevents Excel from "
+"shutting down properly upon exiting and leaves you with a zombie process "
+"when you use `Use UDF Server = True`."
+msgstr ""
+
+#: ../../../vba.md:45
+msgid "Function Arguments and Return Values"
+msgstr ""
+
+#: ../../../vba.md:47
+msgid ""
+"While it's technically possible to include arguments in the function call "
+"within `RunPython`, it's not very convenient. Also, `RunPython` does not "
+"allow you to return values. To overcome these issues, use UDFs, see [User "
+"Defined Functions (UDFs)](udfs.md#user-defined-functions-udfs) - however, "
+"this is currently limited to Windows only."
+msgstr ""
