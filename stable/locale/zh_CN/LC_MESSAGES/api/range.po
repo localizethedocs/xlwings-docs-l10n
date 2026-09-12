@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-03 10:10+0000\n"
+"POT-Creation-Date: 2026-09-07 13:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../api/range.rst:2
+#: ../../../api/range.md:1
 msgid "Range"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns a Range object that represents a cell or a range of cells."
 msgstr ""
 
-#: ../../../api/range.rst:0
+#: ../../../api/range.md:0
 msgid "Parameters"
 msgstr ""
 
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Adds a hyperlink to the specified Range (single Cell)"
 msgstr ""
 
@@ -70,13 +70,13 @@ msgid ""
 "hold to select this cell.'"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns a string value that represents the range reference. Use "
 "`get_address()` to be able to provide parameters."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Adjusts the indentation in a Range."
 msgstr ""
 
@@ -86,13 +86,13 @@ msgid ""
 "negative."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns the native object (`pywin32` or `appscript` obj) of the engine being "
 "used."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Autofills the destination Range. Note that the destination Range must "
 "include the origin Range."
@@ -111,78 +111,85 @@ msgid ""
 "``\"flash_fill``"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Autofits the width and height of all cells in the range."
 msgstr ""
 
-#: ../../../api/range.rst:3
+#: ../../../api/range.md:3
 msgid ""
 "To autofit only the width of the columns use `myrange.columns.autofit()`"
 msgstr ""
 
-#: ../../../api/range.rst:5
+#: ../../../api/range.md:5
 msgid "To autofit only the height of the rows use `myrange.rows.autofit()`"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Clears the content and the formatting of a Range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Clears the content of a Range but leaves the formatting."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Clears the format of a Range but leaves the content."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Gets and sets the background color of the specified Range."
 msgstr ""
 
-#: ../../../api/range.rst:3
+#: ../../../api/range.md:3
 msgid ""
 "To set the color, either use an RGB tuple `(0, 0, 0)` or a hex string like "
 "`#efefef` or an Excel color constant. To remove the background, set the "
 "color to `None`, see Examples."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns the number of the first column in the in the specified range. Read-"
 "only."
 msgstr ""
 
-#: ../../../api/range.rst:1
-msgid ""
-"Gets or sets the width, in characters, of a Range. One unit of column width "
-"is equal to the width of one character in the Normal style. For proportional "
-"fonts, the width of the character 0 (zero) is used."
+#: ../../../api/range.md:1
+msgid "Gets or sets the width of a Range."
 msgstr ""
 
-#: ../../../api/range.rst:5
+#: ../../../api/range.md:3
+msgid ""
+"The unit depends on the engine: **characters** on the classic, locally "
+"installed xlwings, where one unit is the width of one character in the "
+"Normal style (for proportional fonts, the character 0), and **points** on "
+"xlwings Server and xlwings Lite."
+msgstr ""
+
+#: ../../../api/range.md:8
 msgid ""
 "If all columns in the Range have the same width, returns the width. If "
 "columns in the Range have different widths, returns None."
 msgstr ""
 
-#: ../../../api/range.rst:8
-msgid "column_width must be in the range: 0 <= column_width <= 255"
+#: ../../../api/range.md:11
+msgid ""
+"In characters, column_width must be in the range 0 <= column_width <= 255. "
+"In points it only has to be positive."
 msgstr ""
 
-#: ../../../api/range.rst:11
+#: ../../../api/range.md:14
 msgid ""
 "Note: If the Range is outside the used range of the Worksheet, and columns "
 "in the Range have different widths, returns the width of the first column."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns a `RangeColumns` object that represents the columns in the specified "
 "range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Copy a range to a destination range or clipboard."
 msgstr ""
 
@@ -192,7 +199,7 @@ msgid ""
 "range is copied to the clipboard."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "A newer variant of copy that replaces copy/paste."
 msgstr ""
 
@@ -200,7 +207,7 @@ msgstr ""
 msgid "One of \"all\", \"formats\", \"formulas\", \"link\", \"values\""
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Copies the range to the clipboard as picture."
 msgstr ""
 
@@ -212,11 +219,11 @@ msgstr ""
 msgid "Either 'picture' or 'bitmap'."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns the number of cells."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "This property returns a Range object representing a range bounded by (but "
 "not including) any combination of blank rows and blank columns or the edges "
@@ -224,7 +231,7 @@ msgid ""
 "Space` on Mac."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Deletes a cell or range of cells."
 msgstr ""
 
@@ -234,14 +241,14 @@ msgid ""
 "range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns a Range object that represents the cell at the end of the region "
 "that contains the source range. Equivalent to pressing Ctrl+Up, Ctrl+down, "
 "Ctrl+left, or Ctrl+right."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Expands the range according to the mode provided. Ignores empty top-left "
 "cells (unlike `Range.end()`)."
@@ -251,19 +258,19 @@ msgstr ""
 msgid "One of ``'table'`` (=down and right), ``'down'``, ``'right'``."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Gets or sets the formula for the given Range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Gets or sets the formula2 for the given Range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Gets or sets an  array formula for the given Range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns the address of the range in the specified format. `address` can be "
 "used instead if none of the defaults need to be changed."
@@ -291,15 +298,139 @@ msgid ""
 "Set to True to return an external reference with workbook and worksheet name."
 msgstr ""
 
-#: ../../../api/range.rst:1
-msgid "Fetch values from Excel on demand."
+#: ../../../api/range.md:1
+msgid "Fetch the fill color on demand, as an RGB tuple."
 msgstr ""
 
-#: ../../../api/range.rst:3
+#: ../../../api/range.md:3
+msgid "Returns `None` if the range has no fill."
+msgstr ""
+
+#: ../../../api/range.md:3 ../../../api/range.md:5 ../../../api/range.md:6
+#: ../../../api/range.md:7
 msgid "Requires xlwings Lite."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
+msgid "Fetch the column width on demand, in points."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid "Returns `None` if the range's columns aren't all the same width."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the current region on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"The region bounded by blank rows and columns around this range, i.e. `Ctrl-"
+"*`."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch formulas on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"The returned shape follows the same rules as reading `value`: a single cell "
+"gives a string, a 1-by-n or n-by-1 range a flat list, and anything else a "
+"nested list. `options(ndim=...)` applies as usual."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the array formula for this range on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"A single string, or `None` if the range holds no array formula. Unlike "
+"`get_formula()`, this isn't a value per cell."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the range's height in points, on demand."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch this cell's hyperlink address on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"The async equivalent of `hyperlink`: same result, including for cells that "
+"use a `HYPERLINK()` formula. Raises if the cell has no hyperlink."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the distance from the sheet's left edge, in points, on demand."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the merged range containing this cell, on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid "Returns this range itself if it isn't part of a merged range."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch whether this range contains merged cells, on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"`True` if the whole range is merged, `False` if none of it is, and `None` if "
+"it's only partly merged."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the number format on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid "A single format string, or `None` if the range's cells don't share one."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the row height on demand, in points."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid "Returns `None` if the range's rows aren't all the same height."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the Table this range is part of, on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid "Returns `None` if the range isn't part of a table."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the distance from the sheet's top edge, in points, on demand."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch values on demand."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the range's width in points, on demand."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the wrap text setting on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid "`None` if the range doesn't have a uniform wrap setting."
+msgstr ""
+
+#: ../../../api/range.md:1
 msgid "Group rows or columns."
 msgstr ""
 
@@ -310,21 +441,21 @@ msgid ""
 "as '1:3' or 'A:C', respectively."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "`True` if the range is part of a legacy CSE Array formula and `False` "
 "otherwise."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns the height, in points, of a Range. Read-only."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns the hyperlink address of the specified Range (single Cell only)"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Insert a cell or range of cells into the sheet."
 msgstr ""
 
@@ -338,11 +469,11 @@ msgid ""
 "that copy_origin is only supported on Windows."
 msgstr ""
 
-#: ../../../api/range.rst:2
+#: ../../../api/range.md:2
 msgid "`shift` is now a required argument."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns the bottom right cell of the specified range. Read-only."
 msgstr ""
 
@@ -350,13 +481,13 @@ msgstr ""
 msgid "Example"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns the distance, in points, from the left edge of column A to the left "
 "edge of the range. Read-only."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Creates a merged cell from the specified Range object."
 msgstr ""
 
@@ -366,38 +497,38 @@ msgid ""
 "cells."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns a Range object that represents the merged Range containing the "
 "specified cell. If the specified cell isn't in a merged range, this property "
 "returns the specified cell."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns `True` if the Range contains merged cells, otherwise `False`"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Sets or gets the name of a Range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns a Note object. Before the introduction of threaded comments, a Note "
 "was called a Comment."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Gets and sets the number_format of a Range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns a Range object that represents a Range that's offset from the "
 "specified range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Allows you to set a converter and their options. Converters define how Excel "
 "Ranges and their values are being converted both during reading and writing "
@@ -411,7 +542,7 @@ msgid ""
 "defaults to default converter."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 ":keyword ndim: Number of dimensions. :keyword numbers: Type of numbers, e.g. "
 "`int`. :keyword dates: E.g. `datetime.date`, defaults to `datetime."
@@ -426,11 +557,11 @@ msgid ""
 "`None`.                      *New in version 0.28.0.*"
 msgstr ""
 
-#: ../../../api/range.rst:15
+#: ../../../api/range.md:15
 msgid "For converter-specific options, see `converters`."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Pastes a range from the clipboard into the specified range."
 msgstr ""
 
@@ -454,7 +585,7 @@ msgstr ""
 msgid "Set to ``True`` to transpose rows and columns."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Gets and sets the values directly as delivered from/accepted by the engine "
 "that s being used (`pywin32` or `appscript`) without going through any of "
@@ -463,7 +594,7 @@ msgid ""
 "compatibility."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Resizes the specified Range"
 msgstr ""
 
@@ -479,53 +610,53 @@ msgid ""
 "the range is unchanged)."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns the number of the first row in the specified range. Read-only."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Gets or sets the height, in points, of a Range. If all rows in the Range "
 "have the same height, returns the height. If rows in the Range have "
 "different heights, returns None."
 msgstr ""
 
-#: ../../../api/range.rst:5
+#: ../../../api/range.md:5
 msgid "row_height must be in the range: 0 <= row_height <= 409.5"
 msgstr ""
 
-#: ../../../api/range.rst:8
+#: ../../../api/range.md:8
 msgid ""
 "Note: If the Range is outside the used range of the Worksheet, and rows in "
 "the Range have different heights, returns the height of the first row."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns a `RangeRows` object that represents the rows in the specified range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Selects the range. Select only works on the active book."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Tuple of Range dimensions."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns the Sheet object to which the Range belongs."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Number of elements in the Range."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns a Table object if the range is part of one, otherwise `None`."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Exports the range as PDF."
 msgstr ""
 
@@ -554,7 +685,7 @@ msgstr ""
 msgid "Quality of the PDF file. Can either be ``'standard'`` or ``'minimum'``."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Exports the range as PNG picture."
 msgstr ""
 
@@ -565,32 +696,32 @@ msgid ""
 "the current working directory otherwise."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns the distance, in points, from the top edge of row 1 to the top edge "
 "of the range. Read-only."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Ungroup rows or columns"
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Separates a merged area into individual cells."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Gets and sets the values for the given Range. See `xlwings.Range.options` "
 "about how to set options, e.g., to transform it into a DataFrame or how to "
 "set a chunksize."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid "Returns the width, in points, of a Range. Read-only."
 msgstr ""
 
-#: ../../../api/range.rst:1
+#: ../../../api/range.md:1
 msgid ""
 "Returns `True` if the wrap_text property is enabled and `False` if it's "
 "disabled. If not all cells have the same value in a range, on Windows it "
