@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-09-14 14:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,6 +128,10 @@ msgstr ""
 msgid ""
 "Whether or not the index of a pandas DataFrame should be written to the "
 "Excel table."
+msgstr ""
+
+#: ../../../api/table.md:0
+msgid "Return type"
 msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:19

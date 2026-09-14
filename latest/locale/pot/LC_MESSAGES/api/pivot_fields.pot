@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 14:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/pivot_fields.md:1
+msgid "PivotFields"
+msgstr ""
+
+#: ../../../api/pivot_fields.md:1
+msgid ""
+"The fields in one area of a pivot table, i.e. `pt.rows`, `pt.columns` or `pt."
+"filters`. Iteration follows the field order."
+msgstr ""
+
+#: ../../../api/pivot_fields.md:1
+msgid "Places a source field in this area, after the existing fields."
+msgstr ""
+
+#: ../../../api/pivot_fields.md:3
+msgid ""
+"A field that is already in this area stays where it is; a field in another "
+"of the rows/columns/filters areas is moved here."
+msgstr ""
+
+#: ../../../api/pivot_fields.md:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.PivotFields.add:9
+msgid ""
+"Name of the source field, see :attr:`PivotTable.field_names <xlwings."
+"PivotTable.field_names>`."
+msgstr ""
+
+#: ../../../api/pivot_fields.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/pivot_fields.md:1
+msgid "Returns the pivot table the area belongs to."
+msgstr ""

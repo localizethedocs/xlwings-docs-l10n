@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-09-14 14:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,25 +22,48 @@ msgid "Names"
 msgstr ""
 
 #: ../../../api/names.md:1
-msgid "A collection of all `name` objects in the workbook:"
+msgid "A collection of defined `name` objects in the workbook."
+msgstr ""
+
+#: ../../../api/names.md:3
+msgid ""
+"Excel's internal `_xlfn.*` and `_xlpm.*` names are excluded. Hidden user-"
+"defined names remain available. The native collection is unchanged. "
+"Iteration snapshots name objects so new internal names cannot shift it."
+msgstr ""
+
+#: ../../../api/names.md:7
+msgid "Examples:"
 msgstr ""
 
 #: ../../../api/names.md:1
-msgid "Defines a new name for a range of cells."
+msgid ""
+"Defines a new name for a range, constant, or formula (including a LAMBDA)."
+msgstr ""
+
+#: ../../../api/names.md:3
+msgid ""
+"Full support for named constants and formulas requires Excel desktop or "
+"xlwings Lite or Server. Google Sheets supports named ranges only; Office "
+"Scripts only returns named ranges in its snapshot."
 msgstr ""
 
 #: ../../../api/names.md:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Names.add:6
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Names.add:10
 msgid ""
 "Specifies the text to use as the name. Names cannot include spaces and "
 "cannot be formatted as cell references."
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Names.add:8
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Names.add:12
 msgid "Describes what the name refers to, in English, using A1-style notation."
+msgstr ""
+
+#: ../../../api/names.md:0
+msgid "Return type"
 msgstr ""
 
 #: ../../../api/names.md:1
