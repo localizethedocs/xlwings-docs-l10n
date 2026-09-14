@@ -1,0 +1,77 @@
+# xlwings
+
+> Documentation for xlwings, a Python library to automate Excel, write user-defined functions, and build interactive Excel tools.
+
+
+Zoomer Analytics LLC
+
+## Pages
+
+- [xlwings - Make Excel Fly!](index.md): xlwings (Open Source) is a [BSD-licensed](http://opensource.org/licenses/BSD-3-Clause) Python librar...
+- [Quickstart](quickstart.md): This guide assumes you have xlwings already installed. If that’s not the case, head over to [Install...
+- [Getting Started](getting_started/index.md): * [Video course](../course.md)
+- [Video course](course.md): There is a free but partially outdated course available on YouTube:
+- [Installation](installation.md): * xlwings (Open Source) requires an **installation of Excel** and therefore only works on **Windows*...
+- [Connect to a Book](connect_to_workbook.md): The easiest way to connect to a book is offered by `xw.Book`: it looks for the book in all app insta...
+- [Syntax Overview](syntax_overview.md): The xlwings object model is very similar to the one used by VBA.
+- [Data Structures Tutorial](datastructures.md): This tutorial gives you a quick introduction to the most common use cases and default behaviour of x...
+- [Add-in & Settings](addin.md): ![image](images/ribbon.png)
+- [RunPython](vba.md): To get access to `Run main` (new in v0.16) button or the `RunPython` VBA function, you’ll need the x...
+- [User Defined Functions (UDFs)](udfs.md): This tutorial gets you quickly started on how to write User Defined Functions.
+- [Matplotlib & Plotly Charts](matplotlib.md): Using [`pictures.add()`](api/pictures.md#xlwings.main.Pictures.add), it is easy to paste a Matplotli...
+- [Jupyter Notebooks: Interact with Excel](jupyternotebooks.md): When you work with Jupyter notebooks, you may use Excel as an interactive data viewer or scratchpad ...
+- [Command Line Client (CLI)](command_line.md): xlwings comes with a command line client. On Windows, type the commands into a Command Prompt or Ana...
+- [Deployment](deployment.md): Added in version 0.15.2.
+- [OneDrive and SharePoint](onedrive_sharepoint.md): Since v0.27.4, xlwings works with locally synced files on OneDrive, OneDrive for Business, and Share...
+- [Troubleshooting](troubleshooting.md): 1. `xlwings32-<version>.dll` and `xlwings64-<version>.dll` are both in the same directory as your `p...
+- [Advanced Features](advanced_features/index.md): * [Converters and Options](../converters.md)
+- [Converters and Options](converters.md): Introduced with v0.7.0, converters define how Excel ranges and their values are converted both durin...
+- [Debugging](debugging.md): Since xlwings runs in every Python environment, you can use your preferred way of debugging.
+- [Extensions](extensions.md): It’s easy to extend the xlwings add-in with own code like UDFs or RunPython macros, so that they can...
+- [Custom Add-ins](customaddin.md): Added in version 0.22.0.
+- [Threading and Multiprocessing](threading_and_multiprocessing.md): Added in version 0.13.0.
+- [Missing Features](missing_features.md): If you’re missing a feature in xlwings, do the following:
+- [xlwings with other Office Apps](other_office_apps.md): xlwings can also be used to call Python functions from VBA within Office apps other than Excel (like...
+- [License Key](pro/license_key.md): To use xlwings PRO functionality, you need to use a license key. xlwings PRO licenses keys are verif...
+- [xlwings Reports](pro/reports/index.md): This feature requires xlwings PRO.
+- [Quickstart](pro/reports/reports.md): You can work on the `sheet`, `book` or `app` level:
+- [Components and Filters](pro/reports/components_filters.md): To write DataFrames in a consistent manner to Excel, xlwings Reports ignores the DataFrame indices. ...
+- [Markdown Formatting](pro/reports/markdown.md): This feature requires xlwings PRO and at least v0.23.0.
+- [xlwings Reader](pro/reader.md): This feature requires xlwings PRO and at least v0.28.0.
+- [1-click Installer/Embedded Code](pro/release.md): xlwings PRO offers a simple way to deploy your xlwings tools to your end users without the usual has...
+- [Changelog](whatsnew.md): For more details, check out the linked pull requests under [GitHub Releases](https://github.com/xlwi...
+- [License](license.md): xlwings (Open Source) is a distributed under a BSD-3-Clause license. xlwings (Open Source) includes ...
+- [API Reference](api/index.md): * [Top-level functions](top_level_functions.md)
+- [Top-level functions](api/top_level_functions.md): Loads the selected cell(s) of the active workbook into a pandas DataFrame. If you
+- [UDF decorators](api/udf_decorators.md): Functions decorated with `xlwings.func` will be imported as `Function` to Excel when running
+- [App](api/app.md): An app corresponds to an Excel instance and should normally be used as context
+- [Apps](api/apps.md): A collection of all `app` objects:
+- [Book](api/book.md): A book object is a member of the `books` collection:
+- [BookAsync](api/book_async.md): Type hint for the async API in xlwings Lite scripts.
+- [Books](api/books.md): A collection of all `book` objects:
+- [Characters](api/characters.md): The characters object can be accessed as an attribute of the range or shape
+- [Chart](api/chart.md): The chart object is a member of the `charts` collection:
+- [Charts](api/charts.md): A collection of all `chart` objects on the specified sheet:
+- [Font](api/font.md): The font object can be accessed as an attribute of the range or shape object.
+- [Name](api/name.md): The name object is a member of the `names` collection:
+- [Names](api/names.md): A collection of all `name` objects in the workbook:
+- [Note](api/note.md): Returns the native object (`pywin32` or `appscript` obj)
+- [PageSetup](api/page_setup.md): Returns the native object (`pywin32` or `appscript` obj)
+- [Picture](api/picture.md): The picture object is a member of the `pictures`
+- [Pictures](api/pictures.md): A collection of all `picture` objects on the specified sheet:
+- [Range](api/range.md): Returns a Range object that represents a cell or a range of cells.
+- [RangeColumns](api/range_columns.md): Represents the columns of a range. Do not construct this class directly, use
+- [RangeRows](api/range_rows.md): Represents the rows of a range. Do not construct this class directly, use
+- [Reports](api/reports.md): Use this class to provide images to either `render_template()`.
+- [Shape](api/shape.md): The shape object is a member of the `shapes` collection:
+- [Shapes](api/shapes.md): A collection of all `shape` objects on the specified sheet:
+- [Sheet](api/sheet.md): A sheet object is a member of the `sheets` collection:
+- [Sheets](api/sheets.md): A collection of all `sheet` objects:
+- [Table](api/table.md): The table object is a member of the `tables` collection:
+- [Tables](api/tables.md): A collection of all `table` objects on the specified sheet:
+- [Index Latex](index_latex.md): Page content
+- [Open Source Licenses](opensource_licenses.md): Depending on the platform and features that you use, xlwings requires various Open Source dependenci...
+
+---
+
+For more comprehensive documentation, see [llms-full.txt](llms-full.txt)
