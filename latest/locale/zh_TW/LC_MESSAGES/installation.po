@@ -232,6 +232,3 @@ msgid ""
 "Finally, manually remove the `.xlwings` directory in your home folder if it "
 "exists."
 msgstr ""
-
-#~ msgid "xlwings requires at least Python 3.9."
-#~ msgstr "xlwings 需要最低 Python 3.9。"
