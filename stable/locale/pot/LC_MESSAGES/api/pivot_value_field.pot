@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 14:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/pivot_value_field.md:1
+msgid "PivotValueField"
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:1
+msgid ""
+"A field in the *Values* area of a pivot table, accessed via {class}"
+"`PivotValueFields <xlwings.PivotValueFields>`:"
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:1
+msgid ""
+"`\"sum\"`, `\"count\"`, `\"average\"`, `\"max\"`, `\"min\"`, `\"product\"`, "
+"`\"count_numbers\"`, `\"stdev\"`, `\"stdevp\"`, `\"var\"` or `\"varp\"`. "
+"Returns `None` if the engine only knows that Excel picked the default."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.PivotValueField.function:0
+msgid "type"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.PivotValueField.function:9
+msgid "Returns or sets the summary function"
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:0
+msgid "Setter type"
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:1
+msgid ""
+"Returns or sets the caption, e.g. `\"Sum of Sales\"`. Excel rejects a name "
+"that equals the name of a source field."
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:4
+msgid ""
+"On xlwings Lite and xlwings Server, reading it only works for value fields "
+"that already existed when the script started or if the name was set in the "
+"same script. The automatic caption of a value field added in the same script "
+"can't be read."
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:1
+msgid "Returns or sets the number format of the value field."
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:3
+msgid ""
+"On xlwings Lite and xlwings Server, reading it only works for value fields "
+"that already existed when the script started or if the format was set in the "
+"same script."
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:1
+msgid "Returns the pivot table the field belongs to."
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:1
+msgid "Removes the field from the values area."
+msgstr ""
+
+#: ../../../api/pivot_value_field.md:1
+msgid "The name of the source field this value field summarizes."
+msgstr ""
