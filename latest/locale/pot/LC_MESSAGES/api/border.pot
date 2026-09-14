@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 14:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/border.md:1
+msgid "Border"
+msgstr ""
+
+#: ../../../api/border.md:1
+msgid ""
+"A single side of a range's borders, accessed via {class}`Borders <xlwings."
+"main.Borders>`:"
+msgstr ""
+
+#: ../../../api/border.md:4
+msgid "`mysheet['A1:D10'].borders['edge_bottom']`"
+msgstr ""
+
+#: ../../../api/border.md:6
+msgid "Side names are"
+msgstr ""
+
+#: ../../../api/border.md:8
+msgid "`\"edge_top\"`"
+msgstr ""
+
+#: ../../../api/border.md:9
+msgid "`\"edge_bottom\"`"
+msgstr ""
+
+#: ../../../api/border.md:10
+msgid "`\"edge_left\"`"
+msgstr ""
+
+#: ../../../api/border.md:11
+msgid "`\"edge_right\"`"
+msgstr ""
+
+#: ../../../api/border.md:12
+msgid "`\"inside_vertical\"`"
+msgstr ""
+
+#: ../../../api/border.md:13
+msgid "`\"inside_horizontal\"`"
+msgstr ""
+
+#: ../../../api/border.md:14
+msgid "`\"diagonal_down\"`"
+msgstr ""
+
+#: ../../../api/border.md:15
+msgid "`\"diagonal_up\"`"
+msgstr ""
+
+#: ../../../api/border.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/border.md:1
+msgid "Returns or sets the color (tuple)."
+msgstr ""
+
+#: ../../../api/border.md:3
+msgid ""
+"To set the color, use an RGB tuple `(255, 0, 0)`, a hex string like "
+"`'#ff0000'` or an Excel color constant. Unlike `Range.color`, `None` isn't "
+"accepted: remove a border via `line_style = None`. Reads `None` for a "
+"removed border. A range whose cells don't all agree reports one of its "
+"values, see {attr}`line_style <xlwings.main.Border.line_style>`, and a multi-"
+"cell range reads `None` for its diagonals even when a color was set. Setting "
+"the color of a removed border makes it visible."
+msgstr ""
+
+#: ../../../api/border.md:0
+msgid "Setter type"
+msgstr ""
+
+#: ../../../api/border.md:1
+msgid "Fetch the color on demand, as an RGB tuple."
+msgstr ""
+
+#: ../../../api/border.md:3
+msgid ""
+"`None` for a removed border. xlwings Lite and xlwings Server report a mixed "
+"side differently than the desktop engines, see {meth}`get_line_style() "
+"<xlwings.main.Border.get_line_style>`."
+msgstr ""
+
+#: ../../../api/border.md:7 ../../../api/border.md:10
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/border.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/border.md:1
+msgid "Fetch the line style on demand."
+msgstr ""
+
+#: ../../../api/border.md:3
+msgid ""
+"`\"none\"` for a missing border. No engine detects a side whose segments "
+"differ from cell to cell, but xlwings Lite and xlwings Server report a "
+"different value than the desktop engines do: an edge reports its first "
+"segment's value rather than the range's, and an inside border of a range "
+"whose cells don't share the same border formatting reads `\"none\"` even "
+"though every cell's own borders are intact."
+msgstr ""
+
+#: ../../../api/border.md:1
+msgid "Fetch the weight on demand."
+msgstr ""
+
+#: ../../../api/border.md:3
+msgid ""
+"xlwings Lite and xlwings Server report a mixed side differently than the "
+"desktop engines, see {meth}`get_line_style() <xlwings.main.Border."
+"get_line_style>`."
+msgstr ""
+
+#: ../../../api/border.md:1
+msgid "Returns or sets the line style (str). Available styles:"
+msgstr ""
+
+#: ../../../api/border.md:3
+msgid "`\"continuous\"`"
+msgstr ""
+
+#: ../../../api/border.md:4
+msgid "`\"dash\"`"
+msgstr ""
+
+#: ../../../api/border.md:5
+msgid "`\"dash_dot\"`"
+msgstr ""
+
+#: ../../../api/border.md:6
+msgid "`\"dash_dot_dot\"`"
+msgstr ""
+
+#: ../../../api/border.md:7
+msgid "`\"dot\"`"
+msgstr ""
+
+#: ../../../api/border.md:8
+msgid "`\"double\"`"
+msgstr ""
+
+#: ../../../api/border.md:9
+msgid "`\"slant_dash_dot\"`"
+msgstr ""
+
+#: ../../../api/border.md:10
+msgid "`\"none\"`"
+msgstr ""
+
+#: ../../../api/border.md:12
+msgid ""
+"Setting it to `None` or `\"none\"` removes the border. Reads `\"none\"` for "
+"a missing border. Excel doesn't flag a range whose cells don't all agree, so "
+"a mixed range reports one of its values; read a single cell for an "
+"unambiguous answer."
+msgstr ""
+
+#: ../../../api/border.md:17
+msgid ""
+"Excel's border attributes influence one another, so a line style may change "
+"the weight (and vice versa), and setting a weight or color on a removed "
+"border makes it visible again. Getters always report the resulting native "
+"values."
+msgstr ""
+
+#: ../../../api/border.md:1
+msgid "Returns or sets the weight (str). Available weihts:"
+msgstr ""
+
+#: ../../../api/border.md:3
+msgid "`\"hairline\"`"
+msgstr ""
+
+#: ../../../api/border.md:4
+msgid "`\"thin\"`"
+msgstr ""
+
+#: ../../../api/border.md:5
+msgid "`\"medium\"`"
+msgstr ""
+
+#: ../../../api/border.md:6
+msgid "`\"thick\"`"
+msgstr ""
+
+#: ../../../api/border.md:8
+msgid ""
+"A range whose cells don't all agree reports one of its values, see {attr}"
+"`line_style <xlwings.main.Border.line_style>`. Setting the weight of a "
+"removed border makes it visible."
+msgstr ""
