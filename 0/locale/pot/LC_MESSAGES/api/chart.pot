@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-09-14 14:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,6 +81,10 @@ msgstr ""
 msgid "Requires xlwings Lite."
 msgstr ""
 
+#: ../../../api/chart.md:0
+msgid "Return type"
+msgstr ""
+
 #: ../../../api/chart.md:1
 msgid ""
 "Returns or sets the number of points that represent the height of the chart."
@@ -93,11 +97,29 @@ msgid ""
 msgstr ""
 
 #: ../../../api/chart.md:1
+msgid ""
+"Returns the {class}`ChartLegend <xlwings.main.ChartLegend>` of the chart."
+msgstr ""
+
+#: ../../../api/chart.md:1
 msgid "Returns or sets the name of the chart."
 msgstr ""
 
 #: ../../../api/chart.md:1
 msgid "Returns the parent of the chart."
+msgstr ""
+
+#: ../../../api/chart.md:1
+msgid ""
+"Returns or sets whether the data series come from the rows or from the "
+"columns of the source data: either `\"rows\"` or `\"columns\"`."
+msgstr ""
+
+#: ../../../api/chart.md:4
+msgid ""
+"On xlwings Lite and xlwings Server, reading it only works after it has been "
+"set in the same script, either via this property or via "
+"`set_source_data(plot_by=...)`."
 msgstr ""
 
 #: ../../../api/chart.md:1
@@ -111,6 +133,36 @@ msgstr ""
 #: ../../../../xlwings/main.py:docstring of
 #: xlwings.main.Chart.set_source_data:6
 msgid "Range object, e.g. ``xw.books['Book1'].sheets[0].range('A1')``"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.Chart.set_source_data:7
+msgid ""
+"Whether the data series come from the ``\"rows\"`` or from the "
+"``\"columns\"`` of the source range. Defaults to letting Excel decide. *New "
+"in version 0.37.3.*"
+msgstr ""
+
+#: ../../../api/chart.md:1
+msgid "Returns or sets the built-in chart style, an integer between 1 and 48."
+msgstr ""
+
+#: ../../../api/chart.md:3
+msgid ""
+"On xlwings Lite and xlwings Server, reading it only works after it has been "
+"set in the same script."
+msgstr ""
+
+#: ../../../api/chart.md:1
+msgid ""
+"Returns or sets the chart title. Setting it to `None` hides the title, "
+"setting it to a string shows it."
+msgstr ""
+
+#: ../../../api/chart.md:9
+msgid ""
+"On xlwings Lite and xlwings Server, reading the title only works after it "
+"has been set in the same script."
 msgstr ""
 
 #: ../../../api/chart.md:1

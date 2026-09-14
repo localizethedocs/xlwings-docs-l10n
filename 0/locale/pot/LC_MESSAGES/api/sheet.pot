@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-09-14 14:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,9 @@ msgid ""
 msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.Sheet.freeze_panes:7
-#: xlwings.main.Sheet.autofit:15 xlwings.main.Sheet.copy:26
-#: xlwings.main.Sheet.render_template:22 xlwings.main.Sheet.to_pdf:26
+#: xlwings.Sheet.show_gridlines:12 xlwings.main.Sheet.autofit:15
+#: xlwings.main.Sheet.copy:26 xlwings.main.Sheet.render_template:22
+#: xlwings.main.Sheet.to_pdf:26
 msgid "Examples"
 msgstr ""
 
@@ -67,7 +68,7 @@ msgid ""
 msgstr ""
 
 #: ../../../api/sheet.md:1
-msgid "See `Charts`"
+msgid "See {class}`Charts <xlwings.main.Charts>`"
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -104,15 +105,15 @@ msgid "The sheet name of the copy"
 msgstr ""
 
 #: ../../../api/sheet.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/sheet.md:0
 msgid "Returns"
 msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Sheet.copy:19
 msgid "The copied sheet"
-msgstr ""
-
-#: ../../../api/sheet.md:0
-msgid "Return type"
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -157,7 +158,11 @@ msgid "Returns a PageSetup object."
 msgstr ""
 
 #: ../../../api/sheet.md:1
-msgid "See `Pictures`"
+msgid "See {class}`Pictures <xlwings.main.Pictures>`"
+msgstr ""
+
+#: ../../../api/sheet.md:1
+msgid "See {class}`PivotTables <xlwings.PivotTables>`"
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -192,11 +197,24 @@ msgid "Selects the Sheet. Activates the book if it isn't the active one."
 msgstr ""
 
 #: ../../../api/sheet.md:1
-msgid "See `Shapes`"
+msgid "See {class}`Shapes <xlwings.main.Shapes>`"
 msgstr ""
 
 #: ../../../api/sheet.md:1
-msgid "See `Tables`"
+msgid ""
+"Gets or sets whether the sheet displays gridlines. This only affects what is "
+"shown on screen, not what is printed."
+msgstr ""
+
+#: ../../../api/sheet.md:4
+msgid ""
+"With classic xlwings (Python running locally), the sheet must be "
+"(temporarily) activated by xlwings, which means that you can't use this with "
+"hidden sheets. xlwings Server and xlwings Lite don't have this restriction."
+msgstr ""
+
+#: ../../../api/sheet.md:1
+msgid "See {class}`Tables <xlwings.main.Tables>`"
 msgstr ""
 
 #: ../../../api/sheet.md:1
