@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 14:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/chart_legend.md:1
+msgid "ChartLegend"
+msgstr ""
+
+#: ../../../api/chart_legend.md:1
+msgid "The legend of a chart, accessed via `mychart.legend`:"
+msgstr ""
+
+#: ../../../api/chart_legend.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/chart_legend.md:1
+msgid ""
+"`\"top\"`, `\"bottom\"`, `\"left\"`, `\"right\"` or `\"corner\"`. Returns "
+"`None` if the legend is hidden. Setting a position shows the legend."
+msgstr ""
+
+#: ../../../api/chart_legend.md:3 ../../../api/chart_legend.md:5
+msgid ""
+"On xlwings Lite and xlwings Server, reading it only works after it has been "
+"set in the same script."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.ChartLegend.position:0
+msgid "type"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.ChartLegend.position:11
+msgid "Returns or sets the position of the legend"
+msgstr ""
+
+#: ../../../api/chart_legend.md:0
+msgid "Setter type"
+msgstr ""
+
+#: ../../../api/chart_legend.md:1
+msgid "Returns or sets whether the legend is shown."
+msgstr ""

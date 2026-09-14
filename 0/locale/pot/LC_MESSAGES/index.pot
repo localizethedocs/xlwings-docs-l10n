@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-09-14 14:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../index.md:66
+#: ../../../index.md:60
 msgid "xlwings PRO"
 msgstr ""
 
-#: ../../../index.md:77
+#: ../../../index.md:71
 msgid "About"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgid ""
 "7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 "
 "1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 "
 "2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 "
-"1-.565-.41L12 2.694Z\"></path></svg> xlwings PRO"
+"1-.565-.41L12 2.694Z\"></path></svg> xlwings Lite & xlwings Server"
 msgstr ""
 
 #: ../../../index.md:31
@@ -181,31 +181,25 @@ msgid ""
 "1-.565-.41L12 2.694Z\"></path></svg>"
 msgstr ""
 
+#: ../../../index.md:32
+msgid "To run xlwings without having to install Python, you have two options:"
+msgstr ""
+
 #: ../../../index.md:34
-msgid "Use advanced features such as:"
+msgid ""
+"[xlwings Lite](https://lite.xlwings.org): Install the free add-in from "
+"Excel's add-in store and you're done. It comes with a VS Code-like editor "
+"and Wingman, a powerful AI assistant."
 msgstr ""
 
-#: ../../../index.md:36
-msgid "xlwings Reports: work with templates"
-msgstr ""
-
-#: ../../../index.md:37
-msgid "1-click installer: bundle Python and all your packages"
+#: ../../../index.md:35
+msgid ""
+"[xlwings Server](https://server.xlwings.org): Create your own modern Excel "
+"add-in with Python instead of JavaScript. Python runs on your own server and "
+"comes with enterprise features such as SSO and RBAC."
 msgstr ""
 
 #: ../../../index.md:38
-msgid "Embedded code: easy deployment"
-msgstr ""
-
-#: ../../../index.md:39
-msgid "Ultra fast file reader: no Excel required"
-msgstr ""
-
-#: ../../../index.md:41
-msgid "Free for non-commercial use only."
-msgstr ""
-
-#: ../../../index.md:44
 msgid ""
 "<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
 "octicon-code-square sd-text-success\" viewBox=\"0 0 24 24\" aria-"
@@ -219,7 +213,7 @@ msgid ""
 "0-.25-.25Z\"></path></svg> API Reference"
 msgstr ""
 
-#: ../../../index.md:45
+#: ../../../index.md:39
 msgid ""
 "<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
 "octicon-code-square sd-text-success\" viewBox=\"0 0 24 24\" aria-"
@@ -233,7 +227,7 @@ msgid ""
 "0-.25-.25Z\"></path></svg>"
 msgstr ""
 
-#: ../../../index.md:48
+#: ../../../index.md:42
 msgid ""
 "This is a description of all the classes, methods, properties and functions "
 "that xlwings offers to work with the Excel object model."

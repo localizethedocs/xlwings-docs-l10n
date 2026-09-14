@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-09-14 14:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgstr ""
 #: ../../../api/apps.md:1
 msgid ""
 "Creates a new App. The new App becomes the active one. Returns an App object."
+msgstr ""
+
+#: ../../../api/apps.md:0
+msgid "Return type"
 msgstr ""
 
 #: ../../../api/apps.md:1
