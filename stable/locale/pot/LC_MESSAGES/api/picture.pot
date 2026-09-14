@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-09-14 14:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,6 +84,10 @@ msgstr ""
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Picture.update:8
 #: xlwings.main.Picture.update:9
 msgid "See under ``Pictures.add()``"
+msgstr ""
+
+#: ../../../api/picture.md:0
+msgid "Return type"
 msgstr ""
 
 #: ../../../api/picture.md:1
