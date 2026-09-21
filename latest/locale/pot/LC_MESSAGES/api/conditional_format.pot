@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/conditional_format.md:1
+msgid "ConditionalFormat"
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "Represents one conditional-format rule that applies to a range."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The positive fill color of a data-bar rule, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The ordered colors of a color-scale rule, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:3
+msgid "Colors run from the minimum criterion to the maximum criterion."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "Delete this complete rule from all ranges to which it applies."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The rule's fill color as an RGB tuple, or `None` if unset."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The rule's bold setting, or `None` if it doesn't set bold."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The rule's font color as an RGB tuple, or `None` if unset."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The rule's italic setting, or `None` if it doesn't set italic."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The formula for a custom-formula rule, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The first operand for a cell-value rule, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The second operand for a between/not-between rule, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "Whether a data bar uses a gradient fill, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The built-in style of an icon-set rule, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The comparison operator for a cell-value rule, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "Whether an icon set's icon order is reversed, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "Change selected attributes of this rule in place."
+msgstr ""
+
+#: ../../../api/conditional_format.md:3
+msgid ""
+"Omitted attributes remain unchanged. Cell-value rules accept `operator`, "
+"`formula1` and `formula2`; custom-formula rules accept `formula`. Formatting "
+"and `stop_if_true` apply to either family. Other rule types can't be edited "
+"by this initial API."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.ConditionalFormat.set:12
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "Whether cell values remain visible for a data bar or icon set."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "Whether lower-priority rules stop when this rule matches."
+msgstr ""
+
+#: ../../../api/conditional_format.md:3
+msgid ""
+"`None` is returned for color scales, data bars and icon sets, which don't "
+"have stop-if-true behavior."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The ordered criterion types for a visual rule, otherwise `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:3
+msgid ""
+"Color scales include all criteria, data bars include the lower and upper "
+"bounds, and icon sets include only the effective thresholds between icons."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid ""
+"The values corresponding to {attr}`threshold_types <xlwings."
+"ConditionalFormat.threshold_types>`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:4
+msgid ""
+"Criteria such as `\"automatic\"`, `\"lowest_value\"` and `\"highest_value\"` "
+"have a value of `None`."
+msgstr ""
+
+#: ../../../api/conditional_format.md:1
+msgid "The normalized rule type."
+msgstr ""
+
+#: ../../../api/conditional_format.md:3
+msgid ""
+"Rule types outside the initially supported cell-value, custom-formula, color-"
+"scale, data-bar and icon-set families are reported as `\"unknown\"` rather "
+"than omitted."
+msgstr ""

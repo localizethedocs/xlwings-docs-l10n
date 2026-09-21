@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/autofilter.md:1
+msgid "AutoFilter"
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "An AutoFilter belonging to a range or table."
+msgstr ""
+
+#: ../../../api/autofilter.md:3
+msgid ""
+"Do not construct this class directly; access it through {attr}`Range."
+"autofilter <xlwings.Range.autofilter>` or {attr}`Table.autofilter <xlwings."
+"main.Table.autofilter>`."
+msgstr ""
+
+#: ../../../api/autofilter.md:5
+msgid ""
+"Fields are one-based column positions relative to the range or table. Value "
+"filters accept strings, finite numbers, and booleans. Comparison filters "
+"additionally accept Python dates and timezone-naive datetimes. Date and "
+"datetime values are not supported by `apply_values()`; to filter for a "
+"single exact date or datetime, use `apply_comparison()` with `\"equal_to\"`. "
+"Comparison operators are `\"between\"`, `\"not_between\"`, `\"equal_to\"`, "
+"`\"not_equal_to\"`, `\"greater_than\"`, `\"less_than\"`, "
+"`\"greater_than_or_equal\"`, and `\"less_than_or_equal\"`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.AutoFilter:11
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Shows the lowest-valued items in a field."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Shows the lowest-valued percentage of items in a field."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Filters a field using a comparison."
+msgstr ""
+
+#: ../../../api/autofilter.md:3
+msgid ""
+"`None` represents blanks with `\"equal_to\"` and nonblanks with "
+"`\"not_equal_to\"`. `\"between\"` and `\"not_between\"` require a second "
+"value; all other operators reject one."
+msgstr ""
+
+#: ../../../api/autofilter.md:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_comparison:8
+#: xlwings.main.AutoFilter.apply_values:8
+msgid "One-based column position relative to the range or table."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_comparison:9
+msgid "The comparison to apply."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_comparison:10
+msgid ""
+"A string, finite number, boolean, date, timezone-naive datetime, or ``None``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_comparison:11
+msgid ""
+"The upper bound for ``\"between\"`` and ``\"not_between\"``; omit it for "
+"every other operator."
+msgstr ""
+
+#: ../../../api/autofilter.md:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_comparison:17
+msgid "If a value has an unsupported type."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_comparison:18
+msgid "If a field, operator, operand combination, or number is invalid."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Shows the highest-valued items in a field."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Shows the highest-valued percentage of items in a field."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Filters a field to rows matching any of the supplied values."
+msgstr ""
+
+#: ../../../api/autofilter.md:3
+msgid ""
+"Dates and datetimes are not supported. Use `apply_comparison(field, "
+"\"equal_to\", value)` to filter for a single exact date or datetime."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_values:9
+msgid "One or more exact values to include."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_values:15
+msgid ""
+"If ``field`` isn't an integer or ``values`` isn't a sequence of supported "
+"scalar values."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.AutoFilter.apply_values:16
+msgid ""
+"If ``field`` is outside the target, ``values`` is empty, or a number isn't "
+"finite."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Clears one field's criteria, or all criteria when `field` is omitted."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.AutoFilter.clear:6
+msgid "Optional one-based column position relative to the range or table."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Returns the criteria for all fields."
+msgstr ""
+
+#: ../../../api/autofilter.md:3
+msgid ""
+"The list contains one entry per field, including entries whose type is "
+"`\"none\"`. In xlwings Lite, use {meth}`get_criteria` instead."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "Returns the criteria for all fields from Excel."
+msgstr ""
+
+#: ../../../api/autofilter.md:3
+msgid ""
+"The list contains one entry per field, including entries whose type is "
+"`\"none\"`. Unsupported native criteria are reported as `\"unknown\"`. "
+"Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/autofilter.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The applied AutoFilter criterion for one field."
+msgstr ""
+
+#: ../../../api/autofilter.md:3
+msgid ""
+"Instances are read-only entries returned by {attr}`AutoFilter.criteria` and "
+"{meth}`AutoFilter.get_criteria`."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The number of items for a top/bottom items filter, otherwise `None`."
+msgstr ""
+
+#: ../../../api/autofilter.md:3
+msgid ""
+"This may be `None` when the native desktop engine only exposes the "
+"calculated cutoff value rather than the requested item count."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The one-based field position relative to the filtered range or table."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The comparison operator, otherwise `None`."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The percentage for a top/bottom percent filter, otherwise `None`."
+msgstr ""
+
+#: ../../../api/autofilter.md:3
+msgid ""
+"This may be `None` when the native desktop engine only exposes the "
+"calculated cutoff value rather than the requested percentage."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The normalized criterion type."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The first normalized comparison operand, otherwise `None`."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The second normalized comparison operand, otherwise `None`."
+msgstr ""
+
+#: ../../../api/autofilter.md:1
+msgid "The included values for a values filter, otherwise `None`."
+msgstr ""

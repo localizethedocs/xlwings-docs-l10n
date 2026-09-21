@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/data_validation.md:1
+msgid "DataValidation"
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Data validation for a range."
+msgstr ""
+
+#: ../../../api/data_validation.md:3
+msgid ""
+"Do not construct this class directly; access it through {attr}`Range."
+"data_validation <xlwings.Range.data_validation>`."
+msgstr ""
+
+#: ../../../api/data_validation.md:6
+msgid ""
+"Comparison setters accept these operators: `\"between\"`, `\"not_between\"`, "
+"`\"equal_to\"`, `\"not_equal_to\"`, `\"greater_than\"`, `\"less_than\"`, "
+"`\"greater_than_or_equal\"`, and `\"less_than_or_equal\"`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.DataValidation:14
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Create a dropdown from literal values:"
+msgstr ""
+
+#: ../../../api/data_validation.md:7
+msgid "Require whole numbers between 1 and 10:"
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The error-alert style."
+msgstr ""
+
+#: ../../../api/data_validation.md:3
+msgid "One of `\"stop\"`, `\"warning\"`, or `\"information\"`."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Returns the native data validation object of the engine being used."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Removes data validation from the range."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The validation-error message."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The validation-error title."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The formula for a custom validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The first comparison operand as an Excel formula string."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The second operand for between/not-between rules."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Whether blank cells are ignored by the validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Whether a list rule displays an in-cell dropdown."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The input-prompt message."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The input-prompt title."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The comparison operator, or `None` for list and custom rules."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Create or update a custom-formula validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:3
+msgid ""
+"The formula must be an A1-style formula starting with `=`. Existing prompts "
+"and error alerts are preserved."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Create or update a date validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:3
+msgid ""
+"Operands may be Python dates, naive datetimes, Excel serial numbers, or "
+"Excel formula strings. Existing prompts and error alerts are preserved."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Create or update a decimal validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:3
+msgid ""
+"`formula2` is required for `\"between\"` and `\"not_between\"` and rejected "
+"for every other operator. Existing prompts and error alerts are preserved."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Creates or updates a list validation on the range."
+msgstr ""
+
+#: ../../../api/data_validation.md:3
+msgid ""
+"Existing input prompts and error alerts are preserved. The source can be a "
+"non-empty sequence of strings, numbers, or booleans, a one-dimensional "
+"Range, or a Name that refers to a one-dimensional range in the same workbook."
+msgstr ""
+
+#: ../../../api/data_validation.md:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.DataValidation.set_list:10
+msgid "Allowed list values, a worksheet range, or a named range."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.DataValidation.set_list:11
+msgid "Whether Excel shows the list's in-cell dropdown."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Create or update a text-length validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Create or update a time validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:3
+msgid ""
+"Operands may be naive Python times, Excel day fractions, or Excel formula "
+"strings. Existing prompts and error alerts are preserved."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Create or update a whole-number validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Whether invalid entries display an error alert."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "Whether the input prompt is shown."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The source string for a list validation rule."
+msgstr ""
+
+#: ../../../api/data_validation.md:1
+msgid "The normalized validation type for this range."
+msgstr ""
+
+#: ../../../api/data_validation.md:3
+msgid ""
+"`\"none\"` means that no cell has validation, `\"mixed_criteria\"` means "
+"that only some cells have validation, and `\"inconsistent\"` means that "
+"cells have different validation rules. Unsupported native rule types are "
+"reported as `\"unknown\"`."
+msgstr ""
