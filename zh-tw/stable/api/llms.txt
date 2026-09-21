@@ -1,0 +1,41 @@
+# xlwings
+
+> Documentation for xlwings, a Python library to automate Excel, write user-defined functions, and build interactive Excel tools.
+
+
+Zoomer Analytics LLC
+
+## Pages in this subsection
+
+- [API 參考](index.md): &#42; Top-level functions
+- [Top-level functions](top_level_functions.md): Loads the selected cell(s) of the active workbook into a pandas DataFrame. If you
+- [UDF 裝飾器](udf_decorators.md): Functions decorated with &#96;xlwings.func&#96; will be imported as &#96;Function&#96; to Excel when running
+- [App](app.md): An app corresponds to an Excel instance and should normally be used as context
+- [Apps](apps.md): A collection of all &#96;app&#96; objects:
+- [Book](book.md): A book object is a member of the &#96;books&#96; collection:
+- [BookAsync](book_async.md): Type hint for the async API in xlwings Lite scripts.
+- [Books](books.md): A collection of all &#96;book&#96; objects:
+- [Characters](characters.md): The characters object can be accessed as an attribute of the range or shape
+- [Chart](chart.md): The chart object is a member of the &#96;charts&#96; collection:
+- [Charts](charts.md): A collection of all &#96;chart&#96; objects on the specified sheet:
+- [Font](font.md): The font object can be accessed as an attribute of the range or shape object.
+- [Name](name.md): The name object is a member of the &#96;names&#96; collection:
+- [Names](names.md): A collection of all &#96;name&#96; objects in the workbook:
+- [Note](note.md): Returns the native object (&#96;pywin32&#96; or &#96;appscript&#96; obj)
+- [PageSetup](page_setup.md): Returns the native object (&#96;pywin32&#96; or &#96;appscript&#96; obj)
+- [Picture](picture.md): The picture object is a member of the &#96;pictures&#96;
+- [Pictures](pictures.md): A collection of all &#96;picture&#96; objects on the specified sheet:
+- [Range](range.md): Returns a Range object that represents a cell or a range of cells.
+- [RangeColumns](range_columns.md): Represents the columns of a range. Do not construct this class directly, use
+- [RangeRows](range_rows.md): Represents the rows of a range. Do not construct this class directly, use
+- [Reports](reports.md): Use this class to provide images to either &#96;render_template()&#96;.
+- [Shape](shape.md): The shape object is a member of the &#96;shapes&#96; collection:
+- [Shapes](shapes.md): A collection of all &#96;shape&#96; objects on the specified sheet:
+- [Sheet](sheet.md): A sheet object is a member of the &#96;sheets&#96; collection:
+- [Sheets](sheets.md): A collection of all &#96;sheet&#96; objects:
+- [Table](table.md): The table object is a member of the &#96;tables&#96; collection:
+- [表格](tables.md): A collection of all &#96;table&#96; objects on the specified sheet:
+
+## Optional
+
+- [Top-level llms.txt](../llms.txt): Complete documentation index.

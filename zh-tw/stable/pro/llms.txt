@@ -1,0 +1,20 @@
+# xlwings
+
+> Documentation for xlwings, a Python library to automate Excel, write user-defined functions, and build interactive Excel tools.
+
+
+Zoomer Analytics LLC
+
+## Pages in this subsection
+
+- [授權金鑰](license_key.md): To use xlwings PRO functionality, you need to use a license key. xlwings PRO licenses keys are verif...
+- [xlwings Reports](reports/index.md): This feature requires xlwings PRO.
+- [Quickstart](reports/reports.md): You can work on the &#96;sheet&#96;, &#96;book&#96; or &#96;app&#96; level:
+- [Components and Filters](reports/components_filters.md): To write DataFrames in a consistent manner to Excel, xlwings Reports ignores the DataFrame indices. ...
+- [Markdown Formatting](reports/markdown.md): This feature requires xlwings PRO and at least v0.23.0.
+- [xlwings 讀取器](reader.md): This feature requires xlwings PRO and at least v0.28.0.
+- [1-click Installer/Embedded Code](release.md): xlwings PRO offers a simple way to deploy your xlwings tools to your end users without the usual has...
+
+## Optional
+
+- [Top-level llms.txt](../llms.txt): Complete documentation index.
