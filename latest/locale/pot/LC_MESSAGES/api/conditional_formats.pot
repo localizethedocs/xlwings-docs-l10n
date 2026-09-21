@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/conditional_formats.md:1
+msgid "ConditionalFormats"
+msgstr ""
+
+#: ../../../api/conditional_formats.md:1
+msgid "An ordered collection of conditional-format rules for a range."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:3
+msgid ""
+"New rules are inserted at the top of Excel's conditional-formatting rule "
+"order. Rules are evaluated from highest to lowest priority. If a matching "
+"rule has `stop_if_true=True`, Excel skips lower-priority rules."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:7
+msgid ""
+"In xlwings Lite, use `await sheet[\"A1:D10\"].get_conditional_formats()` "
+"instead of `sheet[\"A1:D10\"].conditional_formats`."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:1
+msgid "Add a cell-value rule."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:3
+msgid ""
+"`formula2` is required for `\"between\"` and `\"not_between\"` and rejected "
+"for the other operators. Colors accept the same RGB tuple, hex string, or "
+"Excel color integer forms as other xlwings color APIs."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.ConditionalFormats.add_cell_value:11
+#: xlwings.main.ConditionalFormats.add_color_scale:14
+#: xlwings.main.ConditionalFormats.add_custom:7
+#: xlwings.main.ConditionalFormats.add_icon_set:19
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/conditional_formats.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/conditional_formats.md:1
+msgid "Add a two- or three-color scale."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:3
+msgid ""
+"`colors` contains two or three colors ordered from the minimum to the "
+"maximum. Without `thresholds`, a two-color scale uses the lowest and highest "
+"values, while a three-color scale adds the 50th percentile as its midpoint. "
+"Custom thresholds must match the number of colors and be strictly "
+"increasing. `threshold_type` can be `\"number\"`, `\"percent\"` or "
+"`\"percentile\"`."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:1
+msgid "Add a custom-formula rule."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:1
+msgid "Add a data bar."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:3
+msgid ""
+"Omitted bounds are automatic. Supplied bounds use `threshold_type`, which "
+"can be `\"number\"`, `\"percent\"` or `\"percentile\"`."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:1
+msgid "Add a built-in icon set."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:3
+msgid ""
+"Custom thresholds contain one fewer value than the number of icons and must "
+"be strictly increasing. Without them, the icons use equal percent bands (for "
+"example, 33 and 67 for a three-icon set)."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:7
+msgid ""
+"Valid styles are `\"3_arrows\"`, `\"3_arrows_gray\"`, `\"3_flags\"`, "
+"`\"3_traffic_lights_1\"`, `\"3_traffic_lights_2\"`, `\"3_signs\"`, "
+"`\"3_symbols\"`, `\"3_symbols_2\"`, `\"4_arrows\"`, `\"4_arrows_gray\"`, "
+"`\"4_red_to_black\"`, `\"4_rating\"`, `\"4_traffic_lights\"`, "
+"`\"5_arrows\"`, `\"5_arrows_gray\"`, `\"5_rating\"`, `\"5_quarters\"`, "
+"`\"3_stars\"`, `\"3_triangles\"` and `\"5_boxes\"`."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:1
+msgid "Clear all conditional formats active on the represented range."
+msgstr ""
+
+#: ../../../api/conditional_formats.md:3
+msgid "Rules that also apply outside the range remain active there."
+msgstr ""

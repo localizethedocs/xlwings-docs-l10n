@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-09-21 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,6 +98,10 @@ msgid ""
 "so if you want to leave the picture uncropped and increase dpi to 300, use: "
 "``export_options={\"dpi\": 300}``. For Plotly, the options are passed to "
 "``write_image()``. *New in version 0.27.7.*"
+msgstr ""
+
+#: ../../../api/pictures.md:0
+msgid "Return type"
 msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:40
