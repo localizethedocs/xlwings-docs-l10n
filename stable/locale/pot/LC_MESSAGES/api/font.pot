@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-09-21 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,10 @@ msgstr ""
 msgid "Returns or sets the bold property (boolean)."
 msgstr ""
 
+#: ../../../api/font.md:0
+msgid "Setter type"
+msgstr ""
+
 #: ../../../api/font.md:1
 msgid "Returns or sets the color property (tuple)."
 msgstr ""
@@ -60,8 +64,12 @@ msgstr ""
 msgid "Requires xlwings Lite."
 msgstr ""
 
+#: ../../../api/font.md:0
+msgid "Return type"
+msgstr ""
+
 #: ../../../api/font.md:1
-msgid "Fetch the font colour on demand, as an RGB tuple."
+msgid "Fetch the font color on demand, as an RGB tuple."
 msgstr ""
 
 #: ../../../api/font.md:3

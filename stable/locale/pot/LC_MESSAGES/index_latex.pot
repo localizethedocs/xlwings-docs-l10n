@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-09-21 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../index_latex.md:1
+#: ../../../index_latex.md:5
 msgid "Getting Started"
 msgstr ""
 
-#: ../../../index_latex.md:23
+#: ../../../index_latex.md:27
 msgid "Advanced Features"
 msgstr ""
 
-#: ../../../index_latex.md:37
+#: ../../../index_latex.md:41
 msgid "xlwings PRO"
 msgstr ""
 
-#: ../../../index_latex.md:46
+#: ../../../index_latex.md:50
 msgid "File Reader"
 msgstr ""
 
-#: ../../../index_latex.md:54
+#: ../../../index_latex.md:58
 msgid "xlwings Reports"
 msgstr ""
 
-#: ../../../index_latex.md:62
+#: ../../../index_latex.md:66
 msgid "About"
 msgstr ""
 
-#: ../../../index_latex.md:72
+#: ../../../index_latex.md:76
 msgid "API Reference"
 msgstr ""
