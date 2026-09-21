@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-09-21 15:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,21 +34,71 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:6
-msgid "left position in points"
-msgstr ""
-
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:7
-msgid "top position in points"
+msgid ""
+"left position in points. If you use ``top``/``left``, you must not provide a "
+"value for ``anchor``."
 msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:8
+msgid ""
+"top position in points. If you use ``top``/``left``, you must not provide a "
+"value for ``anchor``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:10
 msgid "width in points"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:9
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:11
 msgid "height in points"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:16
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:12
+msgid ""
+"Chart type, see :attr:`Chart.chart_type <xlwings.Chart.chart_type>`. *New in "
+"version 0.37.3.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:15
+msgid ""
+"Source data range, see :meth:`Chart.set_source_data <xlwings.Chart."
+"set_source_data>`. *New in version 0.37.3.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:18
+msgid ""
+"``\"rows\"`` or ``\"columns\"``, requires ``source``. *New in version 0.37.3."
+"*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:20
+msgid ""
+"Excel chart name. Defaults to Excel standard name if not provided, e.g., "
+"'Chart 1'. *New in version 0.37.3.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:22
+msgid ""
+"The xlwings Range object of where you want to insert the chart. If you use "
+"``anchor``, you must not provide values for ``top``/``left``. *New in "
+"version 0.37.3.*"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:25
+msgid ""
+"Built-in chart style. Defaults to the modern Excel style 227. Use ``None`` "
+"to retain the host application's native creation default. See :attr:`Chart."
+"style <xlwings.Chart.style>`."
+msgstr ""
+
+#: ../../../api/charts.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Charts.add:34
 msgid "Examples"
+msgstr ""
+
+#: ../../../api/charts.md:13
+msgid "The same in steps:"
 msgstr ""

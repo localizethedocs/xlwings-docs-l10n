@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-09-21 15:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,6 +43,16 @@ msgstr ""
 msgid ""
 "Returns or sets the formula that the name is defined to refer to, in A1-"
 "style notation, beginning with an equal sign."
+msgstr ""
+
+#: ../../../api/name.md:4
+msgid ""
+"Returns `None` when an older remote client supplies neither the definition "
+"nor single-range coordinates for the name."
+msgstr ""
+
+#: ../../../api/name.md:0
+msgid "Setter type"
 msgstr ""
 
 #: ../../../api/name.md:1
