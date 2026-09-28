@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-09-07 15:43:12 +0200",
-      "hash" : "8f5556a86d0ddfbf5bb412e5bba2f419479c059b",
-      "title" : "Merge pull request #2743 from xlwings/python-3.11"
+      "date" : "2026-09-27 21:55:18 +0200",
+      "hash" : "d5abd284704b60b65abf16bba8b1446db95d1d1a",
+      "title" : "changelog"
     }
   },
   "type" : "branch",

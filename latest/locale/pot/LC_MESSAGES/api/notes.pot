@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-28 16:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/notes.md:1
+msgid "Notes"
+msgstr ""
+
+#: ../../../api/notes.md:1
+msgid ""
+"A collection of notes on one worksheet (`sheet.notes`) or across all "
+"worksheets in a workbook (`book.notes`)."
+msgstr ""
+
+#: ../../../api/notes.md:3
+msgid ""
+"Iterate over `sheet.notes` to inspect one worksheet, or `book.notes` to "
+"inspect every worksheet. If you already know the cell, access its note "
+"directly with `sheet[\"A1\"].note`. Collections also support zero-based "
+"indexing and lookup by cell address (`sheet.notes`) or a single-cell {class}"
+"`Range <xlwings.Range>` (`book.notes`)."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Notes:9
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/notes.md:1
+msgid "Number of notes in this collection."
+msgstr ""
