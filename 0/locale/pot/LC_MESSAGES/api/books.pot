@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-09-28 16:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,20 @@ msgstr ""
 msgid ""
 "Creates a new Book. The new Book becomes the active Book. Returns a Book "
 "object."
+msgstr ""
+
+#: ../../../api/books.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/books.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/books.md:1
+msgid "Returns the number of objects in the collection."
 msgstr ""
 
 #: ../../../api/books.md:1

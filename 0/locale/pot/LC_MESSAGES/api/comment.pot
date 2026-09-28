@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-28 16:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/comment.md:1
+msgid "Comment"
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid ""
+"A modern threaded comment attached to one cell, distinct from a [](note.md)."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Comment:7
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Add a plain-text reply."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Author name. In xlwings Lite, use `await get_author()`."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid ""
+"Creation date, when Excel has one. In xlwings Lite, use `await "
+"get_creation_date()`."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Delete the thread and all its replies."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Read the author's name."
+msgstr ""
+
+#: ../../../api/comment.md:3
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/comment.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Read the creation date."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Read the comment's cell."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Fetch replies."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Read the resolution state."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Read the comment text, or `None` if it was deleted."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "The comment's cell. In xlwings Lite, use `await get_location()`."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Reopen this thread."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Replies to this comment. In xlwings Lite, use `await get_replies()`."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Resolve this thread."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Thread resolution state. In xlwings Lite, use `await get_resolved()`."
+msgstr ""
+
+#: ../../../api/comment.md:1
+msgid "Comment text. In xlwings Lite, use `await get_text()` to read it."
+msgstr ""

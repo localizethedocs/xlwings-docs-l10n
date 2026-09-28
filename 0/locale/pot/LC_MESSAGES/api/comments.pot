@@ -12,35 +12,28 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../index_latex.md:5
-msgid "Getting Started"
+#: ../../../api/comments.md:1
+msgid "Comments"
 msgstr ""
 
-#: ../../../index_latex.md:27
-msgid "Advanced Features"
+#: ../../../api/comments.md:1
+msgid "Threaded comments on a worksheet or in a workbook."
 msgstr ""
 
-#: ../../../index_latex.md:41
-msgid "xlwings PRO"
+#: ../../../api/comments.md:3
+msgid ""
+"In xlwings Lite, obtain the collection with `await sheet.get_comments()` or "
+"`await book.get_comments()`."
 msgstr ""
 
-#: ../../../index_latex.md:50
-msgid "File Reader"
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Comments:9
+msgid "Examples"
 msgstr ""
 
-#: ../../../index_latex.md:58
-msgid "xlwings Reports"
-msgstr ""
-
-#: ../../../index_latex.md:66
-msgid "About"
-msgstr ""
-
-#: ../../../index_latex.md:76
-msgid "API Reference"
+#: ../../../api/comments.md:1
+msgid "Number of comments in this collection."
 msgstr ""
