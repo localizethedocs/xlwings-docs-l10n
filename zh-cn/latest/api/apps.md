@@ -1,0 +1,46 @@
+# Apps
+
+### *class* Apps(impl)
+
+A collection of all `app` objects:
+
+```pycon
+>>> import xlwings as xw
+>>> xw.apps
+Apps([<Excel App 1668>, <Excel App 1644>])
+```
+
+#### *property* active *: [App](app.md#xlwings.App) | None*
+
+Returns the active app.
+
+#### Versionadded
+在 0.9.0 版本加入.
+
+#### add(\*\*kwargs)
+
+Creates a new App. The new App becomes the active one. Returns an App object.
+
+#### cleanup()
+
+Removes Excel zombie processes (Windows-only). Note that this is
+automatically called with `App.quit()` and `App.kill()` and when the Python
+interpreter exits.
+
+#### Versionadded
+在 0.30.2 版本加入.
+
+#### *property* count *: int*
+
+Returns the number of apps.
+
+#### Versionadded
+在 0.9.0 版本加入.
+
+#### keys()
+
+Provides the PIDs of the Excel instances
+that act as keys in the Apps collection.
+
+#### Versionadded
+在 0.13.0 版本加入.
