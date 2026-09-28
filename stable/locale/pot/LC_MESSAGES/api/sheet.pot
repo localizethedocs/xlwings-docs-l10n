@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-09-28 16:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,8 @@ msgid ""
 msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.Sheet.freeze_panes:7
-#: xlwings.main.Sheet.autofit:15 xlwings.main.Sheet.copy:26
+#: xlwings.Sheet.show_gridlines:12 xlwings.main.Sheet.autofit:15
+#: xlwings.main.Sheet.copy:20 xlwings.main.Sheet.move:17
 #: xlwings.main.Sheet.render_template:22 xlwings.main.Sheet.to_pdf:26
 msgid "Examples"
 msgstr ""
@@ -67,7 +68,7 @@ msgid ""
 msgstr ""
 
 #: ../../../api/sheet.md:1
-msgid "See `Charts`"
+msgid "See {class}`Charts <xlwings.main.Charts>`"
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -80,6 +81,12 @@ msgstr ""
 
 #: ../../../api/sheet.md:1
 msgid "Clears the format of the whole sheet but leaves the content."
+msgstr ""
+
+#: ../../../api/sheet.md:1
+msgid ""
+"Threaded comments on this worksheet. In xlwings Lite, use `await "
+"get_comments()`."
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -104,14 +111,6 @@ msgid "The sheet name of the copy"
 msgstr ""
 
 #: ../../../api/sheet.md:0
-msgid "Returns"
-msgstr ""
-
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Sheet.copy:19
-msgid "The copied sheet"
-msgstr ""
-
-#: ../../../api/sheet.md:0
 msgid "Return type"
 msgstr ""
 
@@ -121,6 +120,32 @@ msgstr ""
 
 #: ../../../api/sheet.md:1
 msgid "Interface to freeze/unfreeze panes."
+msgstr ""
+
+#: ../../../api/sheet.md:1
+msgid "Fetch this worksheet's threaded comments."
+msgstr ""
+
+#: ../../../api/sheet.md:3 ../../../api/sheet.md:7
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/sheet.md:1
+msgid ""
+"Returns the used range fetched from the current worksheet state, or `None` "
+"if the worksheet is empty according to `values_only`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Sheet.get_used_range:6
+msgid ""
+"If ``True``, only cells with values count as used. If ``False``, cells with "
+"values or formatting count as used."
+msgstr ""
+
+#: ../../../api/sheet.md:1
+msgid ""
+"Unlike this method, {attr}`used_range` is a values-only snapshot in xlwings "
+"Lite and returns `A1` for an empty worksheet for backward compatibility."
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -138,8 +163,22 @@ msgid ""
 "load this sheet's cell values."
 msgstr ""
 
-#: ../../../api/sheet.md:7
-msgid "Requires xlwings Lite."
+#: ../../../api/sheet.md:1
+msgid "Move a sheet within its current Book."
+msgstr ""
+
+#: ../../../api/sheet.md:3
+msgid ""
+"Provide exactly one of `before` or `after`. Both the sheet being moved and "
+"the target sheet must belong to the same Book."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Sheet.move:9
+msgid "The sheet before which you want to place this sheet."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Sheet.move:10
+msgid "The sheet after which you want to place this sheet."
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -153,11 +192,19 @@ msgid ""
 msgstr ""
 
 #: ../../../api/sheet.md:1
+msgid "Notes on this worksheet, indexed by cell address or position."
+msgstr ""
+
+#: ../../../api/sheet.md:1
 msgid "Returns a PageSetup object."
 msgstr ""
 
 #: ../../../api/sheet.md:1
-msgid "See `Pictures`"
+msgid "See {class}`Pictures <xlwings.main.Pictures>`"
+msgstr ""
+
+#: ../../../api/sheet.md:1
+msgid "See {class}`PivotTables <xlwings.PivotTables>`"
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -192,11 +239,24 @@ msgid "Selects the Sheet. Activates the book if it isn't the active one."
 msgstr ""
 
 #: ../../../api/sheet.md:1
-msgid "See `Shapes`"
+msgid "See {class}`Shapes <xlwings.main.Shapes>`"
 msgstr ""
 
 #: ../../../api/sheet.md:1
-msgid "See `Tables`"
+msgid ""
+"Gets or sets whether the sheet displays gridlines. This only affects what is "
+"shown on screen, not what is printed."
+msgstr ""
+
+#: ../../../api/sheet.md:4
+msgid ""
+"With classic xlwings (Python running locally), the sheet must be "
+"(temporarily) activated by xlwings, which means that you can't use this with "
+"hidden sheets. xlwings Server and xlwings Lite don't have this restriction."
+msgstr ""
+
+#: ../../../api/sheet.md:1
+msgid "See {class}`Tables <xlwings.main.Tables>`"
 msgstr ""
 
 #: ../../../api/sheet.md:1
@@ -248,6 +308,13 @@ msgstr ""
 
 #: ../../../api/sheet.md:1
 msgid "Used Range of Sheet."
+msgstr ""
+
+#: ../../../api/sheet.md:3
+msgid ""
+"In xlwings Lite, this is a values-only snapshot and returns `A1` for an "
+"empty worksheet. Use {meth}`get_used_range` for a current formatting-aware "
+"result that returns `None` when the worksheet is empty."
 msgstr ""
 
 #: ../../../api/sheet.md:1
