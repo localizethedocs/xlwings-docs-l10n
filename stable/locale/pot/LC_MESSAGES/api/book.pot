@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-05 16:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,8 +200,18 @@ msgid ""
 "Book.set_mock_caller()`."
 msgstr ""
 
+#: ../../../api/book.md:0
+msgid "Return type"
+msgstr ""
+
 #: ../../../api/book.md:1
 msgid "Closes the book without saving it."
+msgstr ""
+
+#: ../../../api/book.md:1
+msgid ""
+"Threaded comments in this workbook. In xlwings Lite, use `await "
+"get_comments()`."
 msgstr ""
 
 #: ../../../api/book.md:1
@@ -216,6 +226,10 @@ msgstr ""
 msgid ""
 "Returns the name of the object, including its path on disk, as a string. "
 "Read-only String."
+msgstr ""
+
+#: ../../../api/book.md:1
+msgid "Fetch the workbook's threaded comments."
 msgstr ""
 
 #: ../../../api/book.md:1
@@ -272,6 +286,12 @@ msgstr ""
 msgid ""
 "Returns a names collection that represents all the names in the specified "
 "book (including all sheet-specific names)."
+msgstr ""
+
+#: ../../../api/book.md:1
+msgid ""
+"Notes in this workbook. xlwings Lite includes the worksheets loaded for this "
+"script."
 msgstr ""
 
 #: ../../../api/book.md:1
