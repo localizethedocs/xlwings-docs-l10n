@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/table_rows.md:1
+msgid "TableRows"
+msgstr ""
+
+#: ../../../api/table_rows.md:3
+msgid ""
+"The collection belongs to a [Table](table.md). Use [TableRow](table_row.md) "
+"to delete an indexed row."
+msgstr ""
+
+#: ../../../api/table_rows.md:1
+msgid ""
+"Collection of data rows in a table. Row indexes are one-based; square-"
+"bracket lookup is zero-based. In xlwings Lite, `len(rows)` uses loaded "
+"metadata; use `await rows.get_count()` for the current count."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.TableRows:7
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/table_rows.md:1
+msgid "Add one row before one-based `index`, or append when it is `None`."
+msgstr ""
+
+#: ../../../api/table_rows.md:3
+msgid ""
+"`values` must contain exactly one value per table column. Omit it to let "
+"Excel create a blank row and fill calculated columns. Excel may shift cells "
+"below the table downward."
+msgstr ""
+
+#: ../../../api/table_rows.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/table_rows.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/table_rows.md:1
+msgid "Returns the number of objects in the collection."
+msgstr ""
+
+#: ../../../api/table_rows.md:1
+msgid "Fetch the current row count. Use this method for xlwings Lite readback."
+msgstr ""
