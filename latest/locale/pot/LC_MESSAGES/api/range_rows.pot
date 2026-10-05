@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-05 16:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,4 +37,29 @@ msgstr ""
 
 #: ../../../api/range_rows.md:1
 msgid "Returns the number of rows."
+msgstr ""
+
+#: ../../../api/range_rows.md:1
+msgid ""
+"Fetch row visibility in xlwings Lite; return `None` for a mixed selection."
+msgstr ""
+
+#: ../../../api/range_rows.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/range_rows.md:1
+msgid "Whether all represented worksheet rows are hidden."
+msgstr ""
+
+#: ../../../api/range_rows.md:3
+msgid ""
+"Setting this property hides or shows the entire worksheet rows represented "
+"by the range. Returns `None` when some rows are hidden and others are "
+"visible. In xlwings Lite, use `await rng.rows.get_hidden()` to read this "
+"state."
+msgstr ""
+
+#: ../../../api/range_rows.md:0
+msgid "Setter type"
 msgstr ""

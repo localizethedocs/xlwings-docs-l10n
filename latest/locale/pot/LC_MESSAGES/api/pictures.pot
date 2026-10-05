@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-05 16:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,6 +100,10 @@ msgid ""
 "``write_image()``. *New in version 0.27.7.*"
 msgstr ""
 
+#: ../../../api/pictures.md:0
+msgid "Return type"
+msgstr ""
+
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Pictures.add:40
 msgid "Examples"
 msgstr ""
@@ -110,4 +114,14 @@ msgstr ""
 
 #: ../../../api/pictures.md:10
 msgid "Matplotlib"
+msgstr ""
+
+#: ../../../api/pictures.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/pictures.md:1
+msgid "Returns the number of objects in the collection."
 msgstr ""
