@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-10-05 16:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,26 @@ msgstr ""
 msgid "Note"
 msgstr ""
 
+#: ../../../api/note.md:3
+msgid ""
+"See also [](notes.md) for worksheet and workbook note collections. Modern "
+"threaded comments use a separate [](comment.md) model."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "Represents a cell Note."
+msgstr ""
+
+#: ../../../api/note.md:3
+msgid ""
+"Before the introduction of threaded comments, a Note was called a Comment."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Note:9
+#: xlwings.main.Note.text:8
+msgid "Examples"
+msgstr ""
+
 #: ../../../api/note.md:1
 msgid ""
 "Returns the native object (`pywin32` or `appscript` obj) of the engine being "
@@ -28,23 +48,40 @@ msgid ""
 msgstr ""
 
 #: ../../../api/note.md:1
+msgid "The note's author. In xlwings Lite, use `await get_author()`."
+msgstr ""
+
+#: ../../../api/note.md:1
 msgid "Delete the note."
 msgstr ""
 
 #: ../../../api/note.md:1
-msgid "Fetch the note's text on demand."
+msgid "Read the note's author from Excel; return `None` if the note is gone."
 msgstr ""
 
 #: ../../../api/note.md:3
 msgid "Requires xlwings Lite."
 msgstr ""
 
+#: ../../../api/note.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "Read the note's cell from Excel; return `None` if it is gone."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "Fetch the note's text on demand."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid ""
+"The cell containing this note. In xlwings Lite, use `await get_location()`."
+msgstr ""
+
 #: ../../../api/note.md:1
 msgid ""
 "Gets or sets the text of a note. Keep in mind that the note must already "
 "exist!"
-msgstr ""
-
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Note.text:8
-msgid "Examples"
 msgstr ""
