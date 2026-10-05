@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/chart_axis.md:1
+msgid "ChartAxis"
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid ""
+"A primary chart axis, accessed through {attr}`Chart.category_axis <xlwings."
+"Chart.category_axis>` or {attr}`Chart.value_axis <xlwings.Chart.value_axis>`."
+msgstr ""
+
+#: ../../../api/chart_axis.md:3
+msgid ""
+"Use {meth}`set` to change several attributes in one operation. On xlwings "
+"Lite, use the asynchronous getters to fetch the current values from Excel."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Returns the native `pywin32` object on Windows."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Fetches the resolved major-unit interval."
+msgstr ""
+
+#: ../../../api/chart_axis.md:3
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/chart_axis.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Fetches the resolved maximum scale."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Fetches the resolved minimum scale."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Fetches the tick-label number format."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Fetches the axis title. Returns `None` if the axis or title is hidden."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Fetches whether the axis is shown."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid ""
+"Returns or sets the interval between major tick marks. Set to `None` to "
+"restore Excel's automatic interval; reads return the resolved value."
+msgstr ""
+
+#: ../../../api/chart_axis.md:0
+msgid "Setter type"
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid ""
+"Returns or sets the maximum scale. Set to `None` to restore Excel's "
+"automatic scale; reads return the resolved numeric value."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid ""
+"Returns or sets the minimum scale. Set to `None` to restore Excel's "
+"automatic scale; reads return the resolved numeric value."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Returns or sets the format code for the axis tick labels."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Sets one or more axis attributes in one operation."
+msgstr ""
+
+#: ../../../api/chart_axis.md:3
+msgid ""
+"Only supplied attributes are changed, and all arguments are validated before "
+"anything is written. `visible=True` is applied before the other attributes; "
+"`visible=False` is applied last so it describes the final state."
+msgstr ""
+
+#: ../../../api/chart_axis.md:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.ChartAxis.set:8
+msgid "Axis title, or ``None`` to hide it."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.ChartAxis.set:9
+msgid "Minimum scale, or ``None`` for automatic scaling."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.ChartAxis.set:10
+msgid "Maximum scale, or ``None`` for automatic scaling."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.ChartAxis.set:11
+msgid "Positive major-unit interval, or ``None`` for automatic."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.ChartAxis.set:12
+msgid "Format code for the tick labels."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.ChartAxis.set:13
+msgid "Whether the axis is shown."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid ""
+"Returns or sets the axis title. Setting it to `None` hides the title; "
+"setting it to a string shows the axis and its title."
+msgstr ""
+
+#: ../../../api/chart_axis.md:1
+msgid "Returns or sets whether the axis is shown."
+msgstr ""
