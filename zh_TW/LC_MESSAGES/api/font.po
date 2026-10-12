@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/font.md:1
+msgid "Font"
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid ""
+"The font object can be accessed as an attribute of the range or shape object."
+msgstr ""
+
+#: ../../../api/font.md:3
+msgid "`mysheet['A1'].font`"
+msgstr ""
+
+#: ../../../api/font.md:4
+msgid "`mysheet.shapes[0].font`"
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Returns or sets the bold property (boolean)."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Returns or sets the color property (tuple)."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Fetch the bold property on demand."
+msgstr ""
+
+#: ../../../api/font.md:3
+msgid "`None` if the range's cells don't all agree."
+msgstr ""
+
+#: ../../../api/font.md:5
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Fetch the font colour on demand, as an RGB tuple."
+msgstr ""
+
+#: ../../../api/font.md:3
+msgid "`None` if unset or if the range's cells don't all agree."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Fetch the italic property on demand."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Fetch the font name on demand."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Fetch the font size on demand."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Returns or sets the italic property (boolean)."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Returns or sets the name of the font (str)."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Returns or sets the size (float)."
+msgstr ""
