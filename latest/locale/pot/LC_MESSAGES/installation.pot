@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-19 15:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,9 +27,9 @@ msgstr ""
 
 #: ../../../installation.md:5
 msgid ""
-"xlwings (Open Source) requires an **installation of Excel** and therefore "
-"only works on **Windows** and **macOS**. Note that macOS currently does not "
-"support UDFs."
+"Classic xlwings requires an **installation of Excel** and therefore only "
+"works on **Windows** and **macOS**. Its VBA UDF integration is only "
+"supported on Windows; xlwings Lite custom functions also work on macOS."
 msgstr ""
 
 #: ../../../installation.md:6

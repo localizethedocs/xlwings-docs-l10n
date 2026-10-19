@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-19 15:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,19 @@ msgid ""
 msgstr ""
 
 #: ../../../api/shape.md:1
+msgid ""
+"Returns the {class}`Characters <xlwings.main.Characters>` object for the "
+"shape text, used to format part of the text."
+msgstr ""
+
+#: ../../../api/shape.md:1
 msgid "Deletes the shape."
+msgstr ""
+
+#: ../../../api/shape.md:1
+msgid ""
+"Returns the {class}`Font <xlwings.main.Font>` object for the shape text, "
+"used to read or change font formatting."
 msgstr ""
 
 #: ../../../api/shape.md:1
@@ -49,6 +61,10 @@ msgstr ""
 
 #: ../../../api/shape.md:5
 msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/shape.md:0
+msgid "Return type"
 msgstr ""
 
 #: ../../../api/shape.md:1
@@ -100,6 +116,10 @@ msgstr ""
 
 #: ../../../api/shape.md:1
 msgid "Returns or sets the text of a shape."
+msgstr ""
+
+#: ../../../api/shape.md:0
+msgid "Setter type"
 msgstr ""
 
 #: ../../../api/shape.md:1
