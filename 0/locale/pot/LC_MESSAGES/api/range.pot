@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 14:11+0000\n"
+"POT-Creation-Date: 2026-10-19 15:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,11 +42,32 @@ msgid ""
 "or as name or as xw.Range object."
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.Range.color:11
-#: xlwings.Range.hyperlink:7 xlwings.Range.number_format:7
-#: xlwings.main.Range:17 xlwings.main.Range.end:15 xlwings.main.Range.expand:14
-#: xlwings.main.Range.get_address:21
+#: ../../../../xlwings/main.py:docstring of xlwings.Range.autofilter:10
+#: xlwings.Range.borders:10 xlwings.Range.color:12
+#: xlwings.Range.data_validation:11 xlwings.Range.horizontal_alignment:16
+#: xlwings.Range.hyperlink:8 xlwings.Range.number_format:8
+#: xlwings.Range.vertical_alignment:14 xlwings.main.Range:14
+#: xlwings.main.Range.end:12 xlwings.main.Range.expand:13
+#: xlwings.main.Range.find:16 xlwings.main.Range.get_address:18
+#: xlwings.main.Range.get_colors:14 xlwings.main.Range.get_value:10
+#: xlwings.main.Range.move:12 xlwings.main.Range.replace_all:10
+#: xlwings.main.Range.set_colors:10 xlwings.main.Range.sort:18
+#: xlwings.main.Range.to_png:14
 msgid "Examples"
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Add a plain-text threaded comment to one cell and return its handle."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Raises `TypeError` for non-text content and `ValueError` for empty text or a "
+"multi-cell range. Excel rejects a second comment on the same cell."
+msgstr ""
+
+#: ../../../api/range.md:0
+msgid "Return type"
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -68,6 +89,16 @@ msgid ""
 "The screen tip to be displayed when the mouse pointer is paused over the "
 "hyperlink. Default is set to '<address> - Click once to follow. Click and "
 "hold to select this cell.'"
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Add a note to this single cell and return it."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Raises `TypeError` for non-text content and `ValueError` for empty text, a "
+"multi-cell range, or a cell that already has a note."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -112,6 +143,16 @@ msgid ""
 msgstr ""
 
 #: ../../../api/range.md:1
+msgid "Returns the AutoFilter for this range."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"The first row is treated as the header row and `field` arguments are one-"
+"based column positions relative to the range."
+msgstr ""
+
+#: ../../../api/range.md:1
 msgid "Autofits the width and height of all cells in the range."
 msgstr ""
 
@@ -122,6 +163,19 @@ msgstr ""
 
 #: ../../../api/range.md:5
 msgid "To autofit only the height of the rows use `myrange.rows.autofit()`"
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"Returns the {class}`Borders <xlwings.main.Borders>` collection of the range, "
+"which gives access to the eight individual {class}`Border <xlwings.main."
+"Border>` sides."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"Returns the {class}`Characters <xlwings.main.Characters>` object for the "
+"range, used to format part of the text."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -147,6 +201,10 @@ msgid ""
 "color to `None`, see Examples."
 msgstr ""
 
+#: ../../../api/range.md:0
+msgid "Setter type"
+msgstr ""
+
 #: ../../../api/range.md:1
 msgid ""
 "Returns the number of the first column in the in the specified range. Read-"
@@ -159,25 +217,24 @@ msgstr ""
 
 #: ../../../api/range.md:3
 msgid ""
-"The unit depends on the engine: **characters** on the classic, locally "
-"installed xlwings, where one unit is the width of one character in the "
-"Normal style (for proportional fonts, the character 0), and **points** on "
-"xlwings Server and xlwings Lite."
+"The unit depends on the engine: **characters** with classic xlwings, where "
+"one unit is the width of one character in the Normal style (for proportional "
+"fonts, the character 0), and **points** with xlwings Server and xlwings Lite."
 msgstr ""
 
-#: ../../../api/range.md:8
+#: ../../../api/range.md:5
 msgid ""
 "If all columns in the Range have the same width, returns the width. If "
 "columns in the Range have different widths, returns None."
 msgstr ""
 
-#: ../../../api/range.md:11
+#: ../../../api/range.md:8
 msgid ""
 "In characters, column_width must be in the range 0 <= column_width <= 255. "
 "In points it only has to be positive."
 msgstr ""
 
-#: ../../../api/range.md:14
+#: ../../../api/range.md:11
 msgid ""
 "Note: If the Range is outside the used range of the Worksheet, and columns "
 "in the Range have different widths, returns the width of the first column."
@@ -187,6 +244,22 @@ msgstr ""
 msgid ""
 "Returns a `RangeColumns` object that represents the columns in the specified "
 "range."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"The cell's threaded comment. In xlwings Lite, use `await get_comment()`."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Returns the conditional-format rules for this range."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"In xlwings Lite, use `await sheet[\"A1:D10\"].get_conditional_formats()` for "
+"inspection; `sheet[\"A1:D10\"].conditional_formats.clear()` remains "
+"available."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -232,6 +305,16 @@ msgid ""
 msgstr ""
 
 #: ../../../api/range.md:1
+msgid "Returns the data validation object for the range."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Use it to create, replace, or remove a validation rule. On xlwings Lite, use "
+"{meth}`Range.get_data_validation` instead."
+msgstr ""
+
+#: ../../../api/range.md:1
 msgid "Deletes a cell or range of cells."
 msgstr ""
 
@@ -254,16 +337,95 @@ msgid ""
 "cells (unlike `Range.end()`)."
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.expand:7
+#: ../../../api/range.md:4
+msgid ""
+"For async workbook reads in xlwings Lite, use {meth}`get_expanded_range "
+"<xlwings.Range.get_expanded_range>`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.expand:9
 msgid "One of ``'table'`` (=down and right), ``'down'``, ``'right'``."
 msgstr ""
 
 #: ../../../api/range.md:1
-msgid "Gets or sets the formula for the given Range."
+msgid ""
+"Find the first matching cell or return `None`; in xlwings Lite, use `await "
+"rng.find(...)`."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Classic xlwings returns the result directly. The search starts at the first "
+"cell in the requested traversal direction and is restricted to this range."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.find:8
+msgid "Text to find. An empty string is not allowed."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.find:9
+msgid "Match the entire cell rather than part of it."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.find:10
+msgid "``\"forward\"`` or ``\"backward\"``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.find:11
+msgid "Search by ``\"rows\"`` or ``\"columns\"``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.find:12
+msgid "Whether matching is case-sensitive."
 msgstr ""
 
 #: ../../../api/range.md:1
-msgid "Gets or sets the formula2 for the given Range."
+msgid "With classic xlwings:"
+msgstr ""
+
+#: ../../../api/range.md:11
+msgid "In xlwings Lite, await the same search:"
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"Returns the {class}`Font <xlwings.main.Font>` object for the range, used to "
+"read or change font formatting."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"Gets or sets formulas using Excel's implicit-intersection formula semantics "
+"with classic xlwings."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Assign a formula string to fill the range, or a list or list of lists to "
+"write formulas to individual cells. Writing accepts the converters and shape "
+"options supported by {meth}`Range.options <xlwings.Range.options>`."
+msgstr ""
+
+#: ../../../api/range.md:5
+msgid ""
+"For dynamic-array formulas with classic xlwings, use {attr}`formula2 "
+"<xlwings.Range.formula2>`. In xlwings Lite, both properties write through "
+"the same Office.js formula API, which supports dynamic arrays. Synchronous "
+"formula reads are not supported in xlwings Lite; use `await rng."
+"get_formula()`."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"Gets or sets formulas using Excel's dynamic-array formula semantics with "
+"classic xlwings."
+msgstr ""
+
+#: ../../../api/range.md:5
+msgid ""
+"In xlwings Lite, this property writes through the same Office.js formula API "
+"as {attr}`formula <xlwings.Range.formula>`. Read formulas with `await rng."
+"get_formula()`; there is no separate `get_formula2()` method."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -307,8 +469,37 @@ msgid "Returns `None` if the range has no fill."
 msgstr ""
 
 #: ../../../api/range.md:3 ../../../api/range.md:5 ../../../api/range.md:6
-#: ../../../api/range.md:7
+#: ../../../api/range.md:7 ../../../api/range.md:8
 msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Returns the fill color of every cell as a two-dimensional list."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Each entry is an RGB tuple, or `None` for no fill color. The result always "
+"has the range's row and column dimensions, including `[[color]]` for a "
+"single cell; conversion options such as `ndim` and `transpose` do not affect "
+"it."
+msgstr ""
+
+#: ../../../api/range.md:5
+msgid ""
+"Reads direct cell fills, excluding colors supplied by conditional formatting "
+"or table styles. For patterned fills, returns the background fill color, not "
+"the pattern color or rendered appearance."
+msgstr ""
+
+#: ../../../api/range.md:7
+msgid "A call supports at most 100,000 cells."
+msgstr ""
+
+#: ../../../api/range.md:6
+msgid ""
+"See {meth}`get_color <xlwings.Range.get_color>` for a single range-level "
+"fill color."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -320,6 +511,20 @@ msgid "Returns `None` if the range's columns aren't all the same width."
 msgstr ""
 
 #: ../../../api/range.md:1
+msgid "Fetch the cell's threaded comment, or `None`."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the ordered conditional-format rules on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Rules are returned from highest to lowest evaluation priority. Requires "
+"xlwings Lite."
+msgstr ""
+
+#: ../../../api/range.md:1
 msgid "Fetch the current region on demand."
 msgstr ""
 
@@ -327,6 +532,41 @@ msgstr ""
 msgid ""
 "The region bounded by blank rows and columns around this range, i.e. `Ctrl-"
 "*`."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch this range's data-validation rule for the range."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Returns `\"none\"` when the range has no validation, `\"mixed_criteria\"` "
+"when only some cells have validation, and `\"inconsistent\"` when cells have "
+"different rules."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Return the range expanded down, right, or in both directions."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Like {meth}`expand <xlwings.Range.expand>`, ignores an empty top-left cell. "
+"`mode` is `\"table\"` (down and right), `\"down\"`, or `\"right\"`; the "
+"aliases accepted by `expand()` are also supported."
+msgstr ""
+
+#: ../../../api/range.md:5
+msgid ""
+"Requires xlwings Lite. Like other asynchronous getters, it flushes pending "
+"actions first, so expansion sees earlier writes in the same script. Captured "
+"writes in a dry run remain unapplied. When the intended dimensions are "
+"already known, construct the range directly instead."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.Range.last_cell:8
+#: xlwings.main.Range.get_expanded_range:12
+msgid "Example"
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -352,6 +592,14 @@ msgstr ""
 
 #: ../../../api/range.md:1
 msgid "Fetch the range's height in points, on demand."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the horizontal alignment on demand."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid "`None` if the cells in the range don't all have the same alignment."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -403,6 +651,21 @@ msgid "Returns `None` if the range's rows aren't all the same height."
 msgstr ""
 
 #: ../../../api/range.md:1
+msgid ""
+"Return matching rectangular areas; in xlwings Lite, use `await rng."
+"get_special_cells(...)`."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"`cell_type` is `\"blanks\"`, `\"constants\"`, `\"formulas\"`, or "
+"`\"visible\"`. For constants or formulas, `value_type` may be `\"numbers\"`, "
+"`\"text\"`, `\"logical\"`, or `\"errors\"`; omitting it selects all value "
+"types. Returns an empty list when no cells match. Classic xlwings returns "
+"the list directly."
+msgstr ""
+
+#: ../../../api/range.md:1
 msgid "Fetch the Table this range is part of, on demand."
 msgstr ""
 
@@ -415,7 +678,24 @@ msgid "Fetch the distance from the sheet's top edge, in points, on demand."
 msgstr ""
 
 #: ../../../api/range.md:1
-msgid "Fetch values on demand."
+msgid "Reads the range's current values from Excel asynchronously."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Supports the same converters and options as {attr}`value <xlwings.Range."
+"value>`, including DataFrames, `ndim`, `transpose`, and `chunksize`. Without "
+"an explicit converter, a single cell returns a scalar, a single row or "
+"column returns a flat list, and a two-dimensional range returns a list of "
+"lists. Use `rng.options(ndim=2)` to always receive a list of rows."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Inside an asynchronous script with a supplied `book` parameter:"
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Fetch the vertical alignment on demand."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -452,6 +732,26 @@ msgid "Returns the height, in points, of a Range. Read-only."
 msgstr ""
 
 #: ../../../api/range.md:1
+msgid "Returns or sets the horizontal alignment of the range."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"One of `'general'`, `'left'`, `'center'`, `'right'`, `'fill'`, `'justify'`, "
+"`'center_across_selection'` or `'distributed'`. Returns `None` if the cells "
+"in the range don't all have the same alignment. The default is `'general'`, "
+"which right-aligns numbers and dates and left-aligns text."
+msgstr ""
+
+#: ../../../api/range.md:9
+msgid ""
+"Reading this property synchronously requires classic xlwings. Setting it is "
+"also supported with xlwings Lite and xlwings Server; in xlwings Lite, read "
+"it via {meth}`get_horizontal_alignment() <xlwings.Range."
+"get_horizontal_alignment>`."
+msgstr ""
+
+#: ../../../api/range.md:1
 msgid "Returns the hyperlink address of the specified Range (single Cell only)"
 msgstr ""
 
@@ -475,10 +775,6 @@ msgstr ""
 
 #: ../../../api/range.md:1
 msgid "Returns the bottom right cell of the specified range. Read-only."
-msgstr ""
-
-#: ../../../../xlwings/main.py:docstring of xlwings.Range.last_cell:7
-msgid "Example"
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -506,6 +802,25 @@ msgstr ""
 
 #: ../../../api/range.md:1
 msgid "Returns `True` if the Range contains merged cells, otherwise `False`"
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Move this range to a new location, like cut and paste in Excel."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Values, formulas, and formatting move together, and formulas that reference "
+"the moved cells are updated to point to the new location. The source and "
+"destination may overlap, e.g., to shift a block a few columns to the left. "
+"Source cells that the moved block doesn't cover afterwards are left empty."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.move:8
+msgid ""
+"The range whose top-left cell becomes the top-left cell of the moved block. "
+"The moved block keeps this range's size. The destination may be on another "
+"sheet of the same book."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -542,23 +857,67 @@ msgid ""
 "defaults to default converter."
 msgstr ""
 
-#: ../../../api/range.md:1
-msgid ""
-":keyword ndim: Number of dimensions. :keyword numbers: Type of numbers, e.g. "
-"`int`. :keyword dates: E.g. `datetime.date`, defaults to `datetime."
-"datetime`. :keyword empty: Transformation of empty cells. :keyword "
-"transpose: Transpose values. :keyword expand: One of `'table'`, `'down'`, "
-"`'right'`. :keyword chunksize: Use a chunksize, e.g. `10000` to prevent "
-"timeout or                     memory issues when reading or writing large "
-"amounts of data.                     Works with all formats, including "
-"DataFrames, NumPy arrays,                     and list of lists. :keyword "
-"err_to_str: If `True`, will include cell errors such as `#N/A` "
-"as                      strings. By default, they will be converted to "
-"`None`.                      *New in version 0.28.0.*"
+#: ../../../api/range.md:0
+msgid "Keyword Arguments"
 msgstr ""
 
-#: ../../../api/range.md:15
-msgid "For converter-specific options, see `converters`."
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:12
+msgid "Number of dimensions."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:13
+msgid "Type of numbers, e.g. ``int``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:14
+msgid "E.g. ``datetime.date``, defaults to ``datetime.datetime``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:15
+msgid "Transformation of empty cells."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:16
+msgid "Transpose values."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:17
+msgid "One of ``'table'``, ``'down'``, ``'right'``."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:18
+msgid ""
+"Number of rows per chunk when reading or writing large amounts of data, e.g. "
+"``10000``. Large ranges are chunked automatically (reads above 4,000,000 "
+"cells, writes above 100,000 cells with classic xlwings and the remote "
+"engines); set ``chunksize`` explicitly to tune the row count, e.g. to "
+"prevent timeout, memory or payload-size issues, or ``chunksize=None`` to "
+"disable chunking. Works with all formats, including DataFrames, NumPy "
+"arrays, and list of lists."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:26
+msgid ""
+"If ``True``, will include cell errors such as ``#N/A`` as strings. By "
+"default, they will be converted to ``None``. *New in version 0.28.0.*"
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"Without an explicit converter, a single cell returns a scalar, a single row "
+"or column returns a flat list, and a two-dimensional range returns a list of "
+"lists. Use `ndim=2` when code needs a list of rows regardless of the range "
+"shape: a single cell becomes `[[value]]`, one row becomes `[[a, b]]`, and "
+"one column becomes `[[a], [b]]`."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"Options apply to both {attr}`value <xlwings.Range.value>` and, in xlwings "
+"Lite, {meth}`get_value <xlwings.Range.get_value>`. For example, `rng."
+"options(ndim=2).value` and `await rng.options(ndim=2).get_value()` both "
+"request a two-dimensional result. Converter-specific options are described "
+"in `converters`."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -592,6 +951,42 @@ msgid ""
 "xlwings' data cleaning/converting. This can be helpful if speed is an issue "
 "but naturally will be engine specific, i.e. might remove the cross-platform "
 "compatibility."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Remove duplicate rows within this range, keeping the first occurrence."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.Range.remove_duplicates:6
+msgid ""
+"One-based column positions within this range used to identify duplicates."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of
+#: xlwings.main.Range.remove_duplicates:7
+msgid "Keep the first row as a header."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"Only cells inside this range are shifted. Ranges intersecting an Excel table "
+"are not supported. On macOS this method isn't supported and raises "
+"`NotImplementedError`."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Replace matching text within this range."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid "An empty replacement string is allowed; an empty search string is not."
+msgstr ""
+
+#: ../../../api/range.md:9
+msgid ""
+"In xlwings Lite, inside an asynchronous script with a supplied `book` "
+"parameter:"
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -641,6 +1036,19 @@ msgid "Selects the range. Select only works on the active book."
 msgstr ""
 
 #: ../../../api/range.md:1
+msgid "Set direct fill colors cell by cell without changing cell contents."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"`colors` must be a two-dimensional matrix exactly matching the range's "
+"shape, including `[[color]]` for one cell. An RGB tuple or list or a "
+"`#RRGGBB` hex string. `None` removes the fill; `...` leaves that cell's "
+"existing fill unchanged. Conversion options do not change the required "
+"matrix shape."
+msgstr ""
+
+#: ../../../api/range.md:1
 msgid "Tuple of Range dimensions."
 msgstr ""
 
@@ -650,6 +1058,29 @@ msgstr ""
 
 #: ../../../api/range.md:1
 msgid "Number of elements in the Range."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Sort the rows of this rectangular range by one or more columns."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.sort:6
+msgid "One-based column positions within this range, in priority order."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.sort:7
+msgid "One direction for every key, or one boolean per key."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.sort:8
+msgid "Whether to keep the first row in place as a header."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"The range is not expanded to adjacent data. Ranges intersecting an Excel "
+"table are not supported; use {meth}`Table.sort <xlwings.main.Table.sort>` "
+"instead."
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -689,11 +1120,23 @@ msgstr ""
 msgid "Exports the range as PNG picture."
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.to_png:6
+#: ../../../api/range.md:3
+msgid ""
+"In xlwings Lite, `path` is required and the export is queued like other "
+"workbook actions: the file exists only after the script returns or you call "
+"`await book.flush()`. Flush before reading the file within the same script."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Range.to_png:8
 msgid ""
 "Path where you want to store the picture. Defaults to the name of the range "
 "in the same directory as the Excel file if the Excel file is stored and to "
 "the current working directory otherwise."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid ""
+"Inside an asynchronous xlwings Lite script with a supplied `book` parameter:"
 msgstr ""
 
 #: ../../../api/range.md:1
@@ -711,10 +1154,41 @@ msgid "Separates a merged area into individual cells."
 msgstr ""
 
 #: ../../../api/range.md:1
+msgid "Gets and sets the values for the given range."
+msgstr ""
+
+#: ../../../api/range.md:3
 msgid ""
-"Gets and sets the values for the given Range. See `xlwings.Range.options` "
-"about how to set options, e.g., to transform it into a DataFrame or how to "
-"set a chunksize."
+"Without an explicit converter, a single cell returns a scalar, a single row "
+"or column returns a flat list, and a two-dimensional range returns a list of "
+"lists. Use {meth}`options <xlwings.Range.options>` to control "
+"dimensionality, convert values to a DataFrame, or set a chunk size."
+msgstr ""
+
+#: ../../../api/range.md:5
+msgid ""
+"In xlwings Lite, reads use the cell values loaded for the script. A script "
+"annotated with {class}`BookAsync <xlwings.BookAsync>` does not preload cell "
+"values: use `await rng.get_value()` to read them."
+msgstr ""
+
+#: ../../../api/range.md:1
+msgid "Returns or sets the vertical alignment of the range."
+msgstr ""
+
+#: ../../../api/range.md:3
+msgid ""
+"One of `'top'`, `'center'`, `'bottom'`, `'justify'` or `'distributed'`. "
+"Returns `None` if the cells in the range don't all have the same alignment. "
+"The default is `'bottom'`."
+msgstr ""
+
+#: ../../../api/range.md:7
+msgid ""
+"Reading this property synchronously requires classic xlwings. Setting it is "
+"also supported with xlwings Lite and xlwings Server; in xlwings Lite, read "
+"it via {meth}`get_vertical_alignment() <xlwings.Range."
+"get_vertical_alignment>`."
 msgstr ""
 
 #: ../../../api/range.md:1
