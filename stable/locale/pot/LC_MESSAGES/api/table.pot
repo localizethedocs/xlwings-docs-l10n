@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-19 15:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,14 @@ msgstr ""
 msgid "Table"
 msgstr ""
 
+#: ../../../api/table.md:3
+msgid ""
+"See [TableRows](table_rows.md) for row insertion and deletion. See "
+"[TableColumns](table_columns.md) for column insertion and deletion. "
+"Positions passed to `add()` are one-based, while square-bracket lookup uses "
+"Python indexing."
+msgstr ""
+
 #: ../../../api/table.md:1
 msgid "The table object is a member of the `tables` collection:"
 msgstr ""
@@ -29,6 +37,19 @@ msgstr ""
 msgid ""
 "Returns the native object (`pywin32` or `appscript` obj) of the engine being "
 "used."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns the AutoFilter for this table."
+msgstr ""
+
+#: ../../../api/table.md:3
+msgid "`field` arguments are one-based column positions relative to the table."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"The columns belonging to this table. Integer collection lookup is zero-based."
 msgstr ""
 
 #: ../../../api/table.md:1
@@ -70,6 +91,10 @@ msgid "Resize a Table by providing an xlwings range object"
 msgstr ""
 
 #: ../../../api/table.md:1
+msgid "Data rows of this table, excluding headers and totals."
+msgstr ""
+
+#: ../../../api/table.md:1
 msgid ""
 "Turn the autofilter on or off by setting it to `True` or `False` (read/write "
 "boolean)"
@@ -103,6 +128,36 @@ msgid "Gets or sets a boolean to show/hide the Total row."
 msgstr ""
 
 #: ../../../api/table.md:1
+msgid ""
+"Sort the table's data rows by one or more columns using Excel's native table "
+"sort."
+msgstr ""
+
+#: ../../../api/table.md:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.sort:6
+msgid "One-based column positions within the table, in priority order."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.sort:7
+msgid "One direction for every key, or one boolean per key."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"The header and totals rows stay in place. Calculated columns, row "
+"formatting, and the table's sort state are kept. In xlwings Lite, the sort "
+"is queued until the next sync."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.sort:20
+#: xlwings.main.Table.update:16
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/table.md:1
 msgid "Gets or sets the table style. See `Tables.add` for possible values."
 msgstr ""
 
@@ -116,10 +171,6 @@ msgid ""
 "DataFrames."
 msgstr ""
 
-#: ../../../api/table.md:0
-msgid "Parameters"
-msgstr ""
-
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:10
 msgid "Currently restricted to pandas DataFrames."
 msgstr ""
@@ -130,6 +181,6 @@ msgid ""
 "Excel table."
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:19
-msgid "Examples"
+#: ../../../api/table.md:0
+msgid "Return type"
 msgstr ""

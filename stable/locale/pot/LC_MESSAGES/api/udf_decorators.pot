@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-19 15:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,106 +21,287 @@ msgstr ""
 msgid "UDF decorators"
 msgstr ""
 
+#: ../../../api/udf_decorators.md:3
+msgid ""
+"Each parameter states which integrations support it. **All integrations** "
+"means xlwings Lite, xlwings Server, and classic xlwings on Windows (VBA "
+"integration)."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:1
+msgid "Registers a Python function as an Excel custom function."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:3
+msgid ""
+"Use `@xw.func` or `@xw.func(...)`. Function annotations describe argument "
+"and return converters; {func}`arg <xlwings.arg>` and {func}`ret <xlwings."
+"ret>` provide explicit converter options. The function's docstring supplies "
+"its description in Excel. Classic xlwings registers functions with **Import "
+"Python UDFs**; xlwings Lite and xlwings Server register them when the "
+"project is loaded."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:8
+msgid ""
+"**All integrations.** Function to decorate when calling "
+"``func(my_function)`` directly. Leave it out when using ``@func`` or "
+"``@func(...)``."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:0
+msgid "Keyword Arguments"
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:11
+msgid ""
+"**xlwings Lite and xlwings Server only.** Excel-facing name, preserving the "
+"supplied spelling. By default, Excel uses the uppercase Python function name."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:12
+msgid ""
+"**xlwings Lite and xlwings Server only.** Function namespace, overriding the "
+"module-level ``__xlwings_func_namespace__``. An empty string suppresses that "
+"module-level namespace. A namespace configured in the add-in manifest is "
+"prepended separately."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:13
+msgid ""
+"**All integrations.** Recalculate whenever Excel calculates. Defaults to "
+"``False``."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:14
+msgid ""
+"**xlwings Lite and xlwings Server only.** Cache custom-function results in "
+"the add-in. Defaults to ``False``; cannot be combined with ``volatile=True`` "
+"or a streaming function."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:15
+msgid ""
+"**xlwings Lite and xlwings Server only.** URL shown as additional help in "
+"Excel."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:13 xlwings.pro.udfs_officejs.xlfunc:16
+msgid ""
+"**xlwings Server only.** Roles required for a server-authenticated user."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:17
+msgid ""
+"**Classic xlwings only.** Excel function category: a built-in category "
+"number from 1 to 14 or a custom string. Defaults to ``\"xlwings\"``."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:18
+msgid ""
+"**Classic xlwings only.** Whether to evaluate the function in Excel's "
+"function wizard. Defaults to ``True``."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlfunc:19
+msgid ""
+"**Classic xlwings only.** Set to ``\"threading\"`` to run an I/O-bound "
+"function asynchronously. Defaults to ``None``."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:21 xlwings.pro.udfs_officejs.xlfunc:21
+msgid "The decorated function, or a decorator when called with options."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:26 xlwings.pro.udfs_officejs.xlarg:20
+#: xlwings.pro.udfs_officejs.xlfunc:26 xlwings.pro.udfs_officejs.xlret:18
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/udf_decorators.md:1
+msgid "Registers a Python function as a runnable script."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:3
+msgid ""
+"Use `@xw.script` or `@xw.script(...)`. In xlwings Lite and xlwings Server, "
+"exactly one parameter must be annotated with {class}`Book <xlwings.Book>` or "
+"{class}`BookAsync <xlwings.BookAsync>` so the runtime can supply the "
+"workbook. Use that parameter instead of constructing `xw.Book()`. In xlwings "
+"Lite, `BookAsync` skips preloading cell values; define an `async def` script "
+"and read values with `await rng.get_value()`."
+msgstr ""
+
 #: ../../../api/udf_decorators.md:5
 msgid ""
-"Functions decorated with `xlwings.func` will be imported as `Function` to "
-"Excel when running \"Import Python UDFs\"."
+"With classic xlwings, **Import Python UDFs** registers the script as a VBA "
+"`Sub` procedure. The injected workbook parameter described above applies to "
+"xlwings Lite and xlwings Server."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:8
-msgid "**Arguments:**"
-msgstr ""
-
-#: ../../../api/udf_decorators.md:10
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:10
 msgid ""
-"category : int or str, default \"xlwings\"     1-14 represent built-in "
-"categories, for user-defined categories use strings"
+"**All integrations.** Function to decorate when calling "
+"``script(my_function)`` directly. Leave it out when using ``@script`` or "
+"``@script(...)``."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:13 ../../../api/udf_decorators.md:21
-#: ../../../api/udf_decorators.md:26
-msgid "*New in version 0.10.3.*"
-msgstr ""
-
-#: ../../../api/udf_decorators.md:15
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:12
 msgid ""
-"volatile : bool, default False     Marks a user-defined function as "
-"volatile. A volatile function must be recalculated     whenever calculation "
-"occurs in any cells on the worksheet. A nonvolatile function is     "
-"recalculated only when the input variables change. This method has no effect "
-"if it's     not inside a user-defined function used to calculate a worksheet "
-"cell."
+"**xlwings Lite and xlwings Server only.** Display name of the script. "
+"Defaults to the Python function name."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:23
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:14
 msgid ""
-"call_in_wizard : bool, default True     Set to False to suppress the "
-"function call in the function wizard."
+"**xlwings Lite and xlwings Server only.** Sheet name or list of names whose "
+"content is loaded for the script."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:31
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:15
 msgid ""
-"Functions decorated with `xlwings.script` will be imported as `Sub` (i.e., "
-"macro) to Excel when running \"Import Python UDFs\". Previously, `xlwings."
-"script` was called `xlwings.subs`, which is now deprecated."
+"**xlwings Lite and xlwings Server only.** Sheet name or list of names whose "
+"content is excluded from loading."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:37
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:16
 msgid ""
-"Apply converters and options to arguments, see also {meth}`Range.options`."
+"**xlwings Lite and xlwings Server only.** Sheet-button reference, for "
+"example ``\"[mybutton]Sheet1!A1\"``."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:39
-msgid "**Examples:**"
-msgstr ""
-
-#: ../../../api/udf_decorators.md:41
-msgid "Convert `x` into a 2-dimensional numpy array:"
-msgstr ""
-
-#: ../../../api/udf_decorators.md:56
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:17
 msgid ""
-"Apply converters and options to return values, see also {meth}`Range."
-"options`."
+"**xlwings Lite and xlwings Server only.** Whether clicking the sheet button "
+"opens the task pane."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:58
-msgid "**Examples**"
-msgstr ""
-
-#: ../../../api/udf_decorators.md:60
-msgid "1\\) Suppress the index and header of a returned DataFrame:"
-msgstr ""
-
-#: ../../../api/udf_decorators.md:71
-msgid "2\\) Dynamic array:"
-msgstr ""
-
-#: ../../../api/udf_decorators.md:74
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.script:19
 msgid ""
-"If your version of Excel supports the new native dynamic arrays, then you "
-"don't have to do anything special, and you shouldn't use the `expand` "
-"decorator! To check if your version of Excel supports it, see if you have "
-"the `=UNIQUE()` formula available. Native dynamic arrays were introduced in "
-"Office 365 Insider Fast at the end of September 2018."
+"**All integrations.** Further options depend on the integration. Classic "
+"xlwings supports ``category``, ``call_in_wizard``, ``volatile``, and "
+"``async_mode``, as described under :func:`func <xlwings.func>`; xlwings Lite "
+"and xlwings Server use them as additional script metadata. In xlwings Lite, "
+"the legacy ``lazy`` option is deprecated; annotate the workbook parameter "
+"with ``BookAsync`` instead."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:80
+#: ../../../api/udf_decorators.md:1
+msgid "In xlwings Lite:"
+msgstr ""
+
+#: ../../../api/udf_decorators.md:1
+msgid "Sets the converter and options for a named custom-function argument."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:3
 msgid ""
-"`expand='table'` turns the UDF into a dynamic array. Currently you must not "
-"use volatile functions as arguments of a dynamic array, e.g. you cannot use "
-"`=TODAY()` as part of a dynamic array. Also note that a dynamic array needs "
-"an empty row and column at the bottom and to the right and will overwrite "
-"existing data without warning."
+"Place `@xw.arg(...)` below `@xw.func`. The argument name must match a Python "
+"parameter. Converter options follow {meth}`Range.options <xlwings.Range."
+"options>`; `doc` supplies the argument description shown in Excel."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:85
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlarg:8
+msgid "**All integrations.** Name of the Python parameter to configure."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlarg:9
 msgid ""
-"Unlike standard Excel arrays, dynamic arrays are being used from a single "
-"cell like a standard function and auto-expand depending on the dimensions of "
-"the returned array:"
+"**All integrations.** Converter, such as ``numpy.array`` or ``pandas."
+"DataFrame``. Omit it to retain the argument's existing converter, including "
+"one selected by a type annotation."
 msgstr ""
 
-#: ../../../api/udf_decorators.md:98
-msgid "*New in version 0.10.0.*"
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlarg:11
+msgid ""
+"**All integrations.** Converter options, such as ``ndim=2``, "
+"``index=False``, or ``header=False``."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlarg:12
+msgid "**All integrations.** Argument description shown in Excel."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlarg:13
+msgid ""
+"**Classic xlwings only.** VBA expression that supplies a Python argument, "
+"for example ``vba=\"Sheet1\"``. Excel supplies this argument by evaluating "
+"the VBA expression, so users omit it from the worksheet formula."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlarg:15 xlwings.pro.udfs_officejs.xlret:13
+msgid ""
+"A decorator that applies the configured conversion options to the function."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:1
+msgid "Sets the converter and options for a custom function's return value."
+msgstr ""
+
+#: ../../../api/udf_decorators.md:3
+msgid ""
+"Place `@xw.ret(...)` below `@xw.func`. Converter options follow {meth}`Range."
+"options <xlwings.Range.options>` and control how the Python result becomes "
+"Excel cell values."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlret:8
+msgid ""
+"**All integrations.** Return converter. Omit it to retain the existing "
+"converter, including one selected by a type annotation."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlret:10
+msgid ""
+"**All integrations.** Converter options, such as ``index=False`` and "
+"``header=False`` for a DataFrame."
+msgstr ""
+
+#: ../../../../xlwings/pro/udfs_officejs.py:docstring of
+#: xlwings.pro.udfs_officejs.xlret:11
+msgid ""
+"**Classic xlwings only.** Set to ``\"table\"`` for legacy dynamic-array "
+"expansion on Excel versions without native dynamic arrays. This overwrites "
+"existing data and cannot take volatile formulas such as ``TODAY()`` as "
+"arguments. Excel versions with native dynamic arrays, xlwings Lite, and "
+"xlwings Server spill array results without this option."
 msgstr ""

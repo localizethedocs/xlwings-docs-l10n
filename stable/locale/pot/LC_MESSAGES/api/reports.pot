@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-19 15:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,19 +50,19 @@ msgid ""
 msgstr ""
 
 #: ../../../../xlwings/pro/reports/markdown.py:docstring of
-#: xlwings.pro.reports.markdown.Markdown:16
+#: xlwings.pro.reports.markdown.Markdown:12
 msgid "The text in Markdown syntax"
 msgstr ""
 
 #: ../../../../xlwings/pro/reports/markdown.py:docstring of
-#: xlwings.pro.reports.markdown.Markdown:18
+#: xlwings.pro.reports.markdown.Markdown:14
 msgid "The MarkdownStyle object defines how the text will be formatted."
 msgstr ""
 
 #: ../../../../xlwings/pro/reports/markdown.py:docstring of
-#: xlwings.pro.reports.markdown.Markdown:26
+#: xlwings.pro.reports.markdown.Markdown:19
 #: ../../../../xlwings/reports.py:docstring
-#: xlwings.pro.reports.main.render_template:39
+#: xlwings.pro.reports.main.render_template:32
 msgid "Examples"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../../xlwings/reports.py:docstring of
-#: xlwings.pro.reports.main.render_template:32
+#: xlwings.pro.reports.main.render_template:28
 msgid "xlwings Book"
 msgstr ""
 
