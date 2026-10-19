@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-09-07 15:43:12 +0200",
-      "hash" : "8f5556a86d0ddfbf5bb412e5bba2f419479c059b",
-      "title" : "Merge pull request #2743 from xlwings/python-3.11"
+      "date" : "2026-10-19 10:35:55 +0200",
+      "hash" : "f73213c9fc7aa7cba354a7af8ab8827f398ad66f",
+      "title" : "fix platform in async expanded range test"
     }
   },
   "type" : "branch",
