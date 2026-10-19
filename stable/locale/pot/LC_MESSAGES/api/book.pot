@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-19 15:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,6 +184,13 @@ msgid ""
 "used."
 msgstr ""
 
+#: ../../../api/book.md:4
+msgid ""
+"In xlwings Lite, this is the remote backend's internal workbook data "
+"dictionary. It does not expose the Office.js API; use the public xlwings "
+"methods and properties for workbook operations."
+msgstr ""
+
 #: ../../../api/book.md:1
 msgid "Returns an app object that represents the creator of the book."
 msgstr ""
@@ -200,15 +207,80 @@ msgid ""
 "Book.set_mock_caller()`."
 msgstr ""
 
+#: ../../../api/book.md:0
+msgid "Return type"
+msgstr ""
+
 #: ../../../api/book.md:1
 msgid "Closes the book without saving it."
 msgstr ""
 
 #: ../../../api/book.md:1
-msgid "Flushes all pending actions to Excel and the Output pane."
+msgid ""
+"Threaded comments in this workbook. In xlwings Lite, use `await "
+"get_comments()`."
 msgstr ""
 
-#: ../../../api/book.md:3 ../../../api/book.md:10
+#: ../../../api/book.md:1
+msgid "Flushes all pending actions to Excel and lets the Output pane update."
+msgstr ""
+
+#: ../../../api/book.md:3
+msgid ""
+"In xlwings Lite, writes and other workbook changes are queued until the "
+"script returns or you call `await book.flush()`. Asynchronous getters such "
+"as `await rng.get_value()` flush pending actions automatically before they "
+"read from Excel, so they always see the script's earlier changes, including "
+"a sheet that was just added. The same applies to `await book.load()` and "
+"`await sheet.load()`, e.g., to access the columns of a table that was just "
+"added. You only need to call `await book.flush()` explicitly in the "
+"following cases:"
+msgstr ""
+
+#: ../../../api/book.md:5
+msgid ""
+"**Showing progress during a long-running script:** a change that no read "
+"depends on, such as a status message written to a cell, only appears in "
+"Excel after the script returns unless you flush it. Flushing also lets the "
+"Output pane show what you printed so far."
+msgstr ""
+
+#: ../../../api/book.md:6
+msgid ""
+"**Reading a file that an action creates:** actions such as {meth}`Range."
+"to_png <xlwings.Range.to_png>` write their file only when they are "
+"dispatched, and reading a file doesn't flush pending actions. Flush before "
+"reading the file within the same script."
+msgstr ""
+
+#: ../../../api/book.md:7
+msgid ""
+"**Choosing what's applied if the script fails:** if a script raises an "
+"exception, its pending actions are discarded. Everything flushed before the "
+"exception, explicitly or by an asynchronous getter, stays applied. Flush to "
+"apply the changes up to a certain point, for example, before a step that may "
+"fail."
+msgstr ""
+
+#: ../../../api/book.md:9
+msgid ""
+"Flushing does not refresh cell values previously loaded for synchronous "
+"{attr}`Range.value <xlwings.Range.value>` reads. Use `await rng.get_value()` "
+"to read the changed cells, or `await book.load(values=True)` to reload "
+"values before using `.value`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.flush:16
+#: xlwings.main.Book.macro:10 xlwings.main.Book.render_template:16
+#: xlwings.main.Book.set_mock_caller:9 xlwings.main.Book.to_pdf:33
+msgid "Examples"
+msgstr ""
+
+#: ../../../api/book.md:1
+msgid "Inside an asynchronous script with a supplied `book` parameter:"
+msgstr ""
+
+#: ../../../api/book.md:3 ../../../api/book.md:10 ../../../api/book.md:11
 msgid "Requires xlwings Lite."
 msgstr ""
 
@@ -216,6 +288,10 @@ msgstr ""
 msgid ""
 "Returns the name of the object, including its path on disk, as a string. "
 "Read-only String."
+msgstr ""
+
+#: ../../../api/book.md:1
+msgid "Fetch the workbook's threaded comments."
 msgstr ""
 
 #: ../../../api/book.md:1
@@ -250,12 +326,6 @@ msgstr ""
 msgid "``'Module1.MyMacro'`` or ``'MyMacro'``"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.macro:13
-#: xlwings.main.Book.render_template:19 xlwings.main.Book.set_mock_caller:8
-#: xlwings.main.Book.to_pdf:36
-msgid "Examples"
-msgstr ""
-
 #: ../../../api/book.md:6
 msgid "can be accessed like this:"
 msgstr ""
@@ -272,6 +342,12 @@ msgstr ""
 msgid ""
 "Returns a names collection that represents all the names in the specified "
 "book (including all sheet-specific names)."
+msgstr ""
+
+#: ../../../api/book.md:1
+msgid ""
+"Notes in this workbook. xlwings Lite includes the worksheets loaded for this "
+"script."
 msgstr ""
 
 #: ../../../api/book.md:1
@@ -307,11 +383,11 @@ msgstr ""
 msgid "Protection password with max. 15 characters *New in version 0.25.1.*"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.save:20
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book.save:17
 msgid "Example"
 msgstr ""
 
-#: ../../../api/book.md:9
+#: ../../../api/book.md:8
 msgid ""
 "On xlwings Server and xlwings Lite, the workbook is saved in place after "
 "your script returns rather than while it runs. `path` and `password` aren't "
