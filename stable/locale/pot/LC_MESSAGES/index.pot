@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-26 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../index.md:66
+#: ../../../index.md:60
 msgid "xlwings PRO"
 msgstr ""
 
-#: ../../../index.md:77
+#: ../../../index.md:71
 msgid "About"
+msgstr ""
+
+#: ../../../index.md:80
+msgid "API Reference"
 msgstr ""
 
 #: ../../../index.md:1
@@ -158,12 +162,12 @@ msgid ""
 "hidden=\"true\"><path d=\"M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 "
 "6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 "
 "1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 "
-"1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 "
-"1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 "
-"7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 "
-"1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 "
+"1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 1 "
+".416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 "
+"7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 1 "
+".215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 "
 "2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 "
-"1-.565-.41L12 2.694Z\"></path></svg> xlwings PRO"
+"1-.565-.41L12 2.694Z\"></path></svg> xlwings Lite & xlwings Server"
 msgstr ""
 
 #: ../../../index.md:31
@@ -173,39 +177,47 @@ msgid ""
 "hidden=\"true\"><path d=\"M12 .25a.75.75 0 0 1 .673.418l3.058 6.197 "
 "6.839.994a.75.75 0 0 1 .415 1.279l-4.948 4.823 1.168 6.811a.751.751 0 0 "
 "1-1.088.791L12 18.347l-6.117 3.216a.75.75 0 0 "
-"1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 "
-"1 .416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 "
-"7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 "
-"1 .215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 "
+"1-1.088-.79l1.168-6.812-4.948-4.823a.75.75 0 0 1 "
+".416-1.28l6.838-.993L11.328.668A.75.75 0 0 1 12 .25Zm0 2.445L9.44 "
+"7.882a.75.75 0 0 1-.565.41l-5.725.832 4.143 4.038a.748.748 0 0 1 "
+".215.664l-.978 5.702 5.121-2.692a.75.75 0 0 1 .698 0l5.12 "
 "2.692-.977-5.702a.748.748 0 0 1 .215-.664l4.143-4.038-5.725-.831a.75.75 0 0 "
 "1-.565-.41L12 2.694Z\"></path></svg>"
 msgstr ""
 
+#: ../../../index.md:32
+msgid "To run xlwings without having to install Python, you have two options:"
+msgstr ""
+
 #: ../../../index.md:34
-msgid "Use advanced features such as:"
+msgid ""
+"[xlwings Lite](https://lite.xlwings.org): Install the free add-in from "
+"Excel's add-in store and you're done. It comes with a VS Code-like editor "
+"and Wingman, a powerful AI assistant."
 msgstr ""
 
-#: ../../../index.md:36
-msgid "xlwings Reports: work with templates"
-msgstr ""
-
-#: ../../../index.md:37
-msgid "1-click installer: bundle Python and all your packages"
+#: ../../../index.md:35
+msgid ""
+"[xlwings Server](https://server.xlwings.org): Create your own modern Excel "
+"add-in with Python instead of JavaScript. Python runs on your own server and "
+"comes with enterprise features such as SSO and RBAC."
 msgstr ""
 
 #: ../../../index.md:38
-msgid "Embedded code: easy deployment"
+msgid ""
+"<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
+"octicon-code-square sd-text-success\" viewBox=\"0 0 24 24\" aria-"
+"hidden=\"true\"><path d=\"M10.3 8.24a.75.75 0 0 1-.04 1.06L7.352 12l2.908 "
+"2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 "
+"1.06.04Zm3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 "
+"3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7-2.908-2.7Z\"></path><path d=\"M2 3.75C2 "
+"2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 "
+"20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 0-.25.25v16.5c0 "
+".138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25Z\"></"
+"path></svg> API Reference"
 msgstr ""
 
 #: ../../../index.md:39
-msgid "Ultra fast file reader: no Excel required"
-msgstr ""
-
-#: ../../../index.md:41
-msgid "Free for non-commercial use only."
-msgstr ""
-
-#: ../../../index.md:44
 msgid ""
 "<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
 "octicon-code-square sd-text-success\" viewBox=\"0 0 24 24\" aria-"
@@ -214,26 +226,12 @@ msgid ""
 "1.06.04Zm3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 "
 "3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7-2.908-2.7Z\"></path><path d=\"M2 3.75C2 "
 "2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 "
-"20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 "
-"0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 "
-"0-.25-.25Z\"></path></svg> API Reference"
+"20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 0-.25.25v16.5c0 "
+".138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25Z\"></"
+"path></svg>"
 msgstr ""
 
-#: ../../../index.md:45
-msgid ""
-"<svg version=\"1.1\" width=\"2.0em\" height=\"2.0em\" class=\"sd-octicon sd-"
-"octicon-code-square sd-text-success\" viewBox=\"0 0 24 24\" aria-"
-"hidden=\"true\"><path d=\"M10.3 8.24a.75.75 0 0 1-.04 1.06L7.352 12l2.908 "
-"2.7a.75.75 0 1 1-1.02 1.1l-3.5-3.25a.75.75 0 0 1 0-1.1l3.5-3.25a.75.75 0 0 1 "
-"1.06.04Zm3.44 1.06a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 "
-"3.25a.75.75 0 1 1-1.02-1.1l2.908-2.7-2.908-2.7Z\"></path><path d=\"M2 3.75C2 "
-"2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 "
-"20.25 22H3.75A1.75 1.75 0 0 1 2 20.25Zm1.75-.25a.25.25 0 0 "
-"0-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 "
-"0-.25-.25Z\"></path></svg>"
-msgstr ""
-
-#: ../../../index.md:48
+#: ../../../index.md:42
 msgid ""
 "This is a description of all the classes, methods, properties and functions "
 "that xlwings offers to work with the Excel object model."
