@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-10-26 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,10 @@ msgstr ""
 msgid "Returns or sets the bold property (boolean)."
 msgstr ""
 
+#: ../../../api/font.md:0
+msgid "Setter type"
+msgstr ""
+
 #: ../../../api/font.md:1
 msgid "Returns or sets the color property (tuple)."
 msgstr ""
@@ -60,8 +64,12 @@ msgstr ""
 msgid "Requires xlwings Lite."
 msgstr ""
 
+#: ../../../api/font.md:0
+msgid "Return type"
+msgstr ""
+
 #: ../../../api/font.md:1
-msgid "Fetch the font colour on demand, as an RGB tuple."
+msgid "Fetch the font color on demand, as an RGB tuple."
 msgstr ""
 
 #: ../../../api/font.md:3
@@ -86,6 +94,46 @@ msgstr ""
 
 #: ../../../api/font.md:1
 msgid "Returns or sets the name of the font (str)."
+msgstr ""
+
+#: ../../../api/font.md:1
+msgid "Sets one or more font attributes in one go."
+msgstr ""
+
+#: ../../../api/font.md:3
+msgid ""
+"Only the attributes you pass are written. All arguments are validated before "
+"anything is written."
+msgstr ""
+
+#: ../../../api/font.md:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Font.set:8
+msgid "See :attr:`Font.bold <xlwings.main.Font.bold>`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Font.set:9
+msgid "See :attr:`Font.italic <xlwings.main.Font.italic>`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Font.set:10
+msgid "A positive font size, see :attr:`Font.size <xlwings.main.Font.size>`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Font.set:11
+msgid ""
+"An RGB tuple, a hex string or an Excel color integer, see :attr:`Font.color "
+"<xlwings.main.Font.color>`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Font.set:12
+msgid "See :attr:`Font.name <xlwings.main.Font.name>`."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Font.set:16
+msgid "Examples"
 msgstr ""
 
 #: ../../../api/font.md:1
