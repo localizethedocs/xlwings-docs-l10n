@@ -1,0 +1,16 @@
+# Getting Started
+
+* [Video course](../course.md)
+* [Installation](../installation.md)
+* [Connect to a Book](../connect_to_workbook.md)
+* [Syntax Overview](../syntax_overview.md)
+* [Data Structures Tutorial](../datastructures.md)
+* [Add-in & Settings](../addin.md)
+* [RunPython](../vba.md)
+* [User Defined Functions (UDFs)](../udfs.md)
+* [Matplotlib & Plotly Charts](../matplotlib.md)
+* [Jupyter Notebooks: Interact with Excel](../jupyternotebooks.md)
+* [Command Line Client (CLI)](../command_line.md)
+* [Deployment](../deployment.md)
+* [OneDrive and SharePoint](../onedrive_sharepoint.md)
+* [Troubleshooting](../troubleshooting.md)
