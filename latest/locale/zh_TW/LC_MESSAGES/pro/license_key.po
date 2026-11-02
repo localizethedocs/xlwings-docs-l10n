@@ -64,8 +64,8 @@ msgid ""
 "To try xlwings PRO for free in a commercial context, request a trial license "
 "key: https://www.xlwings.org/trial"
 msgstr ""
-"若要在商業環境中免費試用 xlwings PRO，請申請試用授權金鑰：\\ https://www."
-"xlwings.org/trial"
+"若要在商業環境中免費試用 xlwings PRO，請申請試用授權金鑰：\\ https://"
+"www.xlwings.org/trial"
 
 #: ../../../pro/license_key.md:15
 msgid ""
@@ -148,9 +148,9 @@ msgstr ""
 
 #: ../../../pro/license_key.md:47
 msgid ""
-"Note that if you use the `xlwings release` command, your workbook's `xlwings."
-"conf` sheet will be automatically updated with a correct deploy key as we'll "
-"see next."
+"Note that if you use the `xlwings release` command, your workbook's "
+"`xlwings.conf` sheet will be automatically updated with a correct deploy key "
+"as we'll see next."
 msgstr ""
 
 #: ../../../pro/license_key.md:49

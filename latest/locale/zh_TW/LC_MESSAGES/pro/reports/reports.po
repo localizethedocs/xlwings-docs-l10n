@@ -83,14 +83,14 @@ msgstr ""
 #: ../../../pro/reports/reports.md:56
 msgid ""
 "Unlike xlwings, xlwings Reports never writes out the index of pandas "
-"DataFrames. If you need the index to appear in Excel, use `df."
-"reset_index()`, see [DataFrames](components_filters.md#dataframes)."
+"DataFrames. If you need the index to appear in Excel, use "
+"`df.reset_index()`, see [DataFrames](components_filters.md#dataframes)."
 msgstr ""
 
 #: ../../../pro/reports/reports.md:59
 msgid ""
-"See also {meth}`render_templates (API reference) <xlwings.pro.reports."
-"render_template>`."
+"See also {meth}`render_templates (API reference) "
+"<xlwings.pro.reports.render_template>`."
 msgstr ""
 
 #: ../../../pro/reports/reports.md:61
@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../../pro/reports/reports.md:84
 msgid ""
-"See also the {meth}`mysheet.render_template (API reference) <xlwings.Sheet."
-"render_template>` and {meth}`mybook.render_template (API reference) <xlwings."
-"Book.render_template>`."
+"See also the {meth}`mysheet.render_template (API reference) "
+"<xlwings.Sheet.render_template>` and {meth}`mybook.render_template (API "
+"reference) <xlwings.Book.render_template>`."
 msgstr ""

@@ -210,8 +210,9 @@ msgstr ""
 msgid ""
 "`Name of your one-click installer?` `Type in the name of your one-click "
 "installer. If you want to use a different Python distribution (e.g., "
-"Anaconda), you can leave this empty (but you will need to update the xlwings."
-"conf sheet with the Conda settings once the release command has been run).`"
+"Anaconda), you can leave this empty (but you will need to update the "
+"xlwings.conf sheet with the Conda settings once the release command has been "
+"run).`"
 msgstr ""
 
 #: ../../../pro/release.md:91

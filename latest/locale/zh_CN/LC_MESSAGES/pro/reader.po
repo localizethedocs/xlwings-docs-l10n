@@ -56,8 +56,8 @@ msgstr ""
 
 #: ../../../pro/reader.md:14
 msgid ""
-"Support for dynamic ranges via `myrange.expand()` or `myrange."
-"options(expand=\"table\")`, respectively."
+"Support for dynamic ranges via `myrange.expand()` or "
+"`myrange.options(expand=\"table\")`, respectively."
 msgstr ""
 
 #: ../../../pro/reader.md:15
@@ -93,8 +93,8 @@ msgstr ""
 
 #: ../../../pro/reader.md:22
 msgid ""
-"To open a file in read mode, provide the `mode=\"r\"` argument: `xw."
-"Book(\"myfile.xlsx\", mode=\"r\")`. You usually want to use `Book` as a "
+"To open a file in read mode, provide the `mode=\"r\"` argument: "
+"`xw.Book(\"myfile.xlsx\", mode=\"r\")`. You usually want to use `Book` as a "
 "context manager so that the file is automatically closed and resources "
 "cleaned up once the code leaves the body of the `with` statement:"
 msgstr ""
@@ -139,8 +139,8 @@ msgstr ""
 
 #: ../../../pro/reader.md:69
 msgid ""
-"Alternatively, you can also access them via the {meth}`Names <xlwings.main."
-"Names>` collection:"
+"Alternatively, you can also access them via the {meth}`Names "
+"<xlwings.main.Names>` collection:"
 msgstr ""
 
 #: ../../../pro/reader.md:77

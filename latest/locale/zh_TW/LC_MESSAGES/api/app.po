@@ -268,8 +268,8 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.App.render_template:17
 msgid ""
-"A dictionary of ``xlwings.Book`` parameters, for details see: ``xlwings."
-"Book``. For example: ``book_settings={'update_links': False}``."
+"A dictionary of ``xlwings.Book`` parameters, for details see: "
+"``xlwings.Book``. For example: ``book_settings={'update_links': False}``."
 msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.App.render_template:20

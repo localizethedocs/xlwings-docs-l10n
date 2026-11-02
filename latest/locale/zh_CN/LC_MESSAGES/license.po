@@ -57,8 +57,8 @@ msgstr ""
 #: ../../../license.md:14
 msgid ""
 "[xlwings PRO License](https://github.com/xlwings/xlwings/blob/main/"
-"LICENSE_PRO.txt) (commercial use requires a [paid plan](https://www.xlwings."
-"org/pricing))"
+"LICENSE_PRO.txt) (commercial use requires a [paid plan](https://"
+"www.xlwings.org/pricing))"
 msgstr ""
 
 #: ../../../license.md:16

@@ -41,8 +41,8 @@ msgstr ""
 #: ../../../udfs.md:8
 msgid ""
 "For a comprehensive overview of the available decorators and their options, "
-"check out the corresponding API docs: [UDF decorators](api/udf_decorators."
-"md)."
+"check out the corresponding API docs: [UDF decorators](api/"
+"udf_decorators.md)."
 msgstr ""
 
 #: ../../../udfs.md:11
@@ -70,9 +70,9 @@ msgstr ""
 #: ../../../udfs.md:19
 msgid ""
 "The easiest way to start a new project is to run `xlwings quickstart "
-"myproject` on a command prompt (see [Command Line Client (CLI)](command_line."
-"md#command-line-client-cli)). This automatically adds the xlwings reference "
-"to the generated workbook."
+"myproject` on a command prompt (see [Command Line Client (CLI)]"
+"(command_line.md#command-line-client-cli)). This automatically adds the "
+"xlwings reference to the generated workbook."
 msgstr ""
 
 #: ../../../udfs.md:22
@@ -91,8 +91,8 @@ msgstr ""
 
 #: ../../../udfs.md:27
 msgid ""
-"with the same name as the Excel file, but with a `.py` ending instead of `."
-"xlsm`."
+"with the same name as the Excel file, but with a `.py` ending instead of "
+"`.xlsm`."
 msgstr ""
 
 #: ../../../udfs.md:29
@@ -301,8 +301,8 @@ msgstr ""
 
 #: ../../../udfs.md:228
 msgid ""
-"For further details see the [Converters and Options](converters."
-"md#converters-and-options) documentation."
+"For further details see the [Converters and Options]"
+"(converters.md#converters-and-options) documentation."
 msgstr ""
 
 #: ../../../udfs.md:230
