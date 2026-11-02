@@ -95,8 +95,8 @@ msgstr ""
 
 #: ../../../customaddin.md:38
 msgid ""
-"Activate the sheet config by renaming it from `_myaddin.conf` to `myaddin."
-"conf`"
+"Activate the sheet config by renaming it from `_myaddin.conf` to "
+"`myaddin.conf`"
 msgstr ""
 
 #: ../../../customaddin.md:39

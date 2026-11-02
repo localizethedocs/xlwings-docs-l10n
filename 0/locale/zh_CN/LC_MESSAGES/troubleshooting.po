@@ -44,10 +44,10 @@ msgid ""
 "you need to be able to open a windows command prompt and type `python` to "
 "start an interactive Python session. If you get the error `'python' is not "
 "recognized as an internal or external command, operable program or batch "
-"file.`, then you have two options: Either add the path of where your `python."
-"exe` lives to your Windows path (see https://www.computerhope.com/issues/"
-"ch000549.htm) or set the full path to your interpreter in the add-in or your "
-"config sheet, e.g. `C:\\Users\\MyUser\\anaconda\\pythonw.exe`"
+"file.`, then you have two options: Either add the path of where your "
+"`python.exe` lives to your Windows path (see https://www.computerhope.com/"
+"issues/ch000549.htm) or set the full path to your interpreter in the add-in "
+"or your config sheet, e.g. `C:\\Users\\MyUser\\anaconda\\pythonw.exe`"
 msgstr ""
 
 #: ../../../troubleshooting.md:15
@@ -84,6 +84,6 @@ msgstr ""
 
 #: ../../../troubleshooting.md:28
 msgid ""
-"Check the configuration of xlwings according to its [Config Hierarchy](addin."
-"md#config-hierarchy)."
+"Check the configuration of xlwings according to its [Config Hierarchy]"
+"(addin.md#config-hierarchy)."
 msgstr ""

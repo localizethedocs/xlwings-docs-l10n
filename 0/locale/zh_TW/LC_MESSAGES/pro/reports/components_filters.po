@@ -29,8 +29,8 @@ msgstr ""
 msgid ""
 "To write DataFrames in a consistent manner to Excel, xlwings Reports ignores "
 "the DataFrame indices. If you need to pass the index over to Excel, reset "
-"the index before passing in the DataFrame to `render_template`: `df."
-"reset_index()`."
+"the index before passing in the DataFrame to `render_template`: "
+"`df.reset_index()`."
 msgstr ""
 
 #: ../../../pro/reports/components_filters.md:7
@@ -376,9 +376,9 @@ msgstr ""
 
 #: ../../../pro/reports/components_filters.md:289
 msgid ""
-"Within the reports framework, formatters need to be decorated with `xlwings."
-"reports.formatter` (see example below)! This isn't necessary though when you "
-"use them as part of the standard xlwings API."
+"Within the reports framework, formatters need to be decorated with "
+"`xlwings.reports.formatter` (see example below)! This isn't necessary though "
+"when you use them as part of the standard xlwings API."
 msgstr ""
 
 #: ../../../pro/reports/components_filters.md:292
@@ -679,8 +679,8 @@ msgid ""
 "desired as the formatting depends on the user's regional settings. To "
 "prevent that, format the cell in the `Text` format or use a TextBox and use "
 "the `datetime` filter to format the date in the desired format. The "
-"`datetime` filter accepts the strftime syntax---for a good reference, see e."
-"g., [strftime.org](https://strftime.org/)."
+"`datetime` filter accepts the strftime syntax---for a good reference, see "
+"e.g., [strftime.org](https://strftime.org/)."
 msgstr ""
 
 #: ../../../pro/reports/components_filters.md:632
@@ -713,10 +713,10 @@ msgstr ""
 
 #: ../../../pro/reports/components_filters.md:659
 msgid ""
-"This corresponds to the following f-string in Python: "
-"`f\"{performance:0.1%}\"`. To get an introduction to the formatting string "
-"syntax, have a look at the [Python String Format Cookbook](https://mkaz.blog/"
-"code/python-string-format-cookbook/)."
+"This corresponds to the following f-string in Python: `f\"{performance:0.1%}"
+"\"`. To get an introduction to the formatting string syntax, have a look at "
+"the [Python String Format Cookbook](https://mkaz.blog/code/python-string-"
+"format-cookbook/)."
 msgstr ""
 
 #: ../../../pro/reports/components_filters.md:661

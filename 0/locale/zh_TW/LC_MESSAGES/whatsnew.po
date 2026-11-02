@@ -34,8 +34,8 @@ msgstr ""
 #: ../../../whatsnew.md:7
 msgid ""
 "xlwings Lite and xlwings Server: Complete API coverage as far as possible. "
-"Reading properties usually requires the async API (e.g. `await myrange."
-"get_formula()`), which is currently only available in xlwings Lite."
+"Reading properties usually requires the async API (e.g. `await "
+"myrange.get_formula()`), which is currently only available in xlwings Lite."
 msgstr ""
 
 #: ../../../whatsnew.md:9
@@ -290,11 +290,11 @@ msgstr ""
 #: ../../../whatsnew.md:102
 msgid ""
 "{bdg-info}`Enhancement` xlwings Lite: Added an async API to be able to load "
-"data from Excel on demand: `await Books.get_active()`, `await Sheets."
-"get_active()`, `await App.get_selection()`, `await Book.get_selection()`, "
-"`await Range.get_value()`. Also added on-demand loading methods: `await Book."
-"load()`, `await Sheet.load()`. For more details, see the xlwings Lite Async "
-"API docs ({issue}`2686`)."
+"data from Excel on demand: `await Books.get_active()`, `await "
+"Sheets.get_active()`, `await App.get_selection()`, `await "
+"Book.get_selection()`, `await Range.get_value()`. Also added on-demand "
+"loading methods: `await Book.load()`, `await Sheet.load()`. For more "
+"details, see the xlwings Lite Async API docs ({issue}`2686`)."
 msgstr ""
 
 #: ../../../whatsnew.md:103
@@ -419,8 +419,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:142
 msgid ""
-"{bdg-warning}`Bug Fix` Fix `xw.App()` on macOS so that commands like `xw."
-"view()` work even if Excel isn't running yet ({issue}`2642`)."
+"{bdg-warning}`Bug Fix` Fix `xw.App()` on macOS so that commands like "
+"`xw.view()` work even if Excel isn't running yet ({issue}`2642`)."
 msgstr ""
 
 #: ../../../whatsnew.md:144
@@ -472,14 +472,14 @@ msgstr ""
 
 #: ../../../whatsnew.md:166
 msgid ""
-"{bdg-info}`Enhancement` {bdg-secondary}`PRO` xlwings Server: Added `Range."
-"copy_from` ({issue}`2590`)."
+"{bdg-info}`Enhancement` {bdg-secondary}`PRO` xlwings Server: Added "
+"`Range.copy_from` ({issue}`2590`)."
 msgstr ""
 
 #: ../../../whatsnew.md:167
 msgid ""
-"{bdg-warning}`Bug Fix` {bdg-secondary}`PRO` xlwings Server: Fixed `Sheets."
-"add()` ({issue}`2589`)."
+"{bdg-warning}`Bug Fix` {bdg-secondary}`PRO` xlwings Server: Fixed "
+"`Sheets.add()` ({issue}`2589`)."
 msgstr ""
 
 #: ../../../whatsnew.md:169
@@ -623,9 +623,9 @@ msgstr ""
 #: ../../../whatsnew.md:214
 msgid ""
 "{bdg-info}`Enhancement` {bdg-secondary}`PRO` xlwings Server: deprecate the "
-"\"DIY\" approach in favor of the official [xlwings Server](https://github."
-"com/xlwings/xlwings-server) repo and moved docs to https://server.xlwings."
-"org ({issue}`2519`)."
+"\"DIY\" approach in favor of the official [xlwings Server](https://"
+"github.com/xlwings/xlwings-server) repo and moved docs to https://"
+"server.xlwings.org ({issue}`2519`)."
 msgstr ""
 
 #: ../../../whatsnew.md:215
@@ -769,15 +769,15 @@ msgstr ""
 
 #: ../../../whatsnew.md:307
 msgid ""
-"{bdg-info}`Enhancement` {bdg-secondary}`PRO` Implemented `Range."
-"adjust_indent()` (Office.js clients only) ({issue}`2471`)."
+"{bdg-info}`Enhancement` {bdg-secondary}`PRO` Implemented "
+"`Range.adjust_indent()` (Office.js clients only) ({issue}`2471`)."
 msgstr ""
 
 #: ../../../whatsnew.md:308
 msgid ""
-"{bdg-info}`Enhancement` {bdg-secondary}`PRO` Implemented `Sheet.freeze_panes."
-"freeze_at()` and `Sheet.freeze_panes.unfreeze()` for (Office.js clients "
-"only) ({issue}`2463`)."
+"{bdg-info}`Enhancement` {bdg-secondary}`PRO` Implemented "
+"`Sheet.freeze_panes.freeze_at()` and `Sheet.freeze_panes.unfreeze()` for "
+"(Office.js clients only) ({issue}`2463`)."
 msgstr ""
 
 #: ../../../whatsnew.md:309
@@ -940,9 +940,9 @@ msgstr ""
 #: ../../../whatsnew.md:373
 msgid ""
 "{bdg-info}`Enhancement` {bdg-secondary}`PRO` New xlwings Server methods: "
-"`Range.clear()`, `Range.clear_formats()`, `Sheet.clear()`, `Sheet."
-"clear_contents()`, `Sheet.clear_formats()`, and `Sheet.delete()` ({issue}"
-"`2325`)."
+"`Range.clear()`, `Range.clear_formats()`, `Sheet.clear()`, "
+"`Sheet.clear_contents()`, `Sheet.clear_formats()`, and `Sheet.delete()` "
+"({issue}`2325`)."
 msgstr ""
 
 #: ../../../whatsnew.md:374
@@ -954,8 +954,9 @@ msgstr ""
 
 #: ../../../whatsnew.md:375
 msgid ""
-"{bdg-warning}`Bug Fix` {bdg-secondary}`PRO` Added `xlwings."
-"getActiveBookName` as convenience method in xlwings.js ({issue}`2405`)."
+"{bdg-warning}`Bug Fix` {bdg-secondary}`PRO` Added "
+"`xlwings.getActiveBookName` as convenience method in xlwings.js ({issue}"
+"`2405`)."
 msgstr ""
 
 #: ../../../whatsnew.md:377
@@ -1144,8 +1145,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:427
 msgid ""
-"{bdg-warning}`Bug Fix` {bdg-secondary}`PRO` Stability fixes with `xw.apps."
-"cleanup()` ({issue}`2225` and {issue}`2239`)."
+"{bdg-warning}`Bug Fix` {bdg-secondary}`PRO` Stability fixes with "
+"`xw.apps.cleanup()` ({issue}`2225` and {issue}`2239`)."
 msgstr ""
 
 #: ../../../whatsnew.md:429
@@ -1180,8 +1181,8 @@ msgstr ""
 #: ../../../whatsnew.md:437
 msgid ""
 "{bdg-info}`Enhancement` {bdg-secondary}`PRO` xlwings Server now supports "
-"Excel tables ({issue}`2072`), `range.insert()` ({issue}`2073`), and `range."
-"copy()` ({issue}`2204`)."
+"Excel tables ({issue}`2072`), `range.insert()` ({issue}`2073`), and "
+"`range.copy()` ({issue}`2204`)."
 msgstr ""
 
 #: ../../../whatsnew.md:438
@@ -1206,8 +1207,8 @@ msgstr ""
 msgid ""
 "{bdg-info}`Enhancement` On Windows, xlwings now actively cleans up Excel "
 "zombie processes when quitting or killing App objects and when exiting the "
-"Python process. You can also remove zombies manually by calling `xw.apps."
-"cleanup()` ({issue}`2001`)."
+"Python process. You can also remove zombies manually by calling "
+"`xw.apps.cleanup()` ({issue}`2001`)."
 msgstr ""
 
 #: ../../../whatsnew.md:444
@@ -1242,8 +1243,8 @@ msgstr ""
 msgid ""
 "{bdg-info}`Feature` {bdg-secondary}`PRO` xlwings Server now supports custom "
 "functions (a.k.a. user-defined functions or UDFs) on Windows, macOS, and Web "
-"via the Office.js add-ins. See [Office.js Custom Functions](https://server."
-"xlwings.org) ({issue}`2177`)."
+"via the Office.js add-ins. See [Office.js Custom Functions](https://"
+"server.xlwings.org) ({issue}`2177`)."
 msgstr ""
 
 #: ../../../whatsnew.md:454
@@ -1307,8 +1308,8 @@ msgstr ""
 #: ../../../whatsnew.md:470
 msgid ""
 "{bdg-warning}`Bug Fix` The xlwings CLI was removing the xlwings addin when "
-"the `remove` command was called with the `--dir` flag. Also, the `xlwings."
-"exe` builds are now 32-bit ({issue}`2142`)."
+"the `remove` command was called with the `--dir` flag. Also, the "
+"`xlwings.exe` builds are now 32-bit ({issue}`2142`)."
 msgstr ""
 
 #: ../../../whatsnew.md:472
@@ -1540,8 +1541,8 @@ msgstr ""
 #: ../../../whatsnew.md:557
 msgid ""
 "{bdg-success}`Feature` {bdg-secondary}`PRO` xlwings PRO adds an ultra fast "
-"file reader, allowing you to read Excel files much faster than via `pandas."
-"read_excel()`:"
+"file reader, allowing you to read Excel files much faster than via "
+"`pandas.read_excel()`:"
 msgstr ""
 
 #: ../../../whatsnew.md:565
@@ -1559,8 +1560,8 @@ msgstr ""
 #: ../../../whatsnew.md:568
 msgid ""
 "{bdg-info}`Enhancement` The new option `err_to_str` allows you to deliver "
-"cell errors like `#N/A` as strings instead of `None` (default): `xw."
-"Book(\"mybook.xlsx\").options(err_to_str=True).value`."
+"cell errors like `#N/A` as strings instead of `None` (default): "
+"`xw.Book(\"mybook.xlsx\").options(err_to_str=True).value`."
 msgstr ""
 
 #: ../../../whatsnew.md:569
@@ -1647,8 +1648,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:591
 msgid ""
-"{bdg-warning}`Bug Fix` Made `myapp.range()` behave the same as `mysheet."
-"range()` ({issue}`1982`)."
+"{bdg-warning}`Bug Fix` Made `myapp.range()` behave the same as "
+"`mysheet.range()` ({issue}`1982`)."
 msgstr ""
 
 #: ../../../whatsnew.md:592
@@ -1817,8 +1818,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:635
 msgid ""
-"{bdg-info}`Enhancement` {bdg-secondary}`PRO` Added support for `myrange."
-"add_hyperlink()` with remote interpreter ({issue}`1882`)."
+"{bdg-info}`Enhancement` {bdg-secondary}`PRO` Added support for "
+"`myrange.add_hyperlink()` with remote interpreter ({issue}`1882`)."
 msgstr ""
 
 #: ../../../whatsnew.md:636
@@ -1964,8 +1965,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:668
 msgid ""
-"{bdg-success}`Feature` Added support for `mychart.to_pdf()` and `myrange."
-"to_pdf()` ({issue}`1708`)."
+"{bdg-success}`Feature` Added support for `mychart.to_pdf()` and "
+"`myrange.to_pdf()` ({issue}`1708`)."
 msgstr ""
 
 #: ../../../whatsnew.md:669
@@ -2096,8 +2097,9 @@ msgid ""
 "works even if the files are stored on OneDrive/SharePoint---as long as they "
 "are being synced locally. It also makes `mybook.fullname` return the local "
 "file path instead of a URL. Sometimes, this requires editing the "
-"configuration, see: [OneDrive and SharePoint](onedrive_sharepoint."
-"md#onedrive-and-sharepoint) for the details ({issue}`1630`)."
+"configuration, see: [OneDrive and SharePoint]"
+"(onedrive_sharepoint.md#onedrive-and-sharepoint) for the details ({issue}"
+"`1630`)."
 msgstr ""
 
 #: ../../../whatsnew.md:702
@@ -2105,8 +2107,8 @@ msgid ""
 "{bdg-success}`Feature` The `update()` method of Excel tables has been moved "
 "from PRO to open source. You can now easily update an existing table in "
 "Excel with the data from a new pandas DataFrame without messing up any "
-"formulas that reference that table: `mytable.update(df)`, see: {meth}`Table."
-"update() <xlwings.main.Table.update>` ({issue}`1751`)."
+"formulas that reference that table: `mytable.update(df)`, see: {meth}"
+"`Table.update() <xlwings.main.Table.update>` ({issue}`1751`)."
 msgstr ""
 
 #: ../../../whatsnew.md:703
@@ -2147,10 +2149,10 @@ msgstr ""
 
 #: ../../../whatsnew.md:713
 msgid ""
-"{bdg-success}`Feature` New methods {meth}`mychart.to_png() <xlwings.Chart."
-"to_png>`, {meth}`myrange.to_png() <xlwings.Range.to_png>` and {meth}`myrange."
-"copy_picture() <xlwings.Range.copy_picture>` ({issue}`1707` and {issue}"
-"`582`)."
+"{bdg-success}`Feature` New methods {meth}`mychart.to_png() "
+"<xlwings.Chart.to_png>`, {meth}`myrange.to_png() <xlwings.Range.to_png>` and "
+"{meth}`myrange.copy_picture() <xlwings.Range.copy_picture>` ({issue}`1707` "
+"and {issue}`582`)."
 msgstr ""
 
 #: ../../../whatsnew.md:714
@@ -2213,8 +2215,8 @@ msgstr ""
 #: ../../../whatsnew.md:727
 msgid ""
 "{bdg-info}`Enhancement` When you print a workbook or sheet to a pdf, you can "
-"now automatically open the PDF document via the new `show` argument: `mybook."
-"to_pdf(show=True)` ({issue}`1683`)."
+"now automatically open the PDF document via the new `show` argument: "
+"`mybook.to_pdf(show=True)` ({issue}`1683`)."
 msgstr ""
 
 #: ../../../whatsnew.md:728
@@ -2269,8 +2271,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:749
 msgid ""
-"{bdg-info}`Enhancement` The app properties `myapp.enable_events` and `myapp."
-"interactive` are now supported ({issue}`254`)."
+"{bdg-info}`Enhancement` The app properties `myapp.enable_events` and "
+"`myapp.interactive` are now supported ({issue}`254`)."
 msgstr ""
 
 #: ../../../whatsnew.md:750
@@ -2354,10 +2356,11 @@ msgstr ""
 
 #: ../../../whatsnew.md:772
 msgid ""
-"{bdg-info}`Enhancement` {meth}`mysheet.pictures.add <xlwings.main.Pictures."
-"add>` now accepts a new `anchor` argument that you can use as an alternative "
-"to `top`/`left` to position the picture by providing an anchor range object, "
-"e.g.: `mysheet.pictures.add(img, anchor=mysheet['A1'])` ({issue}`1648`)."
+"{bdg-info}`Enhancement` {meth}`mysheet.pictures.add "
+"<xlwings.main.Pictures.add>` now accepts a new `anchor` argument that you "
+"can use as an alternative to `top`/`left` to position the picture by "
+"providing an anchor range object, e.g.: `mysheet.pictures.add(img, "
+"anchor=mysheet['A1'])` ({issue}`1648`)."
 msgstr ""
 
 #: ../../../whatsnew.md:773
@@ -2369,11 +2372,11 @@ msgstr ""
 
 #: ../../../whatsnew.md:774
 msgid ""
-"{bdg-secondary}`PRO` {bdg-info}`Enhancement` {meth}`mybook.to_pdf <xlwings."
-"Book.to_pdf>` now accepts a `layout` parameter so you can \"print\" your "
-"reports onto a PDF with your corporate layout including headers, footers and "
-"borderless graphics. See [PDF Layout](pro/reports/components_filters.md#pdf-"
-"layout)."
+"{bdg-secondary}`PRO` {bdg-info}`Enhancement` {meth}`mybook.to_pdf "
+"<xlwings.Book.to_pdf>` now accepts a `layout` parameter so you can \"print\" "
+"your reports onto a PDF with your corporate layout including headers, "
+"footers and borderless graphics. See [PDF Layout](pro/reports/"
+"components_filters.md#pdf-layout)."
 msgstr ""
 
 #: ../../../whatsnew.md:776
@@ -2382,9 +2385,9 @@ msgstr ""
 
 #: ../../../whatsnew.md:778
 msgid ""
-"{bdg-success}`Feature` Added very basic support for {meth}`mysheet."
-"page_setup <xlwings.Sheet.page_setup>` and {meth}`myrange.note <xlwings."
-"Range.note>` ({issue}`1551` and {issue}`896`)."
+"{bdg-success}`Feature` Added very basic support for {meth}"
+"`mysheet.page_setup <xlwings.Sheet.page_setup>` and {meth}`myrange.note "
+"<xlwings.Range.note>` ({issue}`1551` and {issue}`896`)."
 msgstr ""
 
 #: ../../../whatsnew.md:779
@@ -2483,8 +2486,8 @@ msgstr ""
 #: ../../../whatsnew.md:799
 msgid ""
 "{bdg-success}`Feature` New methods {meth}`mypicture.lock_aspect_ratio "
-"<xlwings.Picture.lock_aspect_ratio>` and {meth}`myapp.cut_copy_mode <xlwings."
-"App.cut_copy_mode>` ({issue}`1622` and {issue}`1625`)."
+"<xlwings.Picture.lock_aspect_ratio>` and {meth}`myapp.cut_copy_mode "
+"<xlwings.App.cut_copy_mode>` ({issue}`1622` and {issue}`1625`)."
 msgstr ""
 
 #: ../../../whatsnew.md:800
@@ -2565,8 +2568,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:820
 msgid ""
-"{bdg-success}`Feature` Added support for {attr}`myrange.wrap_text <xlwings."
-"Range.wrap_text>` ({issue}`173`)."
+"{bdg-success}`Feature` Added support for {attr}`myrange.wrap_text "
+"<xlwings.Range.wrap_text>` ({issue}`173`)."
 msgstr ""
 
 #: ../../../whatsnew.md:821
@@ -2679,8 +2682,8 @@ msgstr ""
 #: ../../../whatsnew.md:897
 msgid ""
 "{bdg-info}`Enhancement` As a convenience method, you can now directly export "
-"sheets to PDF instead of having to go through the book: {meth}`mysheet."
-"to_pdf() <xlwings.Sheet.to_pdf>` ({issue}`1517`)."
+"sheets to PDF instead of having to go through the book: {meth}"
+"`mysheet.to_pdf() <xlwings.Sheet.to_pdf>` ({issue}`1517`)."
 msgstr ""
 
 #: ../../../whatsnew.md:898
@@ -2711,9 +2714,9 @@ msgstr ""
 
 #: ../../../whatsnew.md:907
 msgid ""
-"{bdg-secondary}`PRO` {bdg-warning}`Bug Fix`: {meth}`Table.update <xlwings."
-"main.Table.update>` has been fixed so it also works when the table is the "
-"data source of a chart ({issue}`1507`)."
+"{bdg-secondary}`PRO` {bdg-warning}`Bug Fix`: {meth}`Table.update "
+"<xlwings.main.Table.update>` has been fixed so it also works when the table "
+"is the data source of a chart ({issue}`1507`)."
 msgstr ""
 
 #: ../../../whatsnew.md:908
@@ -2745,16 +2748,17 @@ msgstr ""
 
 #: ../../../whatsnew.md:914
 msgid ""
-"{bdg-success}`Feature` New method {meth}`mysheet.copy() <xlwings.Sheet."
-"copy>` ({issue}`123`)."
+"{bdg-success}`Feature` New method {meth}`mysheet.copy() "
+"<xlwings.Sheet.copy>` ({issue}`123`)."
 msgstr ""
 
 #: ../../../whatsnew.md:915
 msgid ""
-"{bdg-secondary}`PRO` {bdg-success}`Feature`: in addition to `xw."
-"create_report()`, you can now also work within a workbook by using the new "
-"{meth}`mysheet.render_template() <xlwings.Sheet.render_template>` method, "
-"see also [Quickstart](pro/reports/reports.md#quickstart) ({issue}`1478`)."
+"{bdg-secondary}`PRO` {bdg-success}`Feature`: in addition to "
+"`xw.create_report()`, you can now also work within a workbook by using the "
+"new {meth}`mysheet.render_template() <xlwings.Sheet.render_template>` "
+"method, see also [Quickstart](pro/reports/reports.md#quickstart) ({issue}"
+"`1478`)."
 msgstr ""
 
 #: ../../../whatsnew.md:917
@@ -2770,8 +2774,8 @@ msgstr ""
 #: ../../../whatsnew.md:920
 msgid ""
 "{bdg-secondary}`PRO` {bdg-success}`Feature`: xlwings Reports now supports "
-"template text in shapes, see [xlwings Reports](pro/reports/reports."
-"md#quickstart)."
+"template text in shapes, see [xlwings Reports](pro/reports/"
+"reports.md#quickstart)."
 msgstr ""
 
 #: ../../../whatsnew.md:922
@@ -2808,16 +2812,16 @@ msgstr ""
 
 #: ../../../whatsnew.md:933
 msgid ""
-"{bdg-info}`Enhancement` Added new method {meth}`Book.to_pdf() <xlwings.Book."
-"to_pdf>` to easily export PDF reports. Needless to say, this integrates very "
-"nicely with [xlwings Reports](pro/reports/reports.md#quickstart) ({issue}"
-"`1363`)."
+"{bdg-info}`Enhancement` Added new method {meth}`Book.to_pdf() "
+"<xlwings.Book.to_pdf>` to easily export PDF reports. Needless to say, this "
+"integrates very nicely with [xlwings Reports](pro/reports/"
+"reports.md#quickstart) ({issue}`1363`)."
 msgstr ""
 
 #: ../../../whatsnew.md:934
 msgid ""
-"{bdg-info}`Enhancement` Added support for {attr}`Sheet.visible <xlwings."
-"Sheet.visible>` ({issue}`1459`)."
+"{bdg-info}`Enhancement` Added support for {attr}`Sheet.visible "
+"<xlwings.Sheet.visible>` ({issue}`1459`)."
 msgstr ""
 
 #: ../../../whatsnew.md:936
@@ -2846,17 +2850,17 @@ msgstr ""
 
 #: ../../../whatsnew.md:941
 msgid ""
-"{bdg-secondary}`PRO` {bdg-success}`Feature`: {meth}`Table.update <xlwings."
-"main.Table.update>` offers an easy way to keep your Excel tables in sync "
-"with your DataFrame source ({issue}`1454`)."
+"{bdg-secondary}`PRO` {bdg-success}`Feature`: {meth}`Table.update "
+"<xlwings.main.Table.update>` offers an easy way to keep your Excel tables in "
+"sync with your DataFrame source ({issue}`1454`)."
 msgstr ""
 
 #: ../../../whatsnew.md:942
 msgid ""
 "{bdg-secondary}`PRO` {bdg-info}`Enhancement`: The reports package now "
 "supports Excel tables in the templates. This is e.g. helpful to style the "
-"tables with striped rows, see [Excel Tables](pro/reports/components_filters."
-"md#excel-tables) ({issue}`1364`)."
+"tables with striped rows, see [Excel Tables](pro/reports/"
+"components_filters.md#excel-tables) ({issue}`1364`)."
 msgstr ""
 
 #: ../../../whatsnew.md:944
@@ -3180,9 +3184,9 @@ msgstr ""
 
 #: ../../../whatsnew.md:1047
 msgid ""
-"{bdg-success}`Feature` Added support for merged cells: {attr}`xlwings.Range."
-"merge_area`, {attr}`xlwings.Range.merge_cells`, {meth}`xlwings.Range.merge` "
-"{meth}`xlwings.Range.unmerge` ({issue}`21`)."
+"{bdg-success}`Feature` Added support for merged cells: {attr}"
+"`xlwings.Range.merge_area`, {attr}`xlwings.Range.merge_cells`, {meth}"
+"`xlwings.Range.merge` {meth}`xlwings.Range.unmerge` ({issue}`21`)."
 msgstr ""
 
 #: ../../../whatsnew.md:1049
@@ -3517,8 +3521,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:1174
 msgid ""
-"Better support and docs for deployment, see [Deployment](deployment."
-"md#deployment):"
+"Better support and docs for deployment, see [Deployment]"
+"(deployment.md#deployment):"
 msgstr ""
 
 #: ../../../whatsnew.md:1176
@@ -3871,8 +3875,8 @@ msgstr ""
 msgid ""
 "[Mac] Mac Excel 2011 is now supported again with the new add-in. However, "
 "since Excel 2011 doesn't support the ribbon, the config file has been "
-"created/edited manually, see [Making use of Environment Variables](addin."
-"md#making-use-of-environment-variables) ({issue}`714`)."
+"created/edited manually, see [Making use of Environment Variables]"
+"(addin.md#making-use-of-environment-variables) ({issue}`714`)."
 msgstr ""
 
 #: ../../../whatsnew.md:1354
@@ -3881,8 +3885,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:1356
 msgid ""
-"[Win] How to use imported functions in VBA, see [Call UDFs from VBA](udfs."
-"md#call-udfs-from-vba)."
+"[Win] How to use imported functions in VBA, see [Call UDFs from VBA]"
+"(udfs.md#call-udfs-from-vba)."
 msgstr ""
 
 #: ../../../whatsnew.md:1357
@@ -3893,8 +3897,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:1358
 msgid ""
-"A troubleshooting section: [Troubleshooting](troubleshooting."
-"md#troubleshooting)."
+"A troubleshooting section: [Troubleshooting]"
+"(troubleshooting.md#troubleshooting)."
 msgstr ""
 
 #: ../../../whatsnew.md:1360
@@ -4119,8 +4123,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:1451
 msgid ""
-"Add a reference to the xlwings addin, see [Installation](addin."
-"md#installation)"
+"Add a reference to the xlwings addin, see [Installation]"
+"(addin.md#installation)"
 msgstr ""
 
 #: ../../../whatsnew.md:1452
@@ -4245,9 +4249,9 @@ msgstr ""
 
 #: ../../../whatsnew.md:1525
 msgid ""
-"The `int` converter works now always as you would expect (e.g.: `xw."
-"Range('A1').options(numbers=int).value`). Before, it could happen that the "
-"number was off by 1 due to floating point issues ({issue}`554`)."
+"The `int` converter works now always as you would expect (e.g.: "
+"`xw.Range('A1').options(numbers=int).value`). Before, it could happen that "
+"the number was off by 1 due to floating point issues ({issue}`554`)."
 msgstr ""
 
 #: ../../../whatsnew.md:1528
@@ -4359,8 +4363,8 @@ msgstr ""
 #: ../../../whatsnew.md:1581
 msgid ""
 "New powerful object model based on collections and close to Excel's "
-"original, allowing to fully qualify objects: `xw.apps[0].books['MyBook."
-"xlsx'].sheets[0].range('A1:B2').value`"
+"original, allowing to fully qualify objects: "
+"`xw.apps[0].books['MyBook.xlsx'].sheets[0].range('A1:B2').value`"
 msgstr ""
 
 #: ../../../whatsnew.md:1584
@@ -5058,8 +5062,8 @@ msgid ""
 "This version marks an important first step on our path towards a stable "
 "release. It introduces **converters**, a new and powerful concept that "
 "brings a consistent experience for how Excel Ranges and their values are "
-"treated both when **reading** and **writing** but also across **xlwings."
-"Range** objects and **User Defined Functions** (UDFs)."
+"treated both when **reading** and **writing** but also across "
+"**xlwings.Range** objects and **User Defined Functions** (UDFs)."
 msgstr ""
 
 #: ../../../whatsnew.md:1818
@@ -5119,8 +5123,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:1884
 msgid ""
-"`transpose` option: This works in both directions and finally allows us to e."
-"g. write a list in column orientation to Excel ({issue}`11`):"
+"`transpose` option: This works in both directions and finally allows us to "
+"e.g. write a list in column orientation to Excel ({issue}`11`):"
 msgstr ""
 
 #: ../../../whatsnew.md:1891
@@ -5172,8 +5176,8 @@ msgstr ""
 #: ../../../whatsnew.md:1964
 msgid ""
 "When you recalculate the Sheet, the code will stop at breakpoints or print "
-"any statements that you may have. For details, see: [Debugging](debugging."
-"md#debugging)."
+"any statements that you may have. For details, see: [Debugging]"
+"(debugging.md#debugging)."
 msgstr ""
 
 #: ../../../whatsnew.md:1967
@@ -5324,8 +5328,8 @@ msgstr ""
 #: ../../../whatsnew.md:2035
 msgid ""
 "`xlwings quickstart myproject` will produce a folder with the following "
-"files, ready to be used (see [Command Line Client (CLI)](command_line."
-"md#command-line-client-cli)):"
+"files, ready to be used (see [Command Line Client (CLI)]"
+"(command_line.md#command-line-client-cli)):"
 msgstr ""
 
 #: ../../../whatsnew.md:2043
@@ -5434,8 +5438,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:2117
 msgid ""
-"For all commands, see the docs: [Command Line Client (CLI)](command_line."
-"md#command-line-client-cli)"
+"For all commands, see the docs: [Command Line Client (CLI)]"
+"(command_line.md#command-line-client-cli)"
 msgstr ""
 
 #: ../../../whatsnew.md:2119 ../../../whatsnew.md:2179
@@ -5986,8 +5990,8 @@ msgstr ""
 
 #: ../../../whatsnew.md:2502
 msgid ""
-"New property {attr}`xlwings.Range.hyperlink` and new method {meth}`xlwings."
-"Range.add_hyperlink` ({issue}`104`)."
+"New property {attr}`xlwings.Range.hyperlink` and new method {meth}"
+"`xlwings.Range.add_hyperlink` ({issue}`104`)."
 msgstr ""
 
 #: ../../../whatsnew.md:2503
@@ -6263,9 +6267,9 @@ msgstr ""
 #: ../../../whatsnew.md:2755
 msgid ""
 "Calling Python from within Excel VBA is now also supported on Mac, i.e. "
-"Python functions can be called like this: `RunPython(\"import bar; bar."
-"foo()\")`. Running frozen executables (`RunFrozenPython`) isn't available "
-"yet on Mac though."
+"Python functions can be called like this: `RunPython(\"import bar; bar.foo()"
+"\")`. Running frozen executables (`RunFrozenPython`) isn't available yet on "
+"Mac though."
 msgstr ""
 
 #: ../../../whatsnew.md:2759
