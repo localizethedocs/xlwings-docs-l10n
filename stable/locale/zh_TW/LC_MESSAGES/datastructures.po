@@ -63,8 +63,8 @@ msgstr ""
 
 #: ../../../datastructures.md:56
 msgid ""
-"To write a list in column orientation to Excel, use `transpose`: `sheet."
-"range('A1').options(transpose=True).value = [1,2,3,4]`"
+"To write a list in column orientation to Excel, use `transpose`: "
+"`sheet.range('A1').options(transpose=True).value = [1,2,3,4]`"
 msgstr ""
 
 #: ../../../datastructures.md:59
@@ -85,8 +85,8 @@ msgstr ""
 #: ../../../datastructures.md:80
 msgid ""
 "Try to minimize the number of interactions with Excel. It is always more "
-"efficient to do `sheet.range('A1').value = [[1,2],[3,4]]` than `sheet."
-"range('A1').value = [1, 2]` and `sheet.range('A2').value = [3, 4]`."
+"efficient to do `sheet.range('A1').value = [[1,2],[3,4]]` than "
+"`sheet.range('A1').value = [1, 2]` and `sheet.range('A2').value = [3, 4]`."
 msgstr ""
 
 #: ../../../datastructures.md:84
@@ -112,8 +112,8 @@ msgstr ""
 msgid ""
 "Using `expand()` together with a named Range as top left cell gives you a "
 "flexible setup in Excel: You can move around the table and change its size "
-"without having to adjust your code, e.g. by using something like `sheet."
-"range('NamedRange').expand().value`."
+"without having to adjust your code, e.g. by using something like "
+"`sheet.range('NamedRange').expand().value`."
 msgstr ""
 
 #: ../../../datastructures.md:115

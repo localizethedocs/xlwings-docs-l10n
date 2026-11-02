@@ -61,8 +61,8 @@ msgstr ""
 #: ../../../api/udf_decorators.md:31
 msgid ""
 "Functions decorated with `xlwings.script` will be imported as `Sub` (i.e., "
-"macro) to Excel when running \"Import Python UDFs\". Previously, `xlwings."
-"script` was called `xlwings.subs`, which is now deprecated."
+"macro) to Excel when running \"Import Python UDFs\". Previously, "
+"`xlwings.script` was called `xlwings.subs`, which is now deprecated."
 msgstr ""
 
 #: ../../../api/udf_decorators.md:37
@@ -80,8 +80,8 @@ msgstr ""
 
 #: ../../../api/udf_decorators.md:56
 msgid ""
-"Apply converters and options to return values, see also {meth}`Range."
-"options`."
+"Apply converters and options to return values, see also {meth}"
+"`Range.options`."
 msgstr ""
 
 #: ../../../api/udf_decorators.md:58

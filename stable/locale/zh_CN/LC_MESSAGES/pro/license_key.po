@@ -143,9 +143,9 @@ msgstr ""
 
 #: ../../../pro/license_key.md:47
 msgid ""
-"Note that if you use the `xlwings release` command, your workbook's `xlwings."
-"conf` sheet will be automatically updated with a correct deploy key as we'll "
-"see next."
+"Note that if you use the `xlwings release` command, your workbook's "
+"`xlwings.conf` sheet will be automatically updated with a correct deploy key "
+"as we'll see next."
 msgstr ""
 
 #: ../../../pro/license_key.md:49

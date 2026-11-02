@@ -37,8 +37,8 @@ msgid ""
 "local folder. This means that both, the Excel and Python file, need to show "
 "the green check mark in the File Explorer/Finder as status---a cloud icon "
 "will not work. If, in turn, you are looking for the documentation to run "
-"xlwings with Excel on the web, see [xlwings Server](https://server.xlwings."
-"org)."
+"xlwings with Excel on the web, see [xlwings Server](https://"
+"server.xlwings.org)."
 msgstr ""
 
 #: ../../../onedrive_sharepoint.md:9

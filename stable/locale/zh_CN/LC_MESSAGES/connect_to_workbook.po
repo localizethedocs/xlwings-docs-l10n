@@ -96,12 +96,12 @@ msgstr ""
 
 #: ../../../connect_to_workbook.md:34
 msgid ""
-"To reference the calling book when using `RunPython` in VBA, use `xw.Book."
-"caller()`, see [Call Python with \"RunPython\"](vba.md#call-python-with-"
-"runpython). Check out the section about [Debugging](debugging.md#debugging) "
-"to see how you can call a script from both sides, Python and Excel, without "
-"the need to constantly change between `xw.Book.caller()` and one of the "
-"methods explained above."
+"To reference the calling book when using `RunPython` in VBA, use "
+"`xw.Book.caller()`, see [Call Python with \"RunPython\"](vba.md#call-python-"
+"with-runpython). Check out the section about [Debugging]"
+"(debugging.md#debugging) to see how you can call a script from both sides, "
+"Python and Excel, without the need to constantly change between "
+"`xw.Book.caller()` and one of the methods explained above."
 msgstr ""
 
 #: ../../../connect_to_workbook.md:39

@@ -118,8 +118,8 @@ msgid ""
 "`UDF Modules`: Names of Python modules (without .py extension) from which "
 "the UDFs are being imported. Separate multiple modules by \";\". Example: "
 "`UDF_MODULES = \"common_udfs;myproject\"` The default imports a file in the "
-"same directory as the Excel spreadsheet with the same name but ending in `."
-"py`."
+"same directory as the Excel spreadsheet with the same name but ending in "
+"`.py`."
 msgstr ""
 
 #: ../../../addin.md:57

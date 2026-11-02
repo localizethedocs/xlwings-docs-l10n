@@ -196,8 +196,8 @@ msgstr ""
 
 #: ../../../api/book.md:11
 msgid ""
-"To be able to easily invoke such code from Python for debugging, use `xw."
-"Book.set_mock_caller()`."
+"To be able to easily invoke such code from Python for debugging, use "
+"`xw.Book.set_mock_caller()`."
 msgstr ""
 
 #: ../../../api/book.md:1
