@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 17:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/table.md:1
+msgid "Table"
+msgstr ""
+
+#: ../../../api/table.md:3
+msgid ""
+"See [TableRows](table_rows.md) for row insertion and deletion. See "
+"[TableColumns](table_columns.md) for column insertion and deletion. "
+"Positions passed to `add()` are one-based, while square-bracket lookup uses "
+"Python indexing."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "The table object is a member of the `tables` collection:"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns the AutoFilter for this table."
+msgstr ""
+
+#: ../../../api/table.md:3
+msgid "`field` arguments are one-based column positions relative to the table."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"The columns belonging to this table. Integer collection lookup is zero-based."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Returns an xlwings range object that represents the range of values, "
+"excluding the header row"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns or sets the display name for the specified Table object"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Returns an xlwings range object that represents the range of the header row"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Returns an xlwings range object representing the row where data is going to "
+"be inserted. This is only available for empty tables, otherwise it'll return "
+"`None`"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns or sets the name of the Table."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns the parent of the table."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns an xlwings range object of the table."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Resize a Table by providing an xlwings range object"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Data rows of this table, excluding headers and totals."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Turn the autofilter on or off by setting it to `True` or `False` (read/write "
+"boolean)"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Show or hide the header (read/write)"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Returns or sets if the Column Stripes table style is used for (read/write "
+"boolean)"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns or sets if the first column is formatted (read/write boolean)"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns or sets if the last column is displayed (read/write boolean)"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Returns or sets if the Row Stripes table style is used (read/write boolean)"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Gets or sets a boolean to show/hide the Total row."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Sort the table's data rows by one or more columns using Excel's native table "
+"sort."
+msgstr ""
+
+#: ../../../api/table.md:0
+msgid "Parameters"
+msgstr "參數"
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.sort:6
+msgid "One-based column positions within the table, in priority order."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.sort:7
+msgid "One direction for every key, or one boolean per key."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"The header and totals rows stay in place. Calculated columns, row "
+"formatting, and the table's sort state are kept. In xlwings Lite, the sort "
+"is queued until the next sync."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.sort:20
+#: xlwings.main.Table.update:16
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../api/table.md:1
+msgid "Gets or sets the table style. See `Tables.add` for possible values."
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid "Returns an xlwings range object representing the Total row"
+msgstr ""
+
+#: ../../../api/table.md:1
+msgid ""
+"Updates the Excel table with the provided data. Currently restricted to "
+"DataFrames."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:10
+msgid "Currently restricted to pandas DataFrames."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Table.update:11
+msgid ""
+"Whether or not the index of a pandas DataFrame should be written to the "
+"Excel table."
+msgstr ""
+
+#: ../../../api/table.md:0
+msgid "Return type"
+msgstr ""
