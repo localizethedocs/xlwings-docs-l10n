@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Comment:8
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/comment.md:1
 msgid "Add a plain-text reply."
