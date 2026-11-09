@@ -100,7 +100,7 @@ msgstr ""
 #: ../../../../xlwings/main.py:docstring of
 #: xlwings.main.ConditionalFormat.set:13
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/conditional_format.md:1
 msgid "Whether cell values remain visible for a data bar or icon set."

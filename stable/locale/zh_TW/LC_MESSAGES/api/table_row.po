@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.TableRow:8
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/table_row.md:1
 msgid "Delete this table row. Excel may shift cells below the table upward."

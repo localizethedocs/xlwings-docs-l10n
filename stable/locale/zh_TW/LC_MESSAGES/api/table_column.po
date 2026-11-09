@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.TableColumn:8
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/table_column.md:1
 msgid ""

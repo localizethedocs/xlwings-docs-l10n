@@ -27,7 +27,7 @@ msgstr "關於"
 
 #: ../../../index.md:80
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"
 
 #: ../../../index.md:1
 msgid "xlwings - Make Excel Fly!"
