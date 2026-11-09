@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../api/udf_decorators.md:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
 #: xlwings.pro.udfs_officejs.xlfunc:8
@@ -140,7 +140,7 @@ msgstr ""
 #: xlwings.pro.udfs_officejs.script:26 xlwings.pro.udfs_officejs.xlarg:20
 #: xlwings.pro.udfs_officejs.xlfunc:26 xlwings.pro.udfs_officejs.xlret:18
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/udf_decorators.md:1
 msgid "Registers a Python function as a runnable script."
@@ -306,9 +306,3 @@ msgid ""
 "arguments. Excel versions with native dynamic arrays, xlwings Lite, and "
 "xlwings Server spill array results without this option."
 msgstr ""
-
-#~ msgid "**Examples:**"
-#~ msgstr "**範例：**"
-
-#~ msgid "**Examples**"
-#~ msgstr "**範例**"

@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Comments:10
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../api/comments.md:1
 msgid "Number of comments in this collection."
