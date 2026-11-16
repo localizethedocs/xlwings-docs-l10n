@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../customaddin.md:10
 msgid "Quickstart"
-msgstr ""
+msgstr "快速開始"
 
 #: ../../../customaddin.md:12
 msgid ""
@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../../../customaddin.md:43
 msgid "Changing the Ribbon menu"
-msgstr ""
+msgstr "變更 Ribbon 選單"
 
 #: ../../../customaddin.md:45
 msgid ""
@@ -132,7 +132,7 @@ msgstr ""
 
 #: ../../../customaddin.md:47
 msgid "Importing UDFs"
-msgstr ""
+msgstr "匯入 UDF"
 
 #: ../../../customaddin.md:49
 msgid ""
@@ -234,7 +234,7 @@ msgstr ""
 
 #: ../../../customaddin.md:79
 msgid "Deployment"
-msgstr ""
+msgstr "部署"
 
 #: ../../../customaddin.md:81
 msgid ""

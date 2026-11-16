@@ -369,7 +369,7 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Range.find:10
 msgid "``\"forward\"`` or ``\"backward\"``."
-msgstr ""
+msgstr "``\"forward\"`` 或 ``\"backward\"``。"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Range.find:11
 msgid "Search by ``\"rows\"`` or ``\"columns\"``."
@@ -762,7 +762,7 @@ msgstr ""
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Range.insert:6
 msgid "Use ``right`` or ``down``."
-msgstr ""
+msgstr "使用 ``right`` 或 ``down``。"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Range.insert:7
 msgid ""
@@ -860,7 +860,7 @@ msgstr ""
 
 #: ../../../api/range.md:0
 msgid "Keyword Arguments"
-msgstr ""
+msgstr "關鍵字引數"
 
 #: ../../../../xlwings/main.py:docstring of xlwings.main.Range.options:12
 msgid "Number of dimensions."

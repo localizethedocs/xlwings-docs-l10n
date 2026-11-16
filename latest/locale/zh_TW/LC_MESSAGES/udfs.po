@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../udfs.md:1
 msgid "User Defined Functions (UDFs)"
-msgstr ""
+msgstr "使用者定義函數（UDF）"
 
 #: ../../../udfs.md:3
 msgid ""
@@ -288,7 +288,7 @@ msgstr ""
 
 #: ../../../udfs.md:213
 msgid "@xw.arg and @xw.ret decorators"
-msgstr ""
+msgstr "@xw.arg 和 @xw.ret 裝飾器"
 
 #: ../../../udfs.md:215
 msgid ""
@@ -399,7 +399,7 @@ msgstr ""
 
 #: ../../../udfs.md:349
 msgid "Docstrings"
-msgstr ""
+msgstr "文件字串"
 
 #: ../../../udfs.md:351
 msgid ""
@@ -431,7 +431,7 @@ msgstr ""
 
 #: ../../../udfs.md:394
 msgid "The \"vba\" keyword"
-msgstr ""
+msgstr "「vba」關鍵字"
 
 #: ../../../udfs.md:396
 msgid ""
@@ -448,7 +448,7 @@ msgstr ""
 
 #: ../../../udfs.md:409
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../udfs.md:411
 msgid ""
@@ -483,7 +483,7 @@ msgstr ""
 
 #: ../../../udfs.md:452
 msgid "Asynchronous UDFs"
-msgstr ""
+msgstr "異步 UDF"
 
 #: ../../../udfs.md:455
 msgid "This is an experimental feature"

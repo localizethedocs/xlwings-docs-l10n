@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../pro/reports/reports.md:1
 msgid "Quickstart"
-msgstr ""
+msgstr "快速開始"
 
 #: ../../../pro/reports/reports.md:3
 msgid "You can work on the `sheet`, `book` or `app` level:"

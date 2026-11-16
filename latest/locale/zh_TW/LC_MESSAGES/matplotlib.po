@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../matplotlib.md:7
 msgid "Getting started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../matplotlib.md:9
 msgid "The easiest sample boils down to:"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../../matplotlib.md:55
 msgid "Properties"
-msgstr ""
+msgstr "屬性"
 
 #: ../../../matplotlib.md:57
 msgid ""
@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../../matplotlib.md:60
 msgid "For example:"
-msgstr ""
+msgstr "例如："
 
 #: ../../../matplotlib.md:68 ../../../matplotlib.md:88
 msgid "or:"
@@ -105,15 +105,15 @@ msgstr ""
 
 #: ../../../matplotlib.md:80
 msgid "via PyPlot interface:"
-msgstr ""
+msgstr "透過 PyPlot 介面："
 
 #: ../../../matplotlib.md:96
 msgid "via object oriented interface:"
-msgstr ""
+msgstr "透過物件導向介面："
 
 #: ../../../matplotlib.md:105
 msgid "via Pandas:"
-msgstr ""
+msgstr "透過 Pandas："
 
 #: ../../../matplotlib.md:117
 msgid ""

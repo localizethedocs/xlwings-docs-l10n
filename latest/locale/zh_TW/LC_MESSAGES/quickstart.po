@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../quickstart.md:1
 msgid "Quickstart"
-msgstr ""
+msgstr "快速開始"
 
 #: ../../../quickstart.md:3
 msgid ""
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../quickstart.md:72
 msgid "3. Macros: Call Python from Excel"
-msgstr ""
+msgstr "3. 巨集：從 Excel 呼叫 Python"
 
 #: ../../../quickstart.md:74
 msgid ""

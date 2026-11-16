@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../datastructures.md:1
 msgid "Data Structures Tutorial"
-msgstr ""
+msgstr "資料結構教學課程"
 
 #: ../../../datastructures.md:3
 msgid ""
@@ -118,7 +118,7 @@ msgstr ""
 
 #: ../../../datastructures.md:115
 msgid "NumPy arrays"
-msgstr ""
+msgstr "NumPy 陣列"
 
 #: ../../../datastructures.md:117
 msgid ""
