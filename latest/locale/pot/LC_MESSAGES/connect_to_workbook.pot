@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-11-16 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,47 +39,47 @@ msgid ""
 "make sure that the Excel instance is closed and cleaned up again properly:"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:21
 msgid "xw.Book"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:21
 msgid "xw.books"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:21
 msgid "New book"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:21
 msgid "`xw.Book()`"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:23
 msgid "`xw.books.add()`"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:23
 msgid "Unsaved book"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:23
 msgid "`xw.Book('Book1')`"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:24
 msgid "`xw.books['Book1']`"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:24
 msgid "Book by (full)name"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:24
 msgid "`xw.Book(r'C:/path/to/file.xlsx')`"
 msgstr ""
 
-#: ../../../connect_to_workbook.md:0
+#: ../../../connect_to_workbook.md:25
 msgid "`xw.books.open(r'C:/path/to/file.xlsx')`"
 msgstr ""
 
@@ -96,12 +96,12 @@ msgstr ""
 
 #: ../../../connect_to_workbook.md:34
 msgid ""
-"To reference the calling book when using `RunPython` in VBA, use `xw.Book."
-"caller()`, see [Call Python with \"RunPython\"](vba.md#call-python-with-"
-"runpython). Check out the section about [Debugging](debugging.md#debugging) "
-"to see how you can call a script from both sides, Python and Excel, without "
-"the need to constantly change between `xw.Book.caller()` and one of the "
-"methods explained above."
+"To reference the calling book when using `RunPython` in VBA, use "
+"`xw.Book.caller()`, see [Call Python with \"RunPython\"](vba.md#call-python-"
+"with-runpython). Check out the section about [Debugging]"
+"(debugging.md#debugging) to see how you can call a script from both sides, "
+"Python and Excel, without the need to constantly change between "
+"`xw.Book.caller()` and one of the methods explained above."
 msgstr ""
 
 #: ../../../connect_to_workbook.md:39
