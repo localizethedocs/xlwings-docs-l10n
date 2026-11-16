@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../api/names.md:7
 msgid "Examples:"
-msgstr ""
+msgstr "範例："
 
 #: ../../../api/names.md:1
 msgid ""

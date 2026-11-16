@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../syntax_overview.md:1
 msgid "Syntax Overview"
-msgstr ""
+msgstr "語法概覽"
 
 #: ../../../syntax_overview.md:3
 msgid "The xlwings object model is very similar to the one used by VBA."
