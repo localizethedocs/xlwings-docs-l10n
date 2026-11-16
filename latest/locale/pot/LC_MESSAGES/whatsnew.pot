@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 17:32+0000\n"
+"POT-Creation-Date: 2026-11-16 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4884,351 +4884,353 @@ msgid ""
 "= xw.books['Book1'].sheets[0]`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1765
 msgid "v0.9.0"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1765
 msgid "v0.7.2"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1765
 msgid "Active Excel instance"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1765
 msgid "`xw.apps.active`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1767 ../../../whatsnew.md:1768
+#: ../../../whatsnew.md:1774 ../../../whatsnew.md:1775
+#: ../../../whatsnew.md:1778 ../../../whatsnew.md:1780
 msgid "unsupported"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1767
 msgid "New Excel instance"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1767
 msgid "`app = xw.App()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1768
 msgid "Get app from book"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1768
 msgid "`app = wb.app`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1769
 msgid "`app = xw.Application(wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1769
 msgid "Target installation (Mac)"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1769
 msgid "`app = xw.App(spec=...)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1770
 msgid "`wb = xw.Workbook(app_target=...)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1770
 msgid "Hide Excel Instance"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1770
 msgid "`app = xw.App(visible=False)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1771
 msgid "`wb = xw.Workbook(app_visible=False)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1771
 msgid "Selected Range"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1771
 msgid "`app.selection`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1772
 msgid "`wb.get_selection()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1772
 msgid "Calculation mode"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1772
 msgid "`app.calculation = 'manual'`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1773
 msgid "`app.calculation = xw.constants.Calculation.xlCalculationManual`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1773
 msgid "All books in app"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1773
 msgid "`app.books`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1774
 msgid "Fully qualified book"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1774
 msgid "`app.books['Book1']`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1775
 msgid "Active book in active app"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1775
 msgid "`xw.books.active`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1776
 msgid "`xw.Workbook.active()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1776
 msgid "New book in active app"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1776
 msgid "`wb = xw.Book()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1777
 msgid "`wb = xw.Workbook()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1777
 msgid "New book in specific app"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1777
 msgid "`wb = app.books.add()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1778
 msgid "All sheets in book"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1778
 msgid "`wb.sheets`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1779
 msgid "`xw.Sheet.all(wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1779
 msgid "Call a macro in an addin"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1779
 msgid "`app.macro('MacroName')`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1780
 msgid "First sheet of book wb"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1780
 msgid "`wb.sheets[0]`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1781
 msgid "`xw.Sheet(1, wkb=wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1781
 msgid "Active sheet"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1781
 msgid "`wb.sheets.active`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1782
 msgid "`xw.Sheet.active(wkb=wb)` or `wb.active_sheet`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1782
 msgid "Add sheet"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1782
 msgid "`wb.sheets.add()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1783
 msgid "`xw.Sheet.add(wkb=wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1783
 msgid "Sheet count"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1783
 msgid "`wb.sheets.count` or `len(wb.sheets)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1784
 msgid "`xw.Sheet.count(wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1784
 msgid "Add chart to sheet"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1784
 msgid "`chart = wb.sheets[0].charts.add()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1785
 msgid "`chart = xw.Chart.add(sheet=1, wkb=wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1785
 msgid "Existing chart"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1785
 msgid "`wb.sheets['Sheet 1'].charts[0]`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1786
 msgid "`xw.Chart('Sheet 1', 1)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1786
 msgid "Chart Type"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1786
 msgid "`chart.chart_type = '3d_area'`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1787
 msgid "`chart.chart_type = xw.constants.ChartType.xl3DArea`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1787
 msgid "Add picture to sheet"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1787
 msgid "`wb.sheets[0].pictures.add('path/to/pic')`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1788
 msgid "`xw.Picture.add('path/to/pic', sheet=1, wkb=wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1788
 msgid "Existing picture"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1788
 msgid "`wb.sheets['Sheet 1'].pictures[0]`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1789
 msgid "`xw.Picture('Sheet 1', 1)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1789
 msgid "Matplotlib"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1789
 msgid "`sht.pictures.add(fig, name='x', update=True)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1790
 msgid "`xw.Plot(fig).show('MyPlot', sheet=sht, wkb=wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1790
 msgid "Table expansion"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1790
 msgid "`sht.range('A1').expand('table')`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1791
 msgid "`xw.Range(sht, 'A1', wkb=wb).table`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1791
 msgid "Vertical expansion"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1791
 msgid "`sht.range('A1').expand('down')`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1792
 msgid "`xw.Range(sht, 'A1', wkb=wb).vertical`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1792
 msgid "Horizontal expansion"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1792
 msgid "`sht.range('A1').expand('right')`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1793
 msgid "`xw.Range(sht, 'A1', wkb=wb).horizontal`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1793
 msgid "Set name of range"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1793
 msgid "`sht.range('A1').name = 'name'`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1794
 msgid "`xw.Range(sht, 'A1', wkb=wb).name = 'name'`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1794
 msgid "Get name of range"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1794
 msgid "`sht.range('A1').name.name`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1795
 msgid "`xw.Range(sht, 'A1', wkb=wb).name`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1795
 msgid "mock caller"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1795
 msgid "`xw.Book('file.xlsm').set_mock_caller()`"
 msgstr ""
 
-#: ../../../whatsnew.md:1585
+#: ../../../whatsnew.md:1796
 msgid "`xw.Workbook.set_mock_caller('file.xlsm')`"
 msgstr ""
 
@@ -5506,43 +5508,49 @@ msgid ""
 "numpy as `np`):"
 msgstr ""
 
-#: ../../../whatsnew.md:1942 ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2043 ../../../whatsnew.md:2052
+#: ../../../whatsnew.md:2058 ../../../whatsnew.md:2086
+#: ../../../whatsnew.md:2544 ../../../whatsnew.md:2692
+#: ../../../whatsnew.md:2707 ../../../whatsnew.md:2716
 msgid "**New**"
 msgstr ""
 
-#: ../../../whatsnew.md:1942 ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2043 ../../../whatsnew.md:2052
+#: ../../../whatsnew.md:2058 ../../../whatsnew.md:2086
+#: ../../../whatsnew.md:2544 ../../../whatsnew.md:2692
+#: ../../../whatsnew.md:2707 ../../../whatsnew.md:2716
 msgid "**Old**"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2043
 msgid "`@xw.func`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2045
 msgid "`@xw.xlfunc`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2045
 msgid "`@xw.arg`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2046
 msgid "`@xw.xlarg`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2046
 msgid "`@xw.ret`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2047
 msgid "`@xw.xlret`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2047
 msgid "`@xw.sub`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2048
 msgid "`@xw.xlsub`"
 msgstr ""
 
@@ -5550,11 +5558,11 @@ msgstr ""
 msgid "Pay attention to the following subtle change:"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2052
 msgid "`@xw.arg(\"x\", np.array)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2054
 msgid "`@xw.xlarg(\"x\", \"nparray\")`"
 msgstr ""
 
@@ -5564,27 +5572,27 @@ msgid ""
 "arguments:"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2058
 msgid "`Range('A1:A2').options(ndim=2)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2060
 msgid "`Range('A1:A2', atleast_2d=True)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2060
 msgid "`Range('A1:B2').options(np.array)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2061
 msgid "`Range('A1:B2', asarray=True)`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2061
 msgid "`Range('A1').options(index=False, header=False).value = df`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2062
 msgid "`Range('A1', index=False, header=False).value = df`"
 msgstr ""
 
@@ -5606,11 +5614,11 @@ msgid ""
 "Otherwise they're returned as numpy scalar values."
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2086
 msgid "`Range('A1').options(np.array, ndim=1).value`"
 msgstr ""
 
-#: ../../../whatsnew.md:1942
+#: ../../../whatsnew.md:2088
 msgid "`Range('A1', asarray=True).value`"
 msgstr ""
 
@@ -6005,19 +6013,19 @@ msgid ""
 "`Workbook` object):"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2353
 msgid "**Correct Syntax (as before)**"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2353
 msgid "**Removed**"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2353
 msgid "`Application(wkb=wb)`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2355
 msgid "`wb.application`"
 msgstr ""
 
@@ -6242,11 +6250,11 @@ msgid ""
 "interactively or from VBA."
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2544
 msgid "`Workbook.caller()`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2546
 msgid "`Workbook()`"
 msgstr ""
 
@@ -6418,19 +6426,19 @@ msgid ""
 "new `wkb` keyword argument:"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2692
 msgid "`Range('A1', wkb=wb1).value`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2694
 msgid "`wb1.range('A1').value`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2694
 msgid "`Chart('Chart1', wkb=wb1)`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2695
 msgid "`wb1.chart('Chart1')`"
 msgstr ""
 
@@ -6447,35 +6455,35 @@ msgid ""
 "Workbook is: `wb = Workbook()`:"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2707
 msgid "`Sheet('Sheet1').activate()`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2709
 msgid "`wb.activate('Sheet1')`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2709
 msgid "`Sheet('Sheet1').clear()`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2710
 msgid "`wb.clear('Sheet1')`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2710
 msgid "`Sheet('Sheet1').clear_contents()`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2711
 msgid "`wb.clear_contents('Sheet1')`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2711
 msgid "`Sheet.active().clear_contents()`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2712
 msgid "`wb.clear_contents()`"
 msgstr ""
 
@@ -6485,11 +6493,11 @@ msgid ""
 "method now):"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2716
 msgid "`Chart.add()`"
 msgstr ""
 
-#: ../../../whatsnew.md:2203
+#: ../../../whatsnew.md:2718
 msgid "`Chart().add()`"
 msgstr ""
 
