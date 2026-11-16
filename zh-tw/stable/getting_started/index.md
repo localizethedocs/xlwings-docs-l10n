@@ -1,0 +1,16 @@
+# 開始使用
+
+* [Video course](../course.md)
+* [Installation](../installation.md)
+* [Connect to a Book](../connect_to_workbook.md)
+* [語法概覽](../syntax_overview.md)
+* [資料結構教學課程](../datastructures.md)
+* [增益集與設定](../addin.md)
+* [RunPython](../vba.md)
+* [使用者定義函數（UDF）](../udfs.md)
+* [Matplotlib & Plotly Charts](../matplotlib.md)
+* [Jupyter Notebooks: Interact with Excel](../jupyternotebooks.md)
+* [Command Line Client (CLI)](../command_line.md)
+* [Deployment](../deployment.md)
+* [OneDrive and SharePoint](../onedrive_sharepoint.md)
+* [Troubleshooting](../troubleshooting.md)
