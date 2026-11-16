@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../jupyternotebooks.md:9
 msgid "The view function"
-msgstr ""
+msgstr "view 函數"
 
 #: ../../../jupyternotebooks.md:11
 msgid ""
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../jupyternotebooks.md:19
 msgid "The load function"
-msgstr ""
+msgstr "load 函數"
 
 #: ../../../jupyternotebooks.md:21
 msgid ""

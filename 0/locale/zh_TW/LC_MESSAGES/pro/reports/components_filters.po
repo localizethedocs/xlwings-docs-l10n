@@ -145,7 +145,7 @@ msgstr ""
 #: ../../../pro/reports/components_filters.md:190
 #: ../../../pro/reports/components_filters.md:216
 msgid "Syntax:"
-msgstr ""
+msgstr "語法："
 
 #: ../../../pro/reports/components_filters.md:91
 msgid ""
@@ -198,7 +198,7 @@ msgstr ""
 #: ../../../pro/reports/components_filters.md:127
 #: ../../../pro/reports/components_filters.md:151
 msgid "Examples:"
-msgstr ""
+msgstr "範例："
 
 #: ../../../pro/reports/components_filters.md:135
 msgid "aggsmall"

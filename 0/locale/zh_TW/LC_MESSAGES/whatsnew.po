@@ -4486,7 +4486,7 @@ msgstr ""
 
 #: ../../../whatsnew.md:1538
 msgid "Syntax:"
-msgstr ""
+msgstr "語法："
 
 #: ../../../whatsnew.md:1547
 msgid ""
