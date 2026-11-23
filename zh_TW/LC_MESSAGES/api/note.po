@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Zoomer Analytics LLC
+# This file is distributed under the same license as the xlwings package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xlwings stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 17:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/note.md:1
+msgid "Note"
+msgstr ""
+
+#: ../../../api/note.md:3
+msgid ""
+"See also [](notes.md) for worksheet and workbook note collections. Modern "
+"threaded comments use a separate [](comment.md) model."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "Represents a cell Note."
+msgstr ""
+
+#: ../../../api/note.md:3
+msgid ""
+"Before the introduction of threaded comments, a Note was called a Comment."
+msgstr ""
+
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Note:10
+#: xlwings.main.Note.text:9
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../api/note.md:1
+msgid ""
+"Returns the native object (`pywin32` or `appscript` obj) of the engine being "
+"used."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "The note's author. In xlwings Lite, use `await get_author()`."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "Delete the note."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "Read the note's author from Excel; return `None` if the note is gone."
+msgstr ""
+
+#: ../../../api/note.md:3
+msgid "Requires xlwings Lite."
+msgstr ""
+
+#: ../../../api/note.md:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "Read the note's cell from Excel; return `None` if it is gone."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid "Fetch the note's text on demand."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid ""
+"The cell containing this note. In xlwings Lite, use `await get_location()`."
+msgstr ""
+
+#: ../../../api/note.md:1
+msgid ""
+"Gets or sets the text of a note. Keep in mind that the note must already "
+"exist!"
+msgstr ""
