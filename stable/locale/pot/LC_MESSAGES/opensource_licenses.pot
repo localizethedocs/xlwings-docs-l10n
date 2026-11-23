@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 13:47+0000\n"
+"POT-Creation-Date: 2026-11-23 19:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -206,11 +206,11 @@ msgid ""
 "software is supplied to you by Apple Inc."
 msgstr ""
 
-#: ../../../opensource_licenses.md:0
+#: ../../../opensource_licenses.md:150
 msgid "<br />\n"
 msgstr ""
 
-#: ../../../opensource_licenses.md:0
+#: ../../../opensource_licenses.md:150
 msgid "\\\\\n"
 msgstr ""
 
