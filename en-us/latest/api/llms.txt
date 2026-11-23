@@ -1,0 +1,64 @@
+# xlwings
+
+> Documentation for xlwings, a Python library to automate Excel, write user-defined functions, and build interactive Excel tools.
+
+
+Zoomer Analytics LLC
+
+## Pages in this subsection
+
+- [Top-level functions](top_level_functions.md): Loads the selected cell(s) of the active workbook into a pandas DataFrame. If you
+- [UDF decorators](udf_decorators.md): Each parameter states which integrations support it. &#42;&#42;All integrations&#42;&#42; means xlwings Lite, xlwing...
+- [App](app.md): An app corresponds to an Excel instance and should normally be used as context
+- [Apps](apps.md): A collection of all &#96;app&#96; objects:
+- [AutoFilter](autofilter.md): An AutoFilter belonging to a range or table.
+- [Book](book.md): A book object is a member of the &#96;books&#96; collection:
+- [BookAsync](book_async.md): Type hint for the async API in xlwings Lite scripts.
+- [Books](books.md): A collection of all &#96;book&#96; objects:
+- [Border](border.md): A single side of a range’s borders, accessed via
+- [Borders](borders.md): The borders of a range, accessed via &#96;myrange.borders&#96;.
+- [Characters](characters.md): The characters object can be accessed as an attribute of the range or shape
+- [Chart](chart.md): The chart object is a member of the &#96;charts&#96; collection:
+- [ChartAxis](chart_axis.md): A chart axis, accessed through &#96;Chart.category_axis&#96; and &#96;Chart.value_axis&#96; for the primary axes, or...
+- [ChartSeries](chart_series.md): A chart data series.
+- [ChartSeriesCollection](chart_series_collection.md): An ordered, integer-indexed collection of chart series.
+- [ChartLegend](chart_legend.md): The legend of a chart, accessed via &#96;mychart.legend&#96;:
+- [Charts](charts.md): A collection of all &#96;chart&#96; objects on the specified sheet:
+- [ConditionalFormat](conditional_format.md): Represents one conditional-format rule that applies to a range.
+- [ConditionalFormats](conditional_formats.md): An ordered collection of conditional-format rules for a range.
+- [Comment](comment.md): A modern threaded comment attached to one cell, distinct from a Note.
+- [Comments](comments.md): Threaded comments on a worksheet or in a workbook.
+- [CommentReply](comment_reply.md): Replies belong to a Comment. Use &#96;comment.add_reply(text)&#96; to add a reply, and &#96;await comment.get_re...
+- [DataValidation](data_validation.md): Data validation for a range.
+- [Font](font.md): The font object can be accessed as an attribute of the range or shape object.
+- [Name](name.md): The name object is a member of the &#96;names&#96; collection:
+- [Names](names.md): A collection of defined &#96;name&#96; objects in the workbook.
+- [Note](note.md): See also Notes for worksheet and workbook note collections.
+- [Notes](notes.md): A collection of notes on one worksheet (&#96;sheet.notes&#96;) or across all worksheets in a workbook (&#96;book...
+- [PageSetup](page_setup.md): Represents a PageSetup object.
+- [Picture](picture.md): The picture object is a member of the &#96;pictures&#96;
+- [Pictures](pictures.md): A collection of all &#96;picture&#96; objects on the specified sheet:
+- [PivotField](pivot_field.md): A source field placed in the &#42;Rows&#42;, &#42;Columns&#42; or &#42;Filters&#42; area of a
+- [PivotFields](pivot_fields.md): The fields in one area of a pivot table, i.e. &#96;pt.rows&#96;, &#96;pt.columns&#96;
+- [PivotTable](pivot_table.md): The pivot table object is a member of the
+- [PivotTables](pivot_tables.md): A collection of all &#96;PivotTable&#96;
+- [PivotValueField](pivot_value_field.md): A field in the &#42;Values&#42; area of a pivot table, accessed via &#96;PivotValueFields&#96;:
+- [PivotValueFields](pivot_value_fields.md): The fields in the &#42;Values&#42; area of a pivot table, i.e. &#96;pt.values&#96;.
+- [Range](range.md): Returns a Range object that represents a cell or a range of cells.
+- [RangeColumns](range_columns.md): Represents the columns of a range. Do not construct this class directly, use
+- [RangeRows](range_rows.md): Represents the rows of a range. Do not construct this class directly, use
+- [Reports](reports.md): Use this class to provide images to either &#96;render_template()&#96;.
+- [Shape](shape.md): The shape object is a member of the &#96;shapes&#96; collection:
+- [Shapes](shapes.md): A collection of all &#96;shape&#96; objects on the specified sheet:
+- [Sheet](sheet.md): A sheet object is a member of the &#96;sheets&#96; collection:
+- [Sheets](sheets.md): A collection of all &#96;sheet&#96; objects:
+- [Table](table.md): See TableRows for row insertion and deletion. See TableColumns for column insertion and deletion. Po...
+- [TableColumn](table_column.md): A column in an Excel table. Obtain it again after changing table structure.
+- [TableColumns](table_columns.md): Table columns. Collection lookup is zero-based; column indexes are one-based. For a newly created ta...
+- [Tables](tables.md): A collection of all &#96;table&#96; objects on the specified sheet:
+- [TableRow](table_row.md): A data row in an Excel table. Row objects refer to a position, so obtain them again after sorting or...
+- [TableRows](table_rows.md): The collection belongs to a Table. Use TableRow to delete an indexed row.
+
+## Optional
+
+- [Top-level llms.txt](../llms.txt): Complete documentation index.
