@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 17:56+0000\n"
+"POT-Creation-Date: 2026-11-23 20:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:13 xlwings.pro.udfs_officejs.xlfunc:16
+#: xlwings.pro.udfs_officejs.script:15 xlwings.pro.udfs_officejs.xlfunc:16
 msgid ""
 "**xlwings Server only.** Roles required for a server-authenticated user."
 msgstr ""
@@ -128,7 +128,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:21 xlwings.pro.udfs_officejs.xlfunc:21
+#: xlwings.pro.udfs_officejs.script:23 xlwings.pro.udfs_officejs.xlfunc:21
 msgid "The decorated function, or a decorator when called with options."
 msgstr ""
 
@@ -137,7 +137,7 @@ msgid "Return type"
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:26 xlwings.pro.udfs_officejs.xlarg:20
+#: xlwings.pro.udfs_officejs.script:28 xlwings.pro.udfs_officejs.xlarg:20
 #: xlwings.pro.udfs_officejs.xlfunc:26 xlwings.pro.udfs_officejs.xlret:18
 msgid "Examples"
 msgstr ""
@@ -163,8 +163,15 @@ msgid ""
 "xlwings Lite and xlwings Server."
 msgstr ""
 
+#: ../../../api/udf_decorators.md:7
+msgid ""
+"In xlwings Lite and xlwings Server, the script's return value is kept, so "
+"the runtime can pass it on to the code that called the script. A script "
+"without `return` gives `None`."
+msgstr ""
+
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:10
+#: xlwings.pro.udfs_officejs.script:12
 msgid ""
 "**All integrations.** Function to decorate when calling "
 "``script(my_function)`` directly. Leave it out when using ``@script`` or "
@@ -172,42 +179,42 @@ msgid ""
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:12
+#: xlwings.pro.udfs_officejs.script:14
 msgid ""
 "**xlwings Lite and xlwings Server only.** Display name of the script. "
 "Defaults to the Python function name."
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:14
+#: xlwings.pro.udfs_officejs.script:16
 msgid ""
 "**xlwings Lite and xlwings Server only.** Sheet name or list of names whose "
 "content is loaded for the script."
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:15
+#: xlwings.pro.udfs_officejs.script:17
 msgid ""
 "**xlwings Lite and xlwings Server only.** Sheet name or list of names whose "
 "content is excluded from loading."
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:16
+#: xlwings.pro.udfs_officejs.script:18
 msgid ""
 "**xlwings Lite and xlwings Server only.** Sheet-button reference, for "
 "example ``\"[mybutton]Sheet1!A1\"``."
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:17
+#: xlwings.pro.udfs_officejs.script:19
 msgid ""
 "**xlwings Lite and xlwings Server only.** Whether clicking the sheet button "
 "opens the task pane."
 msgstr ""
 
 #: ../../../../xlwings/pro/udfs_officejs.py:docstring of
-#: xlwings.pro.udfs_officejs.script:19
+#: xlwings.pro.udfs_officejs.script:21
 msgid ""
 "**All integrations.** Further options depend on the integration. Classic "
 "xlwings supports ``category``, ``call_in_wizard``, ``volatile``, and "

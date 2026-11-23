@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 17:56+0000\n"
+"POT-Creation-Date: 2026-11-23 20:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,39 +48,39 @@ msgstr ""
 msgid "**Syntax:**"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:20
 msgid "Action"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:20
 msgid "**Range objects**"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:20
 msgid "**UDFs**"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:20
 msgid "**reading**"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:22
 msgid "`myrange.options(convert=None, **kwargs).value`"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:22
 msgid "`@arg('x', convert=None, **kwargs)`"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:22
 msgid "**writing**"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:23
 msgid "`myrange.options(convert=None, **kwargs).value = myvalue`"
 msgstr ""
 
-#: ../../../converters.md:0
+#: ../../../converters.md:23
 msgid "`@ret(convert=None, **kwargs)`"
 msgstr ""
 
