@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xlwings 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 17:56+0000\n"
+"POT-Creation-Date: 2026-11-23 20:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,47 +33,47 @@ msgid ""
 "use `xw.books` and to refer to a specific app, use:"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:20
 msgid "xw.Book"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:20
 msgid "xw.books"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:20
 msgid "New book"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:20
 msgid "`xw.Book()`"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:22
 msgid "`xw.books.add()`"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:22
 msgid "Unsaved book"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:22
 msgid "`xw.Book('Book1')`"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:23
 msgid "`xw.books['Book1']`"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:23
 msgid "Book by (full)name"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:23
 msgid "`xw.Book(r'C:/path/to/file.xlsx')`"
 msgstr ""
 
-#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:28
+#: ../../../../xlwings/main.py:docstring of xlwings.main.Book:24
 msgid "`xw.books.open(r'C:/path/to/file.xlsx')`"
 msgstr ""
 
